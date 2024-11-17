@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const AbstractSubmission = () => {
-  
+
   const createAbstractFormModel = () => ({
     title: '',
     authors: '',
