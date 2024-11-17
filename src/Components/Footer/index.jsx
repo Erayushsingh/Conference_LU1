@@ -11,10 +11,10 @@ const Footer = () => {
           <p className='text-xs'>Society</p>
         </div>
         <div className='text-lg font-bold'>
-          <a href="#" className='m-4 hover:opacity-60'>Home</a>
-          <a href="#" className='m-4 hover:opacity-60'>Research</a>
-          <a href="#" className='m-4 hover:opacity-60'>Publication</a>
-          <a href="#" className='m-4 hover:opacity-60'>Conference</a>
+          <a href="/" className='m-4 hover:opacity-60'>Home</a>
+          <a href="/research" className='m-4 hover:opacity-60'>Research</a>
+          <a href="/publications" className='m-4 hover:opacity-60'>Publication</a>
+          <a href="/conference" className='m-4 hover:opacity-60'>Conference</a>
         </div>
         <div className=''>
           <i className="fa-brands fa-facebook text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>

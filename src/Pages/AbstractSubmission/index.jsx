@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AbstractSubmission = () => {
+const AbstractSubmission = ({className}) => {
 
   const createAbstractFormModel = () => ({
     title: '',
@@ -72,7 +72,7 @@ const AbstractSubmission = () => {
     <div>
       {/* Button to open modal */}
       <button
-        className="p-3 pl-9 border-2 border-black mr-7 pr-9 bg-white"
+         className={`p-3 pl-9 border-2 ${className} mr-7 pr-9 bg-white`}
         onClick={toggleModal}
       >
         Abstracts

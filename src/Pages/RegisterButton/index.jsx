@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '/src/assets/Lu-old.webp'; 
 
-const RegisterButton = () => {
+const RegisterButton = ({className}) => {
     const [showSignup, setShowSignup] = useState(false);
 
     const handleButtonClick = () => {
@@ -11,7 +11,7 @@ const RegisterButton = () => {
     return (
         <div>
             <button
-                className="p-3 pl-9 border-2 border-black mr-7 pr-9 bg-white"
+                 className={`p-3 pl-9 border-2 ${className} mr-7 pr-9 bg-white`}
                 onClick={handleButtonClick}
             >
                 Register
