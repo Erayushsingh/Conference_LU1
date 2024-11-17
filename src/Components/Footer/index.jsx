@@ -17,11 +17,11 @@ const Footer = () => {
           <a href="#" className='m-4 hover:opacity-60'>Conference</a>
         </div>
         <div className=''>
-          <i class="fa-brands fa-facebook text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
-          <i class="fa-brands fa-x-twitter text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
-          <i class="fa-brands fa-youtube text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
-          <i class="fa-regular fa-envelope text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
-          <i class="fa-brands fa-instagram text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
+          <i className="fa-brands fa-facebook text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
+          <i className="fa-brands fa-x-twitter text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
+          <i className="fa-brands fa-youtube text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
+          <i className="fa-regular fa-envelope text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
+          <i className="fa-brands fa-instagram text-xl font-bold m-4 bg-gray-700 p-4 pt-3 pb-3 hover:cursor-pointer hover:opacity-60"></i>
         </div>
       </div>
       <div className='h-6 bg-gray-700'></div>
