@@ -8,7 +8,7 @@ import authRoutes from './routes/authRoutes.js';
 const app = express();
 
 // Middleware
-app.use(express.json());  // Express's built-in JSON parser (no need for body-parser)
+app.use(express.json()); 
 app.use(cors());
 
 // Database Connection

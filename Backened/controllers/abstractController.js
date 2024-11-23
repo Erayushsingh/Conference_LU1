@@ -1,18 +1,15 @@
-// controllers/abstractController.js
-
 import AbstractSubmission from '../models/abstractSubmission.js';
 
-// Handle abstract submission
+
 export const submitAbstract = async (req, res) => {
   const { title, authors, abstract, keywords, preferredPresentation, conferenceTheme, conflictOfInterest } = req.body;
 
-  // Validate required fields
+ 
   if (!title || !authors || !abstract) {
     return res.status(400).json({ error: 'Title, Authors, and Abstract are required.' });
   }
 
   try {
-    // Create a new abstract submission document
     const newSubmission = new AbstractSubmission({
       title,
       authors,
@@ -23,7 +20,6 @@ export const submitAbstract = async (req, res) => {
       conflictOfInterest,
     });
 
-    // Save the submission to the database
     await newSubmission.save();
     res.status(201).json({ message: 'Abstract submitted successfully!', data: newSubmission });
   } catch (error) {
@@ -32,7 +28,7 @@ export const submitAbstract = async (req, res) => {
   }
 };
 
-// Get all submissions (optional)
+
 export const getSubmissions = async (req, res) => {
   try {
     const submissions = await AbstractSubmission.find();

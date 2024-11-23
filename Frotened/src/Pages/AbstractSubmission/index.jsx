@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import { useNavigate, useLocation } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 
-const AbstractSubmission = ({ className }) => {
-  const navigate = useNavigate(); // Initialize navigate for redirection
+const AbstractSubmission = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const createAbstractFormModel = () => ({
     title: '',
     authors: '',
     abstract: '',
     keywords: '',
-    preferredPresentation: '',
+    preferredPresentation: 'oral',
     conferenceTheme: '',
     conflictOfInterest: 'no',
   });
@@ -21,9 +22,22 @@ const AbstractSubmission = ({ className }) => {
     title: false,
     authors: false,
     abstract: false,
+    keywords: false,
+    conferenceTheme: false,
   });
-  const [isModalOpen, setIsModalOpen] = useState(true); // Modal is open by default
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isToastOpen, setIsToastOpen] = useState(false); 
 
+ 
+  useEffect(() => {
+    if (location.pathname === '/abstract-submission') {
+      setIsModalOpen(true);
+    } else {
+      setIsModalOpen(false);
+    }
+  }, [location.pathname]);
+
+  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -32,6 +46,7 @@ const AbstractSubmission = ({ className }) => {
     });
   };
 
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -39,54 +54,59 @@ const AbstractSubmission = ({ className }) => {
     if (!formData.title) newErrors.title = true;
     if (!formData.authors) newErrors.authors = true;
     if (!formData.abstract) newErrors.abstract = true;
+    if (!formData.keywords) newErrors.keywords = true;
+    if (!formData.conferenceTheme) newErrors.conferenceTheme = true;
 
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        toast.error('You must be logged in to submit an abstract');
+        navigate('/login');
+        return;
+      }
+
       try {
-        // Send abstract data to the backend
+        // POST request to submit the abstract with token for authorization
         const response = await fetch('http://localhost:3000/api/abstracts/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${localStorage.getItem('token')}`,
+            'Authorization': `Bearer ${token}`, 
           },
           body: JSON.stringify(formData),
         });
+
+        const data = await response.json();
 
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
 
-        const data = await response.json();
+        // Display success toast
+        toast.success(data.message || 'Abstract submitted successfully!', {
+          onClose: () => {
+            setIsToastOpen(false); // Mark toast as closed
+            navigate('/');
+          },
+        });
 
-        // Show success toast
-        toast.success(data.message || 'Abstract submitted successfully!');
-        setIsModalOpen(false); // Close the modal after submission
-
-        // Redirect to home page after successful submission
-        navigate('/'); // You can replace this with any page you'd like to navigate to
-
+        setIsToastOpen(true); 
       } catch (error) {
-        // Show error toast
         toast.error('Error submitting abstract. Please try again.');
-        console.error('Error submitting abstract:', error);
       }
     }
   };
 
+  // Clear form and close modal
   const clearForm = () => {
-    // Clear the form data and close the modal
     setFormData(createAbstractFormModel());
-    setErrors({
-      title: false,
-      authors: false,
-      abstract: false,
-    });
-    setIsModalOpen(false);
-
-    // Optionally navigate elsewhere if needed (can remove if not necessary)
-    navigate('/'); // This will navigate to the home page (or anywhere else)
+    setErrors({ title: false, authors: false, abstract: false, keywords: false, conferenceTheme: false });
+    if (!isToastOpen) {
+      setIsModalOpen(false); 
+    }
+    navigate('/');
   };
 
   return (
@@ -96,6 +116,7 @@ const AbstractSubmission = ({ className }) => {
           <div className="bg-white p-8 w-4/5 sm:w-3/4 lg:w-1/2 rounded-lg shadow-lg relative">
             <h2 className="text-xl font-semibold mb-4">Abstract Submission for [LU_Conference]</h2>
             <form onSubmit={handleSubmit}>
+              {/* Paper Title */}
               <div className="mb-4">
                 <label htmlFor="title" className="block text-lg font-medium">Paper Title</label>
                 <input
@@ -109,6 +130,7 @@ const AbstractSubmission = ({ className }) => {
                 {errors.title && <span className="text-red-500 text-sm">Title is required</span>}
               </div>
 
+              {/* Authors */}
               <div className="mb-4">
                 <label htmlFor="authors" className="block text-lg font-medium">Authors</label>
                 <input
@@ -122,6 +144,7 @@ const AbstractSubmission = ({ className }) => {
                 {errors.authors && <span className="text-red-500 text-sm">Authors are required</span>}
               </div>
 
+              {/* Abstract */}
               <div className="mb-4">
                 <label htmlFor="abstract" className="block text-lg font-medium">Abstract</label>
                 <textarea
@@ -134,6 +157,7 @@ const AbstractSubmission = ({ className }) => {
                 {errors.abstract && <span className="text-red-500 text-sm">Abstract is required</span>}
               </div>
 
+              {/* Keywords */}
               <div className="mb-4">
                 <label htmlFor="keywords" className="block text-lg font-medium">Keywords</label>
                 <input
@@ -142,71 +166,68 @@ const AbstractSubmission = ({ className }) => {
                   name="keywords"
                   value={formData.keywords}
                   onChange={handleChange}
-                  className="w-full p-2 border-2 rounded-md border-gray-300"
+                  className={`w-full p-2 border-2 rounded-md ${errors.keywords ? 'border-red-500' : 'border-gray-300'}`}
                 />
+                {errors.keywords && <span className="text-red-500 text-sm">Keywords are required</span>}
               </div>
 
+              {/* Preferred Presentation */}
               <div className="mb-4">
-                <label htmlFor="preferredPresentation" className="block text-lg font-medium">Preferred Presentation Type</label>
+                <label htmlFor="preferredPresentation" className="block text-lg font-medium">Preferred Presentation</label>
                 <select
+                  id="preferredPresentation"
                   name="preferredPresentation"
                   value={formData.preferredPresentation}
                   onChange={handleChange}
-                  className="w-full p-2 border-2 rounded-md border-gray-300"
+                  className="w-full p-2 border-2 rounded-md"
                 >
-                  <option value="">Select Presentation Type</option>
-                  <option value="oral">Oral Presentation</option>
-                  <option value="poster">Poster Presentation</option>
-                  <option value="other">Other</option>
+                  <option value="oral">Oral</option>
+                  <option value="poster">Poster</option>
                 </select>
               </div>
 
+              {/* Conference Theme */}
               <div className="mb-4">
-                <label htmlFor="conferenceTheme" className="block text-lg font-medium">Conference Theme(s) Relevance</label>
+                <label htmlFor="conferenceTheme" className="block text-lg font-medium">Conference Theme</label>
                 <input
                   type="text"
+                  id="conferenceTheme"
                   name="conferenceTheme"
                   value={formData.conferenceTheme}
                   onChange={handleChange}
-                  className="w-full p-2 border-2 rounded-md border-gray-300"
+                  className={`w-full p-2 border-2 rounded-md ${errors.conferenceTheme ? 'border-red-500' : 'border-gray-300'}`}
                 />
+                {errors.conferenceTheme && <span className="text-red-500 text-sm">Conference Theme is required</span>}
               </div>
 
+              {/* Conflict of Interest */}
               <div className="mb-4">
                 <label htmlFor="conflictOfInterest" className="block text-lg font-medium">Conflict of Interest</label>
                 <select
+                  id="conflictOfInterest"
                   name="conflictOfInterest"
                   value={formData.conflictOfInterest}
                   onChange={handleChange}
-                  className="w-full p-2 border-2 rounded-md border-gray-300"
+                  className="w-full p-2 border-2 rounded-md"
                 >
-                  <option value="no">No Conflict</option>
+                  <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
               </div>
 
-              <div className="mb-4">
-                <button
-                  type="submit"
-                  className="w-full py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
-                >
-                  Submit Abstract
+              {/* Action Buttons */}
+              <div className="mb-4 flex justify-end">
+                <button type="button" className="bg-gray-500 text-white px-4 py-2 rounded-md" onClick={clearForm}>
+                  Cancel
+                </button>
+                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md ml-2">
+                  Submit
                 </button>
               </div>
             </form>
-
-            {/* Close Button for Modal */}
-            <button
-              className="absolute top-2 right-2 text-gray-600 font-bold text-xl"
-              onClick={clearForm} // Clear the form and close the modal
-            >
-              &times;
-            </button>
           </div>
         </div>
       )}
-
-      {/* Toast Container */}
       <ToastContainer />
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate
+import { useNavigate } from 'react-router-dom';  
 import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = ({ className }) => {
@@ -16,7 +16,7 @@ const LoginForm = ({ className }) => {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const navigate = useNavigate();  // Initialize navigate for redirection
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,7 +37,6 @@ const LoginForm = ({ className }) => {
 
     if (Object.keys(newErrors).length === 0) {
       try {
-        // Send a POST request to the backend to authenticate the user
         const response = await fetch('http://localhost:3000/api/auth/signin', {
           method: 'POST',
           headers: {
@@ -52,25 +51,18 @@ const LoginForm = ({ className }) => {
 
         const data = await response.json();
 
-        // Check for success based on the backend response
-        if (data.success) {  // Check if success is true
-          // If login is successful, store the JWT token (if using JWT)
+        if (data.success) { 
           localStorage.setItem('token', data.token);
 
-          // Show success toast
           toast.success(data.message || 'Login successful!');
-          
-          // Redirect to the abstract submission page before closing the modal
-          navigate('/abstract-submission');  // Navigate to abstract submission page
+          navigate('/abstract-submission');  
 
-          setIsModalOpen(false); // Close the modal after redirect
+          setIsModalOpen(false); 
 
         } else {
-          // Show error toast if login fails
           toast.error(data.message || 'Login failed. Please try again.');
         }
       } catch (error) {
-        // Show general error toast if there's an issue with the request
         toast.error('Error during login. Please try again.');
         console.error('Error during login:', error);
       }
@@ -94,14 +86,13 @@ const LoginForm = ({ className }) => {
     <div>
       <button
         className={`p-3 pl-9 border-2 ${className} mr-7 pr-9 bg-white`}
-        onClick={toggleModal} // Open modal when button is clicked
+        onClick={toggleModal} 
       >
         Sign In
       </button>
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
-          {/* Full-page overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
           {/* Modal content */}
