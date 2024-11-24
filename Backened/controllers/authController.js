@@ -1,42 +1,76 @@
-import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
-import User from '../models/registerModel.js';  
+import jwt from "jsonwebtoken";
+import bcrypt from "bcryptjs";
+import User from "../models/userModel.js";
+import { registerInput, signInInput } from "../config/types.js";
 
-
-export const signInUser = async (req, res) => {
-  const { email, password } = req.body;
-  if (!email || !password) {
-    return res.status(400).json({ message: 'Email and password are required' });
+export const registerUser = async (req, res) => {
+  const parsedBody = registerInput.safeParse(req.body);
+  if (!parsedBody.success) {
+    return res
+      .status(400)
+      .json({ message: "Please check your input format!!" });
   }
 
   try {
-    const user = await User.findOne({ email });
+    const existingUser = await User.findOne({ email: parsedBody.data.email });
 
-    if (!user) {
-      return res.status(400).json({ message: 'Invalid email or password' });
+    if (existingUser) {
+      res.status(400).json({ message: "User already exists" });
+      return;
     }
 
-    const isMatch = await bcrypt.compare(password, user.password);
+    const hashedPassword = await bcrypt.hash(parsedBody.data.password, 10);
 
-    if (!isMatch) {
-      return res.status(400).json({ message: 'Invalid email or password' });
-    }
-
-    const token = jwt.sign({ userId: user._id }, 'yourSecretKey', { expiresIn: '1h' });
-    res.status(200).json({
-      success: true,  
-      message: 'Authentication successful',
-      token,
-      user: {
-        email: user.email,
-        phone: user.phone,
-        organization: user.organization,
-        place: user.place,
-        address: user.address,
-      },
+    const newUser = await User.create({
+      name: parsedBody.data.name,
+      email: parsedBody.data.email,
+      phone: parsedBody.data.phone,
+      organization: parsedBody.data.organization,
+      place: parsedBody.data.place,
+      address: parsedBody.data.address,
+      password: hashedPassword,
     });
+
+    res
+      .status(201)
+      .json({ UserId: newUser._id, message: "Registration successful" });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Server error' });
+    console.log(err);
+    res.status(500).json({ message: "Server error" });
   }
 };
+
+export const signInUser = async (req, res) => {
+  const parsedBody = signInInput.safeParse(req.body);
+  if (!parsedBody.success) {
+    res.status(401);
+    throw new Error("fill all required fiels..");
+  }
+  const user = await User.findOne({ email: parsedBody.data.email });
+
+  const passCompare = await bcrypt.compare(
+    parsedBody.data.password,
+    user.password
+  );
+  if (user && passCompare) {
+    const acessToken = jwt.sign(
+      {
+        user: {
+          id: user._id,
+          email: user.email,
+          user: user.name,
+        },
+      },
+      process.env.SECRET_TOKEN,
+      { expiresIn: "1h" }
+    );
+    res.status(201).json({ acessToken });
+    // console.log(acessToken);
+  } else {
+    res.status(401);
+    throw new Error("Eiter email or passwd is invalid..");
+  }
+};
+export const logoutUser = async (req,res) =>{
+  res.clearCookie("token").json({msg:"User logout"})
+}
