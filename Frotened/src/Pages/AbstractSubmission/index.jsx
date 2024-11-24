@@ -26,9 +26,9 @@ const AbstractSubmission = () => {
     conferenceTheme: false,
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isToastOpen, setIsToastOpen] = useState(false); 
+  const [isToastOpen, setIsToastOpen] = useState(false);
 
- 
+
   useEffect(() => {
     if (location.pathname === '/abstract-submission') {
       setIsModalOpen(true);
@@ -69,11 +69,11 @@ const AbstractSubmission = () => {
 
       try {
         // POST request to submit the abstract with token for authorization
-        const response = await fetch('http://localhost:3000/api/abstracts/submit', {
+        const response = await fetch('http://localhost:3001/api/abstracts/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`, 
+            'Authorization': `Bearer ${token}`,
           },
           body: JSON.stringify(formData),
         });
@@ -92,7 +92,7 @@ const AbstractSubmission = () => {
           },
         });
 
-        setIsToastOpen(true); 
+        setIsToastOpen(true);
       } catch (error) {
         toast.error('Error submitting abstract. Please try again.');
       }
@@ -104,7 +104,7 @@ const AbstractSubmission = () => {
     setFormData(createAbstractFormModel());
     setErrors({ title: false, authors: false, abstract: false, keywords: false, conferenceTheme: false });
     if (!isToastOpen) {
-      setIsModalOpen(false); 
+      setIsModalOpen(false);
     }
     navigate('/');
   };
