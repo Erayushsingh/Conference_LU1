@@ -1,7 +1,6 @@
 import express from 'express';
 import { connectDB } from "./config/db.js";
 import cors from 'cors';
-import registerRoute from './routes/registerRoute.js';
 import abstractRoutes from './routes/abstractRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 
@@ -15,7 +14,6 @@ app.use(cors());
 connectDB();
 
 // Routes
-app.use('/register', registerRoute);
 app.use('/api/abstracts', abstractRoutes);
 app.use('/api/auth', authRoutes);
 

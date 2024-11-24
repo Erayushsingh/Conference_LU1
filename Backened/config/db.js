@@ -1,7 +1,11 @@
-import mangoose from 'mongoose';
-
-export const connectDB=async ()=>{
-    await mangoose.connect('mongodb+srv://luconference2025:AdminLu1234@luconference.ueslv.mongodb.net/?retryWrites=true&w=majority&appName=luconference')
-    .then(console.log("DB Connected"))
-}
-
+import mangoose, { Mongoose } from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
+export const connectDB = async () => {
+  try {
+    await mangoose.connect(process.env.DATABASE_URI);
+    console.log("Database connected..");
+  } catch (error) {
+    handleError(error);
+  }
+};
