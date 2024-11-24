@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';  
+import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = ({ className }) => {
@@ -37,7 +37,7 @@ const LoginForm = ({ className }) => {
 
     if (Object.keys(newErrors).length === 0) {
       try {
-        const response = await fetch('http://localhost:3000/api/auth/signin', {
+        const response = await fetch('http://localhost:3001/api/auth/signin', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -45,19 +45,20 @@ const LoginForm = ({ className }) => {
           body: JSON.stringify(formData),
         });
 
-        if (!response.ok) {
+        if (response.ok === false) {
           throw new Error('Network response was not ok');
         }
 
         const data = await response.json();
-
-        if (data.success) { 
-          localStorage.setItem('token', data.token);
+        console.log(data)
+        if (data.success) {
+          localStorage.setItem('token', data.accessToken);
 
           toast.success(data.message || 'Login successful!');
-          navigate('/abstract-submission');  
 
-          setIsModalOpen(false); 
+          navigate('/abstract-submission');
+
+          setIsModalOpen(false);
 
         } else {
           toast.error(data.message || 'Login failed. Please try again.');
@@ -86,7 +87,7 @@ const LoginForm = ({ className }) => {
     <div>
       <button
         className={`p-3 pl-9 border-2 ${className} mr-7 pr-9 bg-white`}
-        onClick={toggleModal} 
+        onClick={toggleModal}
       >
         Sign In
       </button>
