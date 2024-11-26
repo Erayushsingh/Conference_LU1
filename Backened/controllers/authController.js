@@ -64,10 +64,10 @@ export const signInUser = async (req, res) => {
       user.password
     );
     if (user && passCompare) {
-      const acessToken = jwt.sign(
+      const accessToken = jwt.sign(
         {
           user: {
-            id: user._id,
+            id: user.id,
             email: user.email,
             user: user.password,
           },
@@ -75,11 +75,12 @@ export const signInUser = async (req, res) => {
         process.env.SECRET_TOKEN,
         { expiresIn: "1h" }
       );
-      res.status(201).json({ acessToken });
+      console.log(user.id);
+      res.status(201).json({ accessToken, message: "Login success", success: true, });
       // console.log(acessToken);
     }
   } catch (err) {
-    res.status(500).json({ msg: "error while login " ,err});
+    res.status(500).json({ msg: "error while login ", err });
   }
 };
 export const logoutUser = async (req, res) => {
