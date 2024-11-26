@@ -53,7 +53,7 @@ const LoginForm = ({ className }) => {
         console.log(data)
         if (data.success) {
           localStorage.setItem('token', data.accessToken);
-
+          console.log(data.accessToken)
           toast.success(data.message || 'Login successful!');
 
           navigate('/abstract-submission');

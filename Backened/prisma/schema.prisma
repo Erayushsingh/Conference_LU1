@@ -14,7 +14,7 @@ datasource db {
 }
 
 model User {
-  Id           String         @id @default(uuid())
+  id           String         @id @default(uuid())
   name         String
   email        String         @unique
   phone        String
@@ -22,18 +22,18 @@ model User {
   place        String
   address      String
   password     String
-  adstractForm AbstractForm[]
+  abstractForm AbstractForm[]
 }
 
 model AbstractForm {
   id                    String   @id @default(uuid())
   userId                String
-  user                  User     @relation(fields: [userId], references: [Id])
+  user                  User     @relation(fields: [userId], references: [id])
   title                 String
-  author                String
+  authors                String
   abstract              String
   keywords              String
-  preferredPresentation Type     @default(Oral)
+  preferredPresentation Type     @default(oral)
   conferenceTheme       String
   conflictOfInterest    Conflict
   createdAt             DateTime @default(now())
@@ -41,11 +41,11 @@ model AbstractForm {
 }
 
 enum Conflict {
-  Yes
-  No
+  yes
+  no
 }
 
 enum Type {
-  Oral
-  Poster
+  oral 
+  poster
 }
