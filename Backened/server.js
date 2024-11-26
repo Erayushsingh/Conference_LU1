@@ -1,5 +1,5 @@
 import express from 'express';
-import { connectDB } from "./config/db.js";
+
 import cors from 'cors';
 import abstractRoutes from './routes/abstractRoutes.js';
 import authRoutes from './routes/authRoutes.js';
@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection
-connectDB();
+
 
 // Routes
 app.use('/api/abstracts', abstractRoutes);
