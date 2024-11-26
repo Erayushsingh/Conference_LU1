@@ -1,5 +1,4 @@
-import AbstractSubmission from '../models/abstractSubmission.js';
-
+import { prisma } from "../config/prisma.js";
 
 export const submitAbstract = async (req, res) => {
   const { title, authors, abstract, keywords, preferredPresentation, conferenceTheme, conflictOfInterest } = req.body;
@@ -10,17 +9,16 @@ export const submitAbstract = async (req, res) => {
   }
 
   try {
-    const newSubmission = new AbstractSubmission({
+    const newSubmission = await prisma.abstractForm.create({ data:{
       title,
       authors,
       abstract,
       keywords,
       preferredPresentation,
       conferenceTheme,
-      conflictOfInterest,
+      conflictOfInterest}
     });
 
-    await newSubmission.save();
     res.status(201).json({ message: 'Abstract submitted successfully!', data: newSubmission });
   } catch (error) {
     console.error(error);

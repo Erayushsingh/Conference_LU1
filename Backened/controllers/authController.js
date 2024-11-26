@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import User from "../models/userModel.js";
+import { prisma } from "../config/prisma.js";
+
 import { registerInput, signInInput } from "../config/types.js";
 
 export const registerUser = async (req, res) => {
@@ -12,7 +13,11 @@ export const registerUser = async (req, res) => {
   }
 
   try {
-    const existingUser = await User.findOne({ email: parsedBody.data.email });
+    const existingUser = await prisma.user.findUnique({
+      where: {
+        email: parsedBody.data.email,
+      },
+    });
 
     if (existingUser) {
       res.status(400).json({ message: "User already exists" });
@@ -21,14 +26,16 @@ export const registerUser = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(parsedBody.data.password, 10);
 
-    const newUser = await User.create({
-      name: parsedBody.data.name,
-      email: parsedBody.data.email,
-      phone: parsedBody.data.phone,
-      organization: parsedBody.data.organization,
-      place: parsedBody.data.place,
-      address: parsedBody.data.address,
-      password: hashedPassword,
+    const newUser = await prisma.user.create({
+      data: {
+        name: parsedBody.data.name,
+        email: parsedBody.data.email,
+        phone: parsedBody.data.phone,
+        organization: parsedBody.data.organization,
+        place: parsedBody.data.place,
+        address: parsedBody.data.address,
+        password: hashedPassword,
+      },
     });
 
     res
@@ -36,7 +43,7 @@ export const registerUser = async (req, res) => {
       .json({ UserId: newUser._id, message: "Registration successful" });
   } catch (err) {
     console.log(err);
-    res.status(500).json({ message: "Server error" });
+    res.status(500).json({ message: "Server error", err });
   }
 };
 
@@ -46,31 +53,35 @@ export const signInUser = async (req, res) => {
     res.status(401);
     throw new Error("fill all required fiels..");
   }
-  const user = await User.findOne({ email: parsedBody.data.email });
 
-  const passCompare = await bcrypt.compare(
-    parsedBody.data.password,
-    user.password
-  );
-  if (user && passCompare) {
-    const acessToken = jwt.sign(
-      {
-        user: {
-          id: user._id,
-          email: user.email,
-          user: user.name,
-        },
-      },
-      process.env.SECRET_TOKEN,
-      { expiresIn: "1h" }
+  try {
+    const user = await prisma.user.findUnique({
+      where: { email: parsedBody.data.email },
+    });
+
+    const passCompare = await bcrypt.compare(
+      parsedBody.data.password,
+      user.password
     );
-    res.status(201).json({ acessToken });
-    // console.log(acessToken);
-  } else {
-    res.status(401);
-    throw new Error("Eiter email or passwd is invalid..");
+    if (user && passCompare) {
+      const acessToken = jwt.sign(
+        {
+          user: {
+            id: user._id,
+            email: user.email,
+            user: user.password,
+          },
+        },
+        process.env.SECRET_TOKEN,
+        { expiresIn: "1h" }
+      );
+      res.status(201).json({ acessToken });
+      // console.log(acessToken);
+    }
+  } catch (err) {
+    res.status(500).json({ msg: "error while login " ,err});
   }
 };
-export const logoutUser = async (req,res) =>{
-  res.clearCookie("token").json({msg:"User logout"})
-}
+export const logoutUser = async (req, res) => {
+  res.clearCookie("token").json({ msg: "User logout" });
+};
