@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Logo2 from '/src/assets/mid-logo.png'
 import Logo1 from '/src/assets/Lu-rank.jpg'
 import Logo3 from '/src/assets/A++.jpeg'
