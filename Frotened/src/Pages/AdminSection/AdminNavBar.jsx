@@ -16,8 +16,9 @@ const AdminSection = () => {
       </div>
 
       <LowerHeader />
+
       <div className="flex">
-        <div className="w-1/4 bg-gray-800 text-white p-4 h-screen">
+        <div className="w-1/4 bg-gray-800 text-white p-4 flex flex-col min-h-screen ">
           <h2 className="text-lg font-semibold mb-4">Admin Panel</h2>
           <ul>
             <li className="mb-2">
@@ -42,7 +43,7 @@ const AdminSection = () => {
             </li>
           </ul>
         </div>
-        <div className="w-3/4 p-4">
+        <div className="w-3/4 p-4 overflow-auto max-h-[80vh]">
           <h2 className="text-2xl font-semibold text-center my-4 shadow-lg p-4">Admin Dashboard</h2>
           <Outlet />
         </div>

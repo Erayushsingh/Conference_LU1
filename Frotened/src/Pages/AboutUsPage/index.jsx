@@ -22,6 +22,7 @@ const teamMembers = [
 
 const AboutUsPage = () => {
   return (
+    <>
     <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
       <section className="bg-blue-500 text-white py-20">
@@ -110,7 +111,8 @@ const AboutUsPage = () => {
         </div>
       </footer>
     </div>
-  );
+   
+    </>  );
 };
 
 export default AboutUsPage;
