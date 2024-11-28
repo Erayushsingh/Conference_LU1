@@ -24,6 +24,7 @@ model User {
   address      String
   password     String
   abstractForm AbstractForm[]
+  role        Role  @default(user)
 }
 
 model AbstractForm {
@@ -49,4 +50,8 @@ enum Conflict {
 enum Type {
   oral 
   poster
+}
+enum Role {
+  user
+  admin
 }
