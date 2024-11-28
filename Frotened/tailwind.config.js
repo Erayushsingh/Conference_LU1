@@ -9,3 +9,44 @@ export default {
   },
   plugins: [],
 }
+
+
+module.exports = {
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',  
+  ],
+  theme: {
+    extend: {
+      animation: {
+        flash: 'flash 1s ease-in-out infinite alternate',
+        marquee: 'marquee 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite', 
+        'zoom-out-in': 'zoom-out-in 4s ease-in-out infinite',  
+      },
+      keyframes: {
+        flash: {
+          '0%, 100%': { opacity: 1 },  
+          '50%': { opacity: 0 }, 
+        },
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'zoom-out-in': {
+          '0%': {
+            transform: 'scale(1)', 
+            opacity: 1,
+          },
+          '50%': {
+            transform: 'scale(0.8)', 
+            opacity: 1,
+          },
+          '100%': {
+            transform: 'scale(1)',
+            opacity: 1, 
+          },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
