@@ -54,8 +54,8 @@ import AbstractSubmission from "../../Pages/AbstractSubmission";
 import RegisterButton from "../../Pages/RegisterButton";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import AmanPhoto from "../../assets/Aman_Photo.jpg";
-import Cards from "../Cards";
+import AmanPhoto from "../../assets/Aman_photo.jpg"
+import Cards from "../cards";
 
 
 const HeroSection = () => {
