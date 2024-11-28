@@ -9,7 +9,7 @@ const HeroSection4 = () => {
             <h1 className='text-4xl font-semibold'>Key dates</h1>
             <div className='border-2 border-black mt-10'>
               <div className='p-3 border-b-2 border-dashed border-black ml-3'>
-                <p className='text-lg font-bold  text-red-400'>Abstracts (Round 1)</p>
+                <p className='text-lg font-bold  text-red-400 animate-flash '>Abstracts (Round 1)</p>
                 <p>30 November 2024</p>
               </div>
               <div className='p-3 border-b-2 border-dashed border-black ml-3'>

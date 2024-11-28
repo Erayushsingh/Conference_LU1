@@ -5,19 +5,18 @@ const teamMembers = [
     name: "Ayush",
     role: "Backened+React",
      },
+
   {
     name: "Aman",
     role: "Frotened+Responsive",
     
   },
+
   {
     name: "Aditya",
     role: "Lead Content",
   },
-  {
-    name: "Priyanshu",
-    role: "Management",
-  },
+  
 ];
 
 const AboutUsPage = () => {
