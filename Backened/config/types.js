@@ -14,3 +14,12 @@ export const signInInput = z.object({
   email: z.string().email(),
   password: z.string(),
 });
+export const createAbstract = z.object({
+  title: z.string(),
+  authors: z.string(),
+  abstract: z.string(),
+  keywords: z.string(),
+  preferredPresentation: z.enum(["oral", "poster"]).default("oral"),
+  conferenceTheme: z.string(),
+  conflictOfInterest: z.enum(["no", "yes"]).default("no"),
+});

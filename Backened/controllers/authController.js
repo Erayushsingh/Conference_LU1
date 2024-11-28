@@ -37,12 +37,10 @@ export const registerUser = async (req, res) => {
         password: hashedPassword,
       },
     });
-
-    res
-      .status(201)
-      .json({ UserId: newUser._id, message: "Registration successful" });
+    // console.log(newUser.Id);
+    res.status(201).json({ message: "Registration successful", newUser });
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     res.status(500).json({ message: "Server error", err });
   }
 };
@@ -63,26 +61,33 @@ export const signInUser = async (req, res) => {
       parsedBody.data.password,
       user.password
     );
+    // console.log(parsedBody)
     if (user && passCompare) {
       const accessToken = jwt.sign(
         {
-          user: {
-            id: user.id,
-            email: user.email,
-            user: user.password,
-          },
+          id: user.id,
+          email: user.email,
+          Role: user.role,
         },
         process.env.SECRET_TOKEN,
-        { expiresIn: "1h" }
+        { expiresIn: "7d" }
       );
-      console.log(user.id);
-      res.status(201).json({ accessToken, message: "Login success", success: true, });
+      // console.log(accessToken);
+      res
+
+        .status(201)
+        .json({
+          accessToken,
+          message: "Login success",
+          success: true,
+          role: user.role,
+        });
       // console.log(acessToken);
     }
   } catch (err) {
-    res.status(500).json({ msg: "error while login ", err });
+    res.status(500).json({ msg: "error while login " });
   }
 };
 export const logoutUser = async (req, res) => {
-  res.clearCookie("token").json({ msg: "User logout" });
+  res.clearCookie("accessToken").json({ msg: "User logout" });
 };

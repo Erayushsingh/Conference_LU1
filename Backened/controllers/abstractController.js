@@ -1,25 +1,28 @@
 import { prisma } from "../config/prisma.js";
+import { createAbstract } from "../config/types.js";
 
 export const submitAbstract = async (req, res) => {
-  const { title, authors, abstract, keywords, preferredPresentation, conferenceTheme, conflictOfInterest } = req.body;
-  const userId = req.user.user.id;
-  console.log(userId)
+  const parsedBody = createAbstract.safeParse(req.body);
 
-  if (!title || !authors || !abstract) {
-    return res.status(400).json({ error: 'Title, Authors, and Abstract are required.' });
+  const userId = req.userId;
+  // console.log(userId)
+
+  if (!parsedBody.success) {
+    return res.status(400).json({ error: "please check your input!!!" });
   }
 
   try {
     const newSubmission = await prisma.abstractForm.create({
       data: {
-        userId: userId,
-        title,
-        authors,
-        abstract,
-        keywords,
-        preferredPresentation,
-        conferenceTheme,
-        conflictOfInterest
+        userId:userId,
+
+       title: parsedBody.data.title,
+       authors: parsedBody.data.authors,
+       abstract: parsedBody.data.abstract,
+       keywords: parsedBody.data.keywords,
+       preferredPresentation: parsedBody.data.preferredPresentation,
+       conferenceTheme: parsedBody.data.conferenceTheme,
+       conflictOfInterest:parsedBody.data.conflictOfInterest
       }
     });
 
@@ -32,8 +35,12 @@ export const submitAbstract = async (req, res) => {
 
 
 export const getSubmissions = async (req, res) => {
+  const userId = req.userId;
+  console.log(userId)
   try {
-    const submissions = await prisma.abstractForm.findMany();
+    const submissions = await prisma.abstractForm.findMany({where:{
+      userId:userId
+    }});
     res.status(200).json(submissions);
   } catch (error) {
     console.error(error);
