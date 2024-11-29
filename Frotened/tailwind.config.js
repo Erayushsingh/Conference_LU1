@@ -18,8 +18,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        flash: 'flash 1s ease-in-out infinite alternate',
-        marquee: 'marquee 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite', 
+        flash: 'flash 2s ease-in-out infinite alternate',
+        marquee: 'marquee 20s linear infinite',
         'zoom-out-in': 'zoom-out-in 4s ease-in-out infinite',  
       },
       keyframes: {

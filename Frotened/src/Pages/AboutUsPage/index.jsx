@@ -1,117 +1,278 @@
+// import React from 'react';
+// import HeaderUpper from '../../Components/HeaderUpper';
+// import LowerHeader from '../../Components/LowerHeader';
+// import Footer from '../../Components/Footer';
+
+
+
+// const AboutUsPage = () => {
+//   return (
+//     <>
+//       <HeaderUpper />
+//       <LowerHeader />
+//       {/* Advisory Committee Section */}
+//       <div className="bg-white p-6 my-8 w-4/5 mx-auto border-t-4 border-red-700">
+//         <h3 className="text-2xl font-bold text-black mb-4 text-center">Advisory Committee</h3>
+
+//         {/* Flex container for two sections */}
+//         <div className="flex justify-between space-x-8">
+
+//           {/* First container for the first set of members */}
+//           <div className="bg-blue-50 rounded-lg shadow-lg p-6 w-1/2 space-y-4">
+//             <p className="text-lg text-gray-700 mb-4">Prof. Manuka Khanna, Pro Vice-Chancellor, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. V. K. Sharma, Dean Students’ Welfare, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. P. K. Rath, Department of Physics, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. R. M. Naik, Department of Chemistry, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Sheela Mishra, Dean-Faculty of Science, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Arvind Mohan, Dean-Faculty of Arts, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Sangeeta Sahu, Dean-Faculty of Management Studies, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Vijay Prakash Singh, Department of English and Modern European Languages, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Ranu Uniyal, Department of English and Modern European Languages, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Praveen Sahu, Head-Department of Commerce, Central University of Rajasthan</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Sanjay Kumar Srivastava, Department of AS&H, IET, Lucknow</p>
+//           </div>
+
+//           {/* Second container for the second set of members */}
+//           <div className="bg-green-50 rounded-lg shadow-lg p-6 w-1/2 space-y-4">
+//             <p className="text-lg text-gray-700 mb-4">Prof. Sudhir Srivastava, HoD-Mathematics, Deen Dayal Upadhyay Gorakhpur University</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Sanjay Kumar Pandey, HoD-Mathematics, Banaras Hindu University</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Biswajit Sarkar, Yonsei University, Seoul, Korea</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Manju Agarwal, Department of Mathematics and Astronomy, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Pankaj Mathur, Department of Mathematics, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Vivek Sahai, Department of Mathematics, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. Anjana Solaki, Department of Mathematics, BIET, Jhansi</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. R. P. Singh, Department of English and Modern European Languages, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Prof. O. P. Singh, Department of AS&H, IET, Lucknow</p>
+//             <p className="text-lg text-gray-700 mb-4">Dr. Ashutosh Tiwari, Director-Institute of Advanced Materials, Sweden</p>
+//             <p className="text-lg text-gray-700 mb-4">Dr. Arvind Patel, IIT-Delhi</p>
+//           </div>
+//         </div>
+//       </div>
+
+
+// {/* Organizing Committee Section */}
+//       <div className="bg-white p-6 my-2 w-4/5 mx-auto">
+
+//         {/* Flex container for the two sections */}
+//         <div className="flex justify-between space-x-4">
+
+//           {/* Treasurer Container */}
+//           <div className="bg-blue-50 rounded-lg shadow-lg p-6 w-1/2 flex flex-col items-center">
+//             <h4 className="text-xl font-semibold text-gray-800 mb-2">Treasurer</h4>
+//             <p className="text-lg text-gray-700 text-center">Dr. Savya Sachi</p>
+//             <p className="text-lg text-gray-700 text-center">Department of Applied Science and Humanities, University of Lucknow</p>
+//           </div>
+
+//           {/* Organizing Secretary Container */}
+//           <div className="bg-green-50 rounded-lg shadow-lg p-6 w-1/2 flex flex-col items-center">
+//             <h4 className="text-xl font-semibold text-gray-800 mb-2">Organizing Secretary</h4>
+//             <p className="text-lg text-gray-700 text-center">Dr. Rachana Pathak</p>
+//             <p className="text-lg text-gray-700 text-center mb-4">Department of Applied Science and Humanities, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Khushboo Verma</p>
+//             <p className="text-lg text-gray-700 text-center">Department of Applied Science and Humanities, University of Lucknow</p>
+//           </div>
+//         </div>
+//       </div>
+
+
+//       {/* Steering Committee Section */}
+//       <div className="bg-white p-6 my-8 w-4/5 mx-auto border-t-4 border-red-700 ">
+//         <h3 className="text-2xl font-bold text-black mb-4 text-center">Steering Committee</h3>
+
+//         {/* Flex container for the two sections */}
+//         <div className="flex justify-between space-x-4 ">
+
+//           {/* First container for the first set of members */}
+//           <div className="bg-blue-50 rounded-lg shadow-lg p-6 w-1/2 flex flex-col items-center space-y-4">
+//             <p className="text-lg text-gray-700 text-center">Prof. Pushpendra Tripathi, Director-IPS, Faculty of Engineering & Technology University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Kamlesh Tiwari, Department of Mechanical Engineering, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Siddharth Singh, Department of Electronics and Communication Engineering, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Zeeshan Ali Siddiqui, Department of Computer Science and Engineering, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Er. Nidhi Srivastava, Department of Civil Engineering, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Er. Wazid Ali, Department of Electrical Engineering, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Amit Verma, Department of Physics, University of Lucknow</p>
+//           </div>
+
+//           {/* Second container for the second set of members */}
+//           <div className="bg-green-50 rounded-lg shadow-lg p-6 w-1/2 flex flex-col items-center space-y-4">
+//             <p className="text-lg text-gray-700 text-center">Dr. Himanshu Pandey, Training and Placement Cell, FoET, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Gaurav Gupta, Department of Electrical Engineering, University of Lucknow</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Neha Arora, Department of English, Central University of Rajasthan</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Vijay Kumar, Department of English, Galgotia University</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Jyoti Juyal, Department of Linguistics, Sharda University</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Vimal Kumar Vishwakarma, Dharmashastra National Law University, Jabalpur</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Saroj Yadav, Department of English, Central University of South Bihar</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Saurabh Yadav, Department of Chemistry, U. P. State Institute of Forensic Science</p>
+//             <p className="text-lg text-gray-700 text-center">Dr. Shivangi Srivastava, Department of Applied Mechanics and Biomedical Engineering, IIT-Madras</p>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Organizing Committee Members Section */}
+//       <div className="bg-white p-6 my-8 w-4/5 mx-auto  border-t-4 border-red-700">
+//         <h3 className="text-2xl font-bold text-black mb-4 text-center">Organizing Committee Members</h3>
+
+//         {/* Flex container for individual members */}
+//         <div className="flex flex-wrap justify-between space-x-4">
+
+//           {/* Member 1 */}
+//           <div className="bg-blue-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Dr. Parul Singh</p>
+//           </div>
+
+//           {/* Member 2 */}
+//           <div className="bg-yellow-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Dr. Arif Jamal</p>
+//           </div>
+
+//           {/* Member 3 */}
+//           <div className="bg-green-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Dr. Sumedha Dwivedi</p>
+//           </div>
+
+//           {/* Member 4 */}
+//           <div className="bg-pink-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Dr. Pushpendra Verma</p>
+//           </div>
+
+//           {/* Member 5 */}
+//           <div className="bg-teal-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Dr. Amit Mishra</p>
+//           </div>
+
+//           {/* Member 6 */}
+//           <div className="bg-purple-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Dr. Ankit Prajapati</p>
+//           </div>
+
+//           {/* Member 7 */}
+//           <div className="bg-indigo-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Dr. Bhimsen Chaudhary</p>
+//           </div>
+
+//           {/* Member 8 */}
+//           <div className="bg-red-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Dr. Vinay Kumar</p>
+//           </div>
+
+//           {/* Member 9 */}
+//           <div className="bg-orange-50 rounded-lg shadow-lg p-6 w-1/4 mb-4 flex flex-col items-center">
+//             <p className="text-lg text-gray-700 text-center">Mr. Hrishabh Narayan</p>
+//           </div>
+
+//         </div>
+//       </div>
+
+
+
+//       <Footer />
+//     </>);
+// };
+
+// export default AboutUsPage;
+
 import React from 'react';
-
-const teamMembers = [
-  {
-    name: "Ayush",
-    role: "Backened+React",
-     },
-
-  {
-    name: "Aman",
-    role: "Frotened+Responsive",
-    
-  },
-
-  {
-    name: "Aditya",
-    role: "Lead Content",
-  },
-  
-];
+import HeaderUpper from '../../Components/HeaderUpper';
+import LowerHeader from '../../Components/LowerHeader';
+import Footer from '../../Components/Footer';
 
 const AboutUsPage = () => {
   return (
     <>
-    <div className="min-h-screen bg-gray-100">
-      {/* Hero Section */}
-      <section className="bg-blue-500 text-white py-20">
-        <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-extrabold mb-4">About Us</h1>
-          <p className="text-lg mb-8">Learn more about our team, mission, and the values that drive our company.</p>
-        </div>
-      </section>
+      <HeaderUpper />
+      <LowerHeader />
 
-      {/* Mission Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Mission</h2>
-          <p className="text-lg text-gray-700">
-            Our mission is to leverage cutting-edge technology to improve lives, promote sustainability, and inspire innovation across industries.
-          </p>
-        </div>
-      </section>
+      {/* Advisory Committee Section */}
+      <div className="bg-white p-6 my-8 w-11/12 sm:w-4/5 mx-auto border-t-4 border-red-700">
+        <h3 className="text-2xl sm:text-3xl font-bold text-black mb-4 text-center">Advisory Committee</h3>
 
-      {/* Vision Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Vision</h2>
-          <p className="text-lg text-gray-700">
-            We envision a world where technology and innovation work hand-in-hand to solve the greatest challenges facing humanity.
-          </p>
-        </div>
-      </section>
+        {/* Flex container for two sections */}
+        <div className="flex flex-col sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-8">
 
-      {/* Values Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
-          <div className="flex flex-col md:flex-row md:justify-center">
-            <div className="mx-8 mb-6 md:mb-0">
-              <h3 className="text-2xl font-semibold text-gray-900">Innovation</h3>
-              <p className="text-gray-700">We continuously push boundaries and embrace new ideas to drive progress.</p>
-            </div>
-            <div className="mx-8 mb-6 md:mb-0">
-              <h3 className="text-2xl font-semibold text-gray-900">Sustainability</h3>
-              <p className="text-gray-700">We are committed to creating solutions that promote environmental and social sustainability.</p>
-            </div>
-            <div className="mx-8">
-              <h3 className="text-2xl font-semibold text-gray-900">Integrity</h3>
-              <p className="text-gray-700">We uphold the highest standards of ethics and transparency in everything we do.</p>
-            </div>
+          {/* First container for the first set of members */}
+          <div className="bg-blue-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Manuka Khanna, Pro Vice-Chancellor, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. V. K. Sharma, Dean Students’ Welfare, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. P. K. Rath, Department of Physics, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. R. M. Naik, Department of Chemistry, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Sheela Mishra, Dean-Faculty of Science, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Arvind Mohan, Dean-Faculty of Arts, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Sangeeta Sahu, Dean-Faculty of Management Studies, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Vijay Prakash Singh, Department of English and Modern European Languages, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Ranu Uniyal, Department of English and Modern European Languages, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Praveen Sahu, Head-Department of Commerce, Central University of Rajasthan</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Sanjay Kumar Srivastava, Department of AS&H, IET, Lucknow</p>
+          </div>
+
+          {/* Second container for the second set of members */}
+          <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Sudhir Srivastava, HoD-Mathematics, Deen Dayal Upadhyay Gorakhpur University</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Sanjay Kumar Pandey, HoD-Mathematics, Banaras Hindu University</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Biswajit Sarkar, Yonsei University, Seoul, Korea</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Manju Agarwal, Department of Mathematics and Astronomy, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Pankaj Mathur, Department of Mathematics, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Vivek Sahai, Department of Mathematics, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. Anjana Solaki, Department of Mathematics, BIET, Jhansi</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. R. P. Singh, Department of English and Modern European Languages, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. O. P. Singh, Department of AS&H, IET, Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Dr. Ashutosh Tiwari, Director-Institute of Advanced Materials, Sweden</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Dr. Arvind Patel, IIT-Delhi</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Our Team Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">Meet Our Team</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
-                <p className="text-sm text-gray-500 mb-4">{member.role}</p>
-                <p className="text-gray-700">{member.description}</p>
-              </div>
-            ))}
+      {/* Organizing Committee Section */}
+      <div className="bg-white p-6 my-2 w-11/12 sm:w-4/5 mx-auto">
+        <div className="flex flex-col sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
+          {/* Treasurer Container */}
+          <div className="bg-blue-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+            <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Treasurer</h4>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Savya Sachi</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Department of Applied Science and Humanities, University of Lucknow</p>
+          </div>
+
+          {/* Organizing Secretary Container */}
+          <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+            <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Organizing Secretary</h4>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Rachana Pathak</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center mb-4">Department of Applied Science and Humanities, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Khushboo Verma</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Department of Applied Science and Humanities, University of Lucknow</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Contact Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">Contact Us</h2>
-          <p className="text-lg text-gray-700 mb-4">Have questions or want to get in touch? We'd love to hear from you!</p>
-          <a
-            href="mailto:info@company.com"
-            className="inline-block bg-blue-500 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-blue-600 transition"
-          >
-            Email Us
-          </a>
-        </div>
-      </section>
+      {/* Steering Committee Section */}
+      <div className="bg-white p-6 my-8 w-11/12 sm:w-4/5 mx-auto border-t-4 border-red-700">
+        <h3 className="text-2xl sm:text-3xl font-bold text-black mb-4 text-center">Steering Committee</h3>
 
-      {/* Footer Section */}
-      <footer className="bg-gray-800 text-white py-4">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2024 Our Organization. All Rights Reserved.</p>
+        {/* Flex container for the two sections */}
+        <div className="flex flex-col sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
+          {/* First container for the first set of members */}
+          <div className="bg-blue-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center space-y-4">
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Prof. Pushpendra Tripathi, Director-IPS, Faculty of Engineering & Technology University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Prof. Nidhi Tiwari, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Sandeep Tiwari, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Asha, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Amit Kumar, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Shubham Verma, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+          </div>
+
+          {/* Second container for the second set of members */}
+          <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center space-y-4">
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Anamika, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Akash, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Sanjeev, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Nitin, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+          </div>
         </div>
-      </footer>
-    </div>
-   
-    </>  );
-};
+      </div>
+
+      <Footer />
+    </>
+  );
+}
 
 export default AboutUsPage;

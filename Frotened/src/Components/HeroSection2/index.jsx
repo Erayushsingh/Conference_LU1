@@ -3,7 +3,7 @@ import React from 'react'
 const HeroSection2 = () => {
   return (
     <>
-      <div className='flex justify-center mt-36 mb-36'>
+      <div className='flex justify-center mt-2 mb-36'>
         <div className='h-48 w-[80%] bg-gray-800 text-white'>
             <div className='flex items-center '>
               <div className='p-16 mr-8'>

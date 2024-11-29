@@ -1,5 +1,4 @@
 import React from 'react';
-import RegisterButton from '/src/Pages/RegisterButton'; 
 import SignInButton from '../../Pages/SignInForm';
 
 const HeroSection5 = () => {
@@ -47,9 +46,6 @@ const HeroSection5 = () => {
 
                           {/* Import and use AbstractButton component */}
                         <SignInButton/>
-
-                        {/* Import and use RegisterButton component */}
-                        <RegisterButton />
                     </div>
                 </div>
             </div>
