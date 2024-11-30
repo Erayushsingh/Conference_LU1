@@ -29,7 +29,7 @@ const RegisterButton = ({ className }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3001/api/auth/register', {
+      const response = await fetch('https://conference-lu-1.vercel.app/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ const RegisterButton = ({ className }) => {
               />
             </div>
 
-           
+
             <div className="mb-4">
               <label className="block text-sm font-semibold">Email</label>
               <input
@@ -109,7 +109,7 @@ const RegisterButton = ({ className }) => {
               />
             </div>
 
-            
+
             <div className="mb-4">
               <label className="block text-sm font-semibold">Phone Number</label>
               <input
@@ -122,7 +122,7 @@ const RegisterButton = ({ className }) => {
               />
             </div>
 
-            
+
             <div className="mb-4">
               <label className="block text-sm font-semibold">Affiliating Organization</label>
               <input
@@ -135,7 +135,7 @@ const RegisterButton = ({ className }) => {
               />
             </div>
 
-            
+
             <div className="mb-4">
               <label className="block text-sm font-semibold">Place (City/Town)</label>
               <input
@@ -148,7 +148,7 @@ const RegisterButton = ({ className }) => {
               />
             </div>
 
-            
+
             <div className="mb-4">
               <label className="block text-sm font-semibold">Postal Address</label>
               <textarea
@@ -160,7 +160,7 @@ const RegisterButton = ({ className }) => {
               ></textarea>
             </div>
 
-            
+
             <div className="mb-4">
               <label className="block text-sm font-semibold">Password</label>
               <input
