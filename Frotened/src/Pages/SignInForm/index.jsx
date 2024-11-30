@@ -85,7 +85,7 @@
 
 //   return (
 //     <div>
-     
+
 //       {isModalOpen && (
 //         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
 //           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -188,7 +188,7 @@ const LoginForm = ({ className }) => {
 
     if (Object.keys(newErrors).length === 0) {
       try {
-        const response = await fetch('http://localhost:3001/api/auth/signin', {
+        const response = await fetch('https://www.api.raashee.in/api/auth/signin', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -220,7 +220,7 @@ const LoginForm = ({ className }) => {
     }
   };
 
-  
+
   const clearForm = () => {
     setFormData(createLoginFormModel());
     setErrors({
@@ -280,7 +280,7 @@ const LoginForm = ({ className }) => {
             {/* Close Button for Modal */}
             <button
               className="absolute top-2 right-2 text-gray-600 font-bold text-xl border-2 border-gray-300 rounded-full px-2 py-1 hover:bg-gray-300 focus:outline-none"
-              onClick={clearForm} 
+              onClick={clearForm}
             >
               &times;
             </button>
