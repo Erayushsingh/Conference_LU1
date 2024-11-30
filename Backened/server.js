@@ -6,11 +6,17 @@ import authRoutes from './routes/authRoutes.js';
 import adminRoutes from './routes/adminRoutes.js'
 
 const app = express();
-
+const PORT = 3001
 // Middleware
-app.use(express.json()); 
-app.use(cookieParser()) 
-app.use(cors());
+app.use(express.json());
+app.use(cookieParser())
+app.use(cors(
+  {
+    origin: "http://localhost:5173",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+  }
+));
 
 // Database Connection
 
@@ -21,7 +27,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes)
 
 // Server Setup
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
 });
