@@ -12,6 +12,7 @@ const ConferenceSubmissions = () => {
       preferredPresentationType: "oral",
       conferenceTheme: "Healthcare Innovation",
       conflictOfInterest: "None",
+      date: "2024-11-01", 
     },
     {
       id: "2",
@@ -23,6 +24,7 @@ const ConferenceSubmissions = () => {
       preferredPresentationType: "poster",
       conferenceTheme: "Renewable Energy",
       conflictOfInterest: "None",
+      date: "2024-11-05",
     },
     {
       id: "3",
@@ -34,136 +36,16 @@ const ConferenceSubmissions = () => {
       preferredPresentationType: "oral",
       conferenceTheme: "Supply Chain Optimization",
       conflictOfInterest: "Yes, one of the co-authors is affiliated with a supply chain software company",
-    },
-    {
-      id: "4",
-      userId: "4",
-      title: "5G Networks and Their Impact on IoT",
-      authors: "Grace Wilson, Harry Clark",
-      abstract: "This research discusses the evolution of 5G technology and its role in enhancing IoT applications, with a focus on smart cities and autonomous vehicles.",
-      keywords: "5G, IoT, Smart Cities, Autonomous Vehicles",
-      preferredPresentationType: "oral",
-      conferenceTheme: "Telecommunications Innovation",
-      conflictOfInterest: "None",
-    },
-    {
-      id: "5",
-      userId: "5",
-      title: "Cybersecurity in the Age of Big Data",
-      authors: "Ivy Adams, Jack Evans",
-      abstract: "This paper addresses the increasing concerns of cybersecurity in the era of big data and offers strategies for organizations to mitigate potential risks.",
-      keywords: "Cybersecurity, Big Data, Risk Management",
-      preferredPresentationType: "poster",
-      conferenceTheme: "Cybersecurity Advances",
-      conflictOfInterest: "None",
+      date: "2024-11-10",
     },
 
-    {
-      id: "4",
-      userId: "4",
-      title: "5G Networks and Their Impact on IoT",
-      authors: "Grace Wilson, Harry Clark",
-      abstract: "This research discusses the evolution of 5G technology and its role in enhancing IoT applications, with a focus on smart cities and autonomous vehicles.",
-      keywords: "5G, IoT, Smart Cities, Autonomous Vehicles",
-      preferredPresentationType: "oral",
-      conferenceTheme: "Telecommunications Innovation",
-      conflictOfInterest: "None",
-    },
-    {
-      id: "5",
-      userId: "5",
-      title: "Cybersecurity in the Age of Big Data",
-      authors: "Ivy Adams, Jack Evans",
-      abstract: "This paper addresses the increasing concerns of cybersecurity in the era of big data and offers strategies for organizations to mitigate potential risks.",
-      keywords: "Cybersecurity, Big Data, Risk Management",
-      preferredPresentationType: "poster",
-      conferenceTheme: "Cybersecurity Advances",
-      conflictOfInterest: "None",
-    },
-
-    {
-      id: "1",
-      userId: "1",
-      title: "AI for Healthcare: A New Revolution",
-      authors: "Alice Johnson, Bob Smith",
-      abstract: "This paper explores the potential of AI technologies in the healthcare industry, especially focusing on medical diagnosis, personalized medicine, and AI-assisted surgery.",
-      keywords: "AI, Healthcare, Machine Learning, Medical Diagnosis",
-      preferredPresentationType: "oral",
-      conferenceTheme: "Healthcare Innovation",
-      conflictOfInterest: "None",
-    },
-    {
-      id: "2",
-      userId: "2",
-      title: "Sustainable Energy Solutions for the Future",
-      authors: "Charlie Brown, David Lee",
-      abstract: "This paper reviews current trends in sustainable energy solutions and how they can be integrated into both urban and rural areas for a more eco-friendly future.",
-      keywords: "Sustainability, Renewable Energy, Solar, Wind",
-      preferredPresentationType: "poster",
-      conferenceTheme: "Renewable Energy",
-      conflictOfInterest: "None",
-    },
-    {
-      id: "3",
-      userId: "3",
-      title: "Blockchain in Supply Chain Management",
-      authors: "Eva Green, Frank Miller",
-      abstract: "This paper investigates the application of blockchain technology in supply chain management and how it can enhance transparency, traceability, and efficiency.",
-      keywords: "Blockchain, Supply Chain, Transparency, Efficiency",
-      preferredPresentationType: "oral",
-      conferenceTheme: "Supply Chain Optimization",
-      conflictOfInterest: "Yes, one of the co-authors is affiliated with a supply chain software company",
-    },
-    {
-      id: "4",
-      userId: "4",
-      title: "5G Networks and Their Impact on IoT",
-      authors: "Grace Wilson, Harry Clark",
-      abstract: "This research discusses the evolution of 5G technology and its role in enhancing IoT applications, with a focus on smart cities and autonomous vehicles.",
-      keywords: "5G, IoT, Smart Cities, Autonomous Vehicles",
-      preferredPresentationType: "oral",
-      conferenceTheme: "Telecommunications Innovation",
-      conflictOfInterest: "None",
-    },
-    {
-      id: "5",
-      userId: "5",
-      title: "Cybersecurity in the Age of Big Data",
-      authors: "Ivy Adams, Jack Evans",
-      abstract: "This paper addresses the increasing concerns of cybersecurity in the era of big data and offers strategies for organizations to mitigate potential risks.",
-      keywords: "Cybersecurity, Big Data, Risk Management",
-      preferredPresentationType: "poster",
-      conferenceTheme: "Cybersecurity Advances",
-      conflictOfInterest: "None",
-    },
-
-    {
-      id: "4",
-      userId: "4",
-      title: "5G Networks and Their Impact on IoT",
-      authors: "Grace Wilson, Harry Clark",
-      abstract: "This research discusses the evolution of 5G technology and its role in enhancing IoT applications, with a focus on smart cities and autonomous vehicles.",
-      keywords: "5G, IoT, Smart Cities, Autonomous Vehicles",
-      preferredPresentationType: "oral",
-      conferenceTheme: "Telecommunications Innovation",
-      conflictOfInterest: "None",
-    },
-    {
-      id: "5",
-      userId: "5",
-      title: "Cybersecurity in the Age of Big Data",
-      authors: "Ivy Adams, Jack Evans",
-      abstract: "This paper addresses the increasing concerns of cybersecurity in the era of big data and offers strategies for organizations to mitigate potential risks.",
-      keywords: "Cybersecurity, Big Data, Risk Management",
-      preferredPresentationType: "poster",
-      conferenceTheme: "Cybersecurity Advances",
-      conflictOfInterest: "None",
-    },
   ];
 
   const [submissionsData, setSubmissionsData] = useState([]);
   const [selectedSubmission, setSelectedSubmission] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [fromDate, setFromDate] = useState('');
+  const [toDate, setToDate] = useState('');
 
   useEffect(() => {
     setSubmissionsData(submissions);
@@ -189,30 +71,31 @@ const ConferenceSubmissions = () => {
         font-family: Arial, sans-serif;
       }
 
-      td:nth-child(10), th:nth-child(10) {
-        display: none; /* Hide the Actions column */
+      /* Hide actions column in print */
+      td:nth-child(11), th:nth-child(11) {
+        display: none;
       }
 
       button {
-        display: none; /* Hide all buttons */
+        display: none;
       }
 
       .fixed {
-        display: none; /* Hide the modal */
+        display: none;
       }
 
       .bg-blue-500 {
-        display: none; /* Hide the print button */
+        display: none;
       }
 
       .container {
-        max-width: 100%; 
+        max-width: 100%;
         width: auto;
         padding: 0;
       }
 
       table {
-        width: 100%; 
+        width: 100%;
         border-collapse: collapse;
       }
 
@@ -233,9 +116,8 @@ const ConferenceSubmissions = () => {
       .content {
         margin: 20px 0;
       }
-        
     </style>
-  `; 
+  `;
 
     const printContent = `
     <html>
@@ -249,23 +131,58 @@ const ConferenceSubmissions = () => {
     </html>
     `;
 
-    
     printWindow.document.write(printContent);
     printWindow.document.close();
 
-    
     printWindow.onload = () => {
       printWindow.print();
     };
   };
 
+  const handleFromDateChange = (e) => {
+    setFromDate(e.target.value);
+  };
+
+  const handleToDateChange = (e) => {
+    setToDate(e.target.value);
+  };
+
+  const filteredSubmissions = submissionsData.filter((submission) => {
+    const submissionDate = new Date(submission.date);
+    const from = new Date(fromDate);
+    const to = new Date(toDate);
+
+    return (
+      (!fromDate || submissionDate >= from) &&
+      (!toDate || submissionDate <= to)
+    );
+  });
 
   return (
-    <div className="container mx-auto my-6 w-full ">
+    <div className="container mx-auto my-6 w-full">
       <h2 className="text-2xl font-semibold mb-4 text-blue-500">Abstract Submitted</h2>
 
+      <div className="mb-4">
+        <label htmlFor="fromDate" className="mr-2">From Date:</label>
+        <input
+          type="date"
+          id="fromDate"
+          value={fromDate}
+          onChange={handleFromDateChange}
+          className="px-4 py-2 border rounded"
+        />
+        <label htmlFor="toDate" className="mr-2 ml-4">To Date:</label>
+        <input
+          type="date"
+          id="toDate"
+          value={toDate}
+          onChange={handleToDateChange}
+          className="px-4 py-2 border rounded"
+        />
+      </div>
+
       <div className="overflow-x-auto max-w-full">
-        <table className="min-w-max table-auto border-collapse " id="content-to-print">
+        <table className="min-w-max table-auto border-collapse" id="content-to-print">
           <thead>
             <tr className="bg-gray-100">
               <th className="px-4 py-2 border">ID</th>
@@ -277,11 +194,12 @@ const ConferenceSubmissions = () => {
               <th className="px-4 py-2 border">Preferred Presentation Type</th>
               <th className="px-4 py-2 border">Conference Theme</th>
               <th className="px-4 py-2 border">Conflict of Interest</th>
-              <th className="px-4 py-2 border">Actions</th>
+              <th className="px-4 py-2 border">Date</th>
+              <th className="px-4 py-2 border">Actions</th> {/* Actions column */}
             </tr>
           </thead>
           <tbody>
-            {submissionsData.map((submission) => (
+            {filteredSubmissions.map((submission) => (
               <tr key={submission.id} className="border-b">
                 <td className="px-4 py-2 border break-words max-w-xs">{submission.id}</td>
                 <td className="px-4 py-2 border break-words max-w-xs">{submission.userId}</td>
@@ -292,6 +210,7 @@ const ConferenceSubmissions = () => {
                 <td className="px-4 py-2 border break-words max-w-xs">{submission.preferredPresentationType}</td>
                 <td className="px-4 py-2 border break-words max-w-xs">{submission.conferenceTheme}</td>
                 <td className="px-4 py-2 border break-words max-w-xs">{submission.conflictOfInterest}</td>
+                <td className="px-4 py-2 border break-words max-w-xs">{submission.date}</td> {/* Display Date */}
                 <td className="px-4 py-2 border break-words max-w-xs"><button
                   onClick={() => handleViewClick(submission)}
                   className="text-blue-500 hover:text-blue-700"
@@ -315,23 +234,25 @@ const ConferenceSubmissions = () => {
             <p className="break-words"><strong>Preferred Presentation Type:</strong> {selectedSubmission.preferredPresentationType}</p>
             <p className="break-words"><strong>Conference Theme:</strong> {selectedSubmission.conferenceTheme}</p>
             <p className="break-words"><strong>Conflict of Interest:</strong> {selectedSubmission.conflictOfInterest}</p>
-            <button
-              onClick={handleModalClose}
-              className="mt-4 text-white bg-red-500 hover:bg-red-700 py-2 px-4 rounded"
-            >
-              Close
-            </button>
+            <p className="break-words"><strong>Date:</strong> {selectedSubmission.date}</p>
+
+            <div className="flex justify-end mt-4">
+              <button
+                onClick={handleModalClose}
+                className="bg-red-500 text-white px-4 py-2 rounded"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       )}
 
-      {/* Download Button */}
-      <button
-        onClick={handlePrintClick}
-        className="mt-4 text-white bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded"
-      >
-        Download
-      </button>
+      <div className="flex justify-end mt-4">
+        <button onClick={handlePrintClick} className="bg-blue-500 text-white px-6 py-3 rounded">
+          Print Submissions
+        </button>
+      </div>
     </div>
   );
 };
