@@ -7,14 +7,14 @@ const Footer = () => {
       <div className='w-full items-center bg-gray-900 text-white flex flex-col xl:flex-row justify-between items-start p-6 '>
 
         {/* Rasee Section with Social Media Icons */}
-        <div className='flex-shrink-0 w-full bg-gray-600 p-3 text-end lg:w-[300px] flex flex-col items-center relative mb-6 lg:mb-0'>
+        <a href='https://www.raashee.in' className='flex-shrink-0 w-full bg-gray-600 p-3 text-end lg:w-[300px] flex flex-col items-center relative mb-6 lg:mb-0'>
           <h1 className='text-3xl lg:text-5xl font-semibold text-center'>RAASHEE</h1>
           <div>
             <p className='text-xs text-center font-semibold'>Faculty of Engineering And Technology</p>
             <p className='text-xs text-center font-bold text-red-400'>University of Lucknow</p>
           </div>
 
-        </div>
+        </a>
 
         {/* Navigation Links Section */}
         <div className='w-full lg:w-1/3 flex flex-col mt-4 md:flex-row justify-center items-center text-xl lg:text-2xl'>
