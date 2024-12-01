@@ -69,62 +69,6 @@ const Developers = () => {
           </div>
         </div>
       </div>
-
-      <div className='fade-in animate__animated animate__fadeInRight'>
-        <div className="max-w-sm h-full m-5 bg-white rounded-lg shadow-lg overflow-hidden">
-          <img className="w-full h-44 object-cover" src={Photo1} />
-          <div className="p-3">
-            <div className="flex justify-between items-center">
-              <h2 className="text-xl font-bold text-gray-800">
-                Aman Chaurasiya
-              </h2>
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/aman-chaurasiya-45914224b/"
-                  target="blank"
-                >
-                  <i class="fa-brands fa-linkedin text-blue-600 p-2 text-3xl"></i>
-                </a>
-                <a href="https://github.com/HeyAman63" target="blank">
-                  <i class="fa-brands fa-github text-black p-2 text-3xl"></i>
-                </a>
-              </div>
-            </div>
-
-            <p className="mt-2 text-gray-600">
-              <span className="font-bold text-black">Email : </span>
-              Chaurasiyaaman741@gmail.com
-            </p>
-          </div>
-        </div>
-
-        <div className="max-w-sm h-full m-5 bg-white rounded-lg shadow-lg overflow-hidden">
-          <img className="w-full h-44 object-cover" src={Photo1} />
-          <div className="p-3">
-            <div className="flex justify-between items-center">
-              <h2 className="text-xl font-bold text-gray-800">
-                Aman Chaurasiya
-              </h2>
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/aman-chaurasiya-45914224b/"
-                  target="blank"
-                >
-                  <i class="fa-brands fa-linkedin text-blue-600 p-2 text-3xl"></i>
-                </a>
-                <a href="https://github.com/HeyAman63" target="blank">
-                  <i class="fa-brands fa-github text-black p-2 text-3xl"></i>
-                </a>
-              </div>
-            </div>
-
-            <p className="mt-2 text-gray-600">
-              <span className="font-bold text-black">Email : </span>
-              Chaurasiyaaman741@gmail.com
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
