@@ -68,7 +68,7 @@ const AbstractSubmission = () => {
 
       try {
         // POST request to submit the abstract with token for authorization
-        const response = await fetch('http://localhost:3001/api/abstracts/submit', {
+        const response = await fetch('https://www.api.raashee.in/api/abstracts/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
