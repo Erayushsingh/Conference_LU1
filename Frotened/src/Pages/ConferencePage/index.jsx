@@ -13,7 +13,7 @@ const ConferencePage = () => {
        {/* Conference Tracks Section */}
       <div className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-extrabold text-center text-yellow-900 mb-8 animate-flash">
+          <h2 className="text-4xl font-extrabold text-center text-black mb-8 animate-flash">
             Conference Tracks
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
