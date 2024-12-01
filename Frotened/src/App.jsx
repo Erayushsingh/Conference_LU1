@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Import your components and pages
-<<<<<<< HEAD
 import Header from './Components/Header';
 import ConferencePage from './Pages/ConferencePage';
 import PublicationPage from './Pages/PublicationPage';
@@ -11,7 +9,6 @@ import AboutUsPage from './Pages/AboutUsPage';
 import ResearchPage from './Pages/ResearchPage';
 import AbstractSubmission from './Pages/AbstractSubmission';
 import ProtectedRoute from './Components/ProtectedRoute';
-=======
 import Header from './Components/Header/index.jsx';
 import ConferencePage from './Pages/ConferencePage/index.jsx';
 import PublicationPage from './Pages/PublicationPage/index.jsx';
@@ -19,9 +16,7 @@ import AwardPage from './Pages/AwardPage/index.jsx';
 import AboutUsPage from './Pages/AboutUsPage/index.jsx';
 import ResearchPage from './Pages/ResearchPage/index.jsx';
 import AbstractSubmission from './Pages/AbstractSubmission/index.jsx';
-// import SignInForm from './Pages/SignInForm';
 import ProtectedRoute from './Components/ProtectedRoute/index.jsx';
->>>>>>> 9f58ce2e9f72986ce373663c5f6cbdf136c1a639
 import AdminNavBar from './Pages/AdminSection/AdminNavBar.jsx';
 import RegisteredCandidates from './Pages/AdminSection/RegisteredCandidates.jsx';
 import AbstractSubmitted from './Pages/AdminSection/AbstractSubmitted.jsx';
