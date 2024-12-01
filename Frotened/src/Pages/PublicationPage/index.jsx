@@ -17,7 +17,7 @@ const PublicationPage = () => {
           </h2>
           <div className="text-lg text-gray-700 space-y-6">
             <p>
-              Participants desirous to present a paper/poster in the conference should send their abstract latest by 30 October, 2024. Acceptance of paper/poster to be presented and published shall be notified within 15 days to the corresponding author.
+              Participants desirous to present a paper/poster in the conference should send their abstract latest by 20 December, 2024. Acceptance of paper/poster to be presented and published shall be notified within 15 days to the corresponding author.
             </p>
             <p>
               The abstract must not exceed 150 words, should be neatly typed in Times New Roman (12p) within 25x15 cm on A4 size paper with single spacing and five keywords. Full papers must be formatted as per recent APA standard manual and must fall within 4,000-6,000 words.
@@ -33,8 +33,8 @@ const PublicationPage = () => {
             </p>
             <p>
               The abstracts should be sent to:
-              <a href="mailto:ash.foet2017@gmail.com" className="text-indigo-600 underline">
-                ash.foet2017@gmail.com
+              <a href="mailto:raashee.foet@gmail.com" className="text-indigo-600 underline">
+                raashee.foet@gmail.com
               </a>
             </p>
             <p>
@@ -58,7 +58,7 @@ const PublicationPage = () => {
       {/* Important Dates Section */}
       <div className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-extrabold text-center text-indigo-700 mb-8">
+          <h2 className="text-4xl font-extrabold text-center text-black mb-8">
             Important Dates
           </h2>
 
@@ -73,7 +73,7 @@ const PublicationPage = () => {
               <tbody className="text-gray-700">
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Abstract Submission (Oral & Poster)</td>
-                  <td className="border px-4 py-2">30 October 2024</td>
+                  <td className="border px-4 py-2">20 December 2024</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Abstract Acceptance Notification</td>
@@ -81,15 +81,15 @@ const PublicationPage = () => {
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Full Paper Submission</td>
-                  <td className="border px-4 py-2">31 December 2024</td>
+                  <td className="border px-4 py-2">5 January, 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Paper Acceptance Notification</td>
-                  <td className="border px-4 py-2">15 days from submission</td>
+                  <td className="border px-4 py-2">10 days from submission</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Last date for Registration</td>
-                  <td className="border px-4 py-2">15 January 2025</td>
+                  <td className="border px-4 py-2">25 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">On-the-spot Registration</td>
@@ -103,7 +103,7 @@ const PublicationPage = () => {
 
       {/* Registration Fee Section */}
 <div className="bg-white rounded-lg shadow-lg p-6 my-8 w-full sm:w-[80%] mx-auto">
-  <h2 className="text-3xl font-extrabold text-center text-indigo-700 mb-6">Registration Fee</h2>
+  <h2 className="text-3xl font-extrabold text-center text-black mb-6">Registration Fee</h2>
 
   <div className="overflow-x-auto"> {/* Makes table horizontally scrollable on smaller screens */}
     <table className="min-w-full table-auto border-collapse">

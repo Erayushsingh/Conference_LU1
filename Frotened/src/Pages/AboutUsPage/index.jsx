@@ -45,6 +45,7 @@ const AboutUsPage = () => {
             <p className="text-lg sm:text-xl text-gray-700 mb-4">Prof. O. P. Singh, Department of AS&H, IET, Lucknow</p>
             <p className="text-lg sm:text-xl text-gray-700 mb-4">Dr. Ashutosh Tiwari, Director-Institute of Advanced Materials, Sweden</p>
             <p className="text-lg sm:text-xl text-gray-700 mb-4">Dr. Arvind Patel, IIT-Delhi</p>
+            <p className="text-lg sm:text-xl text-gray-700 mb-4">Dr. Ashish Pandey, National Research Council, Canada</p>
           </div>
         </div>
       </div>
@@ -79,19 +80,24 @@ const AboutUsPage = () => {
           {/* First container for the first set of members */}
           <div className="bg-blue-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center space-y-4">
             <p className="text-lg sm:text-xl text-gray-700 text-center">Prof. Pushpendra Tripathi, Director-IPS, Faculty of Engineering & Technology University of Lucknow</p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Prof. Nidhi Tiwari, Faculty of Engineering and Technology, University of Lucknow</p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Sandeep Tiwari, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Asha, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Amit Kumar, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Shubham Verma, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Prof. K. M. Agarwal, Department of Mathematics, BBC, Jhansi </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Kamlesh Tiwari, Department of Mechanical Engineering, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Siddharth Singh, Department of Electronics and Communication Engineering, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Zeeshan Ali Siddiqui, Department of Computer Science and Engineering, University of Lucknow </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Er. Nidhi Srivastava, Department of Civil Engineering, University of Lucknow </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Vimal Kumar Vishwakarma, Dharmashastra National Law University </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Saroj Yadav, Department of English, Central University of South Bihar </p>
           </div>
 
           {/* Second container for the second set of members */}
           <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center space-y-4">
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Anamika, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Akash, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Sanjeev, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Nitin, Assistant Professor, Faculty of Engineering and Technology, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Er. Wazid Ali, Department of Electrical Engineering, University of Lucknow </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Himanshu Pandey, Incharge-Training and Placement Cell, FoET, University of Lucknow</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Gaurav Gupta, Department of Electrical Engineering, University of Lucknow </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Neha Arora, Department of English, Central University of Rajasthan, Ajmer </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Vijay Kumar, Department of English, Galgotia University, Noida</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Jyoti Juyal, Department of Linguistics, Sharda University, Mathura</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Saurabh Yadav, Department of Chemistry, U. P. State Institute of Forensic Science, Lucknow</p>
           </div>
         </div>
       </div>

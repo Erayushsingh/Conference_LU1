@@ -58,7 +58,6 @@ import AwardPage from './Pages/AwardPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import ResearchPage from './Pages/ResearchPage';
 import AbstractSubmission from './Pages/AbstractSubmission';
-import SignInForm from './Pages/SignInForm';
 import ProtectedRoute from './Components/ProtectedRoute';
 import AdminNavBar from './Pages/AdminSection/AdminNavBar.jsx';
 import RegisteredCandidates from './Pages/AdminSection/RegisteredCandidates.jsx';
@@ -69,7 +68,8 @@ import RegisterLink from './Pages/RegisterPage/index.jsx';
 import LoginLink from './Pages/LoginLink/index.jsx';
 
 
-function App() {
+
+const  App=()=> {
   return (
     <Router>
       <Routes>
@@ -99,7 +99,9 @@ function App() {
 
         {/* Protected Routes */}
         <Route path="/abstract-submission" element={<ProtectedRoute element={<AbstractSubmission />} />} />
+
       </Routes>
+
 
       {/* Optionally, you can add a RegisterLink anywhere in your app */}
       
