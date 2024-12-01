@@ -7,7 +7,7 @@ router.use(protect)
 // Route for submitting an abstract
 router.post('/submit', submitAbstract);
 
-router.get('/submissions', getSubmissions);
+router.get('/submissions/:id', getSubmissions);
 // Optional route to get all submissions (can be used for admin purposes)
 
 export default router;

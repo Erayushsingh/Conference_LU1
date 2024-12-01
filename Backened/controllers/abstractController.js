@@ -14,15 +14,15 @@ export const submitAbstract = async (req, res) => {
   try {
     const newSubmission = await prisma.abstractForm.create({
       data: {
-        userId:userId,
+        userId: userId,
 
-       title: parsedBody.data.title,
-       authors: parsedBody.data.authors,
-       abstract: parsedBody.data.abstract,
-       keywords: parsedBody.data.keywords,
-       preferredPresentation: parsedBody.data.preferredPresentation,
-       conferenceTheme: parsedBody.data.conferenceTheme,
-       conflictOfInterest:parsedBody.data.conflictOfInterest
+        title: parsedBody.data.title,
+        authors: parsedBody.data.authors,
+        abstract: parsedBody.data.abstract,
+        keywords: parsedBody.data.keywords,
+        preferredPresentation: parsedBody.data.preferredPresentation,
+        conferenceTheme: parsedBody.data.conferenceTheme,
+        conflictOfInterest: parsedBody.data.conflictOfInterest
       }
     });
 
@@ -35,12 +35,14 @@ export const submitAbstract = async (req, res) => {
 
 
 export const getSubmissions = async (req, res) => {
-  const userId = req.userId;
+  const userId = req.params.id;
   console.log(userId)
   try {
-    const submissions = await prisma.abstractForm.findMany({where:{
-      userId:userId
-    }});
+    const submissions = await prisma.abstractForm.findMany({
+      where: {
+        userId: userId
+      }
+    });
     res.status(200).json(submissions);
   } catch (error) {
     console.error(error);

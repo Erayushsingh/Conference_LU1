@@ -32,7 +32,7 @@ const AbstractSubmission = () => {
     if (location.pathname === '/abstract-submission') {
       setIsModalOpen(true);
     } else {
-      setIsModalOpen(false);  
+      setIsModalOpen(false);
     }
   }, [location.pathname]);
 
@@ -68,7 +68,7 @@ const AbstractSubmission = () => {
 
       try {
         // POST request to submit the abstract with token for authorization
-        const response = await fetch('https://www.api.raashee.in/api/abstracts/submit', {
+        const response = await fetch(`${process.env.REACT_APP_API_HOSTNAME}/api/abstracts/submit`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
