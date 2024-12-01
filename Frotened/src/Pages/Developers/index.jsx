@@ -69,6 +69,7 @@ const Developers = () => {
           </div>
         </div>
       </div>
+
       
 
       <div className='fade-in animate__animated animate__fadeInRight'>
@@ -127,7 +128,6 @@ const Developers = () => {
         </div>
       </div>
 
-      
     </div>
   );
 };
