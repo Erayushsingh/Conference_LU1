@@ -18,6 +18,7 @@ import LoginForm from './Pages/SignInForm/index.jsx';
 import RegisterLink from './Pages/RegisterPage/index.jsx';
 import LoginLink from './Pages/LoginLink/index.jsx';
 import AlreadySubmitted from './Pages/AlreadySubmitted/index.jsx';
+import Developers from './Pages/Developers/index.jsx';
 
 
 const  App=()=> {
@@ -51,11 +52,9 @@ const  App=()=> {
         {/* Protected Routes */}
         <Route path="/abstract-submission" element={<ProtectedRoute element={<AbstractSubmission />} />} />
 
+        <Route path="/techteam" element={<Developers/>}/>
+
       </Routes>
-
-
-      {/* Optionally, you can add a RegisterLink anywhere in your app */}
-
     </Router>
   );
 }
