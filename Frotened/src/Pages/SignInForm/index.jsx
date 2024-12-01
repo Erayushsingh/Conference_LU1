@@ -160,6 +160,7 @@ const LoginForm = ({ className }) => {
     password: '',
   });
 
+  const [id, setId] = useState('')
   const [formData, setFormData] = useState(createLoginFormModel());
   const [errors, setErrors] = useState({
     email: false,
@@ -188,27 +189,56 @@ const LoginForm = ({ className }) => {
 
     if (Object.keys(newErrors).length === 0) {
       try {
-        const response = await fetch('https://www.api.raashee.in/api/auth/signin', {
+        const response = await fetch(`${process.env.API_HOSTNAME}/api/auth/signin`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(formData),
         });
-
         if (response.ok === false) {
           throw new Error('Network response was not ok');
         }
 
         const data = await response.json();
-        console.log(data)
+        const userId = data.id
+        console.log(data.id)
         if (data.success) {
           localStorage.setItem('token', data.accessToken);
           console.log(data.accessToken)
           toast.success(data.message || 'Login successful!');
+          if (data.role === 'admin') {
+            navigate('/admin')
+          }
 
-          navigate('/abstract-submission');
+          try {
+            const submissionsResponse = await fetch(
+              `${process.env.API_HOSTNAME}/api/abstracts/submissions/${userId}`,
+              {
+                method: "GET",
+                headers: {
+                  'Authorization': `Bearer ${data.accessToken}`,
+                  'Content-Type': 'application/json'
+                }
+              }
+            );
+            const submissionsData = await submissionsResponse.json();
+            if (submissionsData.length > 0) {
+              navigate('/allreadySubmitted')
+            }
+            else {
+              navigate('/abstract-submission');
+            }
+            console.log(submissionsData);
+          } catch (err) {
+            console.error('Error:', err);
+          }
+
+
+
+          //navigate('/abstract-submission');
           setIsModalOpen(false);
+
 
         } else {
           toast.error(data.message || 'Login failed. Please try again.');

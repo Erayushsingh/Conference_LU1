@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import 'animate.css'; 
+import 'animate.css';
 
 const LoginLink = () => {
   const [showOutlet, setShowOutlet] = useState(false);

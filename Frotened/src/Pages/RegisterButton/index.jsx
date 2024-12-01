@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
+
 const RegisterButton = ({ className }) => {
   const [formData, setFormData] = useState({
     name: '',
@@ -29,7 +30,7 @@ const RegisterButton = ({ className }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://www.api.raashee.in/api/auth/register', {
+      const response = await fetch(`${process.env.REACT_APP_API_HOSTNAME}/api/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
