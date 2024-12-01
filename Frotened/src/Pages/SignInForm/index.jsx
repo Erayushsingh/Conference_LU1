@@ -189,7 +189,7 @@ const LoginForm = ({ className }) => {
 
     if (Object.keys(newErrors).length === 0) {
       try {
-        const response = await fetch(`${process.env.API_HOSTNAME}/api/auth/signin`, {
+        const response = await fetch(`${process.env.API_URL}/api/auth/signin`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -213,7 +213,7 @@ const LoginForm = ({ className }) => {
 
           try {
             const submissionsResponse = await fetch(
-              `${process.env.API_HOSTNAME}/api/abstracts/submissions/${userId}`,
+              `${process.env.API_URL}/api/abstracts/submissions/${userId}`,
               {
                 method: "GET",
                 headers: {
