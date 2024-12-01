@@ -1,8 +1,6 @@
 {
-  "rewriters" : [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
+  "buildCommand" : "npm run build",
+ {
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
 }
