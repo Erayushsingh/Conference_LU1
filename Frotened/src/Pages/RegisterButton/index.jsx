@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Logo from '/src/assets/Lu-old.webp';
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
 import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
-
-const RegisterButton = () => {
+const RegisterButton = ({ className }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,8 +13,11 @@ const RegisterButton = () => {
     organization: '',
     place: '',
     address: '',
-    password: '',
+    password: ''
   });
+
+  const [showPassword, setShowPassword] = useState(false); 
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const navigate = useNavigate();
 
@@ -28,9 +31,13 @@ const RegisterButton = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (formData.password !== formData.confirmPassword) {
+      toast.error('Passwords do not match!');
+      return;
+    }
 
     try {
-      const response = await fetch('http://localhost:3001/api/auth/register', {
+      const response = await fetch(`${process.env.API_URL}/api/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -51,6 +58,7 @@ const RegisterButton = () => {
           place: '',
           address: '',
           password: '',
+          confirmPassword: '', 
         });
 
         setTimeout(() => {
@@ -74,19 +82,19 @@ const RegisterButton = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row w-full h-screen">
-      {/* Left Side: Logo */}
-      <div className="hidden md:flex md:w-1/2 bg-gray-100 items-center justify-center">
-        <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
-      </div>
+    <div className='h-screen w-full flex'>
+      <div className="bg-white p-0 z-50 transition-opacity duration-500 ease-in-out opacity-100 flex">
 
-      {/* Right Side: Form */}
-      <div className="w-full overflow-auto h-[100%] md:w-1/2 flex items-center justify-center p-6 md:p-10 bg-white">
-        <div className="w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
+        <div className="w-1/2 bg-gray-100 fade-in animate__animated animate__fadeInLeft">
+          <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
+        </div>
+
+
+        <div className="w-1/2 p-10 fade-in animate__animated animate__fadeInRight">
+          <h2 className="text-xl font-bold mb-4">Register</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label className="block text-sm font-semibold">Name</label>
+              <label className="block text-sm font-semibold md:text-xl">Name</label>
               <input
                 type="text"
                 name="name"
@@ -98,7 +106,7 @@ const RegisterButton = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-sm font-semibold">Email</label>
+              <label className="block text-sm font-semibold md:text-xl">Email</label>
               <input
                 type="email"
                 name="email"
@@ -110,7 +118,7 @@ const RegisterButton = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-sm font-semibold">Phone Number</label>
+              <label className="block text-sm font-semibold md:text-xl">Phone Number</label>
               <input
                 type="tel"
                 name="phone"
@@ -122,7 +130,7 @@ const RegisterButton = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-sm font-semibold">Affiliating Organization</label>
+              <label className="block text-sm font-semibold md:text-xl">Affiliating Organization</label>
               <input
                 type="text"
                 name="organization"
@@ -134,7 +142,7 @@ const RegisterButton = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-sm font-semibold">Place (City/Town)</label>
+              <label className="block text-sm font-semibold md:text-xl">Place (City/Town)</label>
               <input
                 type="text"
                 name="place"
@@ -146,7 +154,7 @@ const RegisterButton = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-sm font-semibold">Postal Address</label>
+              <label className="block text-sm font-semibold md:text-xl">Postal Address</label>
               <textarea
                 name="address"
                 value={formData.address}
@@ -156,6 +164,7 @@ const RegisterButton = () => {
               ></textarea>
             </div>
 
+            
             <div className="mb-4">
               <label className="block text-sm font-semibold">Password</label>
               <input
@@ -163,14 +172,14 @@ const RegisterButton = () => {
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Enter your password"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition duration-200"
+              className="w-full bg-blue-600 text-white py-3 rounded-md fade-in animate__animated animate__zoomIn"
             >
               Register
             </button>

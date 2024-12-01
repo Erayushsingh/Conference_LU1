@@ -32,7 +32,7 @@ const AbstractSubmission = () => {
     if (location.pathname === '/abstract-submission') {
       setIsModalOpen(true);
     } else {
-      setIsModalOpen(false);  
+      setIsModalOpen(false);
     }
   }, [location.pathname]);
 
@@ -68,7 +68,7 @@ const AbstractSubmission = () => {
 
       try {
         // POST request to submit the abstract with token for authorization
-        const response = await fetch('http://localhost:3001/api/abstracts/submit', {
+        const response = await fetch(`${process.env.API_URL}/api/abstracts/submit`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
