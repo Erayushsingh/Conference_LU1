@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Photo1 from "../../assets/Aman_Photo.jpg";
-import Photo2 from "../../assets/Ayush_Photo.jpg";
+import Photo1 from '../../assets/Aman_Photo.jpg';
+import Photo2 from '../../assets/Ayush_Photo.jpg';
 import 'animate.css';
 
 const Developers = () => {
