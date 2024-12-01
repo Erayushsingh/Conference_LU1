@@ -48,45 +48,44 @@ export const registerUser = async (req, res) => {
 export const signInUser = async (req, res) => {
   const parsedBody = signInInput.safeParse(req.body);
   if (!parsedBody.success) {
-    res.status(401);
-    throw new Error("fill all required fiels..");
+		res.status(401);
+		throw new Error('fill all required fiels..');
   }
-
-  try {
-    const user = await prisma.user.findUnique({
-      where: { email: parsedBody.data.email },
-    });
+ const user = await prisma.user.findUnique({
+		where: { email: parsedBody.data.email },
+ });
 
     const passCompare = await bcrypt.compare(
       parsedBody.data.password,
       user.password
     );
-    console.log(parsedBody)
-    if (user && passCompare) {
-      const accessToken = await jwt.sign(
-        {
-          id: user.id,
-          email: user.email,
-          Role: user.role,
-        },
-        process.env.SECRET_TOKEN,
-        { expiresIn: "7d" }
-      );
-     console.log(accessToken);
-      res
-
-        .status(201)
-        .json({
-          accessToken,
-          message: "Login success",
-          success: true,
-          role: user.role,
-        });
-
-    }
-  } catch (err) {
-    res.status(500).json({ msg: "error while login " , err});
-  }
+    if (!user && !passCompare) {
+		res.status(401).json({ msg: 'user not found or password not match' });
+		return;
+	}
+	try {
+		console.log(parsedBody);
+		if (user && passCompare) {
+			const accessToken = await jwt.sign(
+				{
+					id: user.id,
+					email: user.email,
+					Role: user.role,
+				},
+				process.env.SECRET_TOKEN,
+				{ expiresIn: '7d' }
+			);
+			console.log(accessToken);
+			res.status(201).json({
+				accessToken,
+				message: 'Login success',
+				success: true,
+				role: user.role,
+			});
+		}
+	} catch (err) {
+		res.status(500).json({ msg: 'error while login ', err });
+	}
 };
 export const logoutUser = async (req, res) => {
   res.clearCookie("accessToken").json({ msg: "User logout" });
