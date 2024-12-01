@@ -48,44 +48,54 @@ export const registerUser = async (req, res) => {
 export const signInUser = async (req, res) => {
   const parsedBody = signInInput.safeParse(req.body);
   if (!parsedBody.success) {
-		res.status(401);
-		throw new Error('fill all required fiels..');
+    return res.status(400).json({
+		message: 'Please fill all required fields',
+		errors: parsedBody.error.errors,
+	});
   }
- const user = await prisma.user.findUnique({
-		where: { email: parsedBody.data.email },
- });
 
-    const passCompare = await bcrypt.compare(
-      parsedBody.data.password,
-      user.password
-    );
-    if (!user && !passCompare) {
-		res.status(401).json({ msg: 'user not found or password not match' });
-		return;
-	}
-	try {
-		console.log(parsedBody);
-		if (user && passCompare) {
-			const accessToken = await jwt.sign(
-				{
-					id: user.id,
-					email: user.email,
-					Role: user.role,
-				},
-				process.env.SECRET_TOKEN,
-				{ expiresIn: '7d' }
-			);
-			console.log(accessToken);
-			res.status(201).json({
-				accessToken,
-				message: 'Login success',
-				success: true,
-				role: user.role,
+  try {
+		const user = await prisma.user.findUnique({
+			where: { email: parsedBody.data.email },
+		});
+
+		if (!user) {
+			return res.status(401).json({
+				message: 'User not found',
 			});
 		}
-	} catch (err) {
-		res.status(500).json({ msg: 'error while login ', err });
-	}
+
+		const passCompare = await bcrypt.compare(parsedBody.data.password, user.password);
+
+		if (!passCompare) {
+			return res.status(401).json({
+				message: 'Invalid credentials',
+			});
+		}
+
+		const accessToken = jwt.sign(
+			{
+				id: user.id,
+				email: user.email,
+				role: user.role,
+			},
+			process.env.SECRET_TOKEN || 'fallback_secret', // Fallback secret for safety
+			{ expiresIn: '7d' }
+		);
+
+		res.status(200).json({
+			accessToken,
+			message: 'Login successful',
+			success: true,
+			role: user.role,
+		});
+  } catch (err) {
+		console.error('Login error:', err);
+		res.status(500).json({
+			message: 'Error during login',
+			error: err.message,
+		});
+  }
 };
 export const logoutUser = async (req, res) => {
   res.clearCookie("accessToken").json({ msg: "User logout" });
