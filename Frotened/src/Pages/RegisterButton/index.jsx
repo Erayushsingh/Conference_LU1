@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
 import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
+
 const RegisterButton = ({ className }) => {
   const [formData, setFormData] = useState({
     name: '',
@@ -13,7 +14,8 @@ const RegisterButton = ({ className }) => {
     organization: '',
     place: '',
     address: '',
-    password: ''
+    password: '',
+    confirmPassword: '' 
   });
 
   const [showPassword, setShowPassword] = useState(false); 
@@ -82,17 +84,12 @@ const RegisterButton = ({ className }) => {
   }, []);
 
   return (
-    <div className='h-screen w-full flex'>
-      <div className="bg-white p-0 z-50 transition-opacity duration-500 ease-in-out opacity-100 flex">
-
-        <div className="w-1/2 bg-gray-100 fade-in animate__animated animate__fadeInLeft">
-          <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
-        </div>
-
-
-        <div className="w-1/2 p-10 fade-in animate__animated animate__fadeInRight">
-          <h2 className="text-xl font-bold mb-4">Register</h2>
-          <form onSubmit={handleSubmit}>
+    <div className='h-screen flex items-center bg-gray-200 h-full w-full'>
+      
+    <div className="p-2 z-50 transition-opacity duration-500 ease-in-out opacity-100 w-full">
+        <div className="w-1/2 p-10 fade-in animate__animated animate__fadeInRight w-full opacity-100">
+          <h2 className="text-xl font-bold mb-4 text-center md:text-4xl text-red-900">Register</h2>
+          <form onSubmit={handleSubmit} className='grid grid-cols-2 gap-x-8 gap-y-8'>
             <div className="mb-4">
               <label className="block text-sm font-semibold md:text-xl">Name</label>
               <input
@@ -100,7 +97,7 @@ const RegisterButton = ({ className }) => {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Enter your name"
               />
             </div>
@@ -112,7 +109,7 @@ const RegisterButton = ({ className }) => {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Enter your email"
               />
             </div>
@@ -124,7 +121,7 @@ const RegisterButton = ({ className }) => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Enter your phone number"
               />
             </div>
@@ -136,7 +133,7 @@ const RegisterButton = ({ className }) => {
                 name="organization"
                 value={formData.organization}
                 onChange={handleInputChange}
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Enter your organization"
               />
             </div>
@@ -148,7 +145,7 @@ const RegisterButton = ({ className }) => {
                 name="place"
                 value={formData.place}
                 onChange={handleInputChange}
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Enter your place"
               />
             </div>
@@ -159,27 +156,59 @@ const RegisterButton = ({ className }) => {
                 name="address"
                 value={formData.address}
                 onChange={handleInputChange}
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Enter your postal address"
               ></textarea>
             </div>
 
-            
+            {/* Password Field */}
             <div className="mb-4">
-              <label className="block text-sm font-semibold">Password</label>
-              <input
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleInputChange}
-                className="w-full p-3 border-2 border-gray-300 rounded-md"
-                placeholder="Enter your password"
-              />
+              <label className="block text-sm font-semibold md:text-xl">Password</label>
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  name="password"
+                  value={formData.password}
+                  onChange={handleInputChange}
+                  className="w-full p-3 border-2 border-gray-300 rounded-md"
+                  placeholder="Enter your password"
+                />
+                <button
+                  type="button"
+                  className="absolute right-3 top-3 text-lg"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />} {/* Show or Hide icon */}
+                </button>
+              </div>
             </div>
 
+            {/* Confirm Password Field */}
+            <div className="mb-4">
+              <label className="block text-sm font-semibold md:text-xl">Confirm Password</label>
+              <div className="relative">
+                <input
+                  type={showConfirmPassword ? 'text' : 'password'}
+                  name="confirmPassword"
+                  value={formData.confirmPassword}
+                  onChange={handleInputChange}
+                  className="w-full p-3 border-2 border-gray-300 rounded-md"
+                  placeholder="Confirm your password"
+                />
+                <button
+                  type="button"
+                  className="absolute right-3 top-3 text-lg"
+                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                >
+                  {showConfirmPassword ? <FaEyeSlash /> : <FaEye />} {/* Show or Hide icon */}
+                </button>
+              </div>
+            </div>
+
+            {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-md fade-in animate__animated animate__zoomIn"
+              className="bg-blue-600 font-bold text-white py-3 rounded-md fade-in animate__animated animate__zoomIn col-span-2 mx-auto w-[150px]"
             >
               Register
             </button>
@@ -187,7 +216,7 @@ const RegisterButton = ({ className }) => {
         </div>
       </div>
 
-      {/* Toast Notifications */}
+      {/* Toast container */}
       <ToastContainer />
     </div>
   );
