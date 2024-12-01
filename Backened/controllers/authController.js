@@ -63,7 +63,7 @@ export const signInUser = async (req, res) => {
     );
     console.log(parsedBody)
     if (user && passCompare) {
-      const accessToken = jwt.sign(
+      const accessToken = await jwt.sign(
         {
           id: user.id,
           email: user.email,
