@@ -85,7 +85,7 @@ export const signInUser = async (req, res) => {
       // console.log(acessToken);
     }
   } catch (err) {
-    res.status(500).json({ msg: "error while login " });
+    res.status(500).json({ msg: "error while login ", err });
   }
 };
 export const logoutUser = async (req, res) => {
