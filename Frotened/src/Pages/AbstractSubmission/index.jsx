@@ -68,7 +68,7 @@ const AbstractSubmission = () => {
 
       try {
         // POST request to submit the abstract with token for authorization
-        const response = await fetch(`${process.env.REACT_APP_API_HOSTNAME}/api/abstracts/submit`, {
+        const response = await fetch(`${process.env.API_URL}/api/abstracts/submit`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
