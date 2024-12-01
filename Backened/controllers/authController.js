@@ -61,9 +61,9 @@ export const signInUser = async (req, res) => {
       parsedBody.data.password,
       user.password
     );
-    // console.log(parsedBody)
+    console.log(parsedBody)
     if (user && passCompare) {
-      const accessToken = jwt.sign(
+      const accessToken = await jwt.sign(
         {
           id: user.id,
           email: user.email,
@@ -72,7 +72,7 @@ export const signInUser = async (req, res) => {
         process.env.SECRET_TOKEN,
         { expiresIn: "7d" }
       );
-      // console.log(accessToken);
+     console.log(accessToken);
       res
 
         .status(201)
@@ -82,7 +82,7 @@ export const signInUser = async (req, res) => {
           success: true,
           role: user.role,
         });
-      // console.log(acessToken);
+
     }
   } catch (err) {
     res.status(500).json({ msg: "error while login ", err });
