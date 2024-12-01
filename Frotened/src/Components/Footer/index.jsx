@@ -81,7 +81,8 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className='h-6 bg-gray-700 text-end'>
+      <div className='h-6 bg-gray-700 text-blue-500 text-end pr-2'>
+       <strong> <a href="/techteam">@ for any technical issues contact</a></strong>
       </div>
     </>
   );
