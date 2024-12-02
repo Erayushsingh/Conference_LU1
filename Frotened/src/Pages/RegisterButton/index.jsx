@@ -442,7 +442,7 @@ const RegisterButton = ({ className }) => {
               className="bg-blue-600 font-bold text-white py-3 rounded-md fade-in animate__animated animate__zoomIn col-span-2 mx-auto w-[150px]"
             >
               {loading ? (
-                <FaSpinner className="animate-spin" />
+                'Please wait...' 
               ) : (
                 'Register'
               )}
