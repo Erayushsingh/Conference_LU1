@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import { FaSpinner } from 'react-icons/fa'; 
+import { FaSpinner, FaEye, FaEyeSlash } from 'react-icons/fa'; 
 import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = ({ className }) => {
@@ -19,6 +19,7 @@ const LoginForm = ({ className }) => {
   const [isModalOpen, setIsModalOpen] = useState(true);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [popupMessage, setPopupMessage] = useState(""); 
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);  
 
   const navigate = useNavigate();
 
@@ -89,8 +90,6 @@ const LoginForm = ({ className }) => {
           }
 
           setIsModalOpen(false); 
-
-          
           setPopupMessage("Login successful! Redirecting...");
           setTimeout(() => {
             setIsPopupVisible(false);
@@ -103,7 +102,7 @@ const LoginForm = ({ className }) => {
         console.error('Error during login:', error);
         setLoading(false); 
         setPopupMessage("Please try again..."); 
-       setIsPopupVisible(false); 
+        setIsPopupVisible(false); 
       } finally {
         setLoading(false); 
       }
@@ -118,6 +117,10 @@ const LoginForm = ({ className }) => {
     });
     setIsModalOpen(false);
     navigate('/');
+  };
+
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible); 
   };
 
   return (
@@ -145,14 +148,27 @@ const LoginForm = ({ className }) => {
 
               <div className="mb-4">
                 <label htmlFor="password" className="block text-lg font-medium">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  value={formData.password}
-                  onChange={handleChange}
-                  className={`w-full p-2 border-2 rounded-md ${errors.password ? 'border-red-500' : 'border-gray-300'}`}
-                />
+                <div className="relative">
+                  <input
+                    type={isPasswordVisible ? "text" : "password"} 
+                    id="password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    className={`w-full p-2 border-2 rounded-md ${errors.password ? 'border-red-500' : 'border-gray-300'}`}
+                  />
+                  <button
+                    type="button"
+                    onClick={togglePasswordVisibility}
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2"
+                  >
+                    {isPasswordVisible ? (
+                      <FaEyeSlash className="text-gray-500" />
+                    ) : (
+                      <FaEye className="text-gray-500" />
+                    )}
+                  </button>
+                </div>
                 {errors.password && <span className="text-red-500 text-sm">Password is required</span>}
               </div>
 
