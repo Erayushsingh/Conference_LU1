@@ -89,12 +89,7 @@ const AboutUsPage = () => {
         {/* Organizing Committee Section */}
         <div className="bg-white  p-6 my-2 w-11/12 border-red-800 border-t-4 sm:w-4/5 mx-auto">
           <div className="flex flex-col mt-7  sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
-            <div className="bg-blue-50 rounded-lg shadow-lg p-6 pb-28 w-full sm:w-1/2 flex flex-col items-center">
-              <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Treasurer</h4>
-              <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Savya Sachi</p>
-              <p className="text-lg sm:text-xl text-gray-700 text-center">Department of Applied Science and Humanities, University of Lucknow</p>
-            </div>
-
+           
             <div className="bg-green-50 mt-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
               <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Co-Conveners</h4>
               <p className="text-lg sm:text-xl text-gray-700 text-center"> Dr. Anupam Kumar Tripathi,</p>
