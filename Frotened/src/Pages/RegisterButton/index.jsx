@@ -33,8 +33,9 @@ const RegisterButton = ({ className }) => {
     }));
 
     if (name === 'phone') {
-      // Validate phone number length
-      if (value.length > 10) {
+      if (/[^\d]/.test(value)) {
+        setPhoneError('Please enter a valid mobile number with only numbers');
+      } else if (value.length > 10) {
         setPhoneError('Please input a valid mobile number');
       } else {
         setPhoneError('');
