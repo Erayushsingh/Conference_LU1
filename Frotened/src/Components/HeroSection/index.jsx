@@ -374,6 +374,23 @@ const HeroSection = () => {
                 <td className="border px-4 py-2">03:30 pm – 05:00 pm</td>
                 <td className="border px-4 py-2">Track: Paper Presentation</td>
               </tr>
+              <tr>
+                <td className="border px-4 py-2">5:00 pm - 5:30 pm</td>
+                <td className="border px-4 py-2">Tea Break </td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2">5:30 pm – 6:15 pm </td>
+                <td className="border px-4 py-2">Novel Reading and Discussion </td>
+              </tr>
+              
+              <tr>
+                <td className="border px-4 py-2">6:30 pm – 7:45 pm </td>
+                <td className="border px-4 py-2">Cultural Program</td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2">7:50- pm – 8:50 pm  </td>
+                <td className="border px-4 py-2">Dinner </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -429,6 +446,22 @@ const HeroSection = () => {
               <tr>
                 <td className="border px-4 py-2">04:30 pm – 04:50 pm</td>
                 <td className="border px-4 py-2">Tea Break</td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2">4:50 pm – 5:30 pm</td>
+                <td className="border px-4 py-2">Valedictory Session</td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2">5:30 pm – 5:45 pm</td>
+                <td className="border px-4 py-2">Photo Session </td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2">5:45 pm –6:00 pm</td>
+                <td className="border px-4 py-2">Networking </td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2">6:00 pm</td>
+                <td className="border px-4 py-2">Closure and Departure</td>
               </tr>
             </tbody>
           </table>
@@ -486,21 +519,6 @@ const HeroSection = () => {
             <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
               Department of Applied Science and Humanities, University of
               Lucknow
-            </p>
-          </div>
-
-          {/* Co-Conveners Container */}
-          <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/3 flex flex-col items-center">
-            <h4 className="text-xl font-semibold text-green-700 mb-2 md:text-2xl md:leading-8">
-              Co-Conveners
-            </h4>
-            <p className="text-lg text-gray-700 text-center mb-4 md:text-2xl md:leading-8">
-              Dr. Anupam Kumar Tripathi, Department of Applied Science and
-              Humanities, University of Lucknow
-            </p>
-            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-              Dr. Ranvijay Pratap Singh, Department of Applied Science and
-              Humanities, University of Lucknow
             </p>
           </div>
         </div>
