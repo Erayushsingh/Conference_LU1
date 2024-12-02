@@ -227,10 +227,9 @@
 import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
+import { FaEye, FaEyeSlash, FaSpinner } from 'react-icons/fa'; 
 import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
-import { FaSpinner } from 'react-icons/fa'; 
 
 const RegisterButton = ({ className }) => {
   const [formData, setFormData] = useState({
@@ -247,6 +246,7 @@ const RegisterButton = ({ className }) => {
   const [showPassword, setShowPassword] = useState(false); 
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false); 
+  const [showModal, setShowModal] = useState(false); 
 
   const navigate = useNavigate();
 
@@ -266,7 +266,8 @@ const RegisterButton = ({ className }) => {
       return;
     }
 
-    setLoading(true); 
+    setLoading(true);
+    setShowModal(true);
 
     try {
       const response = await fetch(`https://www.api.raashee.in/api/auth/register`, {
@@ -280,6 +281,7 @@ const RegisterButton = ({ className }) => {
       const data = await response.json();
 
       setLoading(false);
+      setShowModal(false); 
 
       if (response.ok) {
         toast.success('You have registered successfully! Redirecting to home...');
@@ -302,6 +304,7 @@ const RegisterButton = ({ className }) => {
       }
     } catch (err) {
       setLoading(false);
+      setShowModal(false); 
       toast.error('An error occurred. Please try again.');
     }
   };
@@ -321,7 +324,6 @@ const RegisterButton = ({ className }) => {
         <div className=" p-10 fade-in animate__animated animate__fadeInRight w-full opacity-100">
           <h2 className="text-xl font-bold mb-4 text-center md:text-4xl text-red-900">Register</h2>
           <form onSubmit={handleSubmit} className='grid md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8'>
-           
             <div className="mb-4">
               <label className="text-sm font-semibold md:text-xl">Name</label>
               <input
@@ -393,7 +395,6 @@ const RegisterButton = ({ className }) => {
               ></textarea>
             </div>
 
-            
             <div className="mb-4">
               <label className="block text-sm font-semibold md:text-xl">Password</label>
               <div className="relative">
@@ -436,7 +437,6 @@ const RegisterButton = ({ className }) => {
               </div>
             </div>
 
-            
             <button
               type="submit"
               className="bg-blue-600 font-bold text-white py-3 rounded-md fade-in animate__animated animate__zoomIn col-span-2 mx-auto w-[150px]"
@@ -453,6 +453,16 @@ const RegisterButton = ({ className }) => {
 
       {/* Toast container */}
       <ToastContainer />
+
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <FaSpinner className="animate-spin text-blue-600 text-3xl" />
+            <p className="text-lg mt-4">Submitting your registration...</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
