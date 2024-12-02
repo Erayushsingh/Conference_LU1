@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import { FaSpinner } from 'react-icons/fa'; // Importing the spinner
+import { FaSpinner } from 'react-icons/fa'; 
 import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = ({ className }) => {
@@ -15,10 +15,10 @@ const LoginForm = ({ className }) => {
     email: false,
     password: false,
   });
-  const [loading, setLoading] = useState(false); // Added loading state
+  const [loading, setLoading] = useState(false); 
   const [isModalOpen, setIsModalOpen] = useState(true);
-  const [isPopupVisible, setIsPopupVisible] = useState(false); // State for popup visibility
-  const [popupMessage, setPopupMessage] = useState(""); // Popup message content
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [popupMessage, setPopupMessage] = useState(""); 
 
   const navigate = useNavigate();
 
@@ -40,8 +40,9 @@ const LoginForm = ({ className }) => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      setLoading(true); // Set loading to true when the login request starts
-
+      setLoading(true); 
+      setPopupMessage("Please wait..."); 
+      setIsPopupVisible(true); 
       try {
         const response = await fetch(`https://www.api.raashee.in/api/auth/signin`, {
           method: 'POST',
@@ -50,6 +51,7 @@ const LoginForm = ({ className }) => {
           },
           body: JSON.stringify(formData),
         });
+
         if (response.ok === false) {
           throw new Error('Network response was not ok');
         }
@@ -86,16 +88,13 @@ const LoginForm = ({ className }) => {
             console.error('Error:', err);
           }
 
-          setIsModalOpen(false); // Close the modal after success
+          setIsModalOpen(false); 
 
-          // Show popup after successful login
-          setPopupMessage("Login successful! Redirecting...");
-          setIsPopupVisible(true);
           
-          // Hide the popup after a few seconds (optional)
+          setPopupMessage("Login successful! Redirecting...");
           setTimeout(() => {
             setIsPopupVisible(false);
-          }, 3000);
+          }, 3000); 
         } else {
           toast.error(data.message || 'Login failed. Please try again.');
         }
@@ -103,7 +102,7 @@ const LoginForm = ({ className }) => {
         toast.error('Error during login. Please try again.');
         console.error('Error during login:', error);
       } finally {
-        setLoading(false); // Set loading to false when the request finishes (success or error)
+        setLoading(false); 
       }
     }
   };
@@ -158,12 +157,10 @@ const LoginForm = ({ className }) => {
                 <button
                   type="submit"
                   className="w-full py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
-                  disabled={loading} // Disable the button while loading
+                  disabled={loading} 
                 >
                   {loading ? (
-                    <div className="flex justify-center items-center">
-                      <FaSpinner className="animate-spin mr-2" /> Loading...
-                    </div>
+                    ''
                   ) : (
                     'Login'
                   )}
@@ -171,7 +168,6 @@ const LoginForm = ({ className }) => {
               </div>
             </form>
 
-            {/* Close Button for Modal */}
             <button
               className="absolute top-2 right-2 text-gray-600 font-bold text-xl border-2 border-gray-300 rounded-full px-2 py-1 hover:bg-gray-300 focus:outline-none"
               onClick={clearForm}
@@ -182,11 +178,13 @@ const LoginForm = ({ className }) => {
         </div>
       )}
 
-      {/* Popup for login success */}
       {isPopupVisible && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm mx-auto">
             <h3 className="text-lg font-semibold">{popupMessage}</h3>
+            <div className="flex justify-center mt-3">
+              <FaSpinner className="animate-spin text-blue-600 text-xl" />
+            </div>
           </div>
         </div>
       )}
