@@ -54,6 +54,28 @@ const PublicationPage = () => {
           </div>
         </div>
       </div>
+      <div className="bg-white rounded-lg p-6 my-8 w-full sm:w-4/5 mx-auto">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-6">
+          Accommodation
+        </h2>
+
+        <p className="text-lg text-gray-700 mb-4 md:mb-0 md:text-2xl md:leading-8">
+          Accommodation will be provided to the candidates on an actual payment
+          basis with prior information. Participants are requested to intimate
+          their preference for accommodation at the earliest possible so that
+          organizers can reserve the accommodation based on availability.
+        </p>
+
+        <p className="text-lg text-gray-700 mb-4 md:mb-0  md:text-2xl md:leading-8">
+          There are limited rooms available in the University Guest House. Once
+          the Guest House is full, participants will be accommodated in hotels
+          nearby the campus.
+        </p>
+
+        <p className="text-lg text-gray-700 mb-6 md:mb-0 md:text-2xl md:leading-8">
+          Please bring a valid ID for verification at the reception.
+        </p>
+      </div>
 
       {/* Important Dates Section */}
       <div className="py-12 bg-gray-50">

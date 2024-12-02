@@ -9,7 +9,7 @@ const LowerHeader = () => {
 
   return (
     <>
-      <div className="bg-blue-300 flex items-center p-2 text-lg border-b-4 border-red-400 w-full">
+      <div className="bg-blue-300 flex items-center p-2 border-t-4 text-lg border-b-4 border-red-400 w-full">
 
         {/* Mobile Menu Toggle Button (Hamburger) - Aligned to the left */}
         <div className="md:hidden flex items-center">
