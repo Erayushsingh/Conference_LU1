@@ -39,7 +39,7 @@ const RegisterButton = ({ className }) => {
     }
 
     try {
-      const response = await fetch(`${process.env.API_URL}/api/auth/register`, {
+      const response = await fetch(`https://www.api.raashee.in/api/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
