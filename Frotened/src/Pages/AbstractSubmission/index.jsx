@@ -245,13 +245,13 @@ const AbstractSubmission = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="mb-4 flex justify-end">
+                <div className="mb-4 flex flex-end">
                   <button type="button" className="bg-gray-500 text-white px-4 py-2 rounded-md" onClick={clearForm}>
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="bg-blue-600 font-bold text-white py-3 rounded-md fade-in animate__animated animate__zoomIn col-span-2 mx-auto w-[150px]"
+                    className="bg-blue-600 font-bold text-white py-2 rounded-md fade-in animate__animated animate__zoomIn  mx-auto px-4"
                   >
                     {loading ? (
                       'Please wait...'
