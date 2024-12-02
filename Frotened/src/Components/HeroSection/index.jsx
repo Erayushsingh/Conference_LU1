@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="bg-red-900 text-white py-2 text-center w-full">
         <div className="flex justify-center items-center flex-col md:flex-row  animate-zoom-out-in">
           <p className="text-2xl font-bold mb-2 md:mb-0 ">
-            Registration Opened for RAASHEE-2025 | Registration Close 25 Dec 2024
+            Registration Opened for RAASHEE-2025 |
           </p>
           <button
             onClick={handleRegisterClick}
@@ -224,67 +224,70 @@ const HeroSection = () => {
       <div className="flex items-center flex-col-reverse md:pl-40 md:flex-row">
         <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%] xl:w-1/2 mx-auto">
           <h3 className="md:text-4xl text-3xl font-extrabold text-center text-gray-800 mb-8">
-            Keynote and Invited Talks
+            Keynote Speaker
           </h3>
-          <ul className="list-inside space-y-2 text-lg sm:text-xl w-full text-gray-700 text-center">
+          <ul className="space-y-2">
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. V. P. Singh, Department of EML, University of Lucknow
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. B. K. Mohanty, IIM-Lucknow 
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Binod Mishra, IIT-Roorkee 
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Rajinder Singh Chandel, Punjabi University, Patiala 
-            </li>
-            
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Rajeev Sijaria, Head- ABVSM&E, JNU 
-            </li>
-            
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. R. P. Singh, University of Lucknow 
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar 
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Sikha Varma, Institute of Physics, Bhubaneshwar 
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Praveen Sahu, Head-Department of Commerce, Central University of Rajasthan, Ajmer
-            </li>
-            
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Pankaj Srivastava, MNNIT, Prayagraj 
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Neha Arora, Department of English, Central University of Rajasthan, Ajmer
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow 
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Saurabh Yadav, U. P. State Institute of Forensic Science, Lucknow 
+            Dr. Ashish Pandey, National Research Council, Canada
             </li>
             <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
             Dr. Gopal Krishna Dixit, Grenoble, France 
             </li>
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Ashish Pandey, National Research Council, Canada 
+              Prof. Binod Mishra, IIT-Roorkee 
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. B. K. Mohanty, IIM-Lucknow
+            </li>
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+            Prof. Rajinder Singh Chandel, Punjabi University, Patiala 
+            </li>
+            
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+            Prof. Rajeev Sijaria, Head- ABVSM&E, JNU 
+            </li>
+            
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+            Prof. R. P. Singh, University of Lucknow 
+            </li>
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+            Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar 
+            </li>
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+            Prof. Sikha Varma, Institute of Physics, Bhubaneshwar 
+            </li>
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+            Prof. Praveen Sahu, Dean - School of Commerce and Management, Central University of Rajasthan
+            </li>
+            
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+            Prof. Pankaj Srivastava, MNNIT, Prayagraj 
+            </li>
+            
+          </ul>
+          <ul className="space-y-2">
+          <h3 className="md:text-4xl text-3xl mt-10 font-extrabold text-center text-gray-800 mb-8">
+              Invited Talks
+            </h3>
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+            Dr. Neha Arora, Department of English, Central University of Rajasthan, Ajmer
+            </li>
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+            Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow 
+            </li>
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+            Dr. Saurabh Yadav, U. P. State Institute of Forensic Science, Lucknow 
+            </li>
+            <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
             Dr. Rituraj Mishra, National P. G. College, Lucknow  
             </li>
-            <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
             Ms. Supriya Yadav, GM-HR, Magnet Technology, Noida   
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
             Dr. Sapna Sharma, Assistant Professor, U. P. State Institute of Forensic Science, Lucknow  
             </li>
-            <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
             Dr. Vijay Kumar, Associate Professor, Department of English, Galgotia University   
             </li>
           </ul>
@@ -312,28 +315,7 @@ const HeroSection = () => {
 
 
       </div>
-      <div className="bg-white rounded-lg p-6 my-8 w-full sm:w-4/5 mx-auto">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-6">
-          Accommodation
-        </h2>
-
-        <p className="text-lg text-gray-700 mb-4 md:mb-0 md:text-2xl md:leading-8">
-          Accommodation will be provided to the candidates on an actual payment
-          basis with prior information. Participants are requested to intimate
-          their preference for accommodation at the earliest possible so that
-          organizers can reserve the accommodation based on availability.
-        </p>
-
-        <p className="text-lg text-gray-700 mb-4 md:mb-0  md:text-2xl md:leading-8">
-          There are limited rooms available in the University Guest House. Once
-          the Guest House is full, participants will be accommodated in hotels
-          nearby the campus.
-        </p>
-
-        <p className="text-lg text-gray-700 mb-6 md:mb-0 md:text-2xl md:leading-8">
-          Please bring a valid ID for verification at the reception.
-        </p>
-      </div>
+      
 
       <div className="bg-white rounded-lg shadow-lg p-6 my-8 w-full sm:w-4/5 mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-center md:mb-0">
@@ -474,7 +456,7 @@ const HeroSection = () => {
               CHIEF GUEST:
             </h4>
             <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-              Prof. Bhartendu K Singh, Director, IIITDM, Jabalpur
+              Prof. T. N. Singh, Director, IIT-Patna
             </p>
           </div>
 

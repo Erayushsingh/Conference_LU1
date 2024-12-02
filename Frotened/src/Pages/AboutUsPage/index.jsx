@@ -62,6 +62,9 @@ const AboutUsPage = () => {
             <li>English (Professional Communication)</li>
             <li>Environment & Ecology</li>
             <li>Human Values & Ethics</li>
+            <li>Essence of Indian Knowledge System</li>
+            <li>Critical thinking</li>
+            <li>Nanotechnology</li>
           </ul>
         </div>
 
@@ -95,7 +98,7 @@ const AboutUsPage = () => {
             </div>
             <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
               {/* List of Advisory Committee Members */}
-              <p className="text-lg sm:text-xl text-gray-700">Prof. Sudhir Srivastava, HoD-Mathematics, Deen Dayal Upadhyay Gorakhpur University</p>
+              <p className="text-lg sm:text-xl text-gray-700">Prof. Sudhir Srivastava, Mathematics, Deen Dayal Upadhyay Gorakhpur University</p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. Sanjay Kumar Pandey, HoD-Mathematics, Banaras Hindu University</p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya</p>
               {/* Add other members similarly */}

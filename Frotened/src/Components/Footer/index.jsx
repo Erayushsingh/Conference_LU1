@@ -8,7 +8,7 @@ const Footer = () => {
 
         {/* Rasee Section with Social Media Icons */}
         <a href='https://www.raashee.in' className='flex-shrink-0 w-full bg-gray-600 p-3 text-end lg:w-[300px] flex flex-col items-center relative mb-6 lg:mb-0'>
-          <h1 className='text-3xl lg:text-5xl font-semibold text-center'>RAASHEE</h1>
+          <h1 className='text-3xl lg:text-4xl font-semibold text-center'>RAASHEE-25</h1>
           <div>
             <p className='text-xs text-center font-semibold'>Faculty of Engineering And Technology</p>
             <p className='text-xs text-center font-bold text-red-400'>University of Lucknow</p>
