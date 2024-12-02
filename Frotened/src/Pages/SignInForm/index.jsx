@@ -99,8 +99,11 @@ const LoginForm = ({ className }) => {
           toast.error(data.message || 'Login failed. Please try again.');
         }
       } catch (error) {
-        toast.error('Error during login. Please try again.');
+        toast.error('Incorrect password or email.');
         console.error('Error during login:', error);
+        setLoading(false); 
+        setPopupMessage("Please try again..."); 
+       setIsPopupVisible(false); 
       } finally {
         setLoading(false); 
       }
