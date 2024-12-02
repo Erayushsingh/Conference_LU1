@@ -30,9 +30,8 @@ const LowerHeader = () => {
         <div className="hidden md:flex justify-between w-full items-center space-x-6 px-10">
           <div className="flex justify-between items-center gap-6 w-full">
             <a href="/" className="hover:text-red-500">Home</a>
-            <a href="/conference" className="hover:text-red-500">Conference</a>
+            <a href="/conference" className="hover:text-red-500">Tracks</a>{/* Initially it was Conference */}
             <a href="/publications" className="hover:text-red-500">Submission</a>
-            <a href="/research" className="hover:text-red-500">Research</a>
             <a href="/awards" className="hover:text-red-500">Awards</a>
             <a href="/about-us" className="hover:text-red-500">About Us</a>
 

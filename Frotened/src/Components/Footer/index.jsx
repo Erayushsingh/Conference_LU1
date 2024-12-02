@@ -24,55 +24,55 @@ const Footer = () => {
           <a href="/conference" className='m-2 hover:opacity-60'>Conference</a>
         </div>
         {/* Social Media Icons Row (positioned below the text) */}
-          <div className=' flex justify-center space-x-6 py-4 '>
-            <a href="https://www.facebook.com/share/1B8gU8jwpJ/?mibextid=LQQJ4d" target="_blank"><i className="fa-brands fa-facebook text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>            
-            <a href="https://x.com/Raashee25" target="_blank"><i className="fa-brands fa-x-twitter text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
-            <a href="https://youtube.com/@raashee25?si=xCXHeb1spEYkAo5Y" target="_blank"><i className="fa-brands fa-youtube text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>           
-            <i className="fa-regular fa-envelope text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i>
-            <a href="https://www.instagram.com/raashee_2025?igsh=MWN0NGU4Z2dtdDVlbw==" target="_blank"><i className="fa-brands fa-instagram text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
-            
-          </div>
-        
+        <div className=' flex justify-center space-x-6 py-4 '>
+          <a href="https://www.facebook.com/share/1B8gU8jwpJ/?mibextid=LQQJ4d" target="_blank"><i className="fa-brands fa-facebook text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
+          <a href="https://x.com/Raashee25" target="_blank"><i className="fa-brands fa-x-twitter text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
+          <a href="https://youtube.com/@raashee25?si=xCXHeb1spEYkAo5Y" target="_blank"><i className="fa-brands fa-youtube text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
+          <i className="fa-regular fa-envelope text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i>
+          <a href="https://www.instagram.com/raashee_2025?igsh=MWN0NGU4Z2dtdDVlbw==" target="_blank"><i className="fa-brands fa-instagram text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
+
+        </div>
+
 
       </div>
 
       {/* Contact Details Section */}
       <div className='w-full md:flex-row lg:w-full border-t-2 border-t-gray-500 border-b-2 shadow-lg shadow-gray-300 border-b-gray-500 flex justify-center p-2 flex-col items-center bg-gray-900'>
-          <div className='md:w-[30%] text-center'>
-            <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 mt-4">CONTACT DETAILS</h3>
-            <p className="text-lg text-gray-700 mb-2  md:mr-4 text-center">
-              All queries and clarifications related to the conference and submission of abstract/paper should be emailed to:
-              <a href="mailto:raashee.foet@gmail.com" className="text-blue-500">raashee.foet@gmail.com</a>
+        <div className='md:w-[30%] text-center'>
+          <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 mt-4">CONTACT DETAILS</h3>
+          <p className="text-lg text-gray-700 mb-2  md:mr-4 text-center">
+            All queries and clarifications related to the conference and submission of abstract/paper should be emailed to:
+            <a href="mailto:raashee.foet@gmail.com" className="text-blue-500">raashee.foet@gmail.com</a>
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row md:justify-around md:w-[70%] items-center">
+          <div className='md:flex'>
+            {/* Highlighted Contact 1 */}
+            <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
+              Dr. Khushboo Verma
+              <div>(7991200535)</div>
+            </p>
+
+            {/* Highlighted Contact 2 */}
+            <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
+              Dr. Rachana Pathak
+              <div>(9044375304)</div>
+            </p>
+
+            {/* Highlighted Contact 3 */}
+            <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
+              Dr. Savya Sachi
+              <div>(9811746901)</div>
+            </p>
+
+            {/* Highlighted Contact 4 */}
+            <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
+              Dr. R. P. Singh
+              <div>(8090196096)</div>
             </p>
           </div>
-          <div className="flex flex-col md:flex-row md:justify-around md:w-[70%] items-center">
-            <div className='md:flex'>
-              {/* Highlighted Contact 1 */}
-              <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
-                Dr. Khushboo Verma
-                <div>(7991200535)</div> 
-              </p>
-            
-              {/* Highlighted Contact 2 */}
-              <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
-                Dr. Rachana Pathak
-                <div>(9044375304)</div>
-              </p>
-
-              {/* Highlighted Contact 3 */}
-              <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
-                Dr. Savya Sachi
-                <div>(9811746901)</div>
-              </p>
-
-              {/* Highlighted Contact 4 */}
-              <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
-                Dr. R. P. Singh 
-                <div>(8090196096)</div>
-              </p>
-            </div>
-          </div>
         </div>
+      </div>
 
       {/* Copyright Section */}
       <div className='h-10 bg-gray-800 text-center text-white flex items-center justify-center'>
@@ -81,9 +81,12 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className='h-6 bg-gray-700 text-blue-500 text-end pr-2'>
-       <strong> <a href="/techteam">@ for any technical issues contact</a></strong>
+      <div className='h-6 bg-gray-700 text-gray-700 text-end pr-2'>
+        <strong>
+          <a href="/techteam" className='text-sm text-blue-400'>@for any technical issues contact</a>
+        </strong>
       </div>
+
     </>
   );
 }

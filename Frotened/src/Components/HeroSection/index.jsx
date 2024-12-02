@@ -295,7 +295,7 @@ const HeroSection = () => {
             Venue of Conference
           </h2>
 
-          <p className="text-lg text-gray-700 text-center">
+          <p className="text-lg text-gray-700 text-center md:text-2xl">
             The conference will be held at:
           </p>
 
@@ -317,20 +317,20 @@ const HeroSection = () => {
           Accommodation
         </h2>
 
-        <p className="text-lg text-gray-700 mb-4 md:mb-0 md:text-xl md:leading-8">
+        <p className="text-lg text-gray-700 mb-4 md:mb-0 md:text-2xl md:leading-8">
           Accommodation will be provided to the candidates on an actual payment
           basis with prior information. Participants are requested to intimate
           their preference for accommodation at the earliest possible so that
           organizers can reserve the accommodation based on availability.
         </p>
 
-        <p className="text-lg text-gray-700 mb-4 md:mb-0  md:text-xl md:leading-8">
+        <p className="text-lg text-gray-700 mb-4 md:mb-0  md:text-2xl md:leading-8">
           There are limited rooms available in the University Guest House. Once
           the Guest House is full, participants will be accommodated in hotels
           nearby the campus.
         </p>
 
-        <p className="text-lg text-gray-700 mb-6 md:mb-0 md:text-xl md:leading-8">
+        <p className="text-lg text-gray-700 mb-6 md:mb-0 md:text-2xl md:leading-8">
           Please bring a valid ID for verification at the reception.
         </p>
       </div>
@@ -347,15 +347,15 @@ const HeroSection = () => {
           <table className="min-w-full table-auto border-collapse bg-blue-50">
             <thead>
               <tr>
-                <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700 md:text-xl md:leading-8">
+                <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700 md:text-2xl md:leading-8 ">
                   Time
                 </th>
-                <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700 md:text-xl md:leading-8">
+                <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700 md:text-2xl md:leading-8">
                   Event
                 </th>
               </tr>
             </thead>
-            <tbody className="text-gray-700 md:text-xl md:leading-8">
+            <tbody className="text-gray-700 md:text-2xl md:leading-8">
               <tr>
                 <td className="border px-4 py-2">09:30 am – 10:00 am</td>
                 <td className="border px-4 py-2">Inauguration</td>
@@ -400,7 +400,7 @@ const HeroSection = () => {
           <h3 className="text-2xl font-bold text-black mb-4">
             Day 2: 08 February 2025, Saturday
           </h3>
-          <table className="min-w-full table-auto border-collapse bg-green-50 md:text-xl md:leading-8">
+          <table className="min-w-full table-auto border-collapse bg-green-50 md:text-2xl md:leading-8">
             <thead>
               <tr>
                 <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700">
@@ -459,10 +459,10 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row justify-between space-x-4 space-y-4 sm:space-y-0">
           {/* Chief Patron Container */}
           <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-1/3">
-            <h4 className="text-xl font-semibold text-blue-700 md:text-xl md:leading-8">
+            <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
               CHIEF-PATRON:
             </h4>
-            <p className="text-lg text-gray-700 text-center md:text-xl md:leading-8">
+            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
               Prof. Alok Kumar Rai, Hon’ble Vice-Chancellor, University of
               Lucknow
             </p>
@@ -470,18 +470,18 @@ const HeroSection = () => {
 
           {/* Chief Guest Container */}
           <div className="flex flex-col items-center p-4 bg-green-50 rounded-lg w-full sm:w-1/3">
-            <h4 className="text-xl font-semibold text-green-700 md:text-xl md:leading-8">
+            <h4 className="text-xl font-semibold text-green-700 md:text-2xl md:leading-8">
               CHIEF GUEST:
             </h4>
-            <p className="text-lg text-gray-700 text-center md:text-xl md:leading-8">
+            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
               Prof. Bhartendu K Singh, Director, IIITDM, Jabalpur
             </p>
           </div>
 
           {/* Patron Container */}
           <div className="flex flex-col items-center p-4 bg-yellow-50 rounded-lg w-full sm:w-1/3">
-            <h4 className="text-xl font-semibold text-yellow-700 md:text-xl md:leading-8">PATRON:</h4>
-            <p className="text-lg text-gray-700 text-center md:text-xl md:leading-8">
+            <h4 className="text-xl font-semibold text-yellow-700 md:text-2xl md:leading-8">PATRON:</h4>
+            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
               Prof. A. K. Singh, Dean, Faculty of Engineering and Technology,
               University of Lucknow
             </p>
@@ -495,13 +495,13 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row justify-around space-x-4 space-y-4 sm:space-y-0">
           {/* Convener Container */}
           <div className="bg-yellow-50 rounded-lg shadow-lg p-6 w-full sm:w-1/3 flex flex-col items-center">
-            <h4 className="text-xl font-semibold text-blue-700 mb-2 md:text-xl md:leading-8">
+            <h4 className="text-xl font-semibold text-blue-700 mb-2 md:text-2xl md:leading-8">
               Convener
             </h4>
-            <p className="text-lg text-gray-700 text-center md:text-xl md:leading-8">
+            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
               Dr. Deepak Gupta
             </p>
-            <p className="text-lg text-gray-700 text-center md:text-xl md:leading-8">
+            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
               Department of Applied Science and Humanities, University of
               Lucknow
             </p>
@@ -509,14 +509,14 @@ const HeroSection = () => {
 
           {/* Co-Conveners Container */}
           <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/3 flex flex-col items-center">
-            <h4 className="text-xl font-semibold text-green-700 mb-2 md:text-xl md:leading-8">
+            <h4 className="text-xl font-semibold text-green-700 mb-2 md:text-2xl md:leading-8">
               Co-Conveners
             </h4>
-            <p className="text-lg text-gray-700 text-center mb-4 md:text-xl md:leading-8">
+            <p className="text-lg text-gray-700 text-center mb-4 md:text-2xl md:leading-8">
               Dr. Anupam Kumar Tripathi, Department of Applied Science and
               Humanities, University of Lucknow
             </p>
-            <p className="text-lg text-gray-700 text-center md:text-xl md:leading-8">
+            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
               Dr. Ranvijay Pratap Singh, Department of Applied Science and
               Humanities, University of Lucknow
             </p>

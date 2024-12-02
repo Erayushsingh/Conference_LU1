@@ -17,7 +17,7 @@ const LoginLink = () => {
           <div className="w-1/2 bg-gray-200 flex items-center justify-center">
             <div className="text-center animate__animated animate__fadeInLeft">
               <h1 className="text-3xl font-bold mb-4">Welcome Back!</h1>
-              <p className="text-lg">Log in to your account and enjoy the full experience. Let's get started!</p>
+              <p className="text-lg">Verify your cridentials for abstract submission.</p>
             </div>
           </div>
 

@@ -6,7 +6,6 @@ import ConferencePage from './Pages/ConferencePage/index.jsx';
 import PublicationPage from './Pages/PublicationPage/index.jsx';
 import AwardPage from './Pages/AwardPage/index.jsx';
 import AboutUsPage from './Pages/AboutUsPage/index.jsx';
-import ResearchPage from './Pages/ResearchPage/index.jsx';
 import AbstractSubmission from './Pages/AbstractSubmission/index.jsx';
 import ProtectedRoute from './Components/ProtectedRoute/index.jsx';
 
@@ -29,7 +28,6 @@ const  App=()=> {
         <Route path="/" element={<Header />} />
         <Route path="/conference" element={<ConferencePage />} />
         <Route path="/publications" element={<PublicationPage />} />
-        <Route path="/research" element={<ResearchPage />} />
         <Route path="/awards" element={<AwardPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/allreadySubmitted" element={<AlreadySubmitted />} />

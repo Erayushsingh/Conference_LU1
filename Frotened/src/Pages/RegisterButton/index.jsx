@@ -84,20 +84,20 @@ const RegisterButton = ({ className }) => {
   }, []);
 
   return (
-    <div className='h-screen flex items-center bg-gray-200 h-full w-full'>
+    <div className='flex items-center bg-gray-200 h-full w-full'>
       
     <div className="p-2 z-50 transition-opacity duration-500 ease-in-out opacity-100 w-full">
-        <div className="w-1/2 p-10 fade-in animate__animated animate__fadeInRight w-full opacity-100">
+        <div className=" p-10 fade-in animate__animated animate__fadeInRight w-full opacity-100">
           <h2 className="text-xl font-bold mb-4 text-center md:text-4xl text-red-900">Register</h2>
-          <form onSubmit={handleSubmit} className='grid grid-cols-2 gap-x-8 gap-y-8'>
+          <form onSubmit={handleSubmit} className='grid md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8'>
             <div className="mb-4">
-              <label className="block text-sm font-semibold md:text-xl">Name</label>
+              <label className="text-sm font-semibold md:text-xl">Name</label>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full p-3 border-2 border-gray-300 rounded-md"
+                className="w-full p-3 border-2 border-gray-300 rounded-md "
                 placeholder="Enter your name"
               />
             </div>
