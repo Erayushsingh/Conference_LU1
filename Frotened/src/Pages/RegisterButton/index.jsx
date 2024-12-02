@@ -458,7 +458,7 @@ const RegisterButton = ({ className }) => {
       {showModal && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <FaSpinner className="animate-spin text-blue-600 text-3xl" />
+            <FaSpinner className="flex flex-col items-center justify-center animate-spin text-blue-600 text-3xl" />
             <p className="text-lg mt-4">Submitting your registration...</p>
           </div>
         </div>
