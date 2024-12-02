@@ -2,14 +2,17 @@ import React from "react";
 import gatePhoto from "/src/assets/Lu-main.jpg";
 import gatePhoto1 from "/src/assets/Lu-gate.jpg";
 import LuPhoto01 from "/src/assets/LuPhoto01.jpg";
-import LuPhoto02 from "/src/assets/LuPhoto02.jpg";
+import LuPhoto06 from "/src/assets/LuPhoto06.jpg";
+import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
+import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
+import LuPhoto07 from "/src/assets/LuPhoto07.jpg";
 import LuPhoto03 from "/src/assets/LuPhoto03.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const HeroSection = () => {
   const handleRegisterClick = () => {
-    window.open('/auth', '_blank');
+    window.open("/auth", "_blank");
   };
 
   return (
@@ -38,42 +41,65 @@ const HeroSection = () => {
           data-bs-interval="2000"
         >
           <div className="carousel-inner">
-          <div className="carousel-item">
+          <div className="carousel-item active">
+              <img
+                src={LuPhoto05}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+          <div className="carousel-item active">
               <img
                 src={gatePhoto}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
                 alt="Gate 2"
               />
             </div>
+          <div className="carousel-item active">
+              <img
+                src={LuPhoto04}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
             <div className="carousel-item active">
               <img
-                src={LuPhoto02}
+                src={LuPhoto07}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
-                alt="Gate"
+                alt="Gate 2"
+              />
+            </div>
+          <div className="carousel-item active">
+              <img
+                src={LuPhoto05}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            
+            <div className="carousel-item active">
+              <img
+                src={LuPhoto01}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            <div className="carousel-item active">
+              <img
+                src={LuPhoto06}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
               />
             </div>
             <div className="carousel-item active">
               <img
                 src={gatePhoto1}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
-                alt="Gate"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src={LuPhoto03}
-                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
-                alt="Lucknow University"
+                alt="Gate 2"
               />
             </div>
             
-            <div className="carousel-item active">
-                <img
-                  src={LuPhoto01}
-                  className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
-                  alt="Gate"
-                />
-            </div>
+            
           </div>
 
           <button
@@ -110,7 +136,9 @@ const HeroSection = () => {
           <p className="md:text-3xl text-[15px] font-extrabold text-white text-center">
             Department of Applied Science & Humanities
           </p>
-          <p className="text-white md:text-4xl text-xl font-bold ">University of Lucknow</p>
+          <p className="text-white md:text-4xl text-xl font-bold ">
+            University of Lucknow
+          </p>
         </div>
       </div>
 
@@ -228,67 +256,70 @@ const HeroSection = () => {
           </h3>
           <ul className="space-y-2">
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Ashish Pandey, National Research Council, Canada
+              Dr. Ashish Pandey, National Research Council, Canada
             </li>
             <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Gopal Krishna Dixit, Grenoble, France 
+              Dr. Gopal Krishna Dixit, Grenoble, France
             </li>
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Binod Mishra, IIT-Roorkee 
+              Prof. Binod Mishra, IIT-Roorkee
             </li>
             <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
               Prof. B. K. Mohanty, IIM-Lucknow
             </li>
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Rajinder Singh Chandel, Punjabi University, Patiala 
+              Prof. Rajinder Singh Chandel, Punjabi University, Patiala
             </li>
-            
+
             <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Rajeev Sijaria, Head- ABVSM&E, JNU 
+              Prof. Rajeev Sijaria, Head- ABVSM&E, JNU
             </li>
-            
+
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. R. P. Singh, University of Lucknow 
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar 
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Sikha Varma, Institute of Physics, Bhubaneshwar 
+              Prof. R. P. Singh, University of Lucknow
             </li>
             <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Praveen Sahu, Dean - School of Commerce and Management, Central University of Rajasthan
+              Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar
             </li>
-            
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Prof. Pankaj Srivastava, MNNIT, Prayagraj 
+              Prof. Sikha Varma, Institute of Physics, Bhubaneshwar
             </li>
-            
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Praveen Sahu, Dean - School of Commerce and Management,
+              Central University of Rajasthan
+            </li>
+
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Pankaj Srivastava, MNNIT, Prayagraj
+            </li>
           </ul>
           <ul className="space-y-2">
-          <h3 className="md:text-4xl text-3xl mt-10 font-extrabold text-center text-gray-800 mb-8">
+            <h3 className="md:text-4xl text-3xl mt-10 font-extrabold text-center text-gray-800 mb-8">
               Invited Talks
             </h3>
             <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Neha Arora, Department of English, Central University of Rajasthan, Ajmer
+              Dr. Neha Arora, Department of English, Central University of
+              Rajasthan, Ajmer
             </li>
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow 
+              Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow
             </li>
             <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-            Dr. Saurabh Yadav, U. P. State Institute of Forensic Science, Lucknow 
+              Dr. Saurabh Yadav, U. P. State Institute of Forensic Science,
+              Lucknow
             </li>
             <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-            Dr. Rituraj Mishra, National P. G. College, Lucknow  
+              Dr. Rituraj Mishra, National P. G. College, Lucknow
             </li>
             <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-            Ms. Supriya Yadav, GM-HR, Magnet Technology, Noida   
+              Ms. Supriya Yadav, GM-HR, Magnet Technology, Noida
             </li>
             <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-            Dr. Sapna Sharma, Assistant Professor, U. P. State Institute of Forensic Science, Lucknow  
+              Dr. Sapna Sharma, U. P. State Institute of Forensic Science,
+              Lucknow
             </li>
             <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-            Dr. Vijay Kumar, Associate Professor, Department of English, Galgotia University   
+              Dr. Vijay Kumar, Department of English, Galgotia University
             </li>
           </ul>
         </div>
@@ -302,7 +333,11 @@ const HeroSection = () => {
             The conference will be held at:
           </p>
 
-          <a href="https://maps.app.goo.gl/8coD5FYR6acGvP8d7" target="blank" className="text-xl font-semibold flex justify-center text-red-900 mb-4 text-center animate-zoom-out-in md:text-xl md:leading-8">
+          <a
+            href="https://maps.app.goo.gl/8coD5FYR6acGvP8d7"
+            target="blank"
+            className="text-xl font-semibold flex justify-center text-red-900 mb-4 text-center animate-zoom-out-in md:text-xl md:leading-8"
+          >
             Faculty of Engineering and Technology,
             <br />
             University of Lucknow,
@@ -312,10 +347,7 @@ const HeroSection = () => {
             Lucknow-226031, Uttar Pradesh.
           </a>
         </div>
-
-
       </div>
-      
 
       <div className="bg-white rounded-lg shadow-lg p-6 my-8 w-full sm:w-4/5 mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-center md:mb-0">
@@ -380,15 +412,17 @@ const HeroSection = () => {
               </tr>
               <tr>
                 <td className="border px-4 py-2">5:30 pm – 6:15 pm </td>
-                <td className="border px-4 py-2">Novel Reading and Discussion </td>
+                <td className="border px-4 py-2">
+                  Novel Reading and Discussion{" "}
+                </td>
               </tr>
-              
+
               <tr>
                 <td className="border px-4 py-2">6:30 pm – 7:45 pm </td>
                 <td className="border px-4 py-2">Cultural Program</td>
               </tr>
               <tr>
-                <td className="border px-4 py-2">7:50- pm – 8:50 pm  </td>
+                <td className="border px-4 py-2">7:50- pm – 8:50 pm </td>
                 <td className="border px-4 py-2">Dinner </td>
               </tr>
             </tbody>
@@ -402,10 +436,10 @@ const HeroSection = () => {
           <table className="min-w-full table-auto border-collapse bg-green-50 md:text-2xl md:leading-8">
             <thead>
               <tr>
-                <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700">
+                <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700 md:text-2xl">
                   Time
                 </th>
-                <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700">
+                <th className="border-b px-4 py-2 text-left text-lg font-semibold text-gray-700 md:text-2xl">
                   Event
                 </th>
               </tr>
@@ -495,7 +529,9 @@ const HeroSection = () => {
 
           {/* Patron Container */}
           <div className="flex flex-col items-center p-4 bg-yellow-50 rounded-lg w-full sm:w-1/3">
-            <h4 className="text-xl font-semibold text-yellow-700 md:text-2xl md:leading-8">PATRON:</h4>
+            <h4 className="text-xl font-semibold text-yellow-700 md:text-2xl md:leading-8">
+              PATRON:
+            </h4>
             <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
               Prof. A. K. Singh, Dean, Faculty of Engineering and Technology,
               University of Lucknow
@@ -528,4 +564,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
