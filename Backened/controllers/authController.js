@@ -53,8 +53,6 @@ export const signInUser = async (req, res) => {
       errors: parsedBody.error.errors,
     });
   }
-
-  try {
     const user = await prisma.user.findUnique({
       where: { email: parsedBody.data.email },
     });
@@ -73,6 +71,8 @@ export const signInUser = async (req, res) => {
       });
     }
 
+
+  try {
     const accessToken = jwt.sign(
       {
         id: user.id,

@@ -10,7 +10,7 @@ const PORT = 3001;
 app.use(express.json());
 app.use(
 	cors({
-		origin: '*',
+		origin:['https://www.raashee.in', 'https://raashee.in'],
 		methods: ['GET', 'POST', 'PUT', 'DELETE'],
 	})
 );
