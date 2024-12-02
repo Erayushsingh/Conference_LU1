@@ -255,7 +255,7 @@ const AbstractSubmission = () => {
                   </button>
                   <button
                     type="submit"
-                    className="bg-blue-600 font-bold text-white py-2 rounded-md fade-in animate__animated animate__zoomIn px-4"
+                    className="bg-blue-600 font-bold text-white py-2 rounded-md px-4"
                   >
                     {loading ? 'Please wait...' : 'Submit'}
                   </button>
