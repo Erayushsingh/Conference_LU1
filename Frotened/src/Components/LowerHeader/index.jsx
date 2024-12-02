@@ -55,8 +55,7 @@ const LowerHeader = () => {
 
           <a href="/" className="py-2 hover:text-blue-700">Home</a>
           <a href="/conference" className="py-2 hover:text-blue-700">Conference</a>
-          <a href="/publications" className="py-2 hover:text-blue-700">Submission</a>
-          <a href="/research" className="py-2 hover:text-blue-700">Research</a>
+          <a href="/publications" className="py-2 hover:text-blue-700">Tracks</a>
           <a href="/awards" className="py-2 hover:text-blue-700">Awards</a>
           <a href="/about-us" className="py-2 hover:text-blue-700">About Us</a>
 
