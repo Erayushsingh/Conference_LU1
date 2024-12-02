@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
+import { FaSpinner } from 'react-icons/fa';
 import { useNavigate, useLocation } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 
 const AbstractSubmission = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const createAbstractFormModel = () => ({
     title: '',
@@ -66,9 +70,12 @@ const AbstractSubmission = () => {
         return;
       }
 
+      setLoading(true);
+      setShowModal(true);
+
       try {
         // POST request to submit the abstract with token for authorization
-        const response = await fetch(`${process.env.API_URL}/api/abstracts/submit`, {
+        const response = await fetch(`https://www.api.raashee.in/api/abstracts/submit`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -79,6 +86,9 @@ const AbstractSubmission = () => {
 
         const data = await response.json();
 
+        setLoading(false);
+        setShowModal(false);
+
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -86,14 +96,17 @@ const AbstractSubmission = () => {
         // Display success toast
         toast.success(data.message || 'Abstract submitted successfully!', {
           onClose: () => {
-            setIsToastOpen(false); // Mark toast as closed
+            setIsToastOpen(false);
             navigate('/');
           },
         });
 
         setIsToastOpen(true);
       } catch (error) {
+        setLoading(false);
+        setShowModal(false);
         toast.error('Error submitting abstract. Please try again.');
+
       }
     }
   };
@@ -129,13 +142,14 @@ const AbstractSubmission = () => {
               <form onSubmit={handleSubmit}>
                 {/* Paper Title */}
                 <div className="mb-4">
-                  <label htmlFor="title" className="block text-lg font-medium">Paper Title</label>
+                  <label htmlFor="title" className="block text-lg font-medium">Paper Title <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="title"
                     name="title"
                     value={formData.title}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.title ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.title && <span className="text-red-500 text-sm">Title is required</span>}
@@ -143,13 +157,14 @@ const AbstractSubmission = () => {
 
                 {/* Authors */}
                 <div className="mb-4">
-                  <label htmlFor="authors" className="block text-lg font-medium">Authors</label>
+                  <label htmlFor="authors" className="block text-lg font-medium">Authors <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="authors"
                     name="authors"
                     value={formData.authors}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.authors ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.authors && <span className="text-red-500 text-sm">Authors are required</span>}
@@ -157,12 +172,13 @@ const AbstractSubmission = () => {
 
                 {/* Abstract */}
                 <div className="mb-4">
-                  <label htmlFor="abstract" className="block text-lg font-medium">Abstract</label>
+                  <label htmlFor="abstract" className="block text-lg font-medium">Abstract <span className="text-red-500">*</span></label>
                   <textarea
                     id="abstract"
                     name="abstract"
                     value={formData.abstract}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.abstract ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.abstract && <span className="text-red-500 text-sm">Abstract is required</span>}
@@ -170,13 +186,14 @@ const AbstractSubmission = () => {
 
                 {/* Keywords */}
                 <div className="mb-4">
-                  <label htmlFor="keywords" className="block text-lg font-medium">Keywords</label>
+                  <label htmlFor="keywords" className="block text-lg font-medium">Keywords <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="keywords"
                     name="keywords"
                     value={formData.keywords}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.keywords ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.keywords && <span className="text-red-500 text-sm">Keywords are required</span>}
@@ -199,13 +216,14 @@ const AbstractSubmission = () => {
 
                 {/* Conference Theme */}
                 <div className="mb-4">
-                  <label htmlFor="conferenceTheme" className="block text-lg font-medium">Conference Theme</label>
+                  <label htmlFor="conferenceTheme" className="block text-lg font-medium">Conference Theme <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="conferenceTheme"
                     name="conferenceTheme"
                     value={formData.conferenceTheme}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.conferenceTheme ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.conferenceTheme && <span className="text-red-500 text-sm">Conference Theme is required</span>}
@@ -227,20 +245,38 @@ const AbstractSubmission = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="mb-4 flex justify-end">
-                  <button type="button" className="bg-gray-500 text-white px-4 py-2 rounded-md" onClick={clearForm}>
+                <div className="mb-4 flex justify-end space-x-2">
+                  <button
+                    type="button"
+                    className="bg-gray-500 text-white px-4 py-2 rounded-md"
+                    onClick={clearForm}
+                  >
                     Cancel
                   </button>
-                  <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md ml-2">
-                    Submit
+                  <button
+                    type="submit"
+                    className="bg-blue-600 font-bold text-white py-2 rounded-md px-4"
+                  >
+                    {loading ? 'Please wait...' : 'Submit'}
                   </button>
                 </div>
+
               </form>
             </div>
           </div>
         </div>
       )}
       <ToastContainer />
+
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
+          <div className=" flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-lg">
+            <FaSpinner className="animate-spin text-blue-600 text-3xl" />
+            <p className="text-lg mt-4">Please wait...</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
