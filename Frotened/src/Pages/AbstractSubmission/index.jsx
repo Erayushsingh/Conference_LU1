@@ -7,6 +7,9 @@ const AbstractSubmission = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
   const createAbstractFormModel = () => ({
     title: '',
     authors: '',
@@ -66,6 +69,9 @@ const AbstractSubmission = () => {
         return;
       }
 
+      setLoading(true);
+      setShowModal(true);
+
       try {
         // POST request to submit the abstract with token for authorization
         const response = await fetch(`https://www.api.raashee.in/api/abstracts/submit`, {
@@ -79,6 +85,9 @@ const AbstractSubmission = () => {
 
         const data = await response.json();
 
+        setLoading(false);
+        setShowModal(false);
+
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -86,14 +95,17 @@ const AbstractSubmission = () => {
         // Display success toast
         toast.success(data.message || 'Abstract submitted successfully!', {
           onClose: () => {
-            setIsToastOpen(false); // Mark toast as closed
+            setIsToastOpen(false); 
             navigate('/');
           },
         });
 
         setIsToastOpen(true);
       } catch (error) {
+        setLoading(false);
+        setShowModal(false);
         toast.error('Error submitting abstract. Please try again.');
+
       }
     }
   };
@@ -231,8 +243,15 @@ const AbstractSubmission = () => {
                   <button type="button" className="bg-gray-500 text-white px-4 py-2 rounded-md" onClick={clearForm}>
                     Cancel
                   </button>
-                  <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md ml-2">
-                    Submit
+                  <button
+                    type="submit"
+                    className="bg-blue-600 font-bold text-white py-3 rounded-md fade-in animate__animated animate__zoomIn col-span-2 mx-auto w-[150px]"
+                  >
+                    {loading ? (
+                      'Please wait...'
+                    ) : (
+                      'Submit'
+                    )}
                   </button>
                 </div>
               </form>
@@ -241,6 +260,17 @@ const AbstractSubmission = () => {
         </div>
       )}
       <ToastContainer />
+
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
+          <div className=" flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-lg">
+            <FaSpinner className="animate-spin text-blue-600 text-3xl" />
+            <p className="text-lg mt-4">Please wait...</p>
+          </div>
+        </div>
+      )}
+  
     </div>
   );
 };
