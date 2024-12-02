@@ -96,7 +96,7 @@ const AbstractSubmission = () => {
         // Display success toast
         toast.success(data.message || 'Abstract submitted successfully!', {
           onClose: () => {
-            setIsToastOpen(false); 
+            setIsToastOpen(false);
             navigate('/');
           },
         });
@@ -245,21 +245,22 @@ const AbstractSubmission = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="mb-4 flex flex-end">
-                  <button type="button" className="bg-gray-500 text-white px-4 py-2 rounded-md" onClick={clearForm}>
+                <div className="mb-4 flex justify-end space-x-2">
+                  <button
+                    type="button"
+                    className="bg-gray-500 text-white px-4 py-2 rounded-md"
+                    onClick={clearForm}
+                  >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="bg-blue-600 font-bold text-white py-2 rounded-md fade-in animate__animated animate__zoomIn  mx-auto px-4"
+                    className="bg-blue-600 font-bold text-white py-2 rounded-md fade-in animate__animated animate__zoomIn px-4"
                   >
-                    {loading ? (
-                      'Please wait...'
-                    ) : (
-                      'Submit'
-                    )}
+                    {loading ? 'Please wait...' : 'Submit'}
                   </button>
                 </div>
+
               </form>
             </div>
           </div>
