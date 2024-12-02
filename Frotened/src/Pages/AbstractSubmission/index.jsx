@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
+import { FaSpinner } from 'react-icons/fa';
 import { useNavigate, useLocation } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -141,13 +142,14 @@ const AbstractSubmission = () => {
               <form onSubmit={handleSubmit}>
                 {/* Paper Title */}
                 <div className="mb-4">
-                  <label htmlFor="title" className="block text-lg font-medium">Paper Title</label>
+                  <label htmlFor="title" className="block text-lg font-medium">Paper Title <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="title"
                     name="title"
                     value={formData.title}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.title ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.title && <span className="text-red-500 text-sm">Title is required</span>}
@@ -155,13 +157,14 @@ const AbstractSubmission = () => {
 
                 {/* Authors */}
                 <div className="mb-4">
-                  <label htmlFor="authors" className="block text-lg font-medium">Authors</label>
+                  <label htmlFor="authors" className="block text-lg font-medium">Authors <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="authors"
                     name="authors"
                     value={formData.authors}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.authors ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.authors && <span className="text-red-500 text-sm">Authors are required</span>}
@@ -169,12 +172,13 @@ const AbstractSubmission = () => {
 
                 {/* Abstract */}
                 <div className="mb-4">
-                  <label htmlFor="abstract" className="block text-lg font-medium">Abstract</label>
+                  <label htmlFor="abstract" className="block text-lg font-medium">Abstract <span className="text-red-500">*</span></label>
                   <textarea
                     id="abstract"
                     name="abstract"
                     value={formData.abstract}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.abstract ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.abstract && <span className="text-red-500 text-sm">Abstract is required</span>}
@@ -182,13 +186,14 @@ const AbstractSubmission = () => {
 
                 {/* Keywords */}
                 <div className="mb-4">
-                  <label htmlFor="keywords" className="block text-lg font-medium">Keywords</label>
+                  <label htmlFor="keywords" className="block text-lg font-medium">Keywords <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="keywords"
                     name="keywords"
                     value={formData.keywords}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.keywords ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.keywords && <span className="text-red-500 text-sm">Keywords are required</span>}
@@ -211,13 +216,14 @@ const AbstractSubmission = () => {
 
                 {/* Conference Theme */}
                 <div className="mb-4">
-                  <label htmlFor="conferenceTheme" className="block text-lg font-medium">Conference Theme</label>
+                  <label htmlFor="conferenceTheme" className="block text-lg font-medium">Conference Theme <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="conferenceTheme"
                     name="conferenceTheme"
                     value={formData.conferenceTheme}
                     onChange={handleChange}
+                    required
                     className={`w-full p-2 border-2 rounded-md ${errors.conferenceTheme ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.conferenceTheme && <span className="text-red-500 text-sm">Conference Theme is required</span>}
@@ -270,7 +276,6 @@ const AbstractSubmission = () => {
           </div>
         </div>
       )}
-  
     </div>
   );
 };
