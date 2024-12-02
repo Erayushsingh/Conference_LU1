@@ -121,7 +121,7 @@ const HeroSection = () => {
             <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
               Introduction
             </h2>
-            <p className="text-lg text-gray-700 mb-6 md:text-3xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6 md:text-2xl md:leading-8">
               Basic sciences like Mathematics, Physics, and Chemistry serve as
               the foundation for any form of structure—whether it's a design
               structure, a physical structure, a data structure, or even a logic
@@ -133,7 +133,7 @@ const HeroSection = () => {
               phenomena but also evolve with time, paving the way for
               engineering to thrive.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-3xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
               Just as the basic sciences have evolved, so too has human society.
               The development of human social behavior, linguistic capabilities,
               imagination, psychological traits, and sociological understanding
@@ -143,14 +143,14 @@ const HeroSection = () => {
               deeper into nature's mysteries to discover solutions. This
               exploration becomes the bedrock for the evolution of engineering.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-3xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
               Thus, the combination of basic sciences and human traits is
               collectively known as{" "}
               <strong>Applied Sciences and Humanities in Engineering</strong>.
               These disciplines work hand-in-hand, addressing challenges and
               facilitating the continuous growth of modern engineering.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-3xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
               The central question that drives this discourse is whether recent
               trends in applied sciences and humanities are sufficiently
               prepared to support and advance modern engineering as they have
@@ -159,7 +159,7 @@ const HeroSection = () => {
               development. On the other hand, if the answer is no, the
               course-correction required must be examined.
             </p>
-            <p className="text-lg text-gray-700 md:text-3xl md:leading-8 ">
+            <p className="text-lg text-gray-700 md:text-2xl md:leading-8 ">
               Louis D. Brandeis once said, “There are no shortcuts in
               evolution.” At the Department of Applied Sciences and Humanities,
               we believe that students must be ready to ask tough questions and
@@ -180,7 +180,7 @@ const HeroSection = () => {
             <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
               Our Objective
             </h2>
-            <p className="text-lg text-gray-700 mb-6  md:text-3xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
               The conference is an attempt at promoting basic sciences and
               humanistic studies through scholarly research. It aims at
               providing a platform to hold scholastic deliberations and
@@ -191,28 +191,28 @@ const HeroSection = () => {
               also aims at:
             </p>
 
-            <ul className="list-inside space-y-4 text-lg text-gray-800  md:text-3xl md:leading-8">
+            <ul className="list-inside space-y-4 text-lg text-gray-800  md:text-2xl md:leading-8">
               <li className="flex items-center">
-                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full  md:text-3xl md:leading-8"></span>
+                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full  md:leading-8"></span>
                 Encouraging scholarly discussions on the ongoing researches in
                 the field of applied sciences and humanities.
               </li>
               <li className="flex items-center">
-                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full  md:text-3xl md:leading-8"></span>
+                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full  md:leading-8"></span>
                 Contributing towards the sustainable development of the nation.
               </li>
               <li className="flex items-center">
-                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full  md:text-3xl md:leading-8"></span>
+                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full md:leading-8"></span>
                 Providing a comprehensive overview of the current state of
                 research and exploring new avenues for future growth.
               </li>
               <li className="flex items-center">
-                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full  md:text-3xl md:leading-8"></span>
+                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full   md:leading-8"></span>
                 Establishing coherence between core subjects and allowing the
                 fraternization of different ideas.
               </li>
               <li className="flex items-center">
-                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full  md:text-3xl md:leading-8"></span>
+                <span className="w-3 h-3 mr-4 bg-indigo-500 rounded-full  md:leading-8"></span>
                 Publishing a high-quality special issue research periodical with
                 international reach.
               </li>
@@ -227,64 +227,64 @@ const HeroSection = () => {
             Keynote and Invited Talks
           </h3>
           <ul className="list-inside space-y-2 text-lg sm:text-xl w-full text-gray-700 text-center">
-            <li className="font-semibold text-red-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
               Prof. V. P. Singh, Department of EML, University of Lucknow
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
               Prof. B. K. Mohanty, IIM-Lucknow 
             </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
               Prof. Binod Mishra, IIT-Roorkee 
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
             Prof. Rajinder Singh Chandel, Punjabi University, Patiala 
             </li>
             
-            <li className="font-semibold text-red-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
             Prof. Rajeev Sijaria, Head- ABVSM&E, JNU 
             </li>
             
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
             Prof. R. P. Singh, University of Lucknow 
             </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
             Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar 
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
             Prof. Sikha Varma, Institute of Physics, Bhubaneshwar 
             </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
             Prof. Praveen Sahu, Head-Department of Commerce, Central University of Rajasthan, Ajmer
             </li>
             
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
             Prof. Pankaj Srivastava, MNNIT, Prayagraj 
             </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
             Dr. Neha Arora, Department of English, Central University of Rajasthan, Ajmer
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
             Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow 
             </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
             Dr. Saurabh Yadav, U. P. State Institute of Forensic Science, Lucknow 
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
             Dr. Gopal Krishna Dixit, Grenoble, France 
             </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
             Dr. Ashish Pandey, National Research Council, Canada 
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3 md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
             Dr. Rituraj Mishra, National P. G. College, Lucknow  
             </li>
-            <li className="font-semibold text-red-600 md:mb-3 md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
             Ms. Supriya Yadav, GM-HR, Magnet Technology, Noida   
             </li>
-            <li className="font-semibold text-indigo-600 md:mb-3 md:text-3xl md:leading-8">
+            <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
             Dr. Sapna Sharma, Assistant Professor, U. P. State Institute of Forensic Science, Lucknow  
             </li>
-            <li className="font-semibold text-red-600 md:mb-3 md:text-3xl md:leading-8">
+            <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
             Dr. Vijay Kumar, Associate Professor, Department of English, Galgotia University   
             </li>
           </ul>
