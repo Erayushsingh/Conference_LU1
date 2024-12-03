@@ -24,6 +24,8 @@ model User {
   address      String
   password     String
   abstractForm AbstractForm[]
+
+  screenshot String 
   role        Role  @default(user)
 }
 

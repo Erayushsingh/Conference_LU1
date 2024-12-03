@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import { FaSpinner, FaEye, FaEyeSlash } from 'react-icons/fa'; 
+import { FaSpinner, FaEye, FaEyeSlash } from 'react-icons/fa';
 import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = ({ className }) => {
@@ -15,11 +15,11 @@ const LoginForm = ({ className }) => {
     email: false,
     password: false,
   });
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(true);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [popupMessage, setPopupMessage] = useState(""); 
-  const [isPasswordVisible, setIsPasswordVisible] = useState(false);  
+  const [popupMessage, setPopupMessage] = useState("");
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const navigate = useNavigate();
 
@@ -41,9 +41,9 @@ const LoginForm = ({ className }) => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      setLoading(true); 
-      setPopupMessage("Please wait..."); 
-      setIsPopupVisible(true); 
+      setLoading(true);
+      setPopupMessage("Please wait...");
+      setIsPopupVisible(true);
       try {
         const response = await fetch(`https://www.api.raashee.in/api/auth/signin`, {
           method: 'POST',
@@ -62,49 +62,52 @@ const LoginForm = ({ className }) => {
         console.log(data.id);
         if (data.success) {
           localStorage.setItem('token', data.accessToken);
+          localStorage.setItem('role', data.role);
           toast.success(data.message || 'Login successful!');
           if (data.role === 'admin') {
-            navigate('/admin');
+            return navigate('/admin');
           }
-
-          try {
-            const submissionsResponse = await fetch(
-              `https://www.api.raashee.in/api/abstracts/submissions/${userId}`,
-              {
-                method: "GET",
-                headers: {
-                  'Authorization': `Bearer ${data.accessToken}`,
-                  'Content-Type': 'application/json',
-                },
+          else {
+            try {
+              const submissionsResponse = await fetch(
+                `https://www.api.raashee.in/api/abstracts/submissions/${userId}`,
+                {
+                  method: "GET",
+                  headers: {
+                    'Authorization': `Bearer ${data.accessToken}`,
+                    'Content-Type': 'application/json',
+                  },
+                }
+              );
+              const submissionsData = await submissionsResponse.json();
+              if (submissionsData.length > 0) {
+                navigate('/allreadySubmitted');
+              } else {
+                navigate('/abstract-submission');
               }
-            );
-            const submissionsData = await submissionsResponse.json();
-            if (submissionsData.length > 0) {
-              navigate('/allreadySubmitted');
-            } else {
-              navigate('/abstract-submission');
+
+              console.log(submissionsData);
+            } catch (err) {
+              console.error('Error:', err);
             }
-            console.log(submissionsData);
-          } catch (err) {
-            console.error('Error:', err);
           }
 
-          setIsModalOpen(false); 
+          setIsModalOpen(false);
           setPopupMessage("Login successful! Redirecting...");
           setTimeout(() => {
             setIsPopupVisible(false);
-          }, 3000); 
+          }, 3000);
         } else {
           toast.error(data.message || 'Login failed. Please try again.');
         }
       } catch (error) {
         toast.error('Incorrect password or email.');
         console.error('Error during login:', error);
-        setLoading(false); 
-        setPopupMessage("Please try again..."); 
-        setIsPopupVisible(false); 
+        setLoading(false);
+        setPopupMessage("Please try again...");
+        setIsPopupVisible(false);
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     }
   };
@@ -120,7 +123,7 @@ const LoginForm = ({ className }) => {
   };
 
   const togglePasswordVisibility = () => {
-    setIsPasswordVisible(!isPasswordVisible); 
+    setIsPasswordVisible(!isPasswordVisible);
   };
 
   return (
@@ -150,7 +153,7 @@ const LoginForm = ({ className }) => {
                 <label htmlFor="password" className="block text-lg font-medium">Password</label>
                 <div className="relative">
                   <input
-                    type={isPasswordVisible ? "text" : "password"} 
+                    type={isPasswordVisible ? "text" : "password"}
                     id="password"
                     name="password"
                     value={formData.password}
@@ -176,7 +179,7 @@ const LoginForm = ({ className }) => {
                 <button
                   type="submit"
                   className="w-full py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
-                  disabled={loading} 
+                  disabled={loading}
                 >
                   {loading ? (
                     ''

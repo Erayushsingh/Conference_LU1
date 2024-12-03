@@ -25,6 +25,7 @@ export const registerUser = async (req, res) => {
     }
 
     const hashedPassword = await bcrypt.hash(parsedBody.data.password, 10);
+    console.log(parsedBody.data);
 
     const newUser = await prisma.user.create({
       data: {
@@ -35,10 +36,12 @@ export const registerUser = async (req, res) => {
         place: parsedBody.data.place,
         address: parsedBody.data.address,
         password: hashedPassword,
+        screenshot: parsedBody.data.screenshot,
       },
     });
     // console.log(newUser.Id);
-    res.status(201).json({ message: "Registration successful", newUser });
+
+    res.status(201).json({ message: "Registration successful", newUser, "screenshot": newUser.screenshot });
   } catch (err) {
     // console.log(err);
     res.status(500).json({ message: "Server error", err });
@@ -53,23 +56,23 @@ export const signInUser = async (req, res) => {
       errors: parsedBody.error.errors,
     });
   }
-    const user = await prisma.user.findUnique({
-      where: { email: parsedBody.data.email },
+  const user = await prisma.user.findUnique({
+    where: { email: parsedBody.data.email },
+  });
+
+  if (!user) {
+    return res.status(401).json({
+      message: 'User not found',
     });
+  }
 
-    if (!user) {
-      return res.status(401).json({
-        message: 'User not found',
-      });
-    }
+  const passCompare = await bcrypt.compare(parsedBody.data.password, user.password);
 
-    const passCompare = await bcrypt.compare(parsedBody.data.password, user.password);
-
-    if (!passCompare) {
-      return res.status(401).json({
-        message: 'Invalid credentials',
-      });
-    }
+  if (!passCompare) {
+    return res.status(401).json({
+      message: 'Invalid credentials',
+    });
+  }
 
 
   try {

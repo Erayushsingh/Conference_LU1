@@ -2,196 +2,35 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 const UserTable = () => {
-  const Users = [
-    {
-      "id": "1",
-      "name": "Alice Johnson",
-      "email": "as88080207@gmail.com",
-      "phone": "+1234567890",
-      "organization": "TechCorp",
-      "place": "New York",
-      "address": "1234 Elm Street, New York, NY 10001",
-      "password": "password123"
-    },
-    {
-      "id": "2",
-      "name": "Bob Smith",
-      "email": "gullubaba37@gmail.com",
-      "phone": "+1234567891",
-      "organization": "BizInc",
-      "place": "Los Angeles",
-      "address": "5678 Oak Avenue, Los Angeles, CA 90001",
-      "password": "password123"
-    },
-    {
-      "id": "3",
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
-      "phone": "+1234567892",
-      "organization": "DesignWorks",
-      "place": "Chicago",
-      "address": "9101 Maple Road, Chicago, IL 60001",
-      "password": "password123"
-    },
-
-    {
-      "id": "4",
-      "name": "Alice Johnson",
-      "email": "as88080207@gmail.com",
-      "phone": "+1234567890",
-      "organization": "TechCorp",
-      "place": "New York",
-      "address": "1234 Elm Street, New York, NY 10001",
-      "password": "password123"
-    },
-    {
-      "id": "5",
-      "name": "Bob Smith",
-      "email": "gullubaba37@gmail.com",
-      "phone": "+1234567891",
-      "organization": "BizInc",
-      "place": "Los Angeles",
-      "address": "5678 Oak Avenue, Los Angeles, CA 90001",
-      "password": "password123"
-    },
-    {
-      "id": "6",
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
-      "phone": "+1234567892",
-      "organization": "DesignWorks",
-      "place": "Chicago",
-      "address": "9101 Maple Road, Chicago, IL 60001",
-      "password": "password123"
-    },
-
-    {
-      "id": "7",
-      "name": "Alice Johnson",
-      "email": "as88080207@gmail.com",
-      "phone": "+1234567890",
-      "organization": "TechCorp",
-      "place": "New York",
-      "address": "1234 Elm Street, New York, NY 10001",
-      "password": "password123"
-    },
-    {
-      "id": "8",
-      "name": "Bob Smith",
-      "email": "gullubaba37@gmail.com",
-      "phone": "+1234567891",
-      "organization": "BizInc",
-      "place": "Los Angeles",
-      "address": "5678 Oak Avenue, Los Angeles, CA 90001",
-      "password": "password123"
-    },
-    {
-      "id": "9",
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
-      "phone": "+1234567892",
-      "organization": "DesignWorks",
-      "place": "Chicago",
-      "address": "9101 Maple Road, Chicago, IL 60001",
-      "password": "password123"
-    },
-    {
-      "id": "10",
-      "name": "Alice Johnson",
-      "email": "as88080207@gmail.com",
-      "phone": "+1234567890",
-      "organization": "TechCorp",
-      "place": "New York",
-      "address": "1234 Elm Street, New York, NY 10001",
-      "password": "password123"
-    },
-    {
-      "id": "11",
-      "name": "Bob Smith",
-      "email": "gullubaba37@gmail.com",
-      "phone": "+1234567891",
-      "organization": "BizInc",
-      "place": "Los Angeles",
-      "address": "5678 Oak Avenue, Los Angeles, CA 90001",
-      "password": "password123"
-    },
-    {
-      "id": "12",
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
-      "phone": "+1234567892",
-      "organization": "DesignWorks",
-      "place": "Chicago",
-      "address": "9101 Maple Road, Chicago, IL 60001",
-      "password": "password123"
-    },
-    {
-      "id": "13",
-      "name": "Alice Johnson",
-      "email": "as88080207@gmail.com",
-      "phone": "+1234567890",
-      "organization": "TechCorp",
-      "place": "New York",
-      "address": "1234 Elm Street, New York, NY 10001",
-      "password": "password123"
-    },
-    {
-      "id": "14",
-      "name": "Bob Smith",
-      "email": "gullubaba37@gmail.com",
-      "phone": "+1234567891",
-      "organization": "BizInc",
-      "place": "Los Angeles",
-      "address": "5678 Oak Avenue, Los Angeles, CA 90001",
-      "password": "password123"
-    },
-    {
-      "id": "15",
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
-      "phone": "+1234567892",
-      "organization": "DesignWorks",
-      "place": "Chicago",
-      "address": "9101 Maple Road, Chicago, IL 60001",
-      "password": "password123"
-    },
-    {
-      "id": "16",
-      "name": "Alice Johnson",
-      "email": "as88080207@gmail.com",
-      "phone": "+1234567890",
-      "organization": "TechCorp",
-      "place": "New York",
-      "address": "1234 Elm Street, New York, NY 10001",
-      "password": "password123"
-    },
-    {
-      "id": "17",
-      "name": "Bob Smith",
-      "email": "gullubaba37@gmail.com",
-      "phone": "+1234567891",
-      "organization": "BizInc",
-      "place": "Los Angeles",
-      "address": "5678 Oak Avenue, Los Angeles, CA 90001",
-      "password": "password123"
-    },
-    {
-      "id": "18",
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
-      "phone": "+1234567892",
-      "organization": "DesignWorks",
-      "place": "Chicago",
-      "address": "9101 Maple Road, Chicago, IL 60001",
-      "password": "password123"
-    },
-  ];
-
-  useEffect(() => {
-    setUsers(Users);
-  }, []);
 
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  const getUsers = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch('https://www.api.raashee.in/api/admin/allUser', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+      const data = await response.json();
+      console.log(data)
+      setUsers(data);
+      console.log("users", users);
+    } catch (e) {
+      console.error('Error fetching users:', e);
+    }
+    finally {
+      setLoading(false);
+    }
+  }
   const [showModal, setShowModal] = useState(false);
   const [selectedUser, setSelectedUser] = useState(null);
   const [emailSubject, setEmailSubject] = useState('');
@@ -203,11 +42,12 @@ const UserTable = () => {
   };
 
 
+
   const handlePrintClick = () => {
     const printWindow = window.open('', '', 'height=800,width=1000');
     const contentToPrint = document.getElementById('content-to-print').outerHTML;
 
-        const printCSS = `
+    const printCSS = `
         <style>
           
           body {
@@ -265,7 +105,7 @@ const UserTable = () => {
             margin: 20px 0;
           }
         </style>
-      `;  
+      `;
 
     const printContent = `
           <html>
@@ -291,24 +131,24 @@ const UserTable = () => {
   const handleEmailSubmit = (e) => {
     e.preventDefault();
 
-    
+
     if (!emailSubject || !emailBody || !selectedUser) {
       alert('Please fill in all fields and select a user.');
       return;
     }
 
-   
+
     console.log('Selected User:', selectedUser);
 
-    const serviceId = 'service_dsje71r';  
-    const templateId = 'template_ccfyai4'; 
-    const userId = 'CzqGwtISPjvfhtcUk'; 
+    const serviceId = 'service_dsje71r';
+    const templateId = 'template_ccfyai4';
+    const userId = 'CzqGwtISPjvfhtcUk';
 
     const templateParams = {
       to_name: selectedUser.name,
-      to_email: selectedUser.email,  
-      from_name: 'Ayush Singh', 
-      from_email: 'ayushsingh74340@gmail.com', 
+      to_email: selectedUser.email,
+      from_name: 'Ayush Singh',
+      from_email: 'ayushsingh74340@gmail.com',
       subject: emailSubject,
       message: emailBody,
     };
@@ -330,6 +170,11 @@ const UserTable = () => {
   return (
     <div className="container mx-auto my-6">
       <h2 className="text-2xl font-semibold mb-4 text-blue-500">Candidates Information</h2>
+      {loading ? (
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+        </div>
+      ) : (
       <div className="overflow-x-auto">
         <table className="min-w-full table-auto border-collapse" style={{ tableLayout: 'fixed' }} id="content-to-print">
           <thead>
@@ -373,7 +218,8 @@ const UserTable = () => {
           Download
         </button>
       </div>
-
+      )}
+      
       {/* Modal for sending email */}
       {showModal && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
