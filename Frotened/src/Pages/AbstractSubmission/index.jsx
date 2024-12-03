@@ -122,15 +122,15 @@ const AbstractSubmission = () => {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-full">
       {isModalOpen && (
-        <div className="flex w-full">
+        <div className="flex w-full md:h-full items-center bg-blue-200">
           {/* Left side content */}
-          <div className="flex-1 bg-blue-200 p-8 flex justify-center items-center">
-            <div className="text-center">
+          <div className="flex-1 md:w-[50%] md:h-[100%]  p-8 hidden md:block flex justify-center items-center">
+            <div className="text-center md:h-full  items-center justify-center flex-col">
               <h2 className="text-3xl font-bold mb-4">Submit Your Abstract</h2>
               <p className="text-lg mb-8">
-                Welcome to the abstract submission page for the LU Conference. Please fill out the form on the right to submit your abstract. We look forward to your contributions!
+                Welcome to the abstract submission page for the RAASHEE-25. Please fill out the form on the right to submit your abstract. We look forward to your participations!
               </p>
             </div>
           </div>
@@ -138,7 +138,7 @@ const AbstractSubmission = () => {
           {/* Right side form */}
           <div className="flex-1 bg-white p-8">
             <div className="w-full sm:w-3/4 lg:w-2/3 mx-auto bg-white rounded-lg ">
-              <h2 className="text-xl font-semibold mb-4">Abstract Submission for [LU_Conference]</h2>
+              <h2 className="text-xl text-center font-semibold mb-4">Abstract Submission for<br /> Raashee-25</h2>
               <form onSubmit={handleSubmit}>
                 {/* Paper Title */}
                 <div className="mb-4">
