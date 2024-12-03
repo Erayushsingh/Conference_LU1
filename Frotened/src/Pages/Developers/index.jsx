@@ -55,10 +55,10 @@ const Developers = () => {
                     </a>
                   </div>
                 </div>
-                <p className="mt-2 text-gray-600 text-sm">
+                <a href="mailto:chaurasiyaaman741@gmail.com" className="mt-2 font-bold text-gray-600 text-sm">
                   <span className="font-bold text-black">Email:</span>{" "}
                   chaurasiyaaman741@gmail.com
-                </p>
+                </a>
               </div>
             </div>
 
@@ -90,10 +90,10 @@ const Developers = () => {
                     </a>
                   </div>
                 </div>
-                <p className="mt-2 text-gray-600 text-sm">
+                <a href="mailto:ayushsingh74340@gmail.com" className="mt-2 font-bold text-gray-600 text-sm">
                   <span className="font-bold text-black">Email:</span>{" "}
                   ayushsingh74340@gmail.com
-                </p>
+                </a>
               </div>
             </div>
 
@@ -125,10 +125,10 @@ const Developers = () => {
                     </a>
                   </div>
                 </div>
-                <p className="mt-2 text-gray-600 text-sm">
+                <a href="mailto:mohammadsaif0847@gmail.com" className="mt-2 font-bold text-gray-600 text-sm">
                   <span className="font-bold text-black">Email:</span>{" "}
                   mohammadsaif0847@gmail.com
-                </p>
+                </a>
               </div>
             </div>
 
@@ -160,26 +160,27 @@ const Developers = () => {
                     </a>
                   </div>
                 </div>
-                <p className="mt-2 text-gray-600 text-sm">
+                <a href="mailto:sudipkumar0200@gmail.com" className="mt-2 font-bold text-gray-600 text-sm">
                   <span className="font-bold text-black">Email:</span>{" "}
                   sudipkumar0200@gmail.com
-                </p>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         <p className="text-center font-bold text-sm sm:text-base md:text-lg mt-6">
-          <u>Note:</u>
+          <u className="text-lg">Note:</u>
         </p>
-        <p className="text-center font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+        <p className="text-center font-bold text-lg sm:text-sm md:text-base lg:text-lg mb-2 xl:text-xl">
           If you are facing any issue, mail us at:
-          <br />
-          <span className="text-red-700">
-            sudipkumar0200@gmail.com, ayushsingh74340@gmail.com,
-            mohammadsaif0847@gmail.com, chaurasiyaaman741@gmail.com
-          </span>
         </p>
+            <ol type="A" className="text-red-500 font-bold w-full text-center space-y-2 text-xl">
+                <li><a href="mailto:chaurasiyaaman741@gmail.com">chaurasiyaaman741@gmail.com</a></li>
+                <li><a href="mailto:ayushsingh74340@gmail.com">ayushsingh74340@gmail.com</a></li>
+                <li><a href="mailto:mohammadsaif0847@gmail.com">mohammadsaif0847@gmail.com</a></li>
+                <li><a href="mailto:sudipkumar0200@gmail.com">sudipkumar0200@gmail.com</a></li>
+            </ol>
       </div>
 
       <Footer />

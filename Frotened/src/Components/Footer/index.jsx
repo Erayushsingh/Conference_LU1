@@ -20,7 +20,7 @@ const Footer = () => {
         <div className='w-full lg:w-1/3 flex flex-col mt-4 md:flex-row justify-center items-center text-xl lg:text-2xl'>
           <a href="/" className='m-2 hover:opacity-60'>Home</a>
           <a href="/conference" className='m-2 hover:opacity-60'>Tracks</a>
-          <a href="/submissions" className='m-2 hover:opacity-60'>Submission</a>
+          <a href="/publications" className='m-2 hover:opacity-60'>Submission</a>
           <a href="/awards" className='m-2 hover:opacity-60'>Awards</a>
         </div>
         {/* Social Media Icons Row (positioned below the text) */}
@@ -48,27 +48,27 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-around md:w-[70%] items-center">
           <div className='md:flex'>
             {/* Highlighted Contact 1 */}
-            <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
+            <p className="text-lg text-blue-500 md:p-2 text-center hover:cursor-pointer font-bold mb-2">
               Dr. Khushboo Verma
-              <div>(7991200535)</div>
+              <div>(+91 7991200535)</div>
             </p>
 
             {/* Highlighted Contact 2 */}
-            <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
+            <p className="text-lg text-blue-500 md:p-2 text-center hover:cursor-pointer font-bold mb-2">
               Dr. Rachana Pathak
-              <div>(9044375304)</div>
+              <div>(+91 9044375304)</div>
             </p>
 
             {/* Highlighted Contact 3 */}
-            <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
+            <p className="text-lg text-blue-500 md:p-2 text-center hover:cursor-pointer font-bold mb-2">
               Dr. Savya Sachi
-              <div>(9811746901)</div>
+              <div>(+91 9811746901)</div>
             </p>
 
             {/* Highlighted Contact 4 */}
-            <p className="text-lg text-blue-500 md:p-2 hover:cursor-pointer font-bold mb-2">
+            <p className="text-lg text-blue-500 md:p-2 text-center hover:cursor-pointer font-bold mb-2">
               Dr. R. P. Singh
-              <div>(8090196096)</div>
+              <div>(+91 8090196096)</div>
             </p>
           </div>
         </div>
@@ -81,9 +81,9 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className='h-6 bg-gray-700 text-gray-700 text-end pr-2'>
-        <strong>
-          <a href="/techteam" className='text-sm text-blue-600'>@for any technical issues contact</a>
+      <div className='p-1 bg-gray-900 text-gray-700 text-end pr-2'>
+        <strong >
+          <a href="/techteam" className='text-sm text-blue-800 md:pr-3'>@for any technical issues contact</a>
         </strong>
       </div>
 

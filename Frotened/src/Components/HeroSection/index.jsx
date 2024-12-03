@@ -308,7 +308,7 @@ const HeroSection = () => {
                 Rajasthan, Ajmer
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow
+                Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR 
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
                 Dr. Saurabh Yadav, U. P. State Institute of Forensic Science,
