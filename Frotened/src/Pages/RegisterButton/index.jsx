@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { FaEye, FaEyeSlash, FaSpinner } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaSpinner, FaTimes } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 import "animate.css";
 
@@ -22,6 +22,16 @@ const RegisterButton = ({ className }) => {
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [phoneError, setPhoneError] = useState("");
+  const [showPaymentModal, setShowPaymentModal] = useState(false);
+
+  {/*Payment Model */ }
+  const openPaymentModal = () => {
+    setShowPaymentModal(true);
+  };
+
+  const closePaymentModal = () => {
+    setShowPaymentModal(false);
+  };
 
   const navigate = useNavigate();
 
@@ -312,7 +322,7 @@ const RegisterButton = ({ className }) => {
               <input
                 type="file"
                 name="screenshot"
-                onChange={imageBase64 }
+                onChange={imageBase64}
                 className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Attach the screenshot of registration payment"
                 required
@@ -323,12 +333,13 @@ const RegisterButton = ({ className }) => {
               </p>
 
               <strong>
-                <a href="/registrationfeespayment" className="text-red-600">
+                <button type="button" className="text-red-600 "
+                  onClick={openPaymentModal}>
                   <u>Pay registration fees</u>
-                </a>
+                </button>
               </strong>
 
-              {/* Display the Base64 image as an example */}
+              {/* Preview the image*/}
               {formData.screenshot && (
                 <div className="mt-4">
                   <h3 className="text-blue-900"><strong>Preview:</strong></h3>
@@ -354,6 +365,7 @@ const RegisterButton = ({ className }) => {
         </div>
 
 
+
         {/* Toast container */}
         <ToastContainer />
 
@@ -366,6 +378,67 @@ const RegisterButton = ({ className }) => {
             </div>
           </div>
         )}
+
+
+        {/* Payment Modal */}
+        {showPaymentModal && (
+          <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50  flex-col">
+            <button
+              onClick={closePaymentModal}
+              className="absolute top-4 right-4 md:top-10 md:right-10 text-xl hover:text-black text-red-700"
+            >
+              <FaTimes />
+            </button>
+            <div className="bg-white rounded-lg shadow-lg p-6 my-8 w-full sm:w-[80%] mx-auto">
+              <h2 className="text-3xl font-extrabold text-center text-black mb-6">Registration Fee</h2>
+
+              <div className="overflow-x-auto"> 
+                <table className="min-w-full table-auto border-collapse">
+                  <thead>
+                    <tr className="bg-indigo-600 text-white md:text-2xl">
+                      <th className="px-4 py-3 text-left text-sm sm:text-base">Category</th>
+                      <th className="px-4 py-3 text-left text-sm sm:text-base">Paper Presentation (INR/USD)</th>
+                      <th className="px-4 py-3 text-left text-sm sm:text-base">Attendee (INR/USD)</th>
+                      <th className="px-4 py-3 text-left text-sm sm:text-base">On-the-Spot Registration (INR/USD)</th>
+                    </tr>
+                  </thead>
+
+                  <tbody className="text-gray-700">
+                    {/* Students Row */}
+                    <tr className="odd:bg-gray-50 even:bg-gray-100">
+                      <td className="px-4 py-4 font-semibold text-sm sm:text-base">Students (UG/PG/Research)</td>
+                      <td className="px-4 py-4 text-sm sm:text-base">1000 INR / 100 USD</td>
+                      <td className="px-4 py-4 text-sm sm:text-base">1000 INR / 100 USD</td>
+                      <td className="px-4 py-4 text-sm sm:text-base">1500 INR / 110 USD</td>
+                    </tr>
+
+                    {/* Academician/Industry Row */}
+                    <tr className="odd:bg-gray-50 even:bg-gray-100">
+                      <td className="px-4 py-4 font-semibold text-sm sm:text-base">Academician/Industry</td>
+                      <td className="px-4 py-4 text-sm sm:text-base">2000 INR / 150 USD</td>
+                      <td className="px-4 py-4 text-sm sm:text-base">2000 INR / 150 USD</td>
+                      <td className="px-4 py-4 text-sm sm:text-base">2500 INR / 160 USD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/*Payment Details*/}
+            <div className="p-6 max-w-lg mx-auto bg-gray-50 border border-gray-300 rounded-lg shadow-lg md:mb-10 mb-6">
+              <h3 className="text-2xl font-semibold text-center text-gray-800 mb-4">Payment Details</h3>
+              <div className="space-y-2">
+                <p className="text-lg"><strong>UPI ID:</strong></p>
+                <p className="text-lg"><strong>Beneficiary Name:</strong> </p>
+                <p className="text-lg"><strong>Bank Name:</strong> UCO BANK</p>
+                <p className="text-lg"><strong>Account Number:</strong> </p>
+                <p className="text-lg"><strong>Branch:</strong> Lucknow University</p>
+                <p className="text-lg"><strong>IFSC Code:</strong> </p>
+              </div>
+            </div>
+          </div>
+        )}
+
       </div>
     </div>
   );
