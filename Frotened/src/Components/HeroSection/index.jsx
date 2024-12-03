@@ -6,6 +6,10 @@ import LuPhoto06 from "/src/assets/LuPhoto06.jpg";
 import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import LuPhoto07 from "/src/assets/LuPhoto07.jpg";
+import VC_Sir from "/src/assets/VC_Sir.jpg";
+import TN_Sir from "/src/assets/TN_Sir.jpg";
+import Dean_Sir from "/src/assets/Dean_Sir.jpg";
+import Deepak_Sir from "/src/assets/Deepak_Sir.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -514,35 +518,43 @@ const HeroSection = () => {
         {/* Flex container for individual sections */}
         <div className="flex flex-col sm:flex-row justify-between space-x-4 space-y-4 sm:space-y-0">
           {/* Chief Patron Container */}
-          <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-1/3">
-            <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-              CHIEF-PATRON:
-            </h4>
-            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-              Prof. Alok Kumar Rai, Hon’ble Vice-Chancellor, University of
-              Lucknow
-            </p>
+          <div className="md:w-[30%]">
+            <img src={VC_Sir} />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+                CHIEF-PATRON:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                Prof. Alok Kumar Rai, Hon’ble Vice-Chancellor, University of
+                Lucknow
+              </p>
+            </div>
           </div>
 
           {/* Chief Guest Container */}
-          <div className="flex flex-col items-center p-4 bg-green-50 rounded-lg w-full sm:w-1/3">
-            <h4 className="text-xl font-semibold text-green-700 md:text-2xl md:leading-8">
-              CHIEF GUEST:
-            </h4>
-            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-              Prof. T. N. Singh, Director, IIT-Patna
-            </p>
+          <div className="md:w-[30%]">
+            <img src={TN_Sir} />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+                CHIEF GUEST:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                Prof. T. N. Singh, Director, IIT-Patna
+              </p>
+            </div>
           </div>
 
           {/* Patron Container */}
-          <div className="flex flex-col items-center p-4 bg-yellow-50 rounded-lg w-full sm:w-1/3">
-            <h4 className="text-xl font-semibold text-yellow-700 md:text-2xl md:leading-8">
-              PATRON:
-            </h4>
-            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-              Prof. A. K. Singh, Dean, Faculty of Engineering and Technology,
-              University of Lucknow
-            </p>
+          <div className="md:w-[30%]">
+            <img src={Dean_Sir} />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+                PATRON:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                Prof. A. K. Singh, Dean, FOET, University of Lucknow
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -552,17 +564,17 @@ const HeroSection = () => {
         {/* Flex container for the individual sections */}
         <div className="flex flex-col sm:flex-row justify-around space-x-4 space-y-4 sm:space-y-0">
           {/* Convener Container */}
-          <div className="bg-yellow-50 rounded-lg shadow-lg p-6 w-full sm:w-1/3 flex flex-col items-center">
-            <h4 className="text-xl font-semibold text-blue-700 mb-2 md:text-2xl md:leading-8">
-              Convener
-            </h4>
-            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-              Dr. Deepak Gupta
-            </p>
-            <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-              Department of Applied Science and Humanities, University of
-              Lucknow
-            </p>
+          <div className="md:w-[30%]">
+            <img src={Deepak_Sir} />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+                Convener
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                Dr. Deepak Gupta, Department of Applied Science and Humanities,
+                University of Lucknow
+              </p>
+            </div>
           </div>
         </div>
       </div>

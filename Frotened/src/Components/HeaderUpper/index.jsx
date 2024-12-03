@@ -15,7 +15,7 @@ const HeaderUpper = () => {
         
       </div>
       <div className='p-2 text-center font-bold text-[10px] lg:text-[1.3rem] text-red-950 bg-gray-300'>
-      An International Conference on Recent Advances in Applied Science & Humanities in Evolution of Engineering(RAASHEE-2025)
+      An International Conference on Recent Advances in Applied Sciences & Humanities in Evolution of Engineering (RAASHEE-2025)
       </div>
     </>
   );
