@@ -6,7 +6,6 @@ import LuPhoto06 from "/src/assets/LuPhoto06.jpg";
 import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import LuPhoto07 from "/src/assets/LuPhoto07.jpg";
-import LuPhoto03 from "/src/assets/LuPhoto03.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -38,7 +37,7 @@ const HeroSection = () => {
           id="carouselExampleAutoplaying"
           className="carousel slide w-full"
           data-bs-ride="carousel"
-          data-bs-interval="2000"
+          data-bs-interval="1000"
         >
           <div className="carousel-inner">
           <div className="carousel-item active">
@@ -249,9 +248,11 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="flex items-center flex-col-reverse md:pl-40 md:flex-row">
-        <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%] xl:w-1/2 mx-auto">
-          <h3 className="md:text-4xl text-3xl font-extrabold text-center text-gray-800 mb-8">
+      <div className=" md:pl-40 md:flex-row">
+        <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%] xl:w-1/2 mx-auto ">
+
+        <div>
+        <h3 className="md:text-4xl text-3xl font-extrabold text-center text-gray-800 mb-8">
             Keynote Speaker
           </h3>
           <ul className="space-y-2">
@@ -293,7 +294,11 @@ const HeroSection = () => {
               Prof. Pankaj Srivastava, MNNIT, Prayagraj
             </li>
           </ul>
-          <ul className="space-y-2">
+        </div>
+
+        <div>
+          
+        <ul>
             <h3 className="md:text-4xl text-3xl mt-10 font-extrabold text-center text-gray-800 mb-8">
               Invited Talks
             </h3>
@@ -322,6 +327,7 @@ const HeroSection = () => {
               Dr. Vijay Kumar, Department of English, Galgotia University
             </li>
           </ul>
+        </div>
         </div>
 
         <div className="p-6 my-8 w-full sm:w-[30%] mx-auto">

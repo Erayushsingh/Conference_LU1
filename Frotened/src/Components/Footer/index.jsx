@@ -19,9 +19,9 @@ const Footer = () => {
         {/* Navigation Links Section */}
         <div className='w-full lg:w-1/3 flex flex-col mt-4 md:flex-row justify-center items-center text-xl lg:text-2xl'>
           <a href="/" className='m-2 hover:opacity-60'>Home</a>
-          <a href="/research" className='m-2 hover:opacity-60'>Research</a>
-          <a href="/publications" className='m-2 hover:opacity-60'>Submission</a>
-          <a href="/conference" className='m-2 hover:opacity-60'>Conference</a>
+          <a href="/conference" className='m-2 hover:opacity-60'>Tracks</a>
+          <a href="/submissions" className='m-2 hover:opacity-60'>Submission</a>
+          <a href="/awards" className='m-2 hover:opacity-60'>Awards</a>
         </div>
         {/* Social Media Icons Row (positioned below the text) */}
         <div className=' flex justify-center space-x-6 py-4 '>
@@ -83,7 +83,7 @@ const Footer = () => {
 
       <div className='h-6 bg-gray-700 text-gray-700 text-end pr-2'>
         <strong>
-          <a href="/techteam" className='text-sm text-blue-400'>@for any technical issues contact</a>
+          <a href="/techteam" className='text-sm text-blue-600'>@for any technical issues contact</a>
         </strong>
       </div>
 

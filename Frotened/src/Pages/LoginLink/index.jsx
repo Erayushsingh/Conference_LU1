@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import 'animate.css';
+import Raashee from '/src/assets/Raashee.jpg'
 
 const LoginLink = () => {
   const [showOutlet, setShowOutlet] = useState(false);
@@ -16,8 +17,9 @@ const LoginLink = () => {
           {/* Left side content */}
           <div className="w-1/2 bg-gray-200 flex items-center justify-center">
             <div className="text-center animate__animated animate__fadeInLeft">
-              <h1 className="text-3xl font-bold mb-4">Welcome Back!</h1>
-              <p className="text-lg">Verify your cridentials for abstract submission.</p>
+             <img src={Raashee} alt="Logo" className='md:w-[400px] w-[300px] mx-auto rounded-full mb-4'/>
+              <h1 className="text-3xl font-bold mb-4">Welcome </h1>
+              <p className="md:text-2xl text-lg">Verify your cridentials for abstract submission</p>
             </div>
           </div>
 

@@ -90,7 +90,7 @@ const AboutUsPage = () => {
         <div className="bg-white  p-6 my-2 w-11/12 border-red-800 border-t-4 sm:w-4/5 mx-auto">
           <div className="flex flex-col mt-7  sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
            
-            <div className="bg-green-50 mt-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+            <div className="bg-green-50 mt-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center md:mx-auto">
               <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Co-Conveners</h4>
               <p className="text-lg sm:text-xl text-gray-700 text-center"> Dr. Anupam Kumar Tripathi,</p>
               <p className="text-lg sm:text-xl text-gray-700 text-center mb-4">Department of Applied Science and Humanities, University of Lucknow</p>
@@ -100,7 +100,6 @@ const AboutUsPage = () => {
           </div>
 
           <div className="flex flex-col mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
-            
             <div className="bg-green-50  rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
               <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Organizing Secretary</h4>
               <p className="text-lg sm:text-xl text-gray-700 text-center">Dr. Rachana Pathak</p>
@@ -137,7 +136,6 @@ const AboutUsPage = () => {
               <p className="text-lg sm:text-xl text-gray-700">Prof. Sudhir Srivastava, HoD-Mathematics, Deen Dayal Upadhyay Gorakhpur University</p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. Sanjay Kumar Pandey, HoD-Mathematics, Banaras Hindu University </p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya </p>
-              {/* Add other members similarly */}
             </div>
             <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
               {/* List of Advisory Committee Members */}
@@ -154,7 +152,6 @@ const AboutUsPage = () => {
               <p className="text-lg sm:text-xl text-gray-700">Dr. Ashutosh Tiwari, Director-Institute of Advanced Materials, Sweden</p>
               <p className="text-lg sm:text-xl text-gray-700">Dr. Arvind Patel, IIT-Delhi </p>
               <p className="text-lg sm:text-xl text-gray-700">Dr. Ashish Pandey, National Research Council, Canada </p>
-              {/* Add other members similarly */}
             </div>
           </div>
         </div>
@@ -215,12 +212,43 @@ const AboutUsPage = () => {
           </ul>
         </div>
 
+        <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">ORGANIZING COMMITTEE</h3>
+        <div className="flex flex-col mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4 mb-8">
+            <div className="bg-green-50  rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+             <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Parul Singh</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Arif Jamal</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Sumedha Dwivedi</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Pushpendra Verma</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Amit Mishra</p>
+            </div>
+            <div className="bg-blue-50 mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Ankit Prajapati</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Bhimsen Chaudhary</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Vinay Kumar</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Mr. Hrishabh Narayan</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Swadha Jaiswal</p>
+            </div>
+          </div>
 
+        <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">STUDENT COORDINATORS</h3> 
+        <div className="flex flex-col mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
+            <div className="  rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+            <h3 className="md:text-xl pt-7 text-xl font-bold text-center  text-gray-800 mb-8">Student Coordinators</h3>
+
+             <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Rushdiya</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Shakti Ishan</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Aditya Yadav</p>
+            </div>
+
+            <div className=" mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+            <h3 className="md:text-xl pt-7 text-xl font-bold text-center  text-gray-800 mb-8">Student Co-coordinators</h3>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Archana Kushwaha</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Anurag Semwal</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Pallavi Singh</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Mohd. Abid Khan</p>
+            </div>
+          </div>
       </div>
-      
-      
-
-
       <Footer />
     </>
   );
