@@ -4,6 +4,8 @@ import emailjs from 'emailjs-com';
 const UserTable = () => {
 
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     getUsers();
   }, []);
@@ -24,7 +26,9 @@ const UserTable = () => {
       console.log("users", users);
     } catch (e) {
       console.error('Error fetching users:', e);
-
+    }
+    finally {
+      setLoading(false);
     }
   }
   const [showModal, setShowModal] = useState(false);
@@ -166,6 +170,11 @@ const UserTable = () => {
   return (
     <div className="container mx-auto my-6">
       <h2 className="text-2xl font-semibold mb-4 text-blue-500">Candidates Information</h2>
+      {loading ? (
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+        </div>
+      ) : (
       <div className="overflow-x-auto">
         <table className="min-w-full table-auto border-collapse" style={{ tableLayout: 'fixed' }} id="content-to-print">
           <thead>
@@ -209,7 +218,8 @@ const UserTable = () => {
           Download
         </button>
       </div>
-
+      )}
+      
       {/* Modal for sending email */}
       {showModal && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">

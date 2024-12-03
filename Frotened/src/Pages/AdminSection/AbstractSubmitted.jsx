@@ -6,6 +6,7 @@ const ConferenceSubmissions = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [fromDate, setFromDate] = useState('');
   const [toDate, setToDate] = useState('');
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     getAbstract();
@@ -26,6 +27,9 @@ const ConferenceSubmissions = () => {
       console.log(data)
     } catch (e) {
       console.error('Error fetching abstracts:', e);
+    }
+    finally {
+      setLoading(false); 
     }
   }
 
@@ -137,8 +141,13 @@ const ConferenceSubmissions = () => {
   });
 
   return (
+    
     <div className="container mx-auto my-6 w-full">
-      {
+      { loading ? (
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+        </div> 
+      ) : 
         submissionsData.length === 0 ? (
           <h2 className="text-2xl font-semibold mb-4 text-red-500">No abstracts submitted yet</h2>
         ) :
@@ -204,7 +213,8 @@ const ConferenceSubmissions = () => {
                   ))}
                 </tbody>
               </table>
-            </div></>
+            </div>
+            </>
           )}
       {/* Modal to display submission details */}
       {isModalOpen && selectedSubmission && (
