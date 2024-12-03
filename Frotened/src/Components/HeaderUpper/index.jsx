@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo2 from '/src/assets/mid-logo.png'
 import Logo1 from '/src/assets/CrownLogo.jpeg'
-import Logo3 from '/src/assets/Raashee.jpg'
 import Logo4 from '/src/assets/Raashee_Logo.svg'
 
 const HeaderUpper = () => {
@@ -16,7 +15,7 @@ const HeaderUpper = () => {
         
       </div>
       <div className='p-2 text-center font-bold text-[10px] lg:text-[1.3rem] text-red-950 bg-gray-300'>
-      An International Conference on Recent Advances in Applied Science & Humanities in Evolution of Engineering
+      An International Conference on Recent Advances in Applied Science & Humanities in Evolution of Engineering(RAASHEE-2025)
       </div>
     </>
   );

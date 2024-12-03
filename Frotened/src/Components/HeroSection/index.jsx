@@ -257,12 +257,6 @@ const HeroSection = () => {
           </h3>
           <ul className="space-y-2">
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Ashish Pandey, National Research Council, Canada
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Gopal Krishna Dixit, Grenoble, France
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
               Prof. Binod Mishra, IIT-Roorkee
             </li>
             <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
@@ -292,6 +286,13 @@ const HeroSection = () => {
 
             <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
               Prof. Pankaj Srivastava, MNNIT, Prayagraj
+            </li>
+
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Ashish Pandey, National Research Council, Canada
+            </li>
+            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Gopal Krishna Dixit, Grenoble, France
             </li>
           </ul>
         </div>

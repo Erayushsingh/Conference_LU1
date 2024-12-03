@@ -18,6 +18,8 @@ import RegisterLink from './Pages/RegisterPage/index.jsx';
 import LoginLink from './Pages/LoginLink/index.jsx';
 import AlreadySubmitted from './Pages/AlreadySubmitted/index.jsx';
 import Developers from './Pages/Developers/index.jsx';
+import AboutFoet from './Pages/AboutFoet/index.jsx';
+import AboutConference from './Pages/AboutConference/index.jsx';
 
 
 const  App=()=> {
@@ -26,6 +28,10 @@ const  App=()=> {
       <Routes>
         {/* Main Routes */}
         <Route path="/" element={<Header />} />
+        <Route path="/home/aboutfoet" element={<AboutFoet/>}/>
+        <Route path="/home/aboutconference" element={<AboutConference/>}/>
+
+        
         <Route path="/conference" element={<ConferencePage />} />
         <Route path="/publications" element={<PublicationPage />} />
         <Route path="/awards" element={<AwardPage />} />
