@@ -144,7 +144,7 @@ const AboutUsPage = () => {
               <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Arif Jamal</p>
               <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Sumedha Dwivedi</p>
               <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Pushpendra Verma</p>
-              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Amit Mishra</p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Amit Misra</p>
             </div>
             <div className="bg-blue-50 mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
               <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">Dr. Ankit Prajapati</p>
