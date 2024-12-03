@@ -8,6 +8,7 @@ export const registerInput = z.object({
   organization: z.string().max(50),
   place: z.string(),
   address: z.string(),
+  screenshot: z.string(),
 });
 
 export const signInInput = z.object({

@@ -312,7 +312,7 @@ const RegisterButton = ({ className }) => {
               <input
                 type="file"
                 name="screenshot"
-                onChange={imageBase64 }
+                onChange={imageBase64}
                 className="w-full p-3 border-2 border-gray-300 rounded-md"
                 placeholder="Attach the screenshot of registration payment"
                 required

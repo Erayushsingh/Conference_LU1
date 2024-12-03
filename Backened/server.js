@@ -9,10 +9,11 @@ const PORT = 3001;
 // Middleware
 app.use(express.json());
 app.use(
-	cors({
-		origin:['https://www.raashee.in', 'https://raashee.in'],
-		methods: ['GET', 'POST', 'PUT', 'DELETE'],
-	})
+  cors({
+    origin: ['https://www.raashee.in', 'https://raashee.in'],
+    //origin: "*",
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  })
 );
 
 // Database Connection
@@ -24,5 +25,5 @@ app.use('/api/admin', adminRoutes);
 
 // Server Setup
 app.listen(PORT, () => {
-	console.log(`Server is running on ${PORT}`);
+  console.log(`Server is running on ${PORT}`);
 });
