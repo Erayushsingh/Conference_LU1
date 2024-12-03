@@ -41,7 +41,7 @@ const HeroSection = () => {
           id="carouselExampleAutoplaying"
           className="carousel slide w-full"
           data-bs-ride="carousel"
-          data-bs-interval="1000"
+          data-bs-interval="2000"
         >
           <div className="carousel-inner">
           <div className="carousel-item active">

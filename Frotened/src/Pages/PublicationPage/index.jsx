@@ -15,7 +15,7 @@ const PublicationPage = () => {
           <h2 className="text-4xl font-extrabold text-center text-black mb-8">
             Abstract Submission
           </h2>
-          <div className="text-lg text-gray-700 space-y-6">
+          <div className="text-lg md:text-xl text-gray-700 space-y-6">
             <p>
               Participants desirous to present a paper/poster in the conference should send their abstract latest by 20 December, 2024. Acceptance of paper/poster to be presented and published shall be notified within 15 days to the corresponding author.
             </p>
@@ -130,13 +130,14 @@ const PublicationPage = () => {
   <div className="overflow-x-auto"> {/* Makes table horizontally scrollable on smaller screens */}
     <table className="min-w-full table-auto border-collapse">
       <thead>
-        <tr className="bg-indigo-600 text-white">
+        <tr className="bg-indigo-600 text-white md:text-2xl">
           <th className="px-4 py-3 text-left text-sm sm:text-base">Category</th>
           <th className="px-4 py-3 text-left text-sm sm:text-base">Paper Presentation (INR/USD)</th>
           <th className="px-4 py-3 text-left text-sm sm:text-base">Attendee (INR/USD)</th>
           <th className="px-4 py-3 text-left text-sm sm:text-base">On-the-Spot Registration (INR/USD)</th>
         </tr>
       </thead>
+
       <tbody className="text-gray-700">
         {/* Students Row */}
         <tr className="odd:bg-gray-50 even:bg-gray-100">
