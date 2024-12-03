@@ -215,7 +215,7 @@ const RegisterButton = ({ className }) => {
                   </label>
                   <input
                     name="address"
-                    value={formData.address}
+                    value={formData.organization}
                     onChange={handleInputChange}
                     className="w-full p-3 border-2 border-gray-300 rounded-md"
                     placeholder="Enter your postal address"
