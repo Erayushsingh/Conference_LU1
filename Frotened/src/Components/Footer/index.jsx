@@ -24,7 +24,7 @@ const Footer = () => {
           <a href="/awards" className='m-2 hover:opacity-60'>Awards</a>
         </div>
         {/* Social Media Icons Row (positioned below the text) */}
-        <div className=' flex justify-center space-x-6 py-4 '>
+        <div className=' flex justify-center mt-6 space-x-3 md:space-x-6 md:py-4'>
           <a href="https://www.facebook.com/share/1B8gU8jwpJ/?mibextid=LQQJ4d" target="_blank"><i className="fa-brands fa-facebook text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
           <a href="https://x.com/Raashee25" target="_blank"><i className="fa-brands fa-x-twitter text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
           <a href="https://youtube.com/@raashee25?si=xCXHeb1spEYkAo5Y" target="_blank"><i className="fa-brands fa-youtube text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
@@ -75,7 +75,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className='h-10 bg-gray-800 text-center text-white flex items-center justify-center'>
+      <div className='p-3 bg-gray-800 text-center text-white flex items-center justify-center'>
         <p className='text-sm'>
           &copy; {new Date().getFullYear()} Department of Applied Science & Humanities, FOET, University of Lucknow. All rights reserved.
         </p>
