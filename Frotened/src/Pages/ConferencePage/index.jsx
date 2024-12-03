@@ -61,19 +61,43 @@ const ConferencePage = () => {
   const physicalScience = {
     synthesisandCharacterizationofNanomaterials: {
       title: "Synthesis and Characterization of Nanomaterials",
-      content: "xjdhbh"
+      content: `The two basic approaches for the synthesis of nanomaterials are bottom-up and top-down methods. 
+      The top-down techniques include nanolithography, mechanical milling or ball milling, laser ablation, sputtering, 
+      electron explosion arc discharge, and thermal decomposition. On the other hand, the bottom-up techniques include CVD method, 
+      Sol-Gel method, spinning, pyrolysis, solvothermal and hydrothermal methods, soft and hard templating methods, reverse micelle method,
+       and biological synthesis. There are several methods for the characterization of nanomaterials. The choice of method depends on the property
+        to be analysed. Some of the most commonly used characterization methods are: SEM/TEM for particle shape, size and morphology;
+         BET for accessible surface area; XRD for extent of crystallization of the sample; HRTEM for crystallographic structure of a sample at an atomic scale; 
+         UV-VIS spectra for UV absorption of the amorphous gels and crystalline ceramic samples heated at different temperatures; FT-IR vibrational stretch
+          frequency of metal-oxygen bonds; TG-DTA for weight loss and thermal effect during the conversion of precursors to final method oxides
+           in the heat-treatment process; SLS for particle size distribution; EELS for loss of energy, change in momentum, and ionization potential
+            of an atom; EDS/EDX for Chemical characterization, 
+      investigation of a sample through interactions between light and matter and analysing X-rays in particular cases.`
     },
     NanostructuredMaterials: {
       title: "Nanostructured Materials",
-      content: "xbbldsvx"
+      content: `Nanostructured Materials (NsM), also known as nanophase materials, or nanocrystalline materials or supramolecular solids, can be divided 
+      into three broad categories. The first category comprises materials and devices consisting of nanometre-sized isolated, substrate-supported or embedded 
+      particles, thin wires or thin films. Most frequently, techniques like CVD, PVD, inert gas condensation, various aerosol techniques, precipitation from 
+      the vapour, from supersaturated liquids or solids (both crystalline and amorphous) are used to generate this type of nanostructured materials. Catalysts
+       and semiconductor devices, utilizing single or multilayer quantum well structures, are made-up this type of nanostructured materials. The second category
+        comprises materials and devices in which the nanometre-sized structure is limited to a thin surface region of a bulk material. PVD, CVD, ion implantation
+         and laser beam treatments are the most widely applied procedures to modify the chemical composition and/or atomic structure of solid surfaces on a nanometre scale. Surfaces with enhanced corrosion resistance, hardness, wear resistance or protective coatings (e.g. by diamond) use such nanostructured materials. An important subgroup of this category are materials, the surface region of which are structured laterally by writing a nanometre-sized structural pattern on the free surface. For example, patterns in the form of an array of nanometre-sized islands (e.g. quantum dots) connected by thin (nanometre scale) wires. Patterns of this type may be synthesized by lithography, by means of local probes (e.g. the tip of a tunnelling microscope, near-field methods, focussed electron or ion beams) and/or surface precipitation processes. Processes and devices of this sort play a key role in the production of the state of art electronic devices such as ultrafast microprocessors, terrabit memories, single electron transistors, quantum computers, etc. The third category is of bulk solids with nanometre-scale structures. There are bulk solids in which the chemical composition, the atomic arrangement and/or the size of the building blocks (e.g. crystallites or atomic/molecular groups) forming the solid vary on a length scale of a few nanometres throughout the bulk. Two classes of such solids may be distinguished. In the first class, the atomic structure and/or the chemical composition varies in space continuously throughout the solid on an atomic scale. Glasses, gels, supersaturated solid solutions or implanted materials are examples of this type. In many cases these types of solids are produced by quenching a high-temperature equilibrium structure, e.g. a melt or a solid solution to low temperatures at which the structure is far away from equilibrium. The second class of materials are assembled of nanometre-sized building blocks mostly crystallites. These building blocks may differ in their atomic structure, their crystallographic orientation, and their chemical composition. If the building blocks are crystallites, incoherent or coherent interfaces
+       may be formed between them, depending on the atomic structure, the crystallographic orientation, and the chemical composition of adjacent crystallites.
+        Thus, such materials are microstructurally heterogeneous consisting of the building blocks (e.g. crystallites) and the regions between adjacent building
+         blocks (e.g. grain boundaries). It is this inherently heterogeneous structure on a nanometre scale that is crucial for many of their properties and
+          distinguishes them from glasses, gels, etc. that are microstructurally homogeneous.`
     },
     Solarcells: {
       title: "Solar cells",
-      content: "nkjxbhb"
+      content: `Silicon Solar cells provide a combination of high efficiency, low cost, and long lifetime. They are being used in approximately 95% of the PV modules sold and operated worldwide. Cadmium telluride (CdTe) and copper indium gallium diselenide (CIGS) based thin-film solar cells are made by depositing one or more thin layers on a supporting material such as glass, plastic, or metal using low-cost manufacturing processes but their efficiencies are not as high as of silicon. Moreover, both CdTe and CIGS require more protection than silicon for long-lasting outdoor operation. are the other semiconducting
+Perovskite solar cells are a type of thin-film cells that are printed, coated, or vacuum-deposited onto a suitable substrate. In June 2024, perovskite-silicon tandem solar cell has been reported to have an impressive efficiency of 34.6% surpassing the Shockley-Queisser theoretical efficiency limit of 33.7% for single junction solar cells. Researchers are working on making perovskite cells more durable and developing large-scale, low-cost manufacturing techniques so as to make them commercially viable.
+Organic Photovoltaic (OPV) cells are composed of carbon-rich organic compounds and can be tailored to enhance a specific function, such as bandgap, transparency, or colour. They can also be applied to a variety of supporting materials, such as flexible plastic, so as to serve a wide variety of uses. Currently, OPV cells are almost half as efficient as silicon cells and have shorter operating lifetimes.
+Multijunction solar cells are essentially layers of different semiconductor materials. Each layer, having different bandgap, absorbs a different part of the solar spectrum thereby achieving record efficiency. Quantum dots, with customised size and bandgap, are built into multijunction solar cells enabling them to collect light that is difficult to capture and to be paired with other semiconductors, like perovskites, to optimize the performance of the solar cell.`
     },
     ChemicalSensors: {
       title: "Chemical Sensors",
-      content: "hjcvgv"
+      content: `A chemical sensor is a device that transforms chemical information, like presence/absence, identity, concentration, etc. of a specific sample-component to total composition analysis, into an analytically useful signal. This chemical information may originate from a chemical reaction of the analyte or from a physical property of the system being investigated. Chemical sensors contain two basic functional units: a receptor part and a transducer part. In the receptor part of a sensor, the chemical information is transformed into a form of energy which may be measured by the transducer. The transducer part is a device capable of transforming the energy carrying the chemical information about the sample into a useful analytical signal. The transducer as such does not show selectivity. The receptor part of chemical sensors may be based upon various principles: physical, like change in conductivity, resistance, capacitance, inductance, frequency, temperature, or mass; optical, such as those based upon measurement of absorbance, refractive index, polarisation state, etc.; chemical, in which a chemical reaction with participation of the analyte gives rise to the analytical signal; biochemical, in which a biochemical process is the source of the analytical signal. Selectivity of a chemical sensor is its ability to respond to only one chemical in the presence of other species. The possible challenges pertaining to the sensor performance are noise, drift, low sensitivity, system stability, reuse possibility, sampling problems, measurement, complexity, and cost.`
     }
   };
 
@@ -213,8 +237,8 @@ an exciting exchange of ideas and discussions on the future directions of mathem
         The conference provides a platform for sharing innovative research that bridges pure mathematics
        with real-world challenges.`
     },
-    OptimizationTechniquesetc: {
-      title: "Optimization Techniques etc.",
+    OptimizationTechniquese: {
+      title: "Optimization Techniques",
       content: `Optimization techniques are central to solving complex real-world problems across a wide range of disciplines,
        from engineering and economics to machine learning and logistics. This conference brings together experts to explore the
         latest advancements in optimization methods, including linear and nonlinear programming, integer programming, and
@@ -234,10 +258,6 @@ an exciting exchange of ideas and discussions on the future directions of mathem
 
 
   const management = {
-    HRM: {
-      title: "HRM",
-      content: `Computational Chemistry is a branch of chemistry that uses computer simulations and mathematical models to understand and predict the behavior of molecules, atoms, and chemical reactions. It combines principles from chemistry, physics, and computer science to model the structure, properties, and reactivity of chemical systems. Computational chemistry provides insights that may be difficult or impossible to obtain experimentally, helping researchers in various fields, including drug design, materials science, and chemical engineering.`
-    },
     Marketing: {
       title: "Marketing",
       content: `Marketing is an organizational function that involves creating, communicating, and delivering value to customers while managing customer 
@@ -253,17 +273,13 @@ an exciting exchange of ideas and discussions on the future directions of mathem
        brand performance, and sustaining long-term brand equity. This approach focuses on creating strong emotional 
       and rational associations with consumers, which increases brand loyalty, market share, and overall business performance.`
     },
-    FinancialEconomics: {
-      title: "Financial Economics",
-      content: `Biochemistry is the branch of science that explores the chemical processes and substances that occur within living organisms. It combines principles from chemistry, biology, and physics to understand the molecular mechanisms that underpin the functions of living systems. Biochemists study the structure, function, and interactions of biomolecules like proteins, lipids, nucleic acids, and carbohydrates, which are essential for life.`
-    },
     ConsumerBehavior: {
-      title: "Consumer Behavior",
-      content: `Pharmaceu sbwhsbh`,
+      title:"Consumer Behaviour",
+      content: `Consumer behavior is the study of how individuals, groups, and organizations select, buy, use, and dispose of products to satisfy their needs and wants. Understanding consumer behavior is essential to marketing as it helps businesses design products, strategies, and campaigns that align with consumer preferences and decision-making processes. Insights into consumer behavior drive innovation by identifying emerging trends and demands and guiding the development of technologies and products. This knowledge fosters industrial growth, enhances market competitiveness, and contributes to national development by creating solutions that address societal needs efficiently.`,
     },
     Ecommercemanagement: {
       title: "E-commerce & management",
-      content: `njedbnj`
+      content: `E-commerce , or electronic commerce, involves conducting business transactions online through internet-based technologies like electronic data exchange, email, and electronic fund transfers. It enables the paperless exchange of goods, services, and information, making business operations faster, more efficient, and cost-effective. E-commerce spans various domains, including B2B, B2C, and C2C transactions, facilitating global trade and digital marketplaces. Its growing role in online shopping, travel bookings, and financial services contributes significantly to economic growth by expanding markets and fostering innovation.`
     }
   }
 
