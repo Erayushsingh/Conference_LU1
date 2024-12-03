@@ -210,15 +210,16 @@ const RegisterButton = ({ className }) => {
 
                 <div className="mb-4">
                   <label className="block text-sm font-semibold md:text-lg">
-                    Affiliating Orgnization{" "}
+                    Affiliating Orgnization
                     <span className="text-red-500">*</span>
                   </label>
                   <input
-                    name="address"
+                    name="organization"
                     value={formData.organization}
                     onChange={handleInputChange}
                     className="w-full p-3 border-2 border-gray-300 rounded-md"
-                    placeholder="Enter your postal address"
+                    placeholder="Enter your affiliating organization"
+                    required
                   ></input>
                 </div>
               </div>
