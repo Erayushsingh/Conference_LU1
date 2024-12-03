@@ -44,21 +44,21 @@ const HeroSection = () => {
           data-bs-interval="2000"
         >
           <div className="carousel-inner">
-          <div className="carousel-item active">
+            <div className="carousel-item active">
               <img
                 src={LuPhoto05}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
                 alt="Gate 2"
               />
             </div>
-          <div className="carousel-item active">
+            <div className="carousel-item active">
               <img
                 src={gatePhoto}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
                 alt="Gate 2"
               />
             </div>
-          <div className="carousel-item active">
+            <div className="carousel-item active">
               <img
                 src={LuPhoto04}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
@@ -72,14 +72,14 @@ const HeroSection = () => {
                 alt="Gate 2"
               />
             </div>
-          <div className="carousel-item active">
+            <div className="carousel-item active">
               <img
                 src={LuPhoto05}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
                 alt="Gate 2"
               />
             </div>
-            
+
             <div className="carousel-item active">
               <img
                 src={LuPhoto01}
@@ -101,8 +101,6 @@ const HeroSection = () => {
                 alt="Gate 2"
               />
             </div>
-            
-            
           </div>
 
           <button
@@ -252,87 +250,85 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className=" md:pl-40 md:flex-row">
+      <div className="md:flex-row">
         <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%] xl:w-1/2 mx-auto ">
-
-        <div>
-        <h3 className="md:text-4xl text-3xl font-extrabold text-center text-gray-800 mb-8">
-            Keynote Speaker
-          </h3>
-          <ul className="space-y-2">
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Binod Mishra, IIT-Roorkee
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. B. K. Mohanty, IIM-Lucknow
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Rajinder Singh Chandel, Punjabi University, Patiala
-            </li>
-
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Rajeev Sijaria, Head- ABVSM&E, JNU
-            </li>
-
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. R. P. Singh, University of Lucknow
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Sikha Varma, Institute of Physics, Bhubaneshwar
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Praveen Sahu, Dean - School of Commerce and Management,
-              Central University of Rajasthan
-            </li>
-
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Pankaj Srivastava, MNNIT, Prayagraj
-            </li>
-
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Ashish Pandey, National Research Council, Canada
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Gopal Krishna Dixit, Grenoble, France
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          
-        <ul>
-            <h3 className="md:text-4xl text-3xl mt-10 font-extrabold text-center text-gray-800 mb-8">
-              Invited Talks
+          <div>
+            <h3 className="md:text-4xl text-3xl font-extrabold text-center text-gray-800 mb-8">
+              Keynote Speaker
             </h3>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Neha Arora, Department of English, Central University of
-              Rajasthan, Ajmer
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Saurabh Yadav, U. P. State Institute of Forensic Science,
-              Lucknow
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-              Dr. Rituraj Mishra, National P. G. College, Lucknow
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-              Ms. Supriya Yadav, GM-HR, Magnet Technology, Noida
-            </li>
-            <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-              Dr. Sapna Sharma, U. P. State Institute of Forensic Science,
-              Lucknow
-            </li>
-            <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-              Dr. Vijay Kumar, Department of English, Galgotia University
-            </li>
-          </ul>
-        </div>
+            <ul className="space-y-2">
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. Binod Mishra, IIT-Roorkee
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. B. K. Mohanty, IIM-Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. Rajinder Singh Chandel, Punjabi University, Patiala
+              </li>
+
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. Rajeev Sijaria, Head- ABVSM&E, JNU
+              </li>
+
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. R. P. Singh, University of Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. Sikha Varma, Institute of Physics, Bhubaneshwar
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. Praveen Sahu, Dean - School of Commerce and Management,
+                Central University of Rajasthan
+              </li>
+
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+                Prof. Pankaj Srivastava, MNNIT, Prayagraj
+              </li>
+
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+                Dr. Ashish Pandey, National Research Council, Canada
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+                Dr. Gopal Krishna Dixit, Grenoble, France
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <h3 className="md:text-4xl text-3xl mt-10 font-extrabold text-center text-gray-800 mb-8">
+                Invited Talks
+              </h3>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+                Dr. Neha Arora, Department of English, Central University of
+                Rajasthan, Ajmer
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+                Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+                Dr. Saurabh Yadav, U. P. State Institute of Forensic Science,
+                Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                Dr. Rituraj Mishra, National P. G. College, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                Ms. Supriya Yadav, GM-HR, Magnet Technology, Noida
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                Dr. Sapna Sharma, U. P. State Institute of Forensic Science,
+                Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                Dr. Vijay Kumar, Department of English, Galgotia University
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="p-6 my-8 w-full sm:w-[30%] mx-auto">
