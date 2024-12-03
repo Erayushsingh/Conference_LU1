@@ -317,7 +317,7 @@ const RegisterButton = ({ className }) => {
 
             <div className="mb-4">
               <label className="block text-sm font-semibold md:text-lg">
-                Screenshot<span className="text-red-500">*</span>
+                Screenshot of Payment<span className="text-red-500">*</span>
               </label>
               <input
                 type="file"
