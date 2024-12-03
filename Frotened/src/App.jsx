@@ -20,6 +20,7 @@ import AlreadySubmitted from './Pages/AlreadySubmitted/index.jsx';
 import Developers from './Pages/Developers/index.jsx';
 import AboutFoet from './Pages/AboutFoet/index.jsx';
 import AboutConference from './Pages/AboutConference/index.jsx';
+import RegistrationFeesPayment from './Pages/RegistrationFeesPayment/index.jsx';
 
 
 const  App=()=> {
@@ -57,6 +58,9 @@ const  App=()=> {
         <Route path="/abstract-submission" element={<ProtectedRoute element={<AbstractSubmission />} />} />
 
         <Route path="/techteam" element={<Developers/>}/>
+
+        {/*Fees Payment */}
+        <Route path="/registrationfeespayment" element={<RegistrationFeesPayment/>}/>
 
       </Routes>
     </Router>

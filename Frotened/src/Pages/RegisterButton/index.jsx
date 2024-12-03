@@ -92,6 +92,7 @@ const RegisterButton = ({ className }) => {
           address: "",
           password: "",
           confirmPassword: "",
+          screenshot: "",
         });
 
         setTimeout(() => {
@@ -116,8 +117,34 @@ const RegisterButton = ({ className }) => {
     });
   }, []);
 
+
+  {/*Image Base 64 Convert */ }
+  const imageBase64 = (e) => {
+    const { name, files } = e.target;
+
+    if (files && files[0]) {
+      const file = files[0];
+
+      if (file.type === "image/jpeg" || file.type === "image/jpg") {
+        const reader = new FileReader();
+
+        reader.onloadend = () => {
+          setFormData((prevState) => ({
+            ...prevState,
+            [name]: reader.result,
+          }));
+        };
+
+        reader.readAsDataURL(file); // Convert image to Base64
+      } else {
+        alert("Please upload a .jpg or .jpeg file.");
+      }
+    }
+  };
+
+
   return (
-    
+
     <div className="h-full w-full overflow-y-scroll ">
       <div className="flex items-center justify-center bg-gray-200 min-h-screen w-full">
         <div className="w-full max-w-xl bg-white shadow-md rounded-lg p-4 sm:p-6 md:p-8 mx-auto ">
@@ -128,7 +155,6 @@ const RegisterButton = ({ className }) => {
             onSubmit={handleSubmit}
             className="space-y-4 "
           >
-            {/* Grid layout for inputs */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Left Column */}
               <div>
@@ -278,6 +304,43 @@ const RegisterButton = ({ className }) => {
               </div>
             </div>
 
+
+            <div className="mb-4">
+              <label className="block text-sm font-semibold md:text-lg">
+                Screenshot<span className="text-red-500">*</span>
+              </label>
+              <input
+                type="file"
+                name="screenshot"
+                onChange={imageBase64 }
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
+                placeholder="Attach the screenshot of registration payment"
+                required
+                accept=".jpg, .jpeg"
+              />
+              <p className="text-sm text-gray-500 mt-2">
+                Only .jpg and .jpeg images are accepted.
+              </p>
+
+              <strong>
+                <a href="/registrationfeespayment" className="text-red-600">
+                  <u>Pay registration fees</u>
+                </a>
+              </strong>
+
+              {/* Display the Base64 image as an example */}
+              {formData.screenshot && (
+                <div className="mt-4">
+                  <h3 className="text-blue-900"><strong>Preview:</strong></h3>
+                  <img
+                    src={formData.screenshot}
+                    alt="Screenshot preview"
+                    className="w-32 h-32 object-cover mt-2"
+                  />
+                </div>
+              )}
+            </div>
+
             {/* Submit Button */}
             <div className="text-center">
               <button
@@ -289,6 +352,7 @@ const RegisterButton = ({ className }) => {
             </div>
           </form>
         </div>
+
 
         {/* Toast container */}
         <ToastContainer />
