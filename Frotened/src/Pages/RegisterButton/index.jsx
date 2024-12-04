@@ -22,6 +22,7 @@ const RegisterButton = ({ className }) => {
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [phoneError, setPhoneError] = useState("");
+  const [fileSizeError, setFileSizeError] = useState("");
   const [showPaymentModal, setShowPaymentModal] = useState(false);
 
   {/*Payment Model */ }
@@ -128,29 +129,38 @@ const RegisterButton = ({ className }) => {
   }, []);
 
 
-  {/*Image Base 64 Convert */ }
   const imageBase64 = (e) => {
     const { name, files } = e.target;
-
     if (files && files[0]) {
       const file = files[0];
-
+  
+      // Check if the file size exceeds 50KB
+      if (file.size > 50 * 1024) {
+        setFileSizeError("File size exceeds 50KB. Please upload a smaller image.");
+        toast.warning("File size exceeds 50KB. Please upload a smaller image."); 
+        return;
+      } else {
+        setFileSizeError(""); 
+      }
+  
+      // Check if the file type is .jpeg or .jpg
       if (file.type === "image/jpeg" || file.type === "image/jpg") {
         const reader = new FileReader();
-
+  
         reader.onloadend = () => {
           setFormData((prevState) => ({
             ...prevState,
             [name]: reader.result,
           }));
         };
-
+  
         reader.readAsDataURL(file); // Convert image to Base64
       } else {
         alert("Please upload a .jpg or .jpeg file.");
       }
     }
   };
+  
 
 
   return (
