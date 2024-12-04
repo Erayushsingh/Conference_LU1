@@ -1,11 +1,9 @@
 import React from "react";
 import gatePhoto from "/src/assets/Lu-main.jpg";
 import gatePhoto1 from "/src/assets/Lu-gate.jpg";
-import LuPhoto01 from "/src/assets/LuPhoto01.jpg";
 import LuPhoto06 from "/src/assets/LuPhoto06.jpg";
 import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
-import LuPhoto07 from "/src/assets/LuPhoto07.jpg";
 import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
@@ -65,13 +63,8 @@ const HeroSection = () => {
                 alt="Gate 2"
               />
             </div>
-            <div className="carousel-item active">
-              <img
-                src={LuPhoto07}
-                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
-                alt="Gate 2"
-              />
-            </div>
+            
+
             <div className="carousel-item active">
               <img
                 src={LuPhoto05}
@@ -80,13 +73,7 @@ const HeroSection = () => {
               />
             </div>
 
-            <div className="carousel-item active">
-              <img
-                src={LuPhoto01}
-                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
-                alt="Gate 2"
-              />
-            </div>
+            
             <div className="carousel-item active">
               <img
                 src={LuPhoto06}
@@ -304,8 +291,7 @@ const HeroSection = () => {
                 Invited Talks
               </h3>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Neha Arora, Department of English, Central University of
-                Rajasthan, Ajmer
+                Dr. Neha Arora, Central University of Rajasthan, Ajmer
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
                 Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR 
@@ -325,7 +311,7 @@ const HeroSection = () => {
                 Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                Dr. Vijay Kumar, Department of English, Galgotia University
+                Dr. Vijay Kumar,Galgotia University
               </li>
             </ul>
           </div>

@@ -53,36 +53,40 @@ const AboutFoet = () => {
         </div>
 
         {/* Courses Offered Section */}
-        <div className="bg-white  rounded-lg  mb-12">
-          <h2 className="text-2xl sm:text-4xl font-semibold text-black mb-2 text-center">Courses Offered</h2>
-          <ul className="list-disc pl-6 text-lg sm:text-2xl text-gray-700 flex flex-col items-center ">
-            <li>Engineering Chemistry</li>
-            <li>Engineering Physics</li>
-            <li>Engineering Mathematics</li>
-            <li>English (Professional Communication)</li>
-            <li>Environment & Ecology</li>
-            <li>Human Values & Ethics</li>
-            <li>Essence of Indian Knowledge System</li>
-            <li>Critical thinking</li>
-            <li>Nanotechnology</li>
-          </ul>
+        <div className="bg-white flex flex-col items-center  rounded-lg  mb-12">
+          <h2 className="text-2xl sm:text-4xl font-semibold text-black mb-2 md:mr-28 text-center">Courses Offered</h2>
+          <div>
+            <ul className="list-disc pl-6 text-lg sm:text-2xl text-gray-700 flex flex-col ">
+              <li>Engineering Chemistry</li>
+              <li>Engineering Physics</li>
+              <li>Engineering Mathematics</li>
+              <li>English (Professional Communication)</li>
+              <li>Environment & Ecology</li>
+              <li>Human Values & Ethics</li>
+              <li>Essence of Indian Knowledge System</li>
+              <li>Critical thinking</li>
+              <li>Nanotechnology</li>
+            </ul>
+          </div>
         </div>
 
         {/* Consultancy Areas Section */}
-        <div className='mb-10'>
+        <div className='bg-white flex flex-col items-center  rounded-lg  mb-12 md:ml-12'>
           <h2 className="text-2xl sm:text-3xl font-semibold text-black mb-2 text-center">Consultancy Areas in Applied Science & Humanities</h2>
-          <ul className="list-decimal pl-6 text-lg sm:text-2xl text-gray-700 flex flex-col items-center">
-            <li>Waste Water Treatment</li>
-            <li>Solid Waste Management</li>
-            <li>Rain Water Harvesting</li>
-            <li>Corporate Communication</li>
-            <li>Corporate Training</li>
-            <li>Life Skill Training</li>
-            <li>Voice & Accent Training</li>
-            <li>Behavioral Training</li>
-            <li>Leadership Training</li>
-            <li>Building Corporate Negotiation Framework</li>
-          </ul>
+          <div>
+            <ul className="list-disc pl-6 text-lg sm:text-2xl text-gray-700 flex flex-col ">
+              <li>Waste Water Treatment</li>
+              <li>Solid Waste Management</li>
+              <li>Rain Water Harvesting</li>
+              <li>Corporate Communication</li>
+              <li>Corporate Training</li>
+              <li>Life Skill Training</li>
+              <li>Voice & Accent Training</li>
+              <li>Behavioral Training</li>
+              <li>Leadership Training</li>
+              <li>Building Corporate Negotiation Framework</li>
+            </ul>
+          </div>
         </div>
 
       </div> 
