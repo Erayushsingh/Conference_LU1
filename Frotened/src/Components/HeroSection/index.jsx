@@ -286,7 +286,7 @@ const HeroSection = () => {
           </div>
 
           <div>
-            <ul className="space-x-4">
+            <ul className="">
               <h3 className="md:text-4xl text-3xl  mt-10 font-extrabold text-center text-gray-800 mb-8">
                 Invited Talks
               </h3>
