@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="bg-red-900 text-white py-2 text-center w-full">
         <div className="flex justify-center items-center flex-col md:flex-row  animate-zoom-out-in">
           <p className="text-2xl font-bold mb-2 md:mb-0 ">
-            Registration Opened for RAASHEE-2025 |
+            Registration Open for RAASHEE-2025 |
           </p>
           <button
             onClick={handleRegisterClick}
@@ -286,8 +286,8 @@ const HeroSection = () => {
           </div>
 
           <div>
-            <ul>
-              <h3 className="md:text-4xl text-3xl mt-10 font-extrabold text-center text-gray-800 mb-8">
+            <ul className="space-x-4">
+              <h3 className="md:text-4xl text-3xl  mt-10 font-extrabold text-center text-gray-800 mb-8">
                 Invited Talks
               </h3>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
