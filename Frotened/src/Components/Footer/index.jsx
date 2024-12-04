@@ -28,7 +28,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/share/1B8gU8jwpJ/?mibextid=LQQJ4d" target="_blank"><i className="fa-brands fa-facebook text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
           <a href="https://x.com/Raashee25" target="_blank"><i className="fa-brands fa-x-twitter text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
           <a href="https://youtube.com/@raashee25?si=xCXHeb1spEYkAo5Y" target="_blank"><i className="fa-brands fa-youtube text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
-          <i className="fa-regular fa-envelope text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i>
+          <a href="mailto:raashee.foet@gmail.com"><i className="fa-regular fa-envelope text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
           <a href="https://www.instagram.com/raashee_2025?igsh=MWN0NGU4Z2dtdDVlbw==" target="_blank"><i className="fa-brands fa-instagram text-xl font-bold bg-gray-700 p-3 rounded-3xl hover:cursor-pointer hover:opacity-60"></i></a>
 
         </div>
