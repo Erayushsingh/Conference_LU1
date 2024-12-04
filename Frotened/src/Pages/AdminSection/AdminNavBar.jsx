@@ -5,25 +5,24 @@ import Logo2 from '/src/assets/mid-logo.png';
 import Logo1 from '/src/assets/Lu-rank.jpg';
 import Logo3 from '/src/assets/A++.jpeg';
 import LowerHeader from '../../Components/LowerHeader';
-import {  AiOutlineArrowRight,AiOutlineClose } from 'react-icons/ai'; 
+import { AiOutlineArrowRight, AiOutlineClose } from 'react-icons/ai';
 
 const AdminSection = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(true); 
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen); 
+    setSidebarOpen(!sidebarOpen);
   };
 
   return (
     <>
-      <div className="h-24 w-full flex justify-between p-1 border-b-4 border-red-400">
-    
-        <div className="flex items-center justify-center w-full">
-          <img src={Logo2} className="h-16 mt-4" alt="Logo" />
-        </div>
+      <div className="h-24 w-full flex justify-between p-1 border-b-1 border-red-400">
 
-        <div className="flex items-center space-x-2">
+
+
+        <div className="flex items-center space-x-2 justify-between  w-full ">
           <img src={Logo1} className="h-16 mt-4 ml-2" alt="Logo1" />
+          <img src={Logo2} className="h-16 mt-4" alt="Logo" />
           <img src={Logo3} className="h-16 mt-4 mr-2" alt="Logo3" />
         </div>
       </div>
@@ -32,19 +31,18 @@ const AdminSection = () => {
 
       <div className="flex">
         <div
-          className={`${
-            sidebarOpen ? 'w-1/4' : 'w-0'
-          } bg-gray-800 text-white p-5 flex flex-col min-h-screen transition-all duration-300 ease-in-out`}
+          className={`${sidebarOpen ? 'w-1/4' : 'w-0'
+            } bg-gray-800 text-white p-5 flex flex-col min-h-screen transition-all duration-300 ease-in-out`}
         >
 
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-lg font-semibold ">{sidebarOpen ? 'Admin Panel' : ''}</h2>
             <button
-            onClick={toggleSidebar}
-            className="text-red-500 text-lg  " 
-          >
-           {sidebarOpen?<AiOutlineClose />:<AiOutlineArrowRight />} 
-                      </button>
+              onClick={toggleSidebar}
+              className="text-red-500 text-lg  "
+            >
+              {sidebarOpen ? <AiOutlineClose /> : <AiOutlineArrowRight />}
+            </button>
           </div>
 
           {sidebarOpen && (
@@ -74,9 +72,8 @@ const AdminSection = () => {
         </div>
 
         <div
-          className={`${
-            sidebarOpen ? 'w-3/4' : 'w-full'
-          } p-4 overflow-auto max-h-[80vh] transition-all duration-300 ease-in-out`}
+          className={`${sidebarOpen ? 'w-3/4' : 'w-full'
+            } p-4 overflow-auto max-h-[80vh] transition-all duration-300 ease-in-out`}
         >
           <h2 className="text-2xl font-semibold text-center my-4 shadow-lg p-4">Admin Dashboard</h2>
           <Outlet />
