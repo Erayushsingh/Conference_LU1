@@ -317,6 +317,13 @@ const HeroSection = () => {
               <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                 Dr. Vijay Kumar,Galgotia University
               </li>
+              <li className="font-semibold text-blue-600 md:mb-3 md:text-2xl md:leading-8">
+                Dr. Praveen Kumar, Scientist G,Inter University Accelerator Center (IUAC), New Delhi
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                Dr. Vijay Kumar Singh, IIT Jodhpur
+              </li>
+              
             </ul>
           </div>
         </div>
