@@ -56,8 +56,9 @@ const ConferencePage = () => {
     FinancialEconomics: useRef(null),
     ConsumerBehavior: useRef(null),
     Ecommercemanagement: useRef(null),
-    HumanResourceManagement:useRef(null),
     FinancialManagement:useRef(null),
+    Economics:useRef(null),
+    HumanResourceManagement:useRef(null),
 
   };
 
@@ -285,24 +286,22 @@ an exciting exchange of ideas and discussions on the future directions of mathem
       content: `E-commerce , or electronic commerce, involves conducting business transactions online through internet-based technologies like electronic data exchange, email, and electronic fund transfers. It enables the paperless exchange of goods, services, and information, making business operations faster, more efficient, and cost-effective. E-commerce spans various domains, including B2B, B2C, and C2C transactions, facilitating global trade and digital marketplaces. Its growing role in online shopping, travel bookings, and financial services contributes significantly to economic growth by expanding markets and fostering innovation.`
     },
 
-    HumanResourceManagement:{
-      title:"Human Resource Management (HRM)",
-      content:`Human Resource Management is a strategic approach to effectively managing an organization’s workforce.
-       It encompasses activities like workforce planning, recruitment, training, development, performance appraisal, employee welfare, and industrial 
-       relations, ensuring optimal utilization of human resources to achieve organizational goals. HRM aims to create an environment conducive
-        to maximizing productivity, fostering motivation, and ensuring employee well-being. HRM is critical for business organizations as it aligns 
-        employee skills and motivation with strategic objectives, driving productivity and innovation. By fostering
-       a skilled and motivated workforce, HRM supports economic growth and national development, ensuring long-term sustainability and competitiveness.`
-    },
     FinancialManagement:{
-      title:"Financial Economics & E-commerce Mangement",
-      content:`Financial Management involves strategic decisions in the area of investing, 
-      financing, and dividend decisions. Investing decisions focus on allocating resources to projects that maximize returns,
-       supporting engineering innovations and industrial growth. Financing decisions determine the optimal mix of debt and equity to 
-       fund these investments, while dividend decisions balance profit distribution and reinvestment to ensure sustainable development 
-       and shareholder satisfaction. Financial Management is essential for efficient financial planning and control, enabling organizations 
-       to drive innovation, sustain operations, and achieve long-term growth.
-       By aligning financial strategies with engineering goals, it fosters economic efficiency and industrial competitiveness.`
+      title:"Financial Management",
+      content:`Financial Management involves strategic decisions in the area of investing, financing, and dividend decisions. Investing decisions focus on allocating resources to projects that maximize returns, supporting engineering innovations and industrial growth. Financing decisions determine the optimal mix of debt and equity to fund these investments, while dividend decisions balance profit distribution and reinvestment to ensure sustainable development and shareholder satisfaction. Financial Management is essential for efficient financial planning and control, enabling organizations to drive innovation, sustain operations,
+       and achieve long-term growth. By aligning financial strategies with engineering goals, it fosters economic efficiency and industrial competitiveness.`},
+    
+       Economics:{
+      title:"Economics",
+      content:`Economics is the study of how individuals, businesses, and governments allocate scarce resources to meet their needs 
+      and wants. Managers need to understand economics to make informed decisions about resource allocation, pricing, production, and market strategies, enabling them to optimize organizational efficiency and profitability. Economics supports managerial functions by providing frameworks to analyze consumer behavior, market trends, and competitive dynamics, aiding in the achievement of organizational objectives. At the macro level, economics fosters national growth by shaping policies that impact national income, stabilize business cycles, control inflation, and optimize international trade.
+       These measures enhance economic stability, promote global integration, and ensure sustainable development and competitiveness.`
+    },
+    HumanResourceManagement:{
+      title:"Human Resource Management",
+      content:`Human Resource Management is a strategic approach to effectively managing an organization’s workforce.
+       It encompasses activities like workforce planning, recruitment, training, development, performance appraisal, employee welfare, and industrial relations, ensuring optimal utilization of human resources to achieve organizational goals. HRM aims to create an environment conducive to maximizing productivity, fostering motivation, and ensuring employee well-being. HRM is critical for business organizations as it aligns employee skills and motivation with strategic objectives, driving productivity and innovation. By fostering a 
+      skilled and motivated workforce, HRM supports economic growth and national development, ensuring long-term sustainability and competitiveness.`
     }
 
   }
@@ -475,7 +474,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
       {/* Full screen modal for smaller screens */}
       {showModal && selectedTrack && (
         <div className="md:hidden fixed z-50 w-full h-full top-0 left-0 bg-black bg-opacity-50 flex justify-center items-center ">
-          <div className="bg-white p-8 rounded-lg w-full h-full shadow-lg relative overflow-hidden overflow-y-scroll">
+          <div className="bg-green-100 p-8 rounded-lg w-full h-full shadow-lg relative overflow-hidden overflow-y-scroll">
             <h2 className="text-2xl font-bold text-center text-black mb-4">
               {combinedTrackData[selectedTrack].title}
             </h2>
