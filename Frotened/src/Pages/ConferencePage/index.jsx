@@ -56,6 +56,9 @@ const ConferencePage = () => {
     FinancialEconomics: useRef(null),
     ConsumerBehavior: useRef(null),
     Ecommercemanagement: useRef(null),
+    HumanResourceManagement:useRef(null),
+    FinancialManagement:useRef(null),
+
   };
 
   const physicalScience = {
@@ -280,7 +283,28 @@ an exciting exchange of ideas and discussions on the future directions of mathem
     Ecommercemanagement: {
       title: "E-commerce & management",
       content: `E-commerce , or electronic commerce, involves conducting business transactions online through internet-based technologies like electronic data exchange, email, and electronic fund transfers. It enables the paperless exchange of goods, services, and information, making business operations faster, more efficient, and cost-effective. E-commerce spans various domains, including B2B, B2C, and C2C transactions, facilitating global trade and digital marketplaces. Its growing role in online shopping, travel bookings, and financial services contributes significantly to economic growth by expanding markets and fostering innovation.`
+    },
+
+    HumanResourceManagement:{
+      title:"Human Resource Management (HRM)",
+      content:`Human Resource Management is a strategic approach to effectively managing an organization’s workforce.
+       It encompasses activities like workforce planning, recruitment, training, development, performance appraisal, employee welfare, and industrial 
+       relations, ensuring optimal utilization of human resources to achieve organizational goals. HRM aims to create an environment conducive
+        to maximizing productivity, fostering motivation, and ensuring employee well-being. HRM is critical for business organizations as it aligns 
+        employee skills and motivation with strategic objectives, driving productivity and innovation. By fostering
+       a skilled and motivated workforce, HRM supports economic growth and national development, ensuring long-term sustainability and competitiveness.`
+    },
+    FinancialManagement:{
+      title:"Financial Economics & E-commerce Mangement",
+      content:`Financial Management involves strategic decisions in the area of investing, 
+      financing, and dividend decisions. Investing decisions focus on allocating resources to projects that maximize returns,
+       supporting engineering innovations and industrial growth. Financing decisions determine the optimal mix of debt and equity to 
+       fund these investments, while dividend decisions balance profit distribution and reinvestment to ensure sustainable development 
+       and shareholder satisfaction. Financial Management is essential for efficient financial planning and control, enabling organizations 
+       to drive innovation, sustain operations, and achieve long-term growth.
+       By aligning financial strategies with engineering goals, it fosters economic efficiency and industrial competitiveness.`
     }
+
   }
 
   const toggleModal = (trackName) => {
