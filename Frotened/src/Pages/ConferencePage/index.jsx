@@ -459,13 +459,13 @@ an exciting exchange of ideas and discussions on the future directions of mathem
           }}
         >
           {/* Modal for larger screens */}
-          <div className="bg-white p-8 rounded-lg w-full max-w-96 shadow-lg md:w-96 md:max-w-full">
+          <div className="bg-white p-8 rounded-lg w-full  max-w-96 shadow-lg md:w-94 md:h-200 md:max-w-full ">
 
             {/* Modal content */}
             <h2 className="text-2xl font-bold text-center text-black mb-4">
               {combinedTrackData[selectedTrack].title}
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700 ">
               {combinedTrackData[selectedTrack].content}
             </p>
           </div>
