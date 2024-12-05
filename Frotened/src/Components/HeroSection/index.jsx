@@ -300,17 +300,21 @@ const HeroSection = () => {
                 Dr. Saurabh Yadav, U. P. State Institute of Forensic Science,
                 Lucknow
               </li>
-              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+               Dr. Shashi Bala, Associate Professor Department of Chemistry, University of Lucknow
+              </li>
+
+              <li className="font-semibold text-blue-600 md:mb-3 md:text-2xl md:leading-8">
                 Dr. Rituraj Mishra, National P. G. College, Lucknow
               </li>
-              <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                 Ms. Supriya Yadav, GM-HR, Magnet Technology, Noida
               </li>
-              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+              <li className="font-semibold text-blue-600 md:mb-3 md:text-2xl md:leading-8">
                 Dr. Sapna Sharma, U. P. State Institute of Forensic Science,
                 Lucknow
               </li>
-              <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                 Dr. Vijay Kumar,Galgotia University
               </li>
             </ul>
