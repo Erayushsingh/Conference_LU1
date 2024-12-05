@@ -301,7 +301,7 @@ const HeroSection = () => {
                 Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-               Dr. Shashi Bala, Associate Professor Department of Chemistry, University of Lucknow
+               Dr. Shashi Bala, University of Lucknow , Lucknow
               </li>
 
               <li className="font-semibold text-blue-600 md:mb-3 md:text-2xl md:leading-8">
