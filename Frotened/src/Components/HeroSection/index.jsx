@@ -342,6 +342,8 @@ const HeroSection = () => {
             target="blank"
             className="text-xl font-semibold flex justify-center text-red-900 mb-4 text-center animate-zoom-out-in md:text-xl md:leading-8"
           >
+            Vishwakarma Auditorium 
+            <br/>
             Faculty of Engineering and Technology,
             <br />
             University of Lucknow,
