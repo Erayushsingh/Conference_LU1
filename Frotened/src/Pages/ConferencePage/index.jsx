@@ -459,7 +459,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
           }}
         >
           {/* Modal for larger screens */}
-          <div className="bg-white p-8 rounded-lg w-full  max-w-96 shadow-lg md:w-94 md:h-200 md:max-w-full ">
+          <div className="bg-green-100 p-8 rounded-lg w-full  max-w-96 shadow-lg md:w-94 md:h-200 md:max-w-full ">
 
             {/* Modal content */}
             <h2 className="text-2xl font-bold text-center text-black mb-4">
@@ -475,7 +475,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
       {/* Full screen modal for smaller screens */}
       {showModal && selectedTrack && (
         <div className="md:hidden fixed z-50 w-full h-full top-0 left-0 bg-black bg-opacity-50 flex justify-center items-center ">
-          <div className="bg-white p-8 rounded-lg w-full h-full shadow-lg relative overflow-hidden">
+          <div className="bg-white p-8 rounded-lg w-full h-full shadow-lg relative overflow-hidden overflow-y-scroll">
             <h2 className="text-2xl font-bold text-center text-black mb-4">
               {combinedTrackData[selectedTrack].title}
             </h2>
