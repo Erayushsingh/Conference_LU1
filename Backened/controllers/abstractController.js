@@ -18,7 +18,7 @@ export const submitAbstract = async (req, res) => {
 
         title: parsedBody.data.title,
         authors: parsedBody.data.authors,
-        drivelink: parsedBody.data.abstract,
+        drivelink: parsedBody.data.drivelink,
         keywords: parsedBody.data.keywords,
         preferredPresentation: parsedBody.data.preferredPresentation,
         conferenceTheme: parsedBody.data.conferenceTheme,
