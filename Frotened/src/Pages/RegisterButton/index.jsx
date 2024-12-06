@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash, FaSpinner, FaTimes } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 import "animate.css";
-
+import Swal from "sweetalert2";
 const RegisterButton = ({ className }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -61,7 +60,11 @@ const RegisterButton = ({ className }) => {
     e.preventDefault();
 
     if (formData.password !== formData.confirmPassword) {
-      toast.error("Passwords do not match!");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Passwords do not match! Please try",
+      })
       return;
     }
 
@@ -76,6 +79,7 @@ const RegisterButton = ({ className }) => {
     try {
       const response = await fetch(
         `https://www.api.raashee.in/api/auth/register`,
+        //'http://localhost:3001/api/auth/register',
         {
           method: "POST",
           headers: {
@@ -91,9 +95,13 @@ const RegisterButton = ({ className }) => {
       setShowModal(false);
 
       if (response.ok) {
-        toast.success(
-          "You have registered successfully! Redirecting to home..."
-        );
+        //toast.success(
+        //  "You have registered successfully! Redirecting to home..."
+        //);
+        Swal.fire({
+          icon: "success",
+          title: "You have registered successfully! Redirecting to home...",
+        })
         setFormData({
           name: "",
           email: "",
@@ -110,12 +118,21 @@ const RegisterButton = ({ className }) => {
           navigate("/");
         }, 3000);
       } else {
-        toast.error(data.message || "Registration failed");
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: data.message || "Something went wrong! Please try again.",
+        })
       }
+
     } catch (err) {
       setLoading(false);
       setShowModal(false);
-      toast.error("An error occurred. Please try again.");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: err.message || "Something went wrong! Please try again.",
+      })
     }
   };
 
@@ -133,34 +150,38 @@ const RegisterButton = ({ className }) => {
     const { name, files } = e.target;
     if (files && files[0]) {
       const file = files[0];
-  
+
       // Check if the file size exceeds 50KB
       if (file.size > 50 * 1024) {
         setFileSizeError("File size exceeds 50KB. Please upload a smaller image.");
-        toast.warning("File size exceeds 50KB. Please upload a smaller image."); 
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "File size exceeds 50KB. Please upload a smaller image.",
+        })
         return;
       } else {
-        setFileSizeError(""); 
+        setFileSizeError("");
       }
-  
+
       // Check if the file type is .jpeg or .jpg
       if (file.type === "image/jpeg" || file.type === "image/jpg") {
         const reader = new FileReader();
-  
+
         reader.onloadend = () => {
           setFormData((prevState) => ({
             ...prevState,
             [name]: reader.result,
           }));
         };
-  
+
         reader.readAsDataURL(file); // Convert image to Base64
       } else {
         alert("Please upload a .jpg or .jpeg file.");
       }
     }
   };
-  
+
 
 
   return (
@@ -377,7 +398,6 @@ const RegisterButton = ({ className }) => {
 
 
         {/* Toast container */}
-        <ToastContainer />
 
         {/* Modal */}
         {showModal && (
@@ -391,61 +411,61 @@ const RegisterButton = ({ className }) => {
 
 
         {/* Payment Modal */}
-{showPaymentModal && (
-  <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50 flex-col px-4">
-    <button
-      onClick={closePaymentModal}
-      className="absolute top-4 right-4 md:top-6 md:right-6 text-2xl hover:text-black text-red-700"
-    >
-      <FaTimes />
-    </button>
-    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8 my-8 w-full sm:w-[90%] lg:w-[70%] mx-auto">
-      <h2 className="text-2xl sm:text-3xl font-extrabold text-center text-black mb-6">Registration Fee</h2>
+        {showPaymentModal && (
+          <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50 flex-col px-4">
+            <button
+              onClick={closePaymentModal}
+              className="absolute top-4 right-4 md:top-6 md:right-6 text-2xl hover:text-black text-red-700"
+            >
+              <FaTimes />
+            </button>
+            <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8 my-8 w-full sm:w-[90%] lg:w-[70%] mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-center text-black mb-6">Registration Fee</h2>
 
-      <div className="overflow-x-auto">
-        <table className="min-w-full table-auto border-collapse">
-          <thead>
-            <tr className="bg-indigo-600 text-white text-xs sm:text-sm md:text-base">
-              <th className="px-2 sm:px-4 py-3 text-left">Category</th>
-              <th className="px-2 sm:px-4 py-3 text-left">Paper Presentation (INR/USD)</th>
-              <th className="px-2 sm:px-4 py-3 text-left">Attendee (INR/USD)</th>
-              <th className="px-2 sm:px-4 py-3 text-left">On-the-Spot Registration (INR/USD)</th>
-            </tr>
-          </thead>
-          <tbody className="text-gray-700 text-xs sm:text-sm md:text-base">
-            {/* Students Row */}
-            <tr className="odd:bg-gray-50 even:bg-gray-100">
-              <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold">Students (UG/PG/Research)</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">1000 INR / 100 USD</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">1000 INR / 100 USD</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">1500 INR / 110 USD</td>
-            </tr>
+              <div className="overflow-x-auto">
+                <table className="min-w-full table-auto border-collapse">
+                  <thead>
+                    <tr className="bg-indigo-600 text-white text-xs sm:text-sm md:text-base">
+                      <th className="px-2 sm:px-4 py-3 text-left">Category</th>
+                      <th className="px-2 sm:px-4 py-3 text-left">Paper Presentation (INR/USD)</th>
+                      <th className="px-2 sm:px-4 py-3 text-left">Attendee (INR/USD)</th>
+                      <th className="px-2 sm:px-4 py-3 text-left">On-the-Spot Registration (INR/USD)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-gray-700 text-xs sm:text-sm md:text-base">
+                    {/* Students Row */}
+                    <tr className="odd:bg-gray-50 even:bg-gray-100">
+                      <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold">Students (UG/PG/Research)</td>
+                      <td className="px-2 sm:px-4 py-2 sm:py-4">1000 INR / 100 USD</td>
+                      <td className="px-2 sm:px-4 py-2 sm:py-4">1000 INR / 100 USD</td>
+                      <td className="px-2 sm:px-4 py-2 sm:py-4">1500 INR / 110 USD</td>
+                    </tr>
 
-            {/* Academician/Industry Row */}
-            <tr className="odd:bg-gray-50 even:bg-gray-100">
-              <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold">Academician/Industry</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">2500 INR / 160 USD</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+                    {/* Academician/Industry Row */}
+                    <tr className="odd:bg-gray-50 even:bg-gray-100">
+                      <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold">Academician/Industry</td>
+                      <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
+                      <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
+                      <td className="px-2 sm:px-4 py-2 sm:py-4">2500 INR / 160 USD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-    {/*Payment Details*/}
-    <div className="p-4 sm:p-6 max-w-lg w-full mx-auto bg-gray-50 border border-gray-300 rounded-lg shadow-lg mb-4">
-      <h3 className="text-xl sm:text-2xl font-semibold text-center text-gray-800 mb-4">Payment Details</h3>
-      <div className="space-y-2 text-sm sm:text-base md:text-lg">
-        <p><strong>Beneficiary Name: </strong>RAASHEE 25</p>
-        <p><strong>Bank Name:</strong> Punjab National Bank</p>
-        <p><strong>Account Number:</strong> 6950002100002537</p>
-        <p><strong>Branch:</strong> JANKIPURAM VISTAR (DALIBAGH GANNA SANSTHAN-6216)</p>
-        <p><strong>IFSC Code:</strong> PUNB0695000</p>
-      </div>
-    </div>
-  </div>
-)}
+            {/*Payment Details*/}
+            <div className="p-4 sm:p-6 max-w-lg w-full mx-auto bg-gray-50 border border-gray-300 rounded-lg shadow-lg mb-4">
+              <h3 className="text-xl sm:text-2xl font-semibold text-center text-gray-800 mb-4">Payment Details</h3>
+              <div className="space-y-2 text-sm sm:text-base md:text-lg">
+                <p><strong>Beneficiary Name: </strong>RAASHEE 25</p>
+                <p><strong>Bank Name:</strong> Punjab National Bank</p>
+                <p><strong>Account Number:</strong> 6950002100002537</p>
+                <p><strong>Branch:</strong> JANKIPURAM VISTAR (DALIBAGH GANNA SANSTHAN-6216)</p>
+                <p><strong>IFSC Code:</strong> PUNB0695000</p>
+              </div>
+            </div>
+          </div>
+        )}
 
       </div>
     </div>
