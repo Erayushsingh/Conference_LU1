@@ -131,12 +131,12 @@ const AbstractSubmission = () => {
   };
 
   return (
-    <div className="flex h-full">
-      {isModalOpen && (
-        <div className="flex w-full md:h-full items-center bg-blue-200">
+    <>
+    {isModalOpen && (
+        <div className="flex w-full  items-center bg-blue-200 h-screen">
           {/* Left side content */}
-          <div className="flex-1 md:w-[50%] md:h-[100%]  p-8  md:block flex justify-center items-center">
-            <div className="text-center md:h-full  items-center justify-center flex-col">
+          <div className=" hidden md:flex md:w-[50%] md:h-full  p-8  justify-center items-center">
+            <div className="text-center md:h-full flex items-center justify-center flex-col">
               <h2 className="text-3xl font-bold mb-4">Submit Your Abstract</h2>
               <p className="text-lg mb-8">
                 Welcome to the abstract submission page for the RAASHEE-25. Please fill out the form  to submit your abstract. We look forward to your participations!
@@ -145,9 +145,9 @@ const AbstractSubmission = () => {
           </div>
 
           {/* Right side form */}
-          <div className="flex-1 bg-white p-8">
+          <div className="flex-1 h-screen bg-white p-8">
             <div className="w-full sm:w-3/4 lg:w-2/3 mx-auto bg-white rounded-lg ">
-              <h2 className="text-xl text-center font-semibold mb-4">Abstract Submission for<br /> Raashee-25</h2>
+              <h2 className="text-xl text-center font-semibold mb-4">Abstract Submission Form For<br /> Raashee-25</h2>
               <form onSubmit={handleSubmit}>
                 {/* Paper Title */}
                 <div className="mb-4">
@@ -200,7 +200,7 @@ const AbstractSubmission = () => {
                 {/* Keywords */}
                 <div className="mb-4">
                   <label htmlFor="keywords" className="block text-lg font-medium">Keywords <span className="text-red-500">*</span></label>
-                  <input
+                  <textarea
                     type="text"
                     id="keywords"
                     name="keywords"
@@ -260,7 +260,7 @@ const AbstractSubmission = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="mb-4 flex justify-end space-x-2">
+                <div className=" mb-4 flex justify-end space-x-2">
                   <button
                     type="button"
                     className="bg-gray-500 text-white px-4 py-2 rounded-md"
@@ -292,7 +292,9 @@ const AbstractSubmission = () => {
           </div>
         </div>
       )}
-    </div>
+   
+    </>
+      
   );
 };
 
