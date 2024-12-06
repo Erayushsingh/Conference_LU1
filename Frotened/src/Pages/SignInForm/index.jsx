@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { FaSpinner, FaEye, FaEyeSlash } from 'react-icons/fa';
-import 'react-toastify/dist/ReactToastify.css';
-
+import Swal from 'sweetalert2';
 const LoginForm = ({ className }) => {
   const createLoginFormModel = () => ({
     email: '',
@@ -53,17 +51,23 @@ const LoginForm = ({ className }) => {
           body: JSON.stringify(formData),
         });
 
-        if (response.ok === false) {
-          throw new Error('Network response was not ok');
-        }
-
+        //if (response.ok === false) {
+        //
+        //  setLoading(false);
+        //  setIsPopupVisible(false)
+        //  console.log('Status')
+        //  Swal.fire("Server Error", "Please try again later", "error");
+        //}
+        //
         const data = await response.json();
         const userId = data.id;
-        console.log(data.id);
         if (data.success) {
           localStorage.setItem('token', data.accessToken);
           localStorage.setItem('role', data.role);
-          toast.success(data.message || 'Login successful!');
+          Swal.fire({
+            icon: 'success',
+            title: 'Login Successful',
+          })
           if (data.role === 'admin') {
             return navigate('/admin');
           }
@@ -86,28 +90,44 @@ const LoginForm = ({ className }) => {
                 navigate('/abstract-submission');
               }
 
-              console.log(submissionsData);
             } catch (err) {
-              console.error('Error:', err);
+              Swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: err.message,
+              })
             }
           }
 
-          setIsModalOpen(false);
           setPopupMessage("Login successful! Redirecting...");
           setTimeout(() => {
             setIsPopupVisible(false);
           }, 3000);
         } else {
-          toast.error(data.message || 'Login failed. Please try again.');
+          setIsPopupVisible(false)
+          setLoading(false)
+
+          Swal.fire({
+            icon: 'error',
+            title: 'Login Failed',
+            text: 'Incorrect email or password',
+          })
+          setTimeout(() => {
+            navigate('/');
+          }, 2000)
         }
       } catch (error) {
-        toast.error('Incorrect password or email.');
-        console.error('Error during login:', error);
+        Swal.fire({
+          icon: 'error',
+          title: 'Login Failed',
+          text: error.message,
+        })
         setLoading(false);
         setPopupMessage("Please try again...");
         setIsPopupVisible(false);
       } finally {
         setLoading(false);
+        setIsModalOpen(false)
       }
     }
   };
@@ -212,7 +232,6 @@ const LoginForm = ({ className }) => {
       )}
 
       {/* Toast Container */}
-      <ToastContainer />
     </div>
   );
 };
