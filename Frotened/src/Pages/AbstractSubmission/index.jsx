@@ -14,7 +14,7 @@ const AbstractSubmission = () => {
   const createAbstractFormModel = () => ({
     title: '',
     authors: '',
-    drivelink:'',
+    drivelink: '',
     keywords: '',
     preferredPresentation: 'oral',
     conferenceTheme: '',
@@ -48,6 +48,13 @@ const AbstractSubmission = () => {
       [name]: value,
     });
   };
+
+  // Drive link validation
+  const validatedrivelink = (url) => {
+    const linkpattern = /^https:\/\/drive\.google\.com\/.*\/d\/[a-zA-Z0-9_-]+(\/.*)?$/;
+
+    return linkpattern.test(url);
+  }
 
   // Handle form submission
   const handleSubmit = async (e) => {
@@ -123,13 +130,6 @@ const AbstractSubmission = () => {
     navigate('/');
   };
 
-  {/* Drive link validation */}
-  const validatedrivelink=(url)=>{
-    const linkpattern=/^https:\/\/drive\.google\.com\/.*\/d\/[a-zA-Z0-9_-]+(\/.*)?$/;
-
-    return linkpattern.test(url);
-  }
-  
   return (
     <div className="flex h-full">
       {isModalOpen && (
@@ -174,7 +174,7 @@ const AbstractSubmission = () => {
                     name="authors"
                     value={formData.authors}
                     onChange={handleChange}
-                     placeholder="Enter author's name"
+                    placeholder="Enter author's name"
                     required
                     className={`w-full p-2 border-2 rounded-md ${errors.authors ? 'border-red-500' : 'border-gray-300'}`}
                   />
