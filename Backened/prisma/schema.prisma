@@ -35,7 +35,7 @@ model AbstractForm {
   user                  User     @relation(fields: [userId], references: [id])
   title                 String
   authors                String
-  abstract              String
+  drivelink             String
   keywords              String
   preferredPresentation Type     @default(oral)
   conferenceTheme       String

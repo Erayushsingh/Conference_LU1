@@ -18,7 +18,7 @@ export const signInInput = z.object({
 export const createAbstract = z.object({
   title: z.string(),
   authors: z.string(),
-  abstract: z.string(),
+  drivelink: z.string(),
   keywords: z.string(),
   preferredPresentation: z.enum(["oral", "poster"]).default("oral"),
   conferenceTheme: z.string(),
