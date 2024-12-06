@@ -45,8 +45,8 @@ model AbstractForm {
 }
 
 enum Conflict {
-  yes
   no
+  yes
 }
 
 enum Type {
