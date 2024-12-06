@@ -124,7 +124,9 @@ const AbstractSubmission = () => {
   const clearForm = () => {
     setFormData(createAbstractFormModel());
     setErrors({ title: false, authors: false, drivelink: false, keywords: false, conferenceTheme: false });
-    setIsModalOpen(false);
+    if (!isToastOpen) {
+      setIsModalOpen(false);
+    }
     navigate('/');
   };
 
