@@ -147,8 +147,6 @@ const UserTable = () => {
     const templateParams = {
       to_name: selectedUser.name,
       to_email: selectedUser.email,
-      from_name: 'Ayush Singh',
-      from_email: 'ayushsingh74340@gmail.com',
       subject: emailSubject,
       message: emailBody,
     };
