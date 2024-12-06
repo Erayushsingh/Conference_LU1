@@ -116,7 +116,7 @@ const AbstractSubmission = () => {
   // Clear form and close modal
   const clearForm = () => {
     setFormData(createAbstractFormModel());
-    setErrors({ title: false, authors: false, abstract: false, keywords: false, conferenceTheme: false });
+    setErrors({ title: false, authors: false, drivelink: false, keywords: false, conferenceTheme: false });
     if (!isToastOpen) {
       setIsModalOpen(false);
     }
