@@ -14,7 +14,7 @@ const AbstractSubmission = () => {
   const createAbstractFormModel = () => ({
     title: '',
     authors: '',
-    abstract: '',
+    drivelink:'',
     keywords: '',
     preferredPresentation: 'oral',
     conferenceTheme: '',
@@ -25,7 +25,7 @@ const AbstractSubmission = () => {
   const [errors, setErrors] = useState({
     title: false,
     authors: false,
-    abstract: false,
+    drivelink: false,
     keywords: false,
     conferenceTheme: false,
   });
@@ -56,7 +56,9 @@ const AbstractSubmission = () => {
     let newErrors = {};
     if (!formData.title) newErrors.title = true;
     if (!formData.authors) newErrors.authors = true;
-    if (!formData.abstract) newErrors.abstract = true;
+    if (!formData.drivelink || !validatedrivelink(formData.drivelink)) {
+      newErrors.drivelink = true;
+    }
     if (!formData.keywords) newErrors.keywords = true;
     if (!formData.conferenceTheme) newErrors.conferenceTheme = true;
 
@@ -121,16 +123,22 @@ const AbstractSubmission = () => {
     navigate('/');
   };
 
+  {/* Drive link validation */}
+  const validatedrivelink=(url)=>{
+    const linkpattern=/^https:\/\/drive\.google\.com\/file\/d\/[a-zA-Z0-9_-]+\/view\?usp=drive_link$/;
+    return linkpattern.test(url);
+  }
+  
   return (
     <div className="flex h-full">
       {isModalOpen && (
         <div className="flex w-full md:h-full items-center bg-blue-200">
           {/* Left side content */}
-          <div className="flex-1 md:w-[50%] md:h-[100%]  p-8 hidden md:block flex justify-center items-center">
+          <div className="flex-1 md:w-[50%] md:h-[100%]  p-8  md:block flex justify-center items-center">
             <div className="text-center md:h-full  items-center justify-center flex-col">
               <h2 className="text-3xl font-bold mb-4">Submit Your Abstract</h2>
               <p className="text-lg mb-8">
-                Welcome to the abstract submission page for the RAASHEE-25. Please fill out the form on the right to submit your abstract. We look forward to your participations!
+                Welcome to the abstract submission page for the RAASHEE-25. Please fill out the form  to submit your abstract. We look forward to your participations!
               </p>
             </div>
           </div>
@@ -147,6 +155,7 @@ const AbstractSubmission = () => {
                     type="text"
                     id="title"
                     name="title"
+                    placeholder="Enter your paper title"
                     value={formData.title}
                     onChange={handleChange}
                     required
@@ -164,24 +173,27 @@ const AbstractSubmission = () => {
                     name="authors"
                     value={formData.authors}
                     onChange={handleChange}
+                     placeholder="Enter author's name"
                     required
                     className={`w-full p-2 border-2 rounded-md ${errors.authors ? 'border-red-500' : 'border-gray-300'}`}
                   />
                   {errors.authors && <span className="text-red-500 text-sm">Authors are required</span>}
                 </div>
 
-                {/* Abstract */}
+                {/* Abstract Drive link*/}
                 <div className="mb-4">
-                  <label htmlFor="abstract" className="block text-lg font-medium">Abstract <span className="text-red-500">*</span></label>
-                  <textarea
-                    id="abstract"
-                    name="abstract"
-                    value={formData.abstract}
+                  <label htmlFor="drivelink" className="block text-lg font-medium">Abstract <span className="text-red-500">*</span></label>
+                  <input
+                    type="text"
+                    id="drivelink"
+                    name="drivelink"
+                    placeholder="Please attach your drive link here"
+                    value={formData.drivelink}
                     onChange={handleChange}
                     required
-                    className={`w-full p-2 border-2 rounded-md ${errors.abstract ? 'border-red-500' : 'border-gray-300'}`}
+                    className={`w-full p-2 border-2 rounded-md ${errors.drivelink ? 'border-red-500' : 'border-gray-300'}`}
                   />
-                  {errors.abstract && <span className="text-red-500 text-sm">Abstract is required</span>}
+                  {errors.drivelink && <span className="text-red-500 text-sm">Please upload a valid drive link.</span>}
                 </div>
 
                 {/* Keywords */}
@@ -193,6 +205,7 @@ const AbstractSubmission = () => {
                     name="keywords"
                     value={formData.keywords}
                     onChange={handleChange}
+                    placeholder="Enter keywords "
                     required
                     className={`w-full p-2 border-2 rounded-md ${errors.keywords ? 'border-red-500' : 'border-gray-300'}`}
                   />
@@ -223,6 +236,7 @@ const AbstractSubmission = () => {
                     name="conferenceTheme"
                     value={formData.conferenceTheme}
                     onChange={handleChange}
+                    placeholder="Enter your conference theme"
                     required
                     className={`w-full p-2 border-2 rounded-md ${errors.conferenceTheme ? 'border-red-500' : 'border-gray-300'}`}
                   />
@@ -231,7 +245,7 @@ const AbstractSubmission = () => {
 
                 {/* Conflict of Interest */}
                 <div className="mb-4">
-                  <label htmlFor="conflictOfInterest" className="block text-lg font-medium">Conflict of Interest</label>
+                  <label htmlFor="conflictOfInterest" className="block text-lg font-medium">Are you interested in full paper submission ?</label>
                   <select
                     id="conflictOfInterest"
                     name="conflictOfInterest"
