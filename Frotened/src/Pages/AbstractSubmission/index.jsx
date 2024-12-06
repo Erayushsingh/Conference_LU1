@@ -125,7 +125,8 @@ const AbstractSubmission = () => {
 
   {/* Drive link validation */}
   const validatedrivelink=(url)=>{
-    const linkpattern=/^https:\/\/drive\.google\.com\/file\/d\/[a-zA-Z0-9_-]+\/view\?usp=drive_link$/;
+    const linkpattern=/^https:\/\/drive\.google\.com\/.*\/d\/[a-zA-Z0-9_-]+(\/.*)?$/;
+
     return linkpattern.test(url);
   }
   
@@ -182,7 +183,7 @@ const AbstractSubmission = () => {
 
                 {/* Abstract Drive link*/}
                 <div className="mb-4">
-                  <label htmlFor="drivelink" className="block text-lg font-medium">Abstract <span className="text-red-500">*</span></label>
+                  <label htmlFor="drivelink" className="block text-lg font-medium">Abstract Drive Link<span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     id="drivelink"
