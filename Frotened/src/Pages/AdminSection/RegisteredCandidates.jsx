@@ -200,9 +200,9 @@ const UserTable = () => {
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.organization}</td>
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.place}</td>
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.address}</td>
-                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.accomadation}</td>  
-                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.interestedPresentation}</td>
-                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}><img src={user.screenshot} alt="userScreenshot" style={{ maxWidth: '100%', height: 'auto' }} /></td>
+                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.accommodation}</td>  
+                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.interestedInPresentation}</td>
+                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}><img src={user.screenshot} alt="userScreenshot"  /></td>
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>
                   <button
                     onClick={() => handleViewClick(user)}
