@@ -24,8 +24,8 @@ model User {
   address      String
   password     String
   abstractForm AbstractForm[]
-  accommodation accomodation @default(no)
-  interestedInPresentation interestedPresenting @default(no)
+  accommodation accomodation @default(No)
+  interestedInPresentation interestedPresenting @default(No)
   screenshot String 
   role        Role  @default(user)
 }
