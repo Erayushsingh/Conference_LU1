@@ -31,7 +31,10 @@ const UserTable = () => {
       setLoading(false);
     }
   }
-  const [showModal, setShowModal] = useState(false);
+
+  const [showEmailModal, setShowEmailModal] = useState(false);
+  const [showImageModal, setShowImageModal] = useState(false);
+
   const [selectedUser, setSelectedUser] = useState(null);
   const [emailSubject, setEmailSubject] = useState('');
   const [emailBody, setEmailBody] = useState('');
@@ -39,7 +42,7 @@ const UserTable = () => {
 
   const handleViewClick = (user) => {
     setSelectedUser(user);
-    setShowModal(true);
+    setShowEmailModal(true);
   };
 
 
@@ -167,8 +170,8 @@ const UserTable = () => {
   };
 
   const handleImageClick = (imageUrl) => {
-    setImageSrc(imageUrl); 
-    setShowModal(true); // Open the modal
+    setImageSrc(imageUrl);
+    setShowImageModal(true); 
   };
 
   return (
@@ -239,7 +242,7 @@ const UserTable = () => {
       )}
 
       {/* Modal for sending email */}
-      {showModal && (
+      {showEmailModal && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-md shadow-md w-1/3">
             <h3 className="text-lg font-semibold mb-4">Send Email to {selectedUser.name}</h3>
@@ -285,8 +288,8 @@ const UserTable = () => {
       )}
 
 
-     {/* Full-Screen Image Modal */}
-     {showModal && (
+      {/* Full-Screen Image Modal */}
+      {showImageModal && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
           <div className="relative bg-white p-6 rounded-md shadow-md w-auto h-auto">
             <button
