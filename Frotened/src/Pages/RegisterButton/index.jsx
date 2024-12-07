@@ -249,7 +249,7 @@ const RegisterButton = ({ className }) => {
                   </label>
                   <select
                     name="interestedInPresentation"
-                    value={formData.interestedInPresentation}
+                    value={formData.interestedInPresentation || "Yes"}
                     onChange={handleInputChange}
                     className="w-full p-3 border-2 border-gray-300 rounded-md"
                   >
@@ -317,7 +317,7 @@ const RegisterButton = ({ className }) => {
                   </label>
                   <select
                     name="accommodation"
-                    value={formData.accommodation}
+                    value={formData.accommodation || "No"}
                     onChange={handleInputChange}
                     className="w-full p-3 border-2 border-gray-300 rounded-md"
                   >
