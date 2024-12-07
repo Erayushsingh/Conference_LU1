@@ -202,7 +202,7 @@ const UserTable = () => {
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.address}</td>
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.accomadation}</td>  
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.interestedPresentation}</td>
-                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.screenshot}</td>
+                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}><img src={user.screenshot} alt="userScreenshot" style={{ maxWidth: '100%', height: 'auto' }} /></td>
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>
                   <button
                     onClick={() => handleViewClick(user)}
