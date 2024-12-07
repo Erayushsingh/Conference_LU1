@@ -14,7 +14,7 @@ const RegisterButton = ({ className }) => {
     address: "",
     password: "",
     confirmPassword: "",
-    accommodation: "",
+    accommodation: "No",
     screenshot: "",
     interestedInPresentation: "Yes",
   });
@@ -113,8 +113,9 @@ const RegisterButton = ({ className }) => {
           address: "",
           password: "",
           confirmPassword: "",
-          accommodation: "",
+          accommodation: "No",
           screenshot: "",
+    interestedInPresentation: "Yes",
         });
 
         setTimeout(() => {
