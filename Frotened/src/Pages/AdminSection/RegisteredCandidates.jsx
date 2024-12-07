@@ -184,6 +184,9 @@ const UserTable = () => {
               <th className="px-4 py-2 border">Organization</th>
               <th className="px-4 py-2 border">Place</th>
               <th className="px-4 py-2 border">Address</th>
+              <th className="px-4 py-2 border">Accomadation</th>
+              <th className="px-4 py-2 border">Presentation Interest</th>
+              <th className="px-4 py-2 border">Screenshot</th>
               <th className="px-4 py-2 border">Action</th>
             </tr>
           </thead>
@@ -197,6 +200,9 @@ const UserTable = () => {
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.organization}</td>
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.place}</td>
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.address}</td>
+                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.accomadation}</td>  
+                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.interestedPresentation}</td>
+                <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.screenshot}</td>
                 <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>
                   <button
                     onClick={() => handleViewClick(user)}
