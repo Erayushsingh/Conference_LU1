@@ -24,7 +24,6 @@ const RegisterButton = ({ className }) => {
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [phoneError, setPhoneError] = useState("");
-  const [fileSizeError, setFileSizeError] = useState("");
   const [showPaymentModal, setShowPaymentModal] = useState(false);
 
   {/*Payment Model */ }
@@ -82,7 +81,7 @@ const RegisterButton = ({ className }) => {
     try {
       const response = await fetch(
         `https://www.api.raashee.in/api/auth/register`,
-        'http://localhost:3001/api/auth/register',
+        //'http://localhost:3001/api/auth/register',
         {
           method: "POST",
           headers: {
@@ -169,6 +168,7 @@ const RegisterButton = ({ className }) => {
       //}
 
       // Check if the file type is .jpeg or .jpg
+
       if (file.type === "image/jpeg" || file.type === "image/jpg") {
         const reader = new FileReader();
 
