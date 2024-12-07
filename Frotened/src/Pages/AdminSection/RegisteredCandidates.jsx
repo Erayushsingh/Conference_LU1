@@ -62,6 +62,9 @@ const UserTable = () => {
             display: none;
           }
     
+           td:nth-child(10), th:nth-child(10) {
+            display: none;
+          }
          
           button {
             display: none; 
