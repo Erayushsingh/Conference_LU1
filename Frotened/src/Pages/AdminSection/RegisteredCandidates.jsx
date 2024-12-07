@@ -58,7 +58,7 @@ const UserTable = () => {
             font-family: Arial, sans-serif;
           }
     
-          td:nth-child(8), th:nth-child(8) {
+          td:nth-child(11), th:nth-child(11) {
             display: none;
           }
     
