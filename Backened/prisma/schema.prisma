@@ -24,7 +24,8 @@ model User {
   address      String
   password     String
   abstractForm AbstractForm[]
-
+  accommodation accomodation @default(no)
+  interestedInPresentation interestedPresenting @default(no)
   screenshot String 
   role        Role  @default(user)
 }
@@ -57,3 +58,12 @@ enum Role {
   user
   admin
 }
+enum accomodation {
+  yes
+  no
+}
+enum interestedPresenting {
+  yes
+  no
+}
+
