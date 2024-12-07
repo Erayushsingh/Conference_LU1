@@ -6,12 +6,30 @@ const ConferenceSubmissions = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [fromDate, setFromDate] = useState('');
   const [toDate, setToDate] = useState('');
-  const [loading, setLoading] = useState(true); 
-
+  const [loading, setLoading] = useState(true);
+  const [formattedDate, setFormattedDate] = useState('');
   useEffect(() => {
     getAbstract();
   }, []);
+  const formatDate = (dateString) => {
+    console.log("Date String:", dateString); // Output: 2024-12-07T00:00:00.000Z
+    const date = new Date(dateString);
+    console.log(date)
+    // Check if the date is valid
+    if (isNaN(date.getTime())) {
+      console.error("Invalid date string");
+      return null;
+    }
 
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = String(date.getFullYear()).slice(2);
+
+    const formattedDate = `${day}/${month}/${year}`;
+    console.log("Formatted Date:", formattedDate); // Output: 07/12/24
+    setFormattedDate(formattedDate);
+    console.log(formattedDate)
+  };
   const getAbstract = async () => {
     try {
       const token = localStorage.getItem('token');
@@ -25,11 +43,12 @@ const ConferenceSubmissions = () => {
       const data = await response.json();
       setSubmissionsData(data);
       console.log(data)
+      formatDate(data[0].createdAt)
     } catch (e) {
       console.error('Error fetching abstracts:', e);
     }
     finally {
-      setLoading(false); 
+      setLoading(false);
     }
   }
 
@@ -141,13 +160,13 @@ const ConferenceSubmissions = () => {
   });
 
   return (
-    
+
     <div className="container mx-auto my-6 w-full">
-      { loading ? (
+      {loading ? (
         <div className="flex justify-center items-center h-64">
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
-        </div> 
-      ) : 
+        </div>
+      ) :
         submissionsData.length === 0 ? (
           <h2 className="text-2xl font-semibold mb-4 text-red-500">No abstracts submitted yet</h2>
         ) :
@@ -197,12 +216,15 @@ const ConferenceSubmissions = () => {
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.userId}</td>
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.title}</td>
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.authors}</td>
-                      <td className="px-4 py-2 border break-words max-w-xs">{submission.abstract}</td>
+                      <td className="px-4 py-2 border break-words max-w-xs"> <a className="text-blue-700 underline cursor-pointer" target='_blank' href={submission.drivelink}>
+                        Drive Link
+                      </a></td>
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.keywords}</td>
-                      <td className="px-4 py-2 border break-words max-w-xs">{submission.preferredPresentationType}</td>
+                      <td className="px-4 py-2 border break-words max-w-xs">{submission.preferredPresentation}</td>
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.conferenceTheme}</td>
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.conflictOfInterest}</td>
-                      <td className="px-4 py-2 border break-words max-w-xs">{submission.date}</td> {/* Display Date */}
+                      <td className="px-4 py-2 border break-words max-w-xs">{formattedDate
+                      }</td> {/* Display Date */}
                       <td className="px-4 py-2 border break-words max-w-xs"><button
                         onClick={() => handleViewClick(submission)}
                         className="text-blue-500 hover:text-blue-700"
@@ -214,7 +236,7 @@ const ConferenceSubmissions = () => {
                 </tbody>
               </table>
             </div>
-            </>
+          </>
           )}
       {/* Modal to display submission details */}
       {isModalOpen && selectedSubmission && (
@@ -222,12 +244,14 @@ const ConferenceSubmissions = () => {
           <div className="bg-white p-6 rounded-lg w-3/4 max-w-4xl">
             <h3 className="text-2xl font-semibold mb-4 break-words">{selectedSubmission.title}</h3>
             <p className="break-words"><strong>Authors:</strong> {selectedSubmission.authors}</p>
-            <p className="break-words"><strong>Abstract:</strong> {selectedSubmission.abstract}</p>
+            <p className="break-words"><strong>Abstract:</strong> <a className="text-blue-700 underline cursor-pointer" target='_blank' href={selectedSubmission.drivelink}>
+              Drive Link
+            </a></p>
             <p className="break-words"><strong>Keywords:</strong> {selectedSubmission.keywords}</p>
             <p className="break-words"><strong>Preferred Presentation Type:</strong> {selectedSubmission.preferredPresentationType}</p>
             <p className="break-words"><strong>Conference Theme:</strong> {selectedSubmission.conferenceTheme}</p>
             <p className="break-words"><strong>Conflict of Interest:</strong> {selectedSubmission.conflictOfInterest}</p>
-            <p className="break-words"><strong>Date:</strong> {selectedSubmission.date}</p>
+            <p className="break-words"><strong>Date:</strong> {formattedDate}</p>
 
             <div className="flex justify-end mt-4">
               <button
@@ -239,7 +263,8 @@ const ConferenceSubmissions = () => {
             </div>
           </div>
         </div>
-      )}
+      )
+      }
 
       <div className="flex justify-end mt-4">
         <button onClick={handlePrintClick} className="bg-blue-500 text-white px-6 py-3 rounded">
@@ -247,7 +272,7 @@ const ConferenceSubmissions = () => {
         </button>
       </div>
 
-    </div>
+    </div >
   );
 };
 
