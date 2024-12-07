@@ -132,7 +132,7 @@ const AbstractSubmission = () => {
 
   return (
     <>
-    {isModalOpen && (
+      {isModalOpen && (
         <div className="flex w-full  items-center bg-blue-200 h-screen">
           {/* Left side content */}
           <div className=" hidden md:flex md:w-[50%] md:h-full  p-8  justify-center items-center">
@@ -215,7 +215,7 @@ const AbstractSubmission = () => {
 
                 {/* Preferred Presentation */}
                 <div className="mb-4">
-                  <label htmlFor="preferredPresentation" className="block text-lg font-medium">Preferred Presentation</label>
+                  <label htmlFor="preferredPresentation" className="block text-lg font-medium">Preferred Presentation<span className='text-red-500 '>*</span></label>
                   <select
                     id="preferredPresentation"
                     name="preferredPresentation"
@@ -231,18 +231,23 @@ const AbstractSubmission = () => {
                 {/* Conference Theme */}
                 <div className="mb-4">
                   <label htmlFor="conferenceTheme" className="block text-lg font-medium">Conference Theme <span className="text-red-500">*</span></label>
-                  <input
-                    type="text"
+                  <select
                     id="conferenceTheme"
                     name="conferenceTheme"
                     value={formData.conferenceTheme}
                     onChange={handleChange}
-                    placeholder="Enter your conference theme"
                     required
                     className={`w-full p-2 border-2 rounded-md ${errors.conferenceTheme ? 'border-red-500' : 'border-gray-300'}`}
-                  />
+                  >
+                    <option value="">Select your theme</option>
+                    <option value="Physical Sciences">Physical Sciences</option>
+                    <option value="Chemical Sciences">Chemical Sciences</option>
+                    <option value="Mathematical Sciences">Mathematical Sciences</option>
+                    <option value="Humanities & Management Sciences">Humanities & Management Sciences</option>
+                  </select>
                   {errors.conferenceTheme && <span className="text-red-500 text-sm">Conference Theme is required</span>}
                 </div>
+
 
                 {/* Conflict of Interest */}
                 <div className="mb-4">
@@ -292,9 +297,9 @@ const AbstractSubmission = () => {
           </div>
         </div>
       )}
-   
+
     </>
-      
+
   );
 };
 

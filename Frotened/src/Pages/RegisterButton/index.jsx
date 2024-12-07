@@ -14,6 +14,9 @@ const RegisterButton = ({ className }) => {
     address: "",
     password: "",
     confirmPassword: "",
+    accommodation: "No",
+    screenshot: "",
+    interestedInPresentation: "Yes",
   });
 
   const [showPassword, setShowPassword] = useState(false);
@@ -111,6 +114,7 @@ const RegisterButton = ({ className }) => {
           address: "",
           password: "",
           confirmPassword: "",
+          accommodation: "No",
           screenshot: "",
         });
 
@@ -237,6 +241,22 @@ const RegisterButton = ({ className }) => {
                     placeholder="Enter your postal address"
                   ></textarea>
                 </div>
+
+                {/*Intereset */}
+                <div className="mb-4">
+                  <label className="block text-sm font-semibold md:text-lg">
+                    Interested in Presentation? <span className="text-red-500">*</span>
+                  </label>
+                  <select
+                    name="interestedInPresentation"
+                    value={formData.interestedInPresentation}
+                    onChange={handleInputChange}
+                    className="w-full p-3 border-2 border-gray-300 rounded-md"
+                  >
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
               </div>
 
               {/* Right Column */}
@@ -289,8 +309,28 @@ const RegisterButton = ({ className }) => {
                     required
                   ></textarea>
                 </div>
+
+                {/* Accommodation Select */}
+                <div className="mb-4">
+                  <label className="block text-sm font-semibold md:text-lg">
+                    Accommodation Required? <span className="text-red-500">*</span>
+                  </label>
+                  <select
+                    name="accommodation"
+                    value={formData.accommodation}
+                    onChange={handleInputChange}
+                    className="w-full p-3 border-2 border-gray-300 rounded-md"
+                  >
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+
+
+
               </div>
             </div>
+
 
             {/* Password Fields */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
