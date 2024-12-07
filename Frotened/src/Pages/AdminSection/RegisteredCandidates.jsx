@@ -276,7 +276,7 @@ const UserTable = () => {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setShowModal(false)}
+                  onClick={() => setShowEmailModal(false)}
                   className="ml-2 py-2 px-4 border rounded"
                 >
                   Cancel
@@ -291,10 +291,11 @@ const UserTable = () => {
       {/* Full-Screen Image Modal */}
       {showImageModal && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
-          <div className="relative bg-white p-6 rounded-md shadow-md w-auto h-auto">
+          <div className="relative bg-white p-6 rounded-md shadow-md max-w-screen-md max-h-screen overflow-auto">
+
             <button
               className="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-700 p-2 rounded-full"
-              onClick={() => setShowModal(false)}
+              onClick={() => setShowImageModal(false)}
             >
               X
             </button>
