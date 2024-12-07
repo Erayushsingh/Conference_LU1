@@ -14,7 +14,7 @@ const RegisterButton = ({ className }) => {
     address: "",
     password: "",
     confirmPassword: "",
-    accommodation: "No",
+    accommodation: "",
     screenshot: "",
     interestedInPresentation: "Yes",
   });
@@ -82,7 +82,7 @@ const RegisterButton = ({ className }) => {
     try {
       const response = await fetch(
         `https://www.api.raashee.in/api/auth/register`,
-        //'http://localhost:3001/api/auth/register',
+        'http://localhost:3001/api/auth/register',
         {
           method: "POST",
           headers: {
@@ -114,7 +114,7 @@ const RegisterButton = ({ className }) => {
           address: "",
           password: "",
           confirmPassword: "",
-          accommodation: "No",
+          accommodation: "",
           screenshot: "",
         });
 
@@ -156,17 +156,17 @@ const RegisterButton = ({ className }) => {
       const file = files[0];
 
       // Check if the file size exceeds 50KB
-      if (file.size > 50 * 1024) {
-        setFileSizeError("File size exceeds 50KB. Please upload a smaller image.");
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "File size exceeds 50KB. Please upload a smaller image.",
-        })
-        return;
-      } else {
-        setFileSizeError("");
-      }
+      //if (file.size > 50 * 1024) {
+      //  setFileSizeError("File size exceeds 50KB. Please upload a smaller image.");
+      //  Swal.fire({
+      //    icon: "error",
+      //    title: "Oops...",
+      //    text: "File size exceeds 50KB. Please upload a smaller image.",
+      //  })
+      //  return;
+      //} else {
+      //  setFileSizeError("");
+      //}
 
       // Check if the file type is .jpeg or .jpg
       if (file.type === "image/jpeg" || file.type === "image/jpg") {
