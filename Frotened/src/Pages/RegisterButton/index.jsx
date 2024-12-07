@@ -401,7 +401,7 @@ const RegisterButton = ({ className }) => {
                 accept=".jpg, .jpeg"
               />
               <p className="text-sm text-gray-500 mt-2">
-                Only .jpg and .jpeg images are accepted.<span className="text-red-500">(Max-Size 50kB* )</span>
+                Only .jpg and .jpeg images are accepted.
               </p>
 
               <strong>
