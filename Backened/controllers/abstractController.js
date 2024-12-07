@@ -15,7 +15,6 @@ export const submitAbstract = async (req, res) => {
     const newSubmission = await prisma.abstractForm.create({
       data: {
         userId: userId,
-
         title: parsedBody.data.title,
         authors: parsedBody.data.authors,
         drivelink: parsedBody.data.drivelink,
