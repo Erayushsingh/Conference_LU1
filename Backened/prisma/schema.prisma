@@ -59,11 +59,11 @@ enum Role {
   admin
 }
 enum accomodation {
-  yes
-  no
+  Yes
+  No
 }
 enum interestedPresenting {
-  yes
-  no
+  Yes
+  No
 }
 
