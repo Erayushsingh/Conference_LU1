@@ -115,7 +115,7 @@ const RegisterButton = ({ className }) => {
           confirmPassword: "",
           accommodation: "No",
           screenshot: "",
-    interestedInPresentation: "Yes",
+          interestedInPresentation: "Yes",
         });
 
         setTimeout(() => {
@@ -242,22 +242,6 @@ const RegisterButton = ({ className }) => {
                     placeholder="Enter your postal address"
                   ></textarea>
                 </div>
-
-                {/*Intereset */}
-                <div className="mb-4">
-                  <label className="block text-sm font-semibold md:text-lg">
-                    Interested in Presentation? <span className="text-red-500">*</span>
-                  </label>
-                  <select
-                    name="interestedInPresentation"
-                    value={formData.interestedInPresentation || "Yes"}
-                    onChange={handleInputChange}
-                    className="w-full p-3 border-2 border-gray-300 rounded-md"
-                  >
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                  </select>
-                </div>
               </div>
 
               {/* Right Column */}
@@ -310,24 +294,6 @@ const RegisterButton = ({ className }) => {
                     required
                   ></textarea>
                 </div>
-
-                {/* Accommodation Select */}
-                <div className="mb-4">
-                  <label className="block text-sm font-semibold md:text-lg">
-                    Accommodation Required? <span className="text-red-500">*</span>
-                  </label>
-                  <select
-                    name="accommodation"
-                    value={formData.accommodation || "No"}
-                    onChange={handleInputChange}
-                    className="w-full p-3 border-2 border-gray-300 rounded-md"
-                  >
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
-                  </select>
-                </div>
-
-
 
               </div>
             </div>
@@ -386,6 +352,38 @@ const RegisterButton = ({ className }) => {
               </div>
             </div>
 
+
+            {/* Accommodation Select */}
+            <div className="mb-4">
+              <label className="block text-sm font-semibold md:text-lg">
+                Accommodation Required? <span className="text-red-500">*</span>
+              </label>
+              <select
+                name="accommodation"
+                value={formData.accommodation || "No"}
+                onChange={handleInputChange}
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
+              >
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+              </select>
+            </div>
+
+            {/*Intereset */}
+            <div className="mb-4">
+              <label className="block text-sm font-semibold md:text-lg">
+                Interested in Presentation? <span className="text-red-500">*</span>
+              </label>
+              <select
+                name="interestedInPresentation"
+                value={formData.interestedInPresentation || "Yes"}
+                onChange={handleInputChange}
+                className="w-full p-3 border-2 border-gray-300 rounded-md"
+              >
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
 
             <div className="mb-4">
               <label className="block text-sm font-semibold md:text-lg">
