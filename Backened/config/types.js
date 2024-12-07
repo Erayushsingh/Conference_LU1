@@ -5,7 +5,7 @@ export const registerInput = z.object({
   email: z.string().email(),
   password: z.string().min(6),
   phone: z.string().max(12),
-  organization: z.string().max(50),
+  organization: z.string(),
   place: z.string(),
   address: z.string(),
   screenshot: z.string(),
