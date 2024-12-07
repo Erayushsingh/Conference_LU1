@@ -30,6 +30,8 @@ export const registerUser = async (req, res) => {
     const newUser = await prisma.user.create({
       data: {
         name: parsedBody.data.name,
+        accommodation: parsedBody.data.accommodation,
+        interestedInPresentation: parsedBody.data.interestedInPresentation,
         email: parsedBody.data.email,
         phone: parsedBody.data.phone,
         organization: parsedBody.data.organization,

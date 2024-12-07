@@ -6,7 +6,7 @@ export const registerInput = z.object({
   password: z.string().min(6),
   phone: z.string().max(12),
   organization: z.string(),
-  accomodation: z.enum(["yes", "no"]).default("no"),
+  accommodation: z.enum(["yes", "no"]).default("no"),
   interestedInPresentation: z.enum(["yes", "no"]).default("no"),
   place: z.string(),
   address: z.string(),
