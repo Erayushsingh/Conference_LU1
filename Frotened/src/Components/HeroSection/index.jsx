@@ -8,6 +8,9 @@ import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
 import Deepak_Sir from "/src/assets/Deepak_Sir.jpg";
+import Launch from "/src/assets/Launch.jpg"
+import Launch01 from "/src/assets/Launch01.jpg"
+import Launch02 from "/src/assets/Launch02.jpg"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -42,6 +45,27 @@ const HeroSection = () => {
           data-bs-interval="2000"
         >
           <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img
+                src={Launch02}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            <div className="carousel-item active">
+              <img
+                src={Launch01}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            <div className="carousel-item active">
+              <img
+                src={Launch}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
             <div className="carousel-item active">
               <img
                 src={LuPhoto05}

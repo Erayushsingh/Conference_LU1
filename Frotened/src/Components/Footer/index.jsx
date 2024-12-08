@@ -50,25 +50,25 @@ const Footer = () => {
             {/* Highlighted Contact 1 */}
             <p className="text-lg text-blue-500 md:p-2 text-center hover:cursor-pointer font-bold mb-2">
               Dr. Khushboo Verma
-              <div>(+91 7991200535)</div>
+              <div>(7991200535)</div>
             </p>
 
             {/* Highlighted Contact 2 */}
             <p className="text-lg text-blue-500 md:p-2 text-center hover:cursor-pointer font-bold mb-2">
               Dr. Rachana Pathak
-              <div>(+91 9044375304)</div>
+              <div>(9044375304)</div>
             </p>
 
             {/* Highlighted Contact 3 */}
             <p className="text-lg text-blue-500 md:p-2 text-center hover:cursor-pointer font-bold mb-2">
               Dr. Savya Sachi
-              <div>(+91 9811746901)</div>
+              <div>(9811746901)</div>
             </p>
 
             {/* Highlighted Contact 4 */}
             <p className="text-lg text-blue-500 md:p-2 text-center hover:cursor-pointer font-bold mb-2">
               Dr. R. P. Singh
-              <div>(+91 8090196096)</div>
+              <div>(8090196096)</div>
             </p>
           </div>
         </div>
