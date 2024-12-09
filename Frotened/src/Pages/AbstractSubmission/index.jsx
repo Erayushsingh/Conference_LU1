@@ -49,12 +49,12 @@ const AbstractSubmission = () => {
     });
   };
 
-  // Drive link validation
-  const validatedrivelink = (url) => {
-    const linkpattern = /^https:\/\/drive\.google\.com\/.*\/d\/[a-zA-Z0-9_-]+(\/.*)?$/;
+  // // Drive link validation
+  // const validatedrivelink = (url) => {
+  //   const linkpattern = /^https:\/\/drive\.google\.com\/.*\/d\/[a-zA-Z0-9_-]+(\/.*)?$/;
 
-    return linkpattern.test(url);
-  }
+  //   return linkpattern.test(url);
+  // }
 
   // Handle form submission
   const handleSubmit = async (e) => {
@@ -63,7 +63,7 @@ const AbstractSubmission = () => {
     let newErrors = {};
     if (!formData.title) newErrors.title = true;
     if (!formData.authors) newErrors.authors = true;
-    if (!formData.drivelink || !validatedrivelink(formData.drivelink)) {
+    if (!formData.drivelink) {
       newErrors.drivelink = true;
     }
     if (!formData.keywords) newErrors.keywords = true;
