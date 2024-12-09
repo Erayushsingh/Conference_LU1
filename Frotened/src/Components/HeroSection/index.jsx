@@ -8,9 +8,14 @@ import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
 import Deepak_Sir from "/src/assets/Deepak_Sir.jpg";
-import Launch from "/src/assets/Launch.jpg"
-import Launch01 from "/src/assets/Launch01.jpg"
-import Launch02 from "/src/assets/Launch02.jpg"
+import Launch from "/src/assets/Launch.jpg";
+import Launch01 from "/src/assets/Launch01.jpg";
+import Launch02 from "/src/assets/Launch02.jpg";
+import Faculty from "/src/assets/Faculty_Photo.jpg";
+import Faculty01 from "/src/assets/Faculty_Photo01.jpg";
+import Faculty02 from "/src/assets/Faculty_Photo02.jpg";
+import Faculty04 from "/src/assets/Faculty_Photo04.jpg";
+import Faculty03 from "/src/assets/Faculty_Photo03.webp";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -25,7 +30,7 @@ const HeroSection = () => {
       <div className="bg-red-900 text-white py-2 text-center w-full">
         <div className="flex justify-center items-center flex-col md:flex-row  animate-zoom-out-in">
           <p className="text-2xl font-bold mb-2 md:mb-0 ">
-            Registration Open for RAASHEE-2025 
+            Registration Open for RAASHEE-2025
           </p>
           <button
             onClick={handleRegisterClick}
@@ -87,7 +92,6 @@ const HeroSection = () => {
                 alt="Gate 2"
               />
             </div>
-            
 
             <div className="carousel-item active">
               <img
@@ -97,7 +101,6 @@ const HeroSection = () => {
               />
             </div>
 
-            
             <div className="carousel-item active">
               <img
                 src={LuPhoto06}
@@ -109,6 +112,41 @@ const HeroSection = () => {
               <img
                 src={gatePhoto1}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            <div className="carousel-item active">
+              <img
+                src={Faculty03}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            <div className="carousel-item active">
+              <img
+                src={Faculty01}
+                className="d-block w-full object-cover overflow-hidden h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            <div className="carousel-item active">
+              <img
+                src={Faculty}
+                className="d-block w-full object-cover overflow-hidden h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            <div className="carousel-item active">
+              <img
+                src={Faculty04}
+                className="d-block w-full object-cover overflow-hidden h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="Gate 2"
+              />
+            </div>
+            <div className="carousel-item active">
+              <img
+                src={Faculty02}
+                className="d-block w-full object-cover overflow-hidden h-[400px] sm:h-[500px] lg:h-[600px]"
                 alt="Gate 2"
               />
             </div>
@@ -318,14 +356,14 @@ const HeroSection = () => {
                 Dr. Neha Arora, Central University of Rajasthan, Ajmer
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR 
+                Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
                 Dr. Saurabh Yadav, U. P. State Institute of Forensic Science,
                 Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-               Dr. Shashi Bala, University of Lucknow , Lucknow
+                Dr. Shashi Bala, University of Lucknow , Lucknow
               </li>
 
               <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
@@ -342,12 +380,12 @@ const HeroSection = () => {
                 Dr. Vijay Kumar,Galgotia University
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                Dr. Praveen Kumar, Scientist G,Inter University Accelerator Center (IUAC), New Delhi
+                Dr. Praveen Kumar, Scientist G,Inter University Accelerator
+                Center (IUAC), New Delhi
               </li>
               <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                 Dr. Vijay Kumar Singh, IIT Jodhpur
               </li>
-              
             </ul>
           </div>
         </div>
@@ -362,12 +400,12 @@ const HeroSection = () => {
           </p>
 
           <a
-            href="https://maps.app.goo.gl/8coD5FYR6acGvP8d7"
+            href="https://maps.app.goo.gl/g6rxtX9ULTdprEBRA"
             target="blank"
             className="text-xl font-semibold flex justify-center text-red-900 mb-4 text-center animate-zoom-out-in md:text-xl md:leading-8"
           >
-            Vishwakarma Auditorium 
-            <br/>
+            Vishwakarma Auditorium
+            <br />
             Faculty of Engineering and Technology,
             <br />
             University of Lucknow,
