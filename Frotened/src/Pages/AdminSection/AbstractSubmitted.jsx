@@ -11,6 +11,7 @@ const ConferenceSubmissions = () => {
   useEffect(() => {
     getAbstract();
   }, []);
+
   const formatDate = (dateString) => {
     console.log("Date String:", dateString); // Output: 2024-12-07T00:00:00.000Z
     const date = new Date(dateString);
@@ -150,14 +151,18 @@ const ConferenceSubmissions = () => {
 
   const filteredSubmissions = submissionsData.filter((submission) => {
     const submissionDate = new Date(submission.date);
-    const from = new Date(fromDate);
-    const to = new Date(toDate);
+    const from = fromDate ? new Date(fromDate) : null;
+    const to = toDate ? new Date(toDate) : null;
 
     return (
       (!fromDate || submissionDate >= from) &&
       (!toDate || submissionDate <= to)
     );
   });
+
+
+
+
 
   return (
 

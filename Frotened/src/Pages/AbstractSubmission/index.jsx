@@ -52,6 +52,8 @@ const AbstractSubmission = () => {
   // // Drive link validation
   // const validatedrivelink = (url) => {
   //   const linkpattern = /^https:\/\/drive\.google\.com\/.*\/d\/[a-zA-Z0-9_-]+(\/.*)?$/;
+  //const linkpattern = /^https:\/\/(?:drive\.google\.com|docs\.google\.com)\/(?:file|document)\/d\/[a-zA-Z0-9_-]+(?:\/.*)?$/;
+
 
   //   return linkpattern.test(url);
   // }
