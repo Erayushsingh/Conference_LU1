@@ -25,7 +25,7 @@ const HeroSection = () => {
       <div className="bg-red-900 text-white py-2 text-center w-full">
         <div className="flex justify-center items-center flex-col md:flex-row  animate-zoom-out-in">
           <p className="text-2xl font-bold mb-2 md:mb-0 ">
-            Registration Open for RAASHEE-2025 |
+            Registration Open for RAASHEE-2025 
           </p>
           <button
             onClick={handleRegisterClick}
