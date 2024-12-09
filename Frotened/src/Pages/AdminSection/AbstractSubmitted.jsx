@@ -155,8 +155,8 @@ const ConferenceSubmissions = () => {
     const to = toDate ? new Date(toDate) : null;
 
     return (
-      (!fromDate || submissionDate >= from) &&
-      (!toDate || submissionDate <= to)
+      (!from || submissionDate >= from) &&
+      (!to || submissionDate <= to)
     );
   });
 
