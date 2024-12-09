@@ -58,8 +58,8 @@ const AboutUsPage = () => {
               <p className="text-lg sm:text-xl text-gray-700">Prof. Sangeeta Sahu, Dean-Faculty of Management Studies, University of Lucknow </p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. Vijay Prakash Singh, Department of English and Modern European Languages, University of Lucknow</p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. Ranu Uniyal, Department of English and Modern European Languages, University of Lucknow</p>
-              <p className="text-lg sm:text-xl text-gray-700">Prof. Sudhir Srivastava, HoD-Mathematics, Deen Dayal Upadhyay Gorakhpur University</p>
-              <p className="text-lg sm:text-xl text-gray-700">Prof. Sanjay Kumar Pandey, HoD-Mathematics, Banaras Hindu University </p>
+              <p className="text-lg sm:text-xl text-gray-700">Prof. Sudhir Srivastava,Mathematics, Deen Dayal Upadhyay Gorakhpur University</p>
+              <p className="text-lg sm:text-xl text-gray-700">Prof. Sanjay Kumar Pandey, Mathematics, Banaras Hindu University </p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya </p>
             </div>
             <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
@@ -67,8 +67,8 @@ const AboutUsPage = () => {
               
               <p className="text-lg sm:text-xl text-gray-700">Prof. Biswajit Sarkar, Yonsei University, Seoul, Korea</p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. Manju Agarwal, Department of Mathematics and Astronomy, University of Lucknow </p>
+              <p className="text-lg sm:text-xl text-gray-700">Prof. Vivek Sahai,Head, Department of Mathematics, University of Lucknow</p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. Pankaj Mathur, Department of Mathematics, University of Lucknow</p>
-              <p className="text-lg sm:text-xl text-gray-700">Prof. Vivek Sahai, Department of Mathematics, University of Lucknow</p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. Anjana Solaki, Department of Mathematics, BIET, Jhansi </p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. R. P. Singh, Department of English and Modern European Languages, University of Lucknow</p>
               <p className="text-lg sm:text-xl text-gray-700">Prof. O. P. Singh, Department of AS&H, IET, Lucknow</p>
