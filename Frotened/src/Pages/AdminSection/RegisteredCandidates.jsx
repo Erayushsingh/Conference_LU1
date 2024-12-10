@@ -32,19 +32,11 @@ const UserTable = () => {
     }
   }
 
-  const [showEmailModal, setShowEmailModal] = useState(false);
+
   const [showImageModal, setShowImageModal] = useState(false);
 
   const [selectedUser, setSelectedUser] = useState(null);
-  const [emailSubject, setEmailSubject] = useState('');
-  const [emailBody, setEmailBody] = useState('');
   const [imageSrc, setImageSrc] = useState('');
-
-  const handleViewClick = (user) => {
-    setSelectedUser(user);
-    setShowEmailModal(true);
-  };
-
 
 
   const handlePrintClick = () => {
@@ -135,18 +127,14 @@ const UserTable = () => {
   };
 
 
-  const handleEmailSubmit = (e) => {
-    e.preventDefault();
 
 
-    if (!emailSubject || !selectedUser) {
-      alert('Please fill in all fields and select a user.');
-      return;
-    }
 
 
-    const eventDetails = `
-    Dear ${selectedUser.name},
+const handleViewClick = (user) => {
+  setSelectedUser(user);
+  const emailBody = `
+    Dear ${user.name},
 
     We are pleased to inform you that your registration for the International Conference on Recent Advances in Applied Sciences & Humanities in Evolution of Engineering (RAASHEE-2025) has been successfully completed.
 
@@ -168,32 +156,11 @@ const UserTable = () => {
     University of Lucknow
     raashee.foet@gmail.com
   `;
+  
+  const mailtoLink = `mailto:${user.email}?subject=RAASHEE-2025 Registration Confirmation&body=${encodeURIComponent(emailBody)}`;
 
-
-    const serviceId = 'service_dsje71r';
-    const templateId = 'template_ccfyai4';
-    const userId = 'CzqGwtISPjvfhtcUk';
-
-    const templateParams = {
-      to_name: selectedUser.name,
-      to_email: selectedUser.email,
-      subject: 'RAASHEE-2025 Registration Confirmation',
-      message: eventDetails,
-    };
-
-
-    emailjs.send(serviceId, templateId, templateParams, userId)
-      .then((response) => {
-        alert('Email sent successfully!');
-        setShowModal(false);
-        setEmailSubject('');
-        setEmailBody('');
-      })
-      .catch((error) => {
-        console.error('Error sending email:', error);
-        alert('Failed to send email. Please try again.');
-      });
-  };
+  window.location.href = mailtoLink;
+};
 
   const handleImageClick = (imageUrl) => {
     setImageSrc(imageUrl);
@@ -267,41 +234,7 @@ const UserTable = () => {
         </div>
       )}
 
-      {/* Modal for sending email */}
-      {showEmailModal && (
-        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-md shadow-md w-1/3">
-            <h3 className="text-lg font-semibold mb-4">Send Email to {selectedUser.name}</h3>
-            <form onSubmit={handleEmailSubmit}>
-              <div className="mt-4">
-                <label className="block text-sm font-semibold">Body</label>
-                <textarea
-                  className="w-full px-4 py-2 border rounded mt-2"
-                  rows="4"
-                  value={emailBody}
-                  onChange={(e) => setEmailBody(e.target.value)}
-                  required
-                ></textarea>
-              </div>
-              <div className="mt-4 flex justify-end">
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white py-2 px-4 rounded"
-                >
-                  Send Email
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowEmailModal(false)}
-                  className="ml-2 py-2 px-4 border rounded"
-                >
-                  Cancel
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
+
 
 
       {/* Full-Screen Image Modal */}
@@ -330,3 +263,4 @@ const UserTable = () => {
 };
 
 export default UserTable;
+
