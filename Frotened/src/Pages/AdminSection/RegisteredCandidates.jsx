@@ -139,13 +139,36 @@ const UserTable = () => {
     e.preventDefault();
 
 
-    if (!emailSubject || !emailBody || !selectedUser) {
+    if (!emailSubject || !selectedUser) {
       alert('Please fill in all fields and select a user.');
       return;
     }
 
 
-    console.log('Selected User:', selectedUser);
+    const eventDetails = `
+    Dear ${selectedUser.name},
+
+    We are pleased to inform you that your registration for the International Conference on Recent Advances in Applied Sciences & Humanities in Evolution of Engineering (RAASHEE-2025) has been successfully completed.
+
+    Event Details:
+    Conference Name: RAASHEE-2025
+    Date: 7th & 8th February, 2025
+    Venue: Vishwakarma Auditorium, Faculty of Engineering and Technology, University of Lucknow, New Campus, Jankipuram Extension, Lucknow-226031, Uttar Pradesh
+
+    We are excited to welcome you to this prestigious event, where leading experts and scholars from around the world will gather to share insights and advancements in the field of Applied Sciences, Humanities, and Engineering.
+
+    Important Documents: Please ensure you bring a printed or digital copy of this confirmation email for event check-in.
+
+    If you have any further questions or need assistance, feel free to contact us at raashee.foet@gmail.com.
+
+    Thank you for registering for RAASHEE-2025. We look forward to your participation in this exciting conference.
+
+    Warm regards,
+    The RAASHEE-2025 Organizing Committee
+    University of Lucknow
+    raashee.foet@gmail.com
+  `;
+
 
     const serviceId = 'service_dsje71r';
     const templateId = 'template_ccfyai4';
@@ -154,8 +177,8 @@ const UserTable = () => {
     const templateParams = {
       to_name: selectedUser.name,
       to_email: selectedUser.email,
-      subject: emailSubject,
-      message: emailBody,
+      subject: 'RAASHEE-2025 Registration Confirmation',
+      message: eventDetails,
     };
 
 
@@ -250,16 +273,6 @@ const UserTable = () => {
           <div className="bg-white p-6 rounded-md shadow-md w-1/3">
             <h3 className="text-lg font-semibold mb-4">Send Email to {selectedUser.name}</h3>
             <form onSubmit={handleEmailSubmit}>
-              <div>
-                <label className="block text-sm font-semibold">Subject</label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-2 border rounded mt-2"
-                  value={emailSubject}
-                  onChange={(e) => setEmailSubject(e.target.value)}
-                  required
-                />
-              </div>
               <div className="mt-4">
                 <label className="block text-sm font-semibold">Body</label>
                 <textarea
