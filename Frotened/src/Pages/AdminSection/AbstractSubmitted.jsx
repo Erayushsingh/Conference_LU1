@@ -7,30 +7,11 @@ const ConferenceSubmissions = () => {
   const [fromDate, setFromDate] = useState('');
   const [toDate, setToDate] = useState('');
   const [loading, setLoading] = useState(true);
-  const [formattedDate, setFormattedDate] = useState('');
   useEffect(() => {
     getAbstract();
   }, []);
 
-  const formatDate = (dateString) => {
-    console.log("Date String:", dateString); // Output: 2024-12-07T00:00:00.000Z
-    const date = new Date(dateString);
-    console.log(date)
-    // Check if the date is valid
-    if (isNaN(date.getTime())) {
-      console.error("Invalid date string");
-      return null;
-    }
 
-    const day = String(date.getDate()).padStart(2, '0');
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const year = String(date.getFullYear()).slice(2);
-
-    const formattedDate = `${day}/${month}/${year}`;
-    console.log("Formatted Date:", formattedDate); // Output: 07/12/24
-    setFormattedDate(formattedDate);
-    console.log(formattedDate)
-  };
   const getAbstract = async () => {
     try {
       const token = localStorage.getItem('token');
@@ -44,7 +25,6 @@ const ConferenceSubmissions = () => {
       const data = await response.json();
       setSubmissionsData(data);
       console.log(data)
-      formatDate(data[0].createdAt)
     } catch (e) {
       console.error('Error fetching abstracts:', e);
     }
@@ -228,7 +208,7 @@ const ConferenceSubmissions = () => {
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.preferredPresentation}</td>
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.conferenceTheme}</td>
                       <td className="px-4 py-2 border break-words max-w-xs">{submission.conflictOfInterest}</td>
-                      <td className="px-4 py-2 border break-words max-w-xs">{formattedDate
+                      <td className="px-4 py-2 border break-words max-w-xs">{submission.createdAt
                       }</td> {/* Display Date */}
                       <td className="px-4 py-2 border break-words max-w-xs"><button
                         onClick={() => handleViewClick(submission)}
