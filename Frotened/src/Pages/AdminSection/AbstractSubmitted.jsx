@@ -236,7 +236,7 @@ const ConferenceSubmissions = () => {
             <p className="break-words"><strong>Preferred Presentation Type:</strong> {selectedSubmission.preferredPresentationType}</p>
             <p className="break-words"><strong>Conference Theme:</strong> {selectedSubmission.conferenceTheme}</p>
             <p className="break-words"><strong>Conflict of Interest:</strong> {selectedSubmission.conflictOfInterest}</p>
-            <p className="break-words"><strong>Date:</strong> {formattedDate}</p>
+            <p className="break-words"><strong>Date:</strong> {selectedSubmission.createdAt}</p>
 
             <div className="flex justify-end mt-4">
               <button
