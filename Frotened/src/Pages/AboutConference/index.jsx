@@ -11,12 +11,12 @@ const AboutConference = () => {
     <div className="bg-gray-50 text-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:text-2xl">
         {/* Title Section */}
-        <h1 className="text-3xl font-semibold text-center mb-6 sm:text-3xl lg:text-5xl">
+        <h1 className="text-2xl font-semibold text-center mb-6 sm:text-3xl md:text-[2.02rem]">
           Recent Advances in Applied Science and Humanities in the Evolution of Engineering
         </h1>
 
         {/* Main Content Section */}
-        <div className="prose lg:prose-xl mx-auto">
+        <div className="prose text-xl lg:prose-xl mx-auto">
           <p>
             Basic sciences like Mathematics, Physics, and Chemistry are at the foundation of all branches of engineering and technology. The fundamental concepts of basic sciences are applied by engineers to solve problems posed by NATURE in our day-to-day lives. The basic sciences, thus, help us to develop various technologies and these technologies, in turn, help us to engineer the materials and resources for the well-being of humanity. Thus, basic sciences are often termed as Applied Sciences.
           </p>
