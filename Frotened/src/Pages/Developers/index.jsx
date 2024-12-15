@@ -20,7 +20,7 @@ const Developers = () => {
   return (
     <>
       <HeaderUpper />
-      <div className="mb-4 px-4 sm:px-6 lg:px-8  w-screen">
+      <div className="mb-4 px-4 sm:px-6 lg:px-8  w-full">
         <h1 className="text-2xl sm:text-3xl text-red-600 text-center mt-10 mb-6 font-bold">
           Tech Team RAASHEE-25
         </h1>
