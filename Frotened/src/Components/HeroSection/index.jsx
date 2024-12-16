@@ -318,180 +318,182 @@ const HeroSection = () => {
             </h3>
             <ul className="space-y-2">
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Vinay Pandey, Tribhuwan University, Nepal
+                Prof. Vinay Pandey, Tribhuwan University, Nepal
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Mohammad Nazrul Islam Khan, Qassim University, Saudi Arabia
+                Dr. Mohammad Nazrul Islam Khan, Qassim University, Saudi Arabia
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Gopal Krishna Dixit, Grenoble, France
+                Dr. Gopal Krishna Dixit, Grenoble, France
               </li>
 
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Sanobar Siddiqui, University of Regina, Saskatchewan, Canada
+                Dr. Sanobar Siddiqui, University of Regina, Saskatchewan, Canada
               </li>
 
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Naila Erum, Universiti Teknologi MARA, Malaysia
+                Dr. Naila Erum, Universiti Teknologi MARA, Malaysia
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Rajneesh Kumar Pandey, Tribhuwan University, Nepal
+                Dr. Rajneesh Kumar Pandey, Tribhuwan University, Nepal
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Mr. Vivek Kumar, Cognizent, U. S. A.
+                Mr. Vivek Kumar, Cognizent, U. S. A.
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Sangeeta Sahu, University of Lucknow, Lucknow
+                Prof. Sangeeta Sahu, University of Lucknow, Lucknow
               </li>
 
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Vijay Prakash Singh, University of Lucknow, Lucknow
+                Prof. Vijay Prakash Singh, University of Lucknow, Lucknow
               </li>
 
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Vivek Sahai, University of Lucknow, Lucknow
+                Prof. Vivek Sahai, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. John Corcoran, University of Buffalo, New York, U. S. A.
+                Prof. John Corcoran, University of Buffalo, New York, U. S. A.
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Ajit Srivastava, Institute of Physics, Bhubneshwar
+                Prof. Ajit Srivastava, Institute of Physics, Bhubneshwar
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Matreyi Priyadashini, University of Lucknow, Lucknow
+                Prof. Matreyi Priyadashini, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Roman Taraban, Texas Tech University, U. S. A.
+                Prof. Roman Taraban, Texas Tech University, U. S. A.
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Shikha Verma, Institute of Physics, Bhubneshwar
+                Prof. Shikha Verma, Institute of Physics, Bhubneshwar
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Binod Mishra, IIT, Roorkee
+                Prof. Binod Mishra, IIT, Roorkee
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Rajinder Singh Chandel, Punjabi University, Patiala
+                Prof. Rajinder Singh Chandel, Punjabi University, Patiala
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. R. P. Singh, University of Lucknow, Lucknow
+                Prof. R. P. Singh, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Satyendra Pal Singh, University of Lucknow, Lucknow
+                Prof. Satyendra Pal Singh, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Anchal Srivastava, University of Lucknow, Lucknow
+                Prof. Anchal Srivastava, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Abha Bishnoi, University of Lucknow, Lucknow
+                Prof. Abha Bishnoi, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Meena Sahai, University of Lucknow, Lucknow
+                Prof. Meena Sahai, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. O. N. Upadhyay, University of Lucknow, Lucknow
+                Prof. O. N. Upadhyay, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Pankaj Mathur, University of Lucknow, Lucknow
+                Prof. Pankaj Mathur, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Masood H. Siddiqui, University of Lucknow, Lucknow
+                Prof. Masood H. Siddiqui, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. D. R. Sahu, University of Lucknow, Lucknow
+                Prof. D. R. Sahu, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Manoj Kumar Singh, University of Lucknow, Lucknow
+                Prof. Manoj Kumar Singh, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Pankaj Srivastava, MNNIT, Prayagraj
+                Prof. Pankaj Srivastava, MNNIT, Prayagraj
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Praveen Sahu, Central University of Rajasthan, Ajmer
+                Prof. Praveen Sahu, Central University of Rajasthan, Ajmer
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Aine Ito, NUS, Singapore
+                Prof. Aine Ito, NUS, Singapore
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. B. K. Mohanty, IIM, Lucknow
+                Prof. B. K. Mohanty, IIM, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Tetiana Kaminska, Kyiv, Ukraine
+                Prof. Tetiana Kaminska, Kyiv, Ukraine
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Rajeev Sijeria, Jawaharlal Nehru University, New Delhi
+                Prof. Rajeev Sijeria, Jawaharlal Nehru University, New Delhi
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Sanjay Medhavi, University of Lucknow, Lucknow
+                Dr. Sanjay Medhavi, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Nimisha Kapoor, University of Lucknow, Lucknow
+                Dr. Nimisha Kapoor, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Ms. Supriya Yadav, Magnet Tech Services, Noida
+                Ms. Supriya Yadav, Magnet Tech Services, Noida
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Prabhanshu Tripathi, CSIR-IITR, Lucknow
+                Dr. Prabhanshu Tripathi, CSIR-IITR, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Pravin Kumar, IUAC, New Delhi
+                Dr. Pravin Kumar, IUAC, New Delhi
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Vijay Kumar, Galgotia University, Greater Noida
+                Dr. Vijay Kumar, Galgotia University, Greater Noida
               </li>
 
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Shambhavi Mishra, University of Lucknow, Lucknow
+                Dr. Shambhavi Mishra, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Amrendra Kumar, University of Lucknow, Lucknow
+                Dr. Amrendra Kumar, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Jyotsna Singh, University of Lucknow, Lucknow
+                Dr. Jyotsna Singh, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Pragya Mishra, University of Lucknow, Lucknow
+                Dr. Pragya Mishra, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Archana Shukla, University of Lucknow, Lucknow
+                Dr. Archana Shukla, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Madhu Chetty, Federation University, Australia
+                Dr. Madhu Chetty, Federation University, Australia
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Shashi Bala, University of Lucknow, Lucknow
+                Dr. Shashi Bala, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Dilip Jaiswal, Ramswaroop Memorial University, Lucknow
+                Dr. Dilip Jaiswal, Ramswaroop Memorial University, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Mukesh Mishra, Ramswaroop Memorial University, Lucknow 
+                Dr. Mukesh Mishra, Ramswaroop Memorial University, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Vijay Kumar Singh, IIT, Jodhpur
+                Dr. Vijay Kumar Singh, IIT, Jodhpur
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Neha Arora, Central University of Rajasthan, Ajmer
+                Dr. Neha Arora, Central University of Rajasthan, Ajmer
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Jyoti Juyal, Sharda University, Mathura
+                Dr. Jyoti Juyal, Sharda University, Mathura
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. C. Withana, Study Group, Australia
+                Dr. C. Withana, Study Group, Australia
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Saroj Kumar, Central University of South Bihar, Gaya
+                Dr. Saroj Kumar, Central University of South Bihar, Gaya
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
+                Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Saurabh Yadav, Uttar Pradesh State Institute of Forensic Science, Lucknow 
+                Dr. Saurabh Yadav, Uttar Pradesh State Institute of Forensic
+                Science, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Sapna Sharma, Uttar Pradesh State Institute of Forensic Science, Lucknow
+                Dr. Sapna Sharma, Uttar Pradesh State Institute of Forensic
+                Science, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Rituraj Mishra, National P. G. College, Lucknow
+                Dr. Rituraj Mishra, National P. G. College, Lucknow
               </li>
             </ul>
           </div>
