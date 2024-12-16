@@ -1,4 +1,5 @@
 import React from "react";
+import Logo4 from "/src/assets/Raashee_Logo.svg";
 import gatePhoto from "/src/assets/Lu-main.jpg";
 import gatePhoto1 from "/src/assets/Lu-gate.jpg";
 import LuPhoto06 from "/src/assets/LuPhoto06.jpg";
@@ -87,14 +88,6 @@ const HeroSection = () => {
             <div className="carousel-item active">
               <img
                 src={LuPhoto04}
-                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
-                alt="Gate 2"
-              />
-            </div>
-
-            <div className="carousel-item active">
-              <img
-                src={LuPhoto05}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
                 alt="Gate 2"
               />
@@ -291,6 +284,32 @@ const HeroSection = () => {
         </div>
       </div>
 
+<div className="flex p-7 justify-center  py-12">
+  <div className="md:pb-10 w-[90%] max-w-4xl">
+    <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
+      About The Logo
+    </h2>
+    <div className="flex justify-center">
+      <img
+        src={Logo4}
+        alt="Logo Design"
+        className="h-40 w-40 bg-black rounded-full mb-10 mt-6 shadow-lg"
+      />
+    </div>
+    <p className="text-lg p-8 text-gray-800 leading-relaxed md:leading-8 md:text-2xl">
+      The foundation of the logo comes from the helix structure of DNA,
+      standing for humanity as a whole, a symbol that resonates with evolution.
+      The gears along the structure give it a nature of engineering and
+      technological aspects. Adding to that, the green leaf speaks volumes
+      about the growth and evolution of the human race and years of
+      advancement. The color red represents the passion of human society, while
+      the blue adds an aspect of the nobleness that grounds engineering as a
+      noble career.
+    </p>
+  </div>
+</div>
+
+
       <div className="md:flex-row">
         <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%] xl:w-1/2 mx-auto ">
           <div>
@@ -299,69 +318,54 @@ const HeroSection = () => {
             </h3>
             <ul className="space-y-2">
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. V.P. Singh, Department of EMEL, University of Lucknow
+                Prof. V.P. Singh, Department of EMEL, University of Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Binod Mishra, IIT-Roorkee
-
+                Prof. Binod Mishra, IIT-Roorkee
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Rajinder Singh Chandel, Punjabi University, Patiala
+                Prof. Rajinder Singh Chandel, Punjabi University, Patiala
               </li>
 
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. B. K. Mohanty, IIM-Lucknow
-
+                Prof. B. K. Mohanty, IIM-Lucknow
               </li>
 
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Rajeev Sijaria, Head- ABVSM&E, JNU
-
+                Prof. Rajeev Sijaria, Head- ABVSM&E, JNU
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. R. P. Singh, University of Lucknow
-
+                Prof. R. P. Singh, University of Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar
-
+                Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Sikha Varma, Institute of Physics, Bhubaneshwar
-
+                Prof. Sikha Varma, Institute of Physics, Bhubaneshwar
               </li>
 
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Praveen Sahu, Dean - School of Commerce and Management, Central University of Rajasthan
-
+                Prof. Praveen Sahu, Dean - School of Commerce and Management,
+                Central University of Rajasthan
               </li>
 
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Pankaj Srivastava, MNNIT, Prayagraj
-
+                Prof. Pankaj Srivastava, MNNIT, Prayagraj
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow
-
+                Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Ashish Pandey, National Research Council, Canada
-
-
+                Dr. Ashish Pandey, National Research Council, Canada
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Gopal Krishna Dixit, Grenoble, France
-
-
+                Dr. Gopal Krishna Dixit, Grenoble, France
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr Pravin Kumar Scientist G, IUAC New Delhi
-
-
+                Dr Pravin Kumar Scientist G, IUAC New Delhi
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr Vijay Kumar Singh,  Department of Physics, IIT Jodhpur
-
+                Dr Vijay Kumar Singh, Department of Physics, IIT Jodhpur
               </li>
             </ul>
           </div>

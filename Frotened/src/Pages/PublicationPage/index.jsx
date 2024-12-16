@@ -95,7 +95,7 @@ const PublicationPage = () => {
               recent APA standard manual and must fall within 4,000-6,000 words.
             </p>
             <p>
-              Abstract and paper should be sent only in MS-Word (.docx/Latex)
+              Abstract and paper should be sent only in MS-Word (.docx)
               format along with duly filled Registration form and Registration
               fee receipt.
             </p>
