@@ -284,130 +284,214 @@ const HeroSection = () => {
         </div>
       </div>
 
-<div className="flex p-7 justify-center  py-12">
-  <div className="md:pb-10 w-[90%] max-w-4xl">
-    <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
-      About The Logo
-    </h2>
-    <div className="flex justify-center">
-      <img
-        src={Logo4}
-        alt="Logo Design"
-        className="h-40 w-40 bg-black rounded-full mb-10 mt-6 shadow-lg"
-      />
-    </div>
-    <p className="text-lg p-8 text-gray-800 leading-relaxed md:leading-8 md:text-2xl">
-      The foundation of the logo comes from the helix structure of DNA,
-      standing for humanity as a whole, a symbol that resonates with evolution.
-      The gears along the structure give it a nature of engineering and
-      technological aspects. Adding to that, the green leaf speaks volumes
-      about the growth and evolution of the human race and years of
-      advancement. The color red represents the passion of human society, while
-      the blue adds an aspect of the nobleness that grounds engineering as a
-      noble career.
-    </p>
-  </div>
-</div>
+      {/*About Logo*/}
+      <div className="flex p-7 justify-center  py-12">
+        <div className="md:pb-10 w-[90%] max-w-4xl">
+          <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
+            About The Logo
+          </h2>
+          <div className="flex justify-center">
+            <img
+              src={Logo4}
+              alt="Logo Design"
+              className="h-40 w-40 bg-black rounded-full mb-10 mt-6 shadow-lg"
+            />
+          </div>
+          <p className="text-lg p-8 text-gray-800 leading-relaxed md:leading-8 md:text-2xl">
+            The foundation of the logo comes from the helix structure of DNA,
+            standing for humanity as a whole, a symbol that resonates with
+            evolution. The gears along the structure give it a nature of
+            engineering and technological aspects. Adding to that, the green
+            leaf speaks volumes about the growth and evolution of the human race
+            and years of advancement. The color red represents the passion of
+            human society, while the blue adds an aspect of the nobleness that
+            grounds engineering as a noble career.
+          </p>
+        </div>
+      </div>
 
-
-      <div className="md:flex-row">
+      <div className="">
         <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%] xl:w-1/2 mx-auto ">
           <div>
             <h3 className="md:text-4xl text-3xl font-extrabold text-center text-gray-800 mb-8">
-              Keynote Speaker
+              Keynote and Invited Talk
             </h3>
             <ul className="space-y-2">
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. V.P. Singh, Department of EMEL, University of Lucknow
+              Prof. Vinay Pandey, Tribhuwan University, Nepal
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Binod Mishra, IIT-Roorkee
+              Dr. Mohammad Nazrul Islam Khan, Qassim University, Saudi Arabia
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Rajinder Singh Chandel, Punjabi University, Patiala
+              Dr. Gopal Krishna Dixit, Grenoble, France
               </li>
 
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. B. K. Mohanty, IIM-Lucknow
+              Dr. Sanobar Siddiqui, University of Regina, Saskatchewan, Canada
               </li>
 
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Rajeev Sijaria, Head- ABVSM&E, JNU
+              Dr. Naila Erum, Universiti Teknologi MARA, Malaysia
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. R. P. Singh, University of Lucknow
+              Dr. Rajneesh Kumar Pandey, Tribhuwan University, Nepal
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Ajit Srivastava, Institute of Physics, Bhubaneshwar
+              Mr. Vivek Kumar, Cognizent, U. S. A.
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Sikha Varma, Institute of Physics, Bhubaneshwar
+              Prof. Sangeeta Sahu, University of Lucknow, Lucknow
               </li>
 
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Praveen Sahu, Dean - School of Commerce and Management,
-                Central University of Rajasthan
+              Prof. Vijay Prakash Singh, University of Lucknow, Lucknow
               </li>
 
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Pankaj Srivastava, MNNIT, Prayagraj
-              </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR, Lucknow
+              Prof. Vivek Sahai, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Ashish Pandey, National Research Council, Canada
+              Prof. John Corcoran, University of Buffalo, New York, U. S. A.
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Gopal Krishna Dixit, Grenoble, France
+              Prof. Ajit Srivastava, Institute of Physics, Bhubneshwar
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr Pravin Kumar Scientist G, IUAC New Delhi
+              Prof. Matreyi Priyadashini, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr Vijay Kumar Singh, Department of Physics, IIT Jodhpur
+              Prof. Roman Taraban, Texas Tech University, U. S. A.
               </li>
-            </ul>
-          </div>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Shikha Verma, Institute of Physics, Bhubneshwar
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Binod Mishra, IIT, Roorkee
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Rajinder Singh Chandel, Punjabi University, Patiala
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. R. P. Singh, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Satyendra Pal Singh, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Anchal Srivastava, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Abha Bishnoi, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Meena Sahai, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. O. N. Upadhyay, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Pankaj Mathur, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Masood H. Siddiqui, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. D. R. Sahu, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Manoj Kumar Singh, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Pankaj Srivastava, MNNIT, Prayagraj
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Praveen Sahu, Central University of Rajasthan, Ajmer
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Aine Ito, NUS, Singapore
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. B. K. Mohanty, IIM, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Tetiana Kaminska, Kyiv, Ukraine
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Prof. Rajeev Sijeria, Jawaharlal Nehru University, New Delhi
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Sanjay Medhavi, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Nimisha Kapoor, University of Lucknow, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Ms. Supriya Yadav, Magnet Tech Services, Noida
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Prabhanshu Tripathi, CSIR-IITR, Lucknow
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Pravin Kumar, IUAC, New Delhi
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Vijay Kumar, Galgotia University, Greater Noida
+              </li>
 
-          <div>
-            <ul className="space-y-2">
-              <h3 className="md:text-4xl text-3xl  mt-10 font-extrabold text-center text-gray-800 mb-8">
-                Invited Talks
-              </h3>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Neha Arora, Central University of Rajasthan, Ajmer
+              Dr. Shambhavi Mishra, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Prabhanshu Tripathi, Principal Scientist, CSIR-IITR
+              Dr. Amrendra Kumar, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Saurabh Yadav, U. P. State Institute of Forensic Science,
-                Lucknow
+              Dr. Jyotsna Singh, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Shashi Bala, University of Lucknow , Lucknow
+              Dr. Pragya Mishra, University of Lucknow, Lucknow
               </li>
-
-              <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                Dr. Rituraj Mishra, National P. G. College, Lucknow
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Archana Shukla, University of Lucknow, Lucknow
               </li>
-              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                Ms. Supriya Yadav, GM-HR, Magnet Technology, Noida
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Madhu Chetty, Federation University, Australia
               </li>
-              <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                Dr. Sapna Sharma, U. P. State Institute of Forensic Science,
-                Lucknow
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Shashi Bala, University of Lucknow, Lucknow
               </li>
-              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                Dr. Vijay Kumar,Galgotia University
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Dilip Jaiswal, Ramswaroop Memorial University, Lucknow
               </li>
-              <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                Dr. Praveen Kumar, Scientist G,Inter University Accelerator
-                Center (IUAC), New Delhi
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Mukesh Mishra, Ramswaroop Memorial University, Lucknow 
               </li>
-              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                Dr. Vijay Kumar Singh, IIT Jodhpur
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Vijay Kumar Singh, IIT, Jodhpur
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Neha Arora, Central University of Rajasthan, Ajmer
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Jyoti Juyal, Sharda University, Mathura
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. C. Withana, Study Group, Australia
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Saroj Kumar, Central University of South Bihar, Gaya
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Saurabh Yadav, Uttar Pradesh State Institute of Forensic Science, Lucknow 
+              </li>
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Sapna Sharma, Uttar Pradesh State Institute of Forensic Science, Lucknow
+              </li>
+              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Rituraj Mishra, National P. G. College, Lucknow
               </li>
             </ul>
           </div>
