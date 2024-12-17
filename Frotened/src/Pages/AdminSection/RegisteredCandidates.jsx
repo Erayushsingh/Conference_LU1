@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import emailjs from 'emailjs-com';
+
 
 const UserTable = () => {
 
@@ -237,7 +237,7 @@ const UserTable = () => {
                   </td>
 
                   <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>
-                    {user.status === 'Pending' ? (
+                    {users.status === 'Pending' ? (
                       <button
                         onClick={() => handleStatusChange(user)}
                         className="text-red-500 hover:text-red-700 block mt-2 w-full"
