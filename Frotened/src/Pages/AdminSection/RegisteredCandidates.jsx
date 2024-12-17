@@ -127,21 +127,23 @@ const UserTable = () => {
   };
 
 
-
-  const handleStatusChange = (user) => {
+  const handleStatusChange = (userId) => {
     const password = prompt("Please enter the password:");
     
     if (password === 'admin') {
-      setUsers((prevUsers) => 
-        prevUsers.map(u =>
-          u.id === user.id ? { ...u, status: 'Verified' } : u
+      setUsers((prevUsers) =>
+        prevUsers.map((user) =>
+          user.id === userId
+            ? { ...user, localStatus: 'Verified' } // Adding localStatus to manage UI state
+            : user
         )
       );
     } else {
       alert("Incorrect password!");
     }
   };
-  
+
+
 
 
   const handleViewClick = (user) => {
@@ -208,7 +210,7 @@ const UserTable = () => {
             </thead>
             <tbody>
               {users.map((user) => (
-                <tr key={user.id} className={`border-b ${user.status === 'Verified' ? 'bg-green-100' : ''}`}>
+                <tr key={user.id} className={`border-b ${user.localStatus === 'Verified' ? 'bg-green-100' : 'bg-red-100'}`}>
                   <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.id}</td>
                   <td className="px-4 py-2 border  break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.name}</td>
                   <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.email}</td>
@@ -237,17 +239,18 @@ const UserTable = () => {
                   </td>
 
                   <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>
-                    {users.status === 'Pending' ? (
+                    {user.localStatus === 'Verified' ? (
+                      <span className="text-green-500">Verified</span>
+                    ) : (
                       <button
-                        onClick={() => handleStatusChange(user)}
+                        onClick={() => handleStatusChange(user.id)}
                         className="text-red-500 hover:text-red-700 block mt-2 w-full"
                       >
                         Pending
                       </button>
-                    ) : (
-                      <span className="text-green-500">Verified</span>
                     )}
                   </td>
+
                 </tr>
               ))}
             </tbody>
