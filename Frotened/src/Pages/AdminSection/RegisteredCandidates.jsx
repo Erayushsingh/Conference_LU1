@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-
 const UserTable = () => {
-
+  
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -127,24 +126,7 @@ const UserTable = () => {
   };
 
 
-  const handleStatusChange = (userId) => {
-    const password = prompt("Please enter the password:");
-    
-    if (password === 'admin') {
-      setUsers((prevUsers) =>
-        prevUsers.map((user) =>
-          user.id === userId
-            ? { ...user, localStatus: 'Verified' } // Adding localStatus to manage UI state
-            : user
-        )
-      );
-    } else {
-      alert("Incorrect password!");
-    }
-  };
-
-
-
+  
 
   const handleViewClick = (user) => {
     setSelectedUser(user);
@@ -205,12 +187,11 @@ const UserTable = () => {
                 <th className="px-4 py-2 border">Presentation Interest</th>
                 <th className="px-4 py-2 border">Screenshot</th>
                 <th className="px-4 py-2 border">Action</th>
-                <th className="px-4 py-2 border">Status</th>
               </tr>
             </thead>
             <tbody>
               {users.map((user) => (
-                <tr key={user.id} className={`border-b ${user.localStatus === 'Verified' ? 'bg-green-100' : 'bg-red-100'}`}>
+                <tr key={user.id} className="border-b">
                   <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.id}</td>
                   <td className="px-4 py-2 border  break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.name}</td>
                   <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.email}</td>
@@ -237,20 +218,6 @@ const UserTable = () => {
                       Selected
                     </button>
                   </td>
-
-                  <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>
-                    {user.localStatus === 'Verified' ? (
-                      <span className="text-green-500">Verified</span>
-                    ) : (
-                      <button
-                        onClick={() => handleStatusChange(user.id)}
-                        className="text-red-500 hover:text-red-700 block mt-2 w-full"
-                      >
-                        Pending
-                      </button>
-                    )}
-                  </td>
-
                 </tr>
               ))}
             </tbody>
