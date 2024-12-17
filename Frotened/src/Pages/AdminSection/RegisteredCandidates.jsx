@@ -128,12 +128,25 @@ const UserTable = () => {
 
 
 
+  const handleStatusChange = (user) => {
+    const password = prompt("Please enter the password:");
+    
+    if (password === 'admin') {
+      setUsers((prevUsers) => 
+        prevUsers.map(u =>
+          u.id === user.id ? { ...u, status: 'Verified' } : u
+        )
+      );
+    } else {
+      alert("Incorrect password!");
+    }
+  };
+  
 
 
-
-const handleViewClick = (user) => {
-  setSelectedUser(user);
-  const emailBody = `
+  const handleViewClick = (user) => {
+    setSelectedUser(user);
+    const emailBody = `
     Dear ${user.name},
 
     We are pleased to inform you that your registration for the International Conference on Recent Advances in Applied Sciences & Humanities in Evolution of Engineering (RAASHEE-2025) has been successfully completed.
@@ -156,15 +169,15 @@ const handleViewClick = (user) => {
     University of Lucknow
     raashee.foet@gmail.com
   `;
-  
-  const mailtoLink = `mailto:${user.email}?subject=RAASHEE-2025 Registration Confirmation&body=${encodeURIComponent(emailBody)}`;
 
-  window.location.href = mailtoLink;
-};
+    const mailtoLink = `mailto:${user.email}?subject=RAASHEE-2025 Registration Confirmation&body=${encodeURIComponent(emailBody)}`;
+
+    window.location.href = mailtoLink;
+  };
 
   const handleImageClick = (imageUrl) => {
     setImageSrc(imageUrl);
-    setShowImageModal(true); 
+    setShowImageModal(true);
   };
 
   return (
@@ -190,11 +203,12 @@ const handleViewClick = (user) => {
                 <th className="px-4 py-2 border">Presentation Interest</th>
                 <th className="px-4 py-2 border">Screenshot</th>
                 <th className="px-4 py-2 border">Action</th>
+                <th className="px-4 py-2 border">Status</th>
               </tr>
             </thead>
             <tbody>
               {users.map((user) => (
-                <tr key={user.id} className="border-b">
+                <tr key={user.id} className={`border-b ${user.status === 'Verified' ? 'bg-green-100' : ''}`}>
                   <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.id}</td>
                   <td className="px-4 py-2 border  break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.name}</td>
                   <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>{user.email}</td>
@@ -220,6 +234,19 @@ const handleViewClick = (user) => {
                     >
                       Selected
                     </button>
+                  </td>
+
+                  <td className="px-4 py-2 border break-words" style={{ wordWrap: 'break-word', maxWidth: '100px' }}>
+                    {user.status === 'Pending' ? (
+                      <button
+                        onClick={() => handleStatusChange(user)}
+                        className="text-red-500 hover:text-red-700 block mt-2 w-full"
+                      >
+                        Pending
+                      </button>
+                    ) : (
+                      <span className="text-green-500">Verified</span>
+                    )}
                   </td>
                 </tr>
               ))}
