@@ -702,7 +702,7 @@ const HeroSection = () => {
             <img src={TN_Sir} />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-                CHIEF GUEST:
+                GUEST OF HONOUR:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 Prof. T. N. Singh, Director, IIT-Patna
