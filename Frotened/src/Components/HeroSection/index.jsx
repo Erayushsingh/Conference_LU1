@@ -177,6 +177,56 @@ const HeroSection = () => {
         </div>
       </div>
 
+      {/* Organizing Committee Section */}
+      <div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto  border-y-4 border-red-700">
+        {/* Flex container for individual sections */}
+        <div className="flex flex-col sm:flex-row justify-between space-x-4 space-y-4 sm:space-y-0">
+          {/* Chief Patron Container */}
+          <div className="md:w-[30%]">
+            <img src={VC_Sir} />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+                CHIEF-PATRON:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                Prof. Alok Kumar Rai
+                <p>Hon’ble Vice-Chancellor</p>
+                University of Lucknow
+              </p>
+            </div>
+          </div>
+
+          {/* Chief Guest Container */}
+          <div className="md:w-[30%]">
+            <img src={TN_Sir} />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl text-center font-semibold text-blue-700 md:text-2xl md:leading-8">
+                GUEST OF HONOUR:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                Prof. T. N. Singh
+                <p>Director</p>IIT-Patna
+              </p>
+            </div>
+          </div>
+
+          {/* Patron Container */}
+          <div className="md:w-[30%]">
+            <img src={Dean_Sir} />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+                PATRON:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                Prof. A. K. Singh
+                <p>Dean, FoET</p>
+                University of Lucknow
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Introduction Section */}
       <div className="md:py-12">
         <div className="container mx-auto px-4">
@@ -676,52 +726,6 @@ const HeroSection = () => {
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
-
-      {/* Organizing Committee Section */}
-      <div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto border-t-4 border-red-700">
-        {/* Flex container for individual sections */}
-        <div className="flex flex-col sm:flex-row justify-between space-x-4 space-y-4 sm:space-y-0">
-          {/* Chief Patron Container */}
-          <div className="md:w-[30%]">
-            <img src={VC_Sir} />
-            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-                CHIEF-PATRON:
-              </h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                Prof. Alok Kumar Rai, Hon’ble Vice-Chancellor, University of
-                Lucknow
-              </p>
-            </div>
-          </div>
-
-          {/* Chief Guest Container */}
-          <div className="md:w-[30%]">
-            <img src={TN_Sir} />
-            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-                GUEST OF HONOUR:
-              </h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                Prof. T. N. Singh, Director, IIT-Patna
-              </p>
-            </div>
-          </div>
-
-          {/* Patron Container */}
-          <div className="md:w-[30%]">
-            <img src={Dean_Sir} />
-            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-                PATRON:
-              </h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                Prof. A. K. Singh, Dean, FOET, University of Lucknow
-              </p>
-            </div>
-          </div>
         </div>
       </div>
 
