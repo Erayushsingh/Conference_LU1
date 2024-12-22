@@ -148,6 +148,26 @@ const PublicationPage = () => {
               <li>&lt;Track&gt;: &lt;Running Title of the Paper&gt;</li>
             </ul>
           </p>
+          <p className="text-lg">
+            Please submit a scanned copy of the certificate along with your full
+            paper.
+          </p>
+          <div>
+            <a
+              href="/src/assets/copyright.docx"
+              download
+              className="text-blue-500 underline font-bold "
+            >
+              For Copyright
+            </a>
+            <a
+              href="/src/assets/PublicationEthics.docx"
+              download
+              className="text-blue-500 underline ml-5 font-bold"
+            >
+              For Publication
+            </a>
+          </div>
         </div>
       </div>
 
