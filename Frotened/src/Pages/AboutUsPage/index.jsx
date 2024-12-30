@@ -276,12 +276,10 @@ const AboutUsPage = () => {
         </div>
 
 
-        <h3 className="md:text-4xl pt-7 border-t-4 border-red-400 text-xl font-bold text-center text-gray-800 mb-8">
-        Editorial Board
-        </h3>
-        <div className="flex flex-col  mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4 mb-8">
+        
+        <div className="flex flex-col border-t-4 border-red-400  mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4 mb-8">
           
-          <div className=" bg-blue-50 mt-4  rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+          <div className=" bg-blue-50 mt-10 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
             <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
               Editor-in-Chief
             </h3>
@@ -291,7 +289,7 @@ const AboutUsPage = () => {
               </p>
             </div>
           </div>
-          <div className="bg-green-50 mt-4 mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+          <div className="bg-green-50 md:mt-10 mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
             <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
               Editors
             </h3>
@@ -316,7 +314,9 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-        
+        <h3 className="md:text-4xl pt-7  text-xl font-bold text-center text-gray-800 mb-8">
+        Editorial Board
+        </h3>
         <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%]  mx-auto">
           <ul className="space-y-2 text-left">
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
