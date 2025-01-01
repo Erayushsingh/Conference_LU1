@@ -7,6 +7,7 @@ import adminRoutes from './routes/adminRoutes.js';
 const app = express();
 const PORT = 3001;
 // Middleware
+app.use(express.static('public'));
 app.use(express.json({ limit: '50mb' }));
 app.use(
   cors({
