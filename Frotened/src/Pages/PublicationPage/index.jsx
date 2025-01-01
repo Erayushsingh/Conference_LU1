@@ -218,7 +218,7 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Abstract Submission (Oral & Poster)
                   </td>
-                  <td className="border px-4 py-2">30 December 2024</td>
+                  <td className="border px-4 py-2">5 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">
