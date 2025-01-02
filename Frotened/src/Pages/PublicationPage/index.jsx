@@ -154,14 +154,14 @@ const PublicationPage = () => {
           </p>
           <div>
             <a
-              href="../src/assets/Copyright.pdf"
+              href="/assets/Copyright.pdf"
               download
               className="text-blue-500 underline font-bold "
             >
               For Copyright
             </a>
             <a
-              href="../src/assets/publication.pdf"
+              href="/assets/publication.pdf"
               download
               className="text-blue-500 underline ml-5 font-bold"
             >
