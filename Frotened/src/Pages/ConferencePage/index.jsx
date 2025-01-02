@@ -352,7 +352,6 @@ an exciting exchange of ideas and discussions on the future directions of mathem
               <ul className="list-inside space-y-2 text-lg text-gray-700">
               <li>Nuclear and Particle Physics</li>
                 <li>Quantum Materials and Topological Insulators: Theoretical and Experimental Insights</li>
-                <li>Literary Theories</li>
                 <li>Synthesis and characterization of nanomaterials</li>
                 <li>Nanostructured materials</li>
                 <li>Solar cells</li>
