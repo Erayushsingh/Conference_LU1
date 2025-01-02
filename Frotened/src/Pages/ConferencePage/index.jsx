@@ -350,17 +350,18 @@ an exciting exchange of ideas and discussions on the future directions of mathem
                 TRACK 1– Physical Sciences
               </h3>
               <ul className="list-inside space-y-2 text-lg text-gray-700">
-                {Object.keys(physicalScience).map((trackKey) => (
-                  <Track
-                    key={trackKey}
-                    trackName={trackKey}
-                    trackTitle={physicalScience[trackKey].title}
-                    trackContent={physicalScience[trackKey].content}
-                    onToggle={toggleModal}
-                    isRotated={isRotated[trackKey]}
-                    iconRef={iconRefs[trackKey]}
-                  />
-                ))}
+              <li>Nuclear and Particle Physics</li>
+                <li>Quantum Materials and Topological Insulators: Theoretical and Experimental Insights</li>
+                <li>Literary Theories</li>
+                <li>Synthesis and characterization of nanomaterials</li>
+                <li>Nanostructured materials</li>
+                <li>Solar cells</li>
+                <li>Chemical sensors</li>
+                <li>Soft Matter Physics:Modelling and Simulation</li>
+                <li>Plasma Physics in Material Synthesis and Processing</li>
+                <li>Magnetic Materials: Theory, Synthesis, and Characterization</li>
+                <li>Advanced Spectroscopic Techniques for Material Analysis</li>
+                <li>Biophysics: Bridging Physics and Biology in Materials Research</li>
               </ul>
 
               <h3 className="text-2xl font-bold text-rose-700 mt-8 mb-4 border-b-2 border-dotted border-gray-400 pb-2">
