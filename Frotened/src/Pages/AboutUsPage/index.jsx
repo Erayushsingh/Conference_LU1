@@ -132,11 +132,10 @@ const AboutUsPage = () => {
                 University of Lucknow{" "}
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Vivek Sahai,Head, Department of Mathematics, University of
-                Lucknow
+                Prof. Vivek Sahai, Department of Mathematics and Astronomy, University of Lucknow
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Pankaj Mathur, Department of Mathematics, University of
+                Prof. Pankaj Mathur, Department of Mathematics and Astronomy, University of
                 Lucknow
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
@@ -353,7 +352,10 @@ const AboutUsPage = () => {
             	Prof. V. K. Sharma, Professor, Department of Chemistry, University of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Vivek Sahai, Department of Mathematics and Astronomy, Bundelkhand University
+            	Prof. Vivek Sahai, Department of Mathematics and Astronomy, University of Lucknow
+            </li>
+            <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            	Prof. Pankaj Mathur, Department of Mathematics and Astronomy, University of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
             	Prof. Praveen Sahu, Professor, Department of Commerce and Management, Central University of Rajasthan
