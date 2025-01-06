@@ -95,9 +95,9 @@ const PublicationPage = () => {
               recent APA standard manual and must fall within 4,000-6,000 words.
             </p>
             <p>
-              Abstract and paper should be sent only in MS-Word (.docx)
-              format along with duly filled Registration form and Registration
-              fee receipt.
+              Abstract and paper should be sent only in MS-Word (.docx) format
+              along with duly filled Registration form and Registration fee
+              receipt.
             </p>
             <p>
               In the paper, name of corresponding author should be marked with
@@ -165,10 +165,55 @@ const PublicationPage = () => {
               download
               className="text-blue-500 underline ml-5 font-bold"
             >
-              For Publication
+              Publication Ethics
             </a>
           </div>
         </div>
+        <h2 className="text-3xl md:text-3xl mt-10 font-extrabold text-center text-gray-800 mb-6">
+          Peer Review Process
+        </h2>
+        <p className="text-lg text-black mb-4 md:mb-0 md:text-lg md:leading-8 flex justify-center">
+          <div className="w-[80%]">
+            <p>
+              <span className="font-bold">Step I:</span> Paper received by
+              Editor-in-Chief for checking the title and abstract for relevance
+              against the conference theme (rejected if no relevance found)
+            </p>
+            <p>
+              <span className="font-bold">Step II:</span> Sent to field specific
+              Editor for further process. Editor conducts first plag-check.
+              (Criteria I: if plag is less than 10%, the manuscript is sent to
+              three specific peers to review and once accepted by first two then
+              communicated to author as ‘under review’; If plag is between 10%
+              and 20%, the manuscript is sent back to author for improvement;
+              and if plag is more than 20%, manuscript is rejected and
+              communicated to author)
+            </p>
+            <p>
+              <span className="font-bold">Step III:</span> Once first two
+              reviews are received, the editor compiles reviews and notes
+              comments and sends back to author for revision in the manuscript.
+            </p>
+            <p>
+              <span className="font-bold">Step IV:</span> If revised manuscript
+              is found satisfactory, the editor accepts it for publication.
+              Else, the revised manuscript is sent to the same peer reviewers
+              for their review.
+            </p>
+            <p>
+              <span className="font-bold">Step V:</span> Once satisfied by the
+              peers the manuscript publication is decided by the Editor. Else,
+              the manuscript is sent back to the author with additional comments
+              by the Editor for further revision. However, if the peers are not
+              satisfied with the revised manuscript, the Editor rejects it and
+              communicates the same to the author.
+            </p>
+            <p>
+              <span className="font-bold">Step VI:</span> Upon receipt of
+              re-revised manuscript, the editor takes final decision
+            </p>
+          </div>
+        </p>
       </div>
 
       <div className="bg-white rounded-lg p-6 my-8 w-full sm:w-4/5 mx-auto">
