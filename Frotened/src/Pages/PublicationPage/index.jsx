@@ -79,7 +79,7 @@ const PublicationPage = () => {
       <div className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-extrabold text-center text-black mb-8">
-            Abstract Submission Formate
+            Abstract Submission Format
           </h2>
           <div className="text-lg md:text-xl text-gray-700 space-y-6">
             <p>
@@ -218,7 +218,7 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Abstract Submission (Oral & Poster)
                   </td>
-                  <td className="border px-4 py-2">5 January 2025</td>
+                  <td className="border px-4 py-2">30 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">
@@ -228,7 +228,7 @@ const PublicationPage = () => {
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Full Paper Submission</td>
-                  <td className="border px-4 py-2">15 January, 2025</td>
+                  <td className="border px-4 py-2">30 January, 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">

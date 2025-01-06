@@ -408,7 +408,8 @@ const HeroSection = () => {
                 Prof. Ajit Srivastava, Institute of Physics, Bhubneshwar
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-              Prof. Anil Misra,HOD Department of Chemistry University of Lucknow
+                Prof. Anil Mishra,HOD Department of Chemistry University of
+                Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. Matreyi Priyadashini, University of Lucknow, Lucknow
