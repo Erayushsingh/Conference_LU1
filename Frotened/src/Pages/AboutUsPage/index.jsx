@@ -120,6 +120,9 @@ const AboutUsPage = () => {
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya{" "}
               </p>
+              <p className="text-lg sm:text-xl text-gray-700">
+              Prof B M Dixit Shri Ramswaroop Memorial University Barabanki
+              </p>
             </div>
             <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
               {/* List of Advisory Committee Members */}
@@ -230,6 +233,9 @@ const AboutUsPage = () => {
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
               Dr. Saurabh Yadav, Department of Chemistry, U. P. State Institute
               of Forensic Science, Lucknow
+            </li>
+            <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+              Dr Ramgopal Singh Shri Ramswaroop Memorial University Barabanki
             </li>
           </ul>
         </div>
