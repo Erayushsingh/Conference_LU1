@@ -263,7 +263,7 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Abstract Submission (Oral & Poster)
                   </td>
-                  <td className="border px-4 py-2">30 January 2025</td>
+                  <td className="border px-4 py-2">15 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">
@@ -273,7 +273,7 @@ const PublicationPage = () => {
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Full Paper Submission</td>
-                  <td className="border px-4 py-2">30 January, 2025</td>
+                  <td className="border px-4 py-2">25 January, 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">
@@ -285,7 +285,7 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Last date for Registration
                   </td>
-                  <td className="border px-4 py-2">05 February 2025</td>
+                  <td className="border px-4 py-2">25 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">On-the-spot Registration</td>

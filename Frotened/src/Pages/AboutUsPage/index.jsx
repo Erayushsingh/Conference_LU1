@@ -121,7 +121,14 @@ const AboutUsPage = () => {
                 Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya{" "}
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-              Prof B M Dixit Shri Ramswaroop Memorial University Barabanki
+                Prof B M Dixit Shri Ramswaroop Memorial University Barabanki
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700">
+                Prof. N.K Pandey, Department of Physics, University of Lucknow
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700">
+                Prof. Onkar Prasad, Head, Department of Physics, University of
+                Lucknow
               </p>
             </div>
             <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
@@ -135,11 +142,12 @@ const AboutUsPage = () => {
                 University of Lucknow{" "}
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Vivek Sahai, Department of Mathematics and Astronomy, University of Lucknow
+                Prof. Vivek Sahai, Department of Mathematics and Astronomy,
+                University of Lucknow
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Pankaj Mathur, Department of Mathematics and Astronomy, University of
-                Lucknow
+                Prof. Pankaj Mathur, Department of Mathematics and Astronomy,
+                University of Lucknow
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. Anjana Solaki, Department of Mathematics, BIET, Jhansi{" "}
@@ -167,6 +175,14 @@ const AboutUsPage = () => {
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Dr. Ashish Pandey, National Research Council, Canada{" "}
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700">
+                Prof. Anil Mishra, Head, Department of Chemistry,
+                University of Lucknow
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700">
+                Prof. Maitraye Priyadarshini, Head, Department of English and
+                Modern European Languages, University of Lucknow
               </p>
             </div>
           </div>
@@ -280,10 +296,7 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-
-        
         <div className="flex flex-col border-t-4 border-red-400  mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4 mb-8">
-          
           <div className=" bg-blue-50 mt-10 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
             <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
               Editor-in-Chief
@@ -320,54 +333,70 @@ const AboutUsPage = () => {
         </div>
 
         <h3 className="md:text-4xl pt-7  text-xl font-bold text-center text-gray-800 mb-8">
-        Editorial Board
+          Editorial Board
         </h3>
         <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%]  mx-auto">
           <ul className="space-y-2 text-left">
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. P. K. Rath, Professor, Department of Physics, University of Lucknow
+              Prof. P. K. Rath, Professor, Department of Physics, University of
+              Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Vijay Prakash Singh, Professor, Department of English and Modern European Languages, University of Lucknow
+              Prof. Vijay Prakash Singh, Professor, Department of English and
+              Modern European Languages, University of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. R. M. Naik, Professor, Department of Chemistry, University of Lucknow
+              Prof. R. M. Naik, Professor, Department of Chemistry, University
+              of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Biswajit Sarkar, Professor, Department of Industrial Management and Engineering, Yonsei University, South Korea
+              Prof. Biswajit Sarkar, Professor, Department of Industrial
+              Management and Engineering, Yonsei University, South Korea
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Manju Agarwal, Professor, Department of Mathematics and Astronomy, University of Lucknow
+              Prof. Manju Agarwal, Professor, Department of Mathematics and
+              Astronomy, University of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Athanase Papadopoulos, Department of Mathematics, University of Strasbourg, France
+              Prof. Athanase Papadopoulos, Department of Mathematics, University
+              of Strasbourg, France
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Sangeeta Sahu, Professor, Department of Management, University of Lucknow
+              Prof. Sangeeta Sahu, Professor, Department of Management,
+              University of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Binod Mishra, Professor, Department of Humanities and Social Sciences, Indian Institute of Technology, Roorkee
+              Prof. Binod Mishra, Professor, Department of Humanities and Social
+              Sciences, Indian Institute of Technology, Roorkee
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Jose Carlos Redondo Olmedilla, Department of English, University of Almeria, Spain
+              Prof. Jose Carlos Redondo Olmedilla, Department of English,
+              University of Almeria, Spain
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Satendra Pal Singh, Professor, Department of Physics, University of Lucknow
+              Prof. Satendra Pal Singh, Professor, Department of Physics,
+              University of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. V. K. Sharma, Professor, Department of Chemistry, University of Lucknow
+              Prof. V. K. Sharma, Professor, Department of Chemistry, University
+              of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Vivek Sahai, Department of Mathematics and Astronomy, University of Lucknow
+              Prof. Vivek Sahai, Department of Mathematics and Astronomy,
+              University of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Pankaj Mathur, Department of Mathematics and Astronomy, University of Lucknow
+              Prof. Pankaj Mathur, Department of Mathematics and Astronomy,
+              University of Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Prof. Praveen Sahu, Professor, Department of Commerce and Management, Central University of Rajasthan
+              Prof. Praveen Sahu, Professor, Department of Commerce and
+              Management, Central University of Rajasthan
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-            	Dr. Ashish Pandey, Associate Research Officer (AcRO), Conseil National de Recherches Canada, Gouvernement dvu Canada, Ottawa, Ontario, Canada, K1A 0R6
+              Dr. Ashish Pandey, Associate Research Officer (AcRO), Conseil
+              National de Recherches Canada, Gouvernement dvu Canada, Ottawa,
+              Ontario, Canada, K1A 0R6
             </li>
           </ul>
         </div>
