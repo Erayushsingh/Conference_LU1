@@ -167,6 +167,14 @@ const AboutUsPage = () => {
                 Prof. Sanjay Kumar Srivastava, Department of AS&H, IET, Lucknow{" "}
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
+                Prof. Anil Mishra, Head, Department of Chemistry,
+                University of Lucknow
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700">
+                Prof. Maitraye Priyadarshini, Head, Department of English and
+                Modern European Languages, University of Lucknow
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700">
                 Dr. Ashutosh Tiwari, Director-Institute of Advanced Materials,
                 Sweden
               </p>
@@ -176,14 +184,7 @@ const AboutUsPage = () => {
               <p className="text-lg sm:text-xl text-gray-700">
                 Dr. Ashish Pandey, National Research Council, Canada{" "}
               </p>
-              <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Anil Mishra, Head, Department of Chemistry,
-                University of Lucknow
-              </p>
-              <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Maitraye Priyadarshini, Head, Department of English and
-                Modern European Languages, University of Lucknow
-              </p>
+              
             </div>
           </div>
         </div>
