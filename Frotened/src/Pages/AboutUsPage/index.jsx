@@ -175,6 +175,9 @@ const AboutUsPage = () => {
                 Modern European Languages, University of Lucknow
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
+              Prof. Sujeet Agarwal, Department of Physics, KNIT, Sultanpur
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700">
                 Dr. Ashutosh Tiwari, Director-Institute of Advanced Materials,
                 Sweden
               </p>
@@ -183,6 +186,9 @@ const AboutUsPage = () => {
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Dr. Ashish Pandey, National Research Council, Canada{" "}
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700">
+              Dr. Alka Singh, Department of English, NLU-Lucknow
               </p>
               
             </div>
