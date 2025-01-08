@@ -361,8 +361,11 @@ const PublicationPage = () => {
         </div>
       </div>
 
-      <div class="overflow-x-auto flex justify-center mb-8">
-        <table class="table-auto border-collapse border border-gray-300 md:w-[90%]  bg-white text-sm">
+      <div class="overflow-x-auto flex flex-col  items-center mb-8">
+      <h2 className="text-3xl font-extrabold text-center text-black mb-6">
+        List of Abstracts
+        </h2>
+        <table class="table-auto border-collapse border shadow-2xl font-semi-bold border-gray-300 md:w-[90%]  bg-white text-[16px]">
             <thead class="bg-indigo-600 text-white">
                 <tr>
                     <th class="border border-gray-300 px-4 py-2 text-left">Sl. No.</th>

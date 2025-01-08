@@ -37,7 +37,7 @@ const AboutUsPage = () => {
 
           <div className="flex flex-col mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
             <div className="bg-green-50  rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
-              <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">
+              <h4 className="text-xl sm:text-2xl text-center font-semibold text-gray-800 mb-2">
                 Organizing Secretary
               </h4>
               <p className="text-lg sm:text-xl text-gray-700 text-center">
@@ -117,9 +117,7 @@ const AboutUsPage = () => {
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. Sanjay Kumar Pandey, Mathematics, Banaras Hindu University{" "}
               </p>
-              <p className="text-lg sm:text-xl text-gray-700">
-                Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya{" "}
-              </p>
+              
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof B M Dixit Shri Ramswaroop Memorial University Barabanki
               </p>
@@ -194,7 +192,8 @@ const AboutUsPage = () => {
             </div>
           </div>
         </div>
-
+        
+        {/* STEERING COMMITTEE */}
         <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">
           STEERING COMMITTEE
         </h3>
@@ -243,8 +242,7 @@ const AboutUsPage = () => {
               Dr. Vijay Kumar, Department of English, Galgotia University, Noida
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-              Dr. Jyoti Juyal, Department of Linguistics, Sharda University,
-              Mathura
+              Dr. Jyoti Juyal, Department of Linguistics, Sharda University, Greater Noida
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
               Dr. Vimal Kumar Vishwakarma, Dharmashastra National Law University
@@ -339,6 +337,24 @@ const AboutUsPage = () => {
           </div>
         </div>
 
+        <div className="flex justify-center">
+          <div className="bg-green-50 md:mt-10 mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+              <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
+                Associate Editor
+              </h3>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Dr. Amit Mishra
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Dr. Parul Singh
+              </p>
+              <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Dr. Sumedha Dwivedi 
+              </p>
+              
+          </div>
+        </div>
+
         <h3 className="md:text-4xl pt-7  text-xl font-bold text-center text-gray-800 mb-8">
           Editorial Board
         </h3>
@@ -400,6 +416,9 @@ const AboutUsPage = () => {
               Prof. Praveen Sahu, Professor, Department of Commerce and
               Management, Central University of Rajasthan
             </li>
+            <p className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+                Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya{" "}
+              </p>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
               Dr. Ashish Pandey, Associate Research Officer (AcRO), Conseil
               National de Recherches Canada, Gouvernement dvu Canada, Ottawa,
@@ -407,6 +426,11 @@ const AboutUsPage = () => {
             </li>
           </ul>
         </div>
+
+
+        
+
+        
 
         <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">
           STUDENT COORDINATORS
