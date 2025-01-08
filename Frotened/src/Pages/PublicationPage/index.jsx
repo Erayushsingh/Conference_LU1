@@ -361,6 +361,51 @@ const PublicationPage = () => {
         </div>
       </div>
 
+      <div class="overflow-x-auto flex justify-center mb-8">
+        <table class="table-auto border-collapse border border-gray-300 md:w-[90%]  bg-white text-sm">
+            <thead class="bg-indigo-600 text-white">
+                <tr>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Sl. No.</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Name</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Subject</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Abstract Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">1</td>
+                    <td class="border border-gray-300 px-2 py-2">Ajit M. Srivastava</td>
+                    <td class="border border-gray-300 px-2 py-2">Physics</td>
+                    <td class="border border-gray-300 px-2 py-2">Detecting gravitational waves with rotating neutron stars as resonant Weber detectors</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">2</td>
+                    <td class="border border-gray-300 px-2 py-2">Vimal Kumar Vishwakarma</td>
+                    <td class="border border-gray-300 px-2 py-2">English</td>
+                    <td class="border border-gray-300 px-2 py-2">A Study of Forensic Linguistics: Bridging the Gap Between Language and Law in India’s Legal System</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">3</td>
+                    <td class="border border-gray-300 px-2 py-2">Dr. Saroj Kumar</td>
+                    <td class="border border-gray-300 px-2 py-2">English</td>
+                    <td class="border border-gray-300 px-2 py-2">Assessing the Feasibility of Recognising English as One of the Indian Languages: Scope and Challenges</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">4</td>
+                    <td class="border border-gray-300 px-2 py-2">Dr. Vinod Pal & Dr. Milan Swarup Sharma</td>
+                    <td class="border border-gray-300 px-2 py-2">English</td>
+                    <td class="border border-gray-300 px-2 py-2">Teaching and Learning through Actions - an essential change in primary Education</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">5</td>
+                    <td class="border border-gray-300 px-2 py-2">Dr. Sangeet Ranjan Natwar</td>
+                    <td class="border border-gray-300 px-2 py-2">English</td>
+                    <td class="border border-gray-300 px-2 py-2">The Role of English Literature in Digital Humanities and Engineering</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
       <Footer />
     </>
   );
