@@ -209,6 +209,7 @@ const HeroSection = () => {
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8 ">
                 <span className="font-bold">Shri Indresh Kumar Ji</span>
+                <p>Patron</p>
                 <p>Forum for Awareness of National Security</p>
               </p>
             </div>
