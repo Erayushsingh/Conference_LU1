@@ -137,7 +137,7 @@ const AboutUsPage = () => {
               </p>
 
               <p className="text-lg sm:text-xl text-gray-700">
-              Prof. Amita Singh Bhal, BBD University Lucknow
+                Prof. Amita Singh Bhal, BBD University Lucknow
               </p>
 
             </div>
@@ -414,6 +414,14 @@ const AboutUsPage = () => {
               Dr. Ashish Pandey, Associate Research Officer (AcRO), Conseil
               National de Recherches Canada, Gouvernement dvu Canada, Ottawa,
               Ontario, Canada, K1A 0R6
+            </li>
+
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Shefali Vaidya , CTU Czech Republic
+            </li>
+            
+            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              Dr. Shantu Mondal , CTU Czech Republic
             </li>
           </ul>
         </div>
