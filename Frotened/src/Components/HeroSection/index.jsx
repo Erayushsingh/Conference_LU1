@@ -390,7 +390,7 @@ const HeroSection = () => {
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. Vinay Pandey, Tribhuwan University, Nepal
               </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
               Dr. Shefali Vaidya , CTU Czech Republic
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
