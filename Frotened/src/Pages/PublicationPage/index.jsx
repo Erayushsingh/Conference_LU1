@@ -418,8 +418,8 @@ const PublicationPage = () => {
 
                 <tr>
                     <td class="border border-gray-300 text-center px-2 py-2">7</td>
-                    <td class="border border-gray-300 px-2 py-2">Ms. Supriya</td>
-                    <td class="border border-gray-300 px-2 py-2">English</td>
+                    <td class="border border-gray-300 px-2 py-2">Ms. Supriya Yadav</td>
+                    <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">Redefining Work in the Age of Smart Technologies- Industry 4.0: Thriving in Disruption?</td>
                 </tr>
 
