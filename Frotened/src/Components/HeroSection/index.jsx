@@ -16,6 +16,9 @@ import Faculty from "/src/assets/faculty_photo.jpg";
 import Faculty01 from "/src/assets/faculty_Photo01.jpg";
 import Faculty02 from "/src/assets/faculty_Photo02.jpg";
 import Faculty03 from "/src/assets/Faculty_Photo03.webp";
+import Indresh_Ji from "/src/assets/Indresh_Ji.jpg";
+import fans from "/src/assets/fans.png";
+import pnb from "/src/assets/pnb.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -178,18 +181,19 @@ const HeroSection = () => {
       </div>
 
       {/* Organizing Committee Section */}
-      <div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto  border-y-4 border-red-700">
+      <div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
         {/* Flex container for individual sections */}
         <div className="flex flex-col sm:flex-row justify-between space-x-4 space-y-4 sm:space-y-0">
+
           {/* Chief Patron Container */}
-          <div className="md:w-[30%]">
-            <img src={VC_Sir} />
+          <div className="md:w-[23%]">
+            <img src={VC_Sir} className="w-full h-54 object-fit rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 md:mt-2">
                 CHIEF-PATRON:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                Prof. Alok Kumar Rai
+                <span className="font-bold">Prof. Alok Kumar Rai</span>
                 <p>Hon’ble Vice-Chancellor</p>
                 University of Lucknow
               </p>
@@ -197,33 +201,48 @@ const HeroSection = () => {
           </div>
 
           {/* Chief Guest Container */}
-          <div className="md:w-[30%]">
-            <img src={TN_Sir} />
+          <div className="md:w-[23%]">
+            <img className="w-full h-54 object-fit rounded-lg" src={Indresh_Ji} />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+                CHIEF-GUEST:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8 ">
+                <span className="font-bold">Shri Indresh Kumar Ji</span>
+                <p>Forum for Awareness of National Security</p>
+              </p>
+            </div>
+          </div>
+
+          {/* Guest of Honor Container */}
+          <div className="md:w-[23%]">
+            <img src={TN_Sir} className="w-full h-54 object-fit rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl text-center font-semibold text-blue-700 md:text-2xl md:leading-8">
                 GUEST OF HONOUR:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                Prof. T. N. Singh
+                <span className="font-bold">Prof. T. N. Singh</span>
                 <p>Director</p>IIT-Patna
               </p>
             </div>
           </div>
 
           {/* Patron Container */}
-          <div className="md:w-[30%]">
-            <img src={Dean_Sir} />
+          <div className="md:w-[23%]">
+            <img src={Dean_Sir} className="w-full h-54 object-fit rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
                 PATRON:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                Prof. A. K. Singh
+                <span className="font-bold">Prof. A. K. Singh</span>
                 <p>Dean, FoET</p>
                 University of Lucknow
               </p>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -739,19 +758,49 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row justify-around space-x-4 space-y-4 sm:space-y-0">
           {/* Convener Container */}
           <div className="md:w-[30%]">
-            <img src={Deepak_Sir} />
-            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-                Convener
-              </h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                Dr. Deepak Gupta, Department of Applied Science and Humanities,
-                University of Lucknow
-              </p>
-            </div>
-          </div>
+  <div className="w-full h-[300px] bg-gray-200 rounded-lg overflow-hidden mx-auto ">  {/* Rectangular container */}
+    <img
+      className="w-full h-full object-fit"
+      src={Deepak_Sir}
+      alt="Dr. Deepak Gupta"
+    />
+  </div>
+  <div className="flex flex-col items-center  bg-blue-50 rounded-lg w-full sm:w-full">
+    <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+      Convener
+    </h4>
+    <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+      Dr. Deepak Gupta, Department of Applied Science and Humanities,
+      University of Lucknow
+    </p>
+  </div>
+</div>
+
+
         </div>
       </div>
+
+      {/* Sponsors Section */}
+      <div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-center md:mb-0">Our Partners</h2>
+
+        {/* Flex container for sponsor logos */}
+        <div className="flex flex-wrap justify-center gap-8 mt-8">
+          {/* Sponsor 1 */}
+          <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md">
+            <img src={fans} alt="Sponsor 1" className="w-full h-full object-fit" />
+          </div>
+
+          {/* Sponsor 2 */}
+          <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md">
+            <img src={pnb} alt="Sponsor 2" className="w-full h-full object-fit" />
+          </div>
+
+          {/* Additional Sponsors can be added here in the same format */}
+        </div>
+      </div>
+
+
     </>
   );
 };

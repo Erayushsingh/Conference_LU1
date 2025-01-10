@@ -130,6 +130,16 @@ const AboutUsPage = () => {
                 Prof. Onkar Prasad, Head, Department of Physics, University of
                 Lucknow
               </p>
+
+              <p className="text-lg sm:text-xl text-gray-700">
+                Prof. Vishal Singh Chandel,
+                Department of Applied Sciences and Humanities Rajkiya Engineering College, Ambedkar Nagar
+              </p>
+
+              <p className="text-lg sm:text-xl text-gray-700">
+              Prof. Amita Singh Bhal, BBD University Lucknow
+              </p>
+
             </div>
             <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
               {/* List of Advisory Committee Members */}
@@ -175,7 +185,7 @@ const AboutUsPage = () => {
                 Modern European Languages, University of Lucknow
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-              Prof. Sujeet Agarwal, Department of Physics, KNIT, Sultanpur
+                Prof. Sujeet Agarwal, Department of Physics, KNIT, Sultanpur
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Dr. Ashutosh Tiwari, Director-Institute of Advanced Materials,
@@ -188,9 +198,9 @@ const AboutUsPage = () => {
                 Dr. Ashish Pandey, National Research Council, Canada{" "}
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-              Dr. Alka Singh, Department of English, NLU-Lucknow
+                Dr. Alka Singh, Department of English, NLU-Lucknow
               </p>
-              
+
             </div>
           </div>
         </div>

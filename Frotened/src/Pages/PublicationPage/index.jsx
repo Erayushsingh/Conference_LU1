@@ -361,9 +361,15 @@ const PublicationPage = () => {
         </div>
       </div>
 
+      <div className="bg-white rounded-lg shadow-lg p-6 my-8 w-full sm:w-[80%] mx-auto">
+      <h2 className="text-3xl font-extrabold text-center text-black mb-6">
+          Abstracts Submitted So far
+        </h2>
       <div class="overflow-x-auto flex justify-center mb-8">
-        <table class="table-auto border-collapse border border-gray-300 md:w-[90%]  bg-white text-sm">
+        <table class="table-auto border-collapse border border-gray-300 md:w-[100%]  bg-white text-sm">
+          
             <thead class="bg-indigo-600 text-white">
+             
                 <tr>
                     <th class="border border-gray-300 px-4 py-2 text-left">Sl. No.</th>
                     <th class="border border-gray-300 px-4 py-2 text-left">Name</th>
@@ -374,13 +380,13 @@ const PublicationPage = () => {
             <tbody>
                 <tr>
                     <td class="border border-gray-300 text-center px-2 py-2">1</td>
-                    <td class="border border-gray-300 px-2 py-2">Ajit M. Srivastava</td>
+                    <td class="border border-gray-300 px-2 py-2">Prof. Ajit M. Srivastava</td>
                     <td class="border border-gray-300 px-2 py-2">Physics</td>
                     <td class="border border-gray-300 px-2 py-2">Detecting gravitational waves with rotating neutron stars as resonant Weber detectors</td>
                 </tr>
                 <tr>
                     <td class="border border-gray-300 text-center px-2 py-2">2</td>
-                    <td class="border border-gray-300 px-2 py-2">Vimal Kumar Vishwakarma</td>
+                    <td class="border border-gray-300 px-2 py-2">Dr. Vimal Kumar Vishwakarma</td>
                     <td class="border border-gray-300 px-2 py-2">English</td>
                     <td class="border border-gray-300 px-2 py-2">A Study of Forensic Linguistics: Bridging the Gap Between Language and Law in India’s Legal System</td>
                 </tr>
@@ -402,8 +408,66 @@ const PublicationPage = () => {
                     <td class="border border-gray-300 px-2 py-2">English</td>
                     <td class="border border-gray-300 px-2 py-2">The Role of English Literature in Digital Humanities and Engineering</td>
                 </tr>
+
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">6</td>
+                    <td class="border border-gray-300 px-2 py-2">Dr. Bindunath Jha</td>
+                    <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                    <td class="border border-gray-300 px-2 py-2">Seeing through Ecological Consciousness in Tribal Literature: Poems of Haldhar Nag and Anuj Lugun</td>
+                </tr>
+
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">7</td>
+                    <td class="border border-gray-300 px-2 py-2">Ms. Supriya</td>
+                    <td class="border border-gray-300 px-2 py-2">English</td>
+                    <td class="border border-gray-300 px-2 py-2">Redefining Work in the Age of Smart Technologies- Industry 4.0: Thriving in Disruption?</td>
+                </tr>
+
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">8</td>
+                    <td class="border border-gray-300 px-2 py-2">Raghvendra Pratap Singh</td>
+                    <td class="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                    <td class="border border-gray-300 px-2 py-2">Impact of Awareness Programs for vaccination on the spread of infectious disease</td>
+                </tr>
+                
+
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">9</td>
+                    <td class="border border-gray-300 px-2 py-2">Mustaq Ahmad</td>
+                    <td class="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                    <td class="border border-gray-300 px-2 py-2">Dynamic Modeling and Control of Hepatitis B Spread: Integrating Harmonic mean Incidence and Vertical Transmission Factors</td>
+                </tr>
+
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">10</td>
+                    <td class="border border-gray-300 px-2 py-2">Mohd Saif Ashraf</td>
+                    <td class="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                    <td class="border border-gray-300 px-2 py-2">Exploring Generative Adversarial Networks for Enhancing Low Resource NLP Tasks</td>
+                </tr>
+
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">11</td>
+                    <td class="border border-gray-300 px-2 py-2">Dwipayan Dutta Roy</td>
+                    <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                    <td class="border border-gray-300 px-2 py-2">The Drowned Worlds: Exploring the Intersection of Climate Change, Migration and Capitalism in Abdulrazak Gurnah’s Paradise and By the Sea</td>
+                </tr>
+
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">12</td>
+                    <td class="border border-gray-300 px-2 py-2">Sarojit Kapasi</td>
+                    <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                    <td class="border border-gray-300 px-2 py-2">Risk and Resilience in the Adoption of New Agrarian Technology by Rural Families: An Ethnographic Study of East Barddhman District</td>
+                </tr>
+
+                <tr>
+                    <td class="border border-gray-300 text-center px-2 py-2">13</td>
+                    <td class="border border-gray-300 px-2 py-2">Sakina Rizvi</td>
+                    <td class="border border-gray-300 px-2 py-2">Mathematical Sciences	</td>
+                    <td class="border border-gray-300 px-2 py-2">Deep Learning in measure theory</td>
+                </tr>
             </tbody>
         </table>
+    </div>
     </div>
 
       <Footer />
