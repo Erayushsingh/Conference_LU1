@@ -395,7 +395,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">2</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">3</td>
                     <td class="border border-gray-300 px-2 py-2">Dr. Santu Mondal</td>
                     <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">Top-Quark Pair Production in Heavy-ion Collisions in the ATLAS</td>
@@ -403,28 +403,28 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">2</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">4</td>
                     <td class="border border-gray-300 px-2 py-2">Dr. Vimal Kumar Vishwakarma</td>
                     <td class="border border-gray-300 px-2 py-2">English</td>
                     <td class="border border-gray-300 px-2 py-2">A Study of Forensic Linguistics: Bridging the Gap Between Language and Law in India’s Legal System</td>
                     <td class="border border-gray-300 px-2 py-2">India</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">3</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">5</td>
                     <td class="border border-gray-300 px-2 py-2">Dr. Saroj Kumar</td>
                     <td class="border border-gray-300 px-2 py-2">English</td>
                     <td class="border border-gray-300 px-2 py-2">Assessing the Feasibility of Recognising English as One of the Indian Languages: Scope and Challenges</td>
                     <td class="border border-gray-300 px-2 py-2">India</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">4</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">6</td>
                     <td class="border border-gray-300 px-2 py-2">Dr. Vinod Pal & Dr. Milan Swarup Sharma</td>
                     <td class="border border-gray-300 px-2 py-2">English</td>
                     <td class="border border-gray-300 px-2 py-2">Teaching and Learning through Actions - an essential change in primary Education</td>
                     <td class="border border-gray-300 px-2 py-2">India</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">5</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">7</td>
                     <td class="border border-gray-300 px-2 py-2">Dr. Sangeet Ranjan Natwar</td>
                     <td class="border border-gray-300 px-2 py-2">English</td>
                     <td class="border border-gray-300 px-2 py-2">The Role of English Literature in Digital Humanities and Engineering</td>
@@ -432,7 +432,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">6</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">8</td>
                     <td class="border border-gray-300 px-2 py-2">Dr. Bindunath Jha</td>
                     <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">Seeing through Ecological Consciousness in Tribal Literature: Poems of Haldhar Nag and Anuj Lugun</td>
@@ -440,7 +440,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">7</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">9</td>
                     <td class="border border-gray-300 px-2 py-2">Ms. Supriya Yadav</td>
                     <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">Redefining Work in the Age of Smart Technologies- Industry 4.0: Thriving in Disruption?</td>
@@ -448,7 +448,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">8</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">10</td>
                     <td class="border border-gray-300 px-2 py-2">Raghvendra Pratap Singh</td>
                     <td class="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">Impact of Awareness Programs for vaccination on the spread of infectious disease</td>
@@ -457,7 +457,7 @@ const PublicationPage = () => {
                 
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">9</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">11</td>
                     <td class="border border-gray-300 px-2 py-2">Mustaq Ahmad</td>
                     <td class="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">Dynamic Modeling and Control of Hepatitis B Spread: Integrating Harmonic mean Incidence and Vertical Transmission Factors</td>
@@ -465,7 +465,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">10</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">12</td>
                     <td class="border border-gray-300 px-2 py-2">Mohd Saif Ashraf</td>
                     <td class="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">Exploring Generative Adversarial Networks for Enhancing Low Resource NLP Tasks</td>
@@ -473,7 +473,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">11</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">13</td>
                     <td class="border border-gray-300 px-2 py-2">Dwipayan Dutta Roy</td>
                     <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">The Drowned Worlds: Exploring the Intersection of Climate Change, Migration and Capitalism in Abdulrazak Gurnah’s Paradise and By the Sea</td>
@@ -481,7 +481,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">12</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">14</td>
                     <td class="border border-gray-300 px-2 py-2">Sarojit Kapasi</td>
                     <td class="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
                     <td class="border border-gray-300 px-2 py-2">Risk and Resilience in the Adoption of New Agrarian Technology by Rural Families: An Ethnographic Study of East Barddhman District</td>
@@ -489,7 +489,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                    <td class="border border-gray-300 text-center px-2 py-2">13</td>
+                    <td class="border border-gray-300 text-center px-2 py-2">15</td>
                     <td class="border border-gray-300 px-2 py-2">Sakina Rizvi</td>
                     <td class="border border-gray-300 px-2 py-2">Mathematical Sciences	</td>
                     <td class="border border-gray-300 px-2 py-2">Deep Learning in measure theory</td>
