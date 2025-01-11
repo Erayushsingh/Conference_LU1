@@ -456,7 +456,7 @@ const HeroSection = () => {
                 Prof. R. P. Singh, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Satyendra Pal Singh, University of Lucknow, Lucknow
+                Prof. Satendra Pal Singh, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. Anchal Srivastava, University of Lucknow, Lucknow
