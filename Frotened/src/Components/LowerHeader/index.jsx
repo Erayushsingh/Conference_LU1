@@ -60,6 +60,7 @@ const LowerHeader = () => {
             <a href="/publications" className="hover:text-red-500">Submission</a>
             <a href="/awards" className="hover:text-red-500">Awards</a>
             <a href="/about-us" className="hover:text-red-500">Committee</a>
+            <a href="/raasheegallery2025" className="hover:text-red-500">Gallery</a>
 
             {/* Login Button - Desktop View */}
             <a
@@ -110,6 +111,8 @@ const LowerHeader = () => {
           <a href="/publications" className="py-2 hover:text-blue-700">Submission</a>
           <a href="/awards" className="py-2 hover:text-blue-700">Awards</a>
           <a href="/about-us" className="py-2 hover:text-blue-700">Committee</a>
+          <a href="/raasheegallery2025" className="py-2 hover:text-red-500">Gallery</a>
+
 
           {/* Mobile Login Button */}
           <a

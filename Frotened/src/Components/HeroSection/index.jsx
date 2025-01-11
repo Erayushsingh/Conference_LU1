@@ -476,7 +476,7 @@ const HeroSection = () => {
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. Masood H. Siddiqui, University of Lucknow, Lucknow
               </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              <li  xs="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. D. R. Sahu, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">

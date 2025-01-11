@@ -20,6 +20,7 @@ import AlreadySubmitted from './Pages/AlreadySubmitted/index.jsx';
 import Developers from './Pages/Developers/index.jsx';
 import AboutFoet from './Pages/AboutFoet/index.jsx';
 import AboutConference from './Pages/AboutConference/index.jsx';
+import Gallery from './Pages/Gallery/index.jsx';
 
 
 
@@ -58,6 +59,8 @@ const  App=()=> {
         <Route path="/abstract-submission" element={<ProtectedRoute element={<AbstractSubmission />} />} />
 
         <Route path="/techteam" element={<Developers/>}/>
+
+        <Route path="/raasheegallery2025" element={<Gallery/>}/>
 
       </Routes>
     </Router>
