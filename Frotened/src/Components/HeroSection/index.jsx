@@ -7,6 +7,8 @@ import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
+import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
+import GolokBihariJi from "/src/assets/GolokBihariJi.jpeg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
 import Deepak_Sir from "/src/assets/Deepak_Sir.jpg";
 import Launch from "/src/assets/Launch.jpg";
@@ -180,14 +182,12 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Organizing Committee Section */}
       <div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
         {/* Flex container for individual sections */}
         <div className="flex flex-col sm:flex-row justify-between space-x-4 space-y-4 sm:space-y-0">
-
           {/* Chief Patron Container */}
           <div className="md:w-[23%]">
-            <img src={VC_Sir} className="w-full h-54 object-fit rounded-lg" />
+            <img src={VC_Sir} className="w-full h-54 object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 md:mt-2">
                 CHIEF-PATRON:
@@ -202,40 +202,39 @@ const HeroSection = () => {
 
           {/* Chief Guest Container */}
           <div className="md:w-[23%]">
-            <img className="w-full h-54 object-fit rounded-lg" src={Indresh_Ji} />
+            <img className="w-full h-54 object-cover rounded-lg" src={Indresh_Ji} />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
                 CHIEF-GUEST:
               </h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8 ">
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Shri Indresh Kumar Ji</span>
                 <p>Patron</p>
-                <p>Forum for Awareness of National Security</p>
+                <p className="text-xl">Forum for Awareness of National Security</p>
               </p>
             </div>
           </div>
 
           {/* Guest of Honor Container */}
           <div className="md:w-[23%]">
-            <img src={TN_Sir} className="w-full h-54 object-fit rounded-lg" />
+            <img src={TN_Sir} className="w-full h-54 object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl text-center font-semibold text-blue-700 md:text-2xl md:leading-8">
                 GUEST OF HONOUR:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Prof. T. N. Singh</span>
-                <p>Director</p>IIT-Patna
+                <p>Director</p>
+                IIT-Patna
               </p>
             </div>
           </div>
 
           {/* Patron Container */}
           <div className="md:w-[23%]">
-            <img src={Dean_Sir} className="w-full h-54 object-fit rounded-lg" />
+            <img src={Dean_Sir} className="w-full h-54 object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-                PATRON:
-              </h4>
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">PATRON:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Prof. A. K. Singh</span>
                 <p>Dean, FoET</p>
@@ -243,8 +242,63 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
-
         </div>
+
+        {/* Special Guest Section */}
+        <div className="flex flex-col sm:flex-row justify-around space-x-4 space-y-4 sm:space-y-0 mt-10">
+          <div className="md:w-[23%]">
+            <img src={GolokBihariJi} className="w-full h-54 object-cover rounded-lg" />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Shri Golok Behari Rai</span>
+                <p>National Secretary(Org)</p>
+                FANS
+              </p>
+            </div>
+          </div>
+
+          {/* Logo4 image with keyframe */}
+          <div className="md:w-[23%]">
+            <img
+              src={Logo4}
+              className="w-full h-54 object-cover mt-24 bg-black rounded-full md:block logo4"
+            />
+          </div>
+
+          {/* Another Special Guest Container */}
+          <div className="md:w-[23%]">
+            <img src={Akshay_Sharma} className="w-full h-54 object-cover rounded-lg" />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Akshay Sharma</span>
+                <p>Novelist, Actor, Philanthropist</p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <style jsx>{`
+        @keyframes hideOnMobile {
+          0% {
+            display: block;
+          }
+          100% {
+            display: none;
+          }
+        }
+
+        .logo4 {
+          display: block; /* Default state for larger screens */
+        }
+
+        @media (max-width: 767px) {
+          .logo4 {
+            animation: hideOnMobile 0s forwards; /* Hide on mobile */
+          }
+        }
+      `}</style>
       </div>
 
       {/* Introduction Section */}
@@ -391,7 +445,7 @@ const HeroSection = () => {
                 Prof. Vinay Pandey, Tribhuwan University, Nepal
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-              Dr. Shefali Vaidya , CTU Czech Republic
+                Dr. Shefali Vaidya , CTU Czech Republic
               </li>
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
                 Dr. Shantu Mondal , CTU Czech Republic
@@ -476,7 +530,7 @@ const HeroSection = () => {
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. Masood H. Siddiqui, University of Lucknow, Lucknow
               </li>
-              <li  xs="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+              <li className=" font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. D. R. Sahu, University of Lucknow, Lucknow
               </li>
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
@@ -765,23 +819,23 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row justify-around space-x-4 space-y-4 sm:space-y-0">
           {/* Convener Container */}
           <div className="md:w-[30%]">
-  <div className="w-full h-[300px] bg-gray-200 rounded-lg overflow-hidden mx-auto ">  {/* Rectangular container */}
-    <img
-      className="w-full h-full object-fit"
-      src={Deepak_Sir}
-      alt="Dr. Deepak Gupta"
-    />
-  </div>
-  <div className="flex flex-col items-center  bg-blue-50 rounded-lg w-full sm:w-full">
-    <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-      Convener
-    </h4>
-    <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-      Dr. Deepak Gupta, Department of Applied Science and Humanities,
-      University of Lucknow
-    </p>
-  </div>
-</div>
+            <div className="w-full h-[300px] bg-gray-200 rounded-lg overflow-hidden mx-auto ">  {/* Rectangular container */}
+              <img
+                className="w-full h-full object-fit"
+                src={Deepak_Sir}
+                alt="Dr. Deepak Gupta"
+              />
+            </div>
+            <div className="flex flex-col items-center  bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
+                Convener
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                Dr. Deepak Gupta, Department of Applied Science and Humanities,
+                University of Lucknow
+              </p>
+            </div>
+          </div>
 
 
         </div>

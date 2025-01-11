@@ -21,6 +21,7 @@ import Developers from './Pages/Developers/index.jsx';
 import AboutFoet from './Pages/AboutFoet/index.jsx';
 import AboutConference from './Pages/AboutConference/index.jsx';
 import Gallery from './Pages/Gallery/index.jsx';
+import NewsAnnouncement from './Pages/NewsAnnouncement/index.jsx';
 
 
 
@@ -61,6 +62,8 @@ const  App=()=> {
         <Route path="/techteam" element={<Developers/>}/>
 
         <Route path="/raasheegallery2025" element={<Gallery/>}/>
+
+        <Route path="/newupdates" element={<NewsAnnouncement/>}/>
 
       </Routes>
     </Router>
