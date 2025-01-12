@@ -7,6 +7,8 @@ import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
+import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpeg";
+import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpeg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
 import GolokBihariJi from "/src/assets/GolokBihariJi.jpeg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
@@ -202,7 +204,7 @@ const HeroSection = () => {
 
           {/* Chief Guest Container */}
           <div className="md:w-[23%]">
-            <img className="w-full h-54 object-cover rounded-lg" src={Indresh_Ji} />
+            <img className="w-full h-[350px]object-cover rounded-lg" src={Indresh_Ji} />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
                 CHIEF-GUEST:
@@ -217,7 +219,7 @@ const HeroSection = () => {
 
           {/* Guest of Honor Container */}
           <div className="md:w-[23%]">
-            <img src={TN_Sir} className="w-full h-54 object-cover rounded-lg" />
+            <img src={TN_Sir} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl text-center font-semibold text-blue-700 md:text-2xl md:leading-8">
                 GUEST OF HONOUR:
@@ -232,7 +234,7 @@ const HeroSection = () => {
 
           {/* Patron Container */}
           <div className="md:w-[23%]">
-            <img src={Dean_Sir} className="w-full h-54 object-cover rounded-lg" />
+            <img src={Dean_Sir} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">PATRON:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
@@ -247,7 +249,7 @@ const HeroSection = () => {
         {/* Special Guest Section */}
         <div className="flex flex-col sm:flex-row justify-around space-x-4 space-y-4 sm:space-y-0 mt-10">
           <div className="md:w-[23%]">
-            <img src={GolokBihariJi} className="w-full h-54 object-cover rounded-lg" />
+            <img src={GolokBihariJi} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
@@ -258,17 +260,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Logo4 image with keyframe */}
-          <div className="md:w-[23%]">
-            <img
-              src={Logo4}
-              className="w-full h-54 object-cover mt-24 bg-black rounded-full md:block logo4"
-            />
-          </div>
-
           {/* Another Special Guest Container */}
           <div className="md:w-[23%]">
-            <img src={Akshay_Sharma} className="w-full h-54 object-cover rounded-lg" />
+            <img src={Akshay_Sharma} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
@@ -277,28 +271,30 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
-        </div>
 
-        <style jsx>{`
-        @keyframes hideOnMobile {
-          0% {
-            display: block;
-          }
-          100% {
-            display: none;
-          }
-        }
+          <div className="md:w-[23%]">
+            <img src={KeynoteSpeaker1} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">Inaugural Keynote Speaker:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. Binod Mishra</span>
+                <p>IIT-Roorkee</p>
+              </p>
+            </div>
+          </div>
 
-        .logo4 {
-          display: block; /* Default state for larger screens */
-        }
+          <div className="md:w-[23%]">
+            <img src={KeynoteSpeaker2} className="w-full h-[350px] object-fit rounded-lg" />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4  className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">Inaugural Keynote Speaker:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold md:text-xl">Prof. Rajinder Singh Chandel</span>
+                <p>Punjabi University</p>
+              </p>
+            </div>
+          </div>
 
-        @media (max-width: 767px) {
-          .logo4 {
-            animation: hideOnMobile 0s forwards; /* Hide on mobile */
-          }
-        }
-      `}</style>
+        </div> 
       </div>
 
       {/* Introduction Section */}
