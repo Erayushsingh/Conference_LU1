@@ -273,7 +273,7 @@ const HeroSection = () => {
           </div>
 
           <div className="md:w-[23%]">
-            <img src={KeynoteSpeaker1} className="w-full h-[350px] object-cover rounded-lg" />
+            <img src={KeynoteSpeaker2} className="w-full h-[350px] object-fit rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">Inaugural Keynote Speaker:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
@@ -284,7 +284,7 @@ const HeroSection = () => {
           </div>
 
           <div className="md:w-[23%]">
-            <img src={KeynoteSpeaker2} className="w-full h-[350px] object-fit rounded-lg" />
+            <img src={KeynoteSpeaker1} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4  className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">Inaugural Keynote Speaker:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
