@@ -188,159 +188,157 @@ const HeroSection = () => {
       </div>
 
       <div className="bg-white p-6 my-8 space-y-6 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
-  {/* Flex container for individual sections */}
-  <div className="flex flex-wrap justify-between gap-6">
+        {/* Grid container for individual sections */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-    {/* Chief Patron Container */}
-    <div className="md:w-[23%]">
-      <img src={VC_Sir} className="w-full h-[350px] object-cover rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 ">
-          CHIEF-PATRON:
-        </h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Prof. Alok Kumar Rai</span>
-          <p>Hon’ble Vice-Chancellor</p>
-          University of Lucknow
-        </p>
+          {/* Chief Patron Container */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={VC_Sir} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">
+                CHIEF-PATRON:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. Alok Kumar Rai</span>
+                <p>Hon’ble Vice-Chancellor</p>
+                University of Lucknow
+              </p>
+            </div>
+          </div>
+
+          {/* Chief Guest Container */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img className="w-full h-[350px] object-cover rounded-lg" src={Indresh_Ji} />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">
+                CHIEF-GUEST:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Shri Indresh Kumar Ji</span>
+                <p>Patron</p>
+                <p>FANS</p>
+              </p>
+            </div>
+          </div>
+
+          {/* Guest of Honor Container */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={TN_Sir} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">
+                GUEST OF HONOUR:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. T. N. Singh</span>
+                <p>Director</p>
+                IIT-Patna
+              </p>
+            </div>
+          </div>
+
+          {/* Patron Container */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={Dean_Sir} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">
+                PATRON:
+              </h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. A. K. Singh</span>
+                <p>Dean, FoET</p>
+                University of Lucknow
+              </p>
+            </div>
+          </div>
+
+          {/* Special Guest Section */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={GolokBihariJi} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Shri Golok Behari Rai</span>
+                <p>National Secretary(Org)</p>
+                FANS
+              </p>
+            </div>
+          </div>
+
+          {/* Another Special Guest */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={Akshay_Sharma} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Akshay Sharma</span>
+                <p>Novelist, Actor, Philanthropist</p>
+              </p>
+            </div>
+          </div>
+
+          {/* Inaugural Keynote Speaker 1 */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={ProfRaj} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. Raj P. Chhabra</span>
+                <p>IIT-Kanpur</p>
+              </p>
+            </div>
+          </div>
+
+          {/* Inaugural Keynote Speaker 2 */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={ProfVijay} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold md:text-xl">Prof. Vijay Prakash Singh</span>
+                <p>EMEL, UoL</p>
+              </p>
+            </div>
+          </div>
+
+          {/* Inaugural Keynote Speaker 3 */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={KeynoteSpeaker2} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. Binod Mishra</span>
+                <p>IIT-Roorkee</p>
+              </p>
+            </div>
+          </div>
+
+          {/* Inaugural Keynote Speaker 4 */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={KeynoteSpeaker1} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold text-xl">Prof. Rajinder Singh Chandel</span>
+                <p>Punjabi University</p>
+              </p>
+            </div>
+          </div>
+
+          {/* Chief Guest (Valedictory) */}
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={DrAlok} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">Chief Guest (Valedictory):</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Dr. Alok Vijayant</span>
+                <p className="text-2xl">Advisor, Ex-Director (Cyber Operations),Govt. of India</p>
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
 
-    {/* Chief Guest Container */}
-    <div className="md:w-[23%]">
-      <img className="w-full h-[350px] object-cover rounded-lg" src={Indresh_Ji} />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
-          CHIEF-GUEST:
-        </h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Shri Indresh Kumar Ji</span>
-          <p>Forum for Awareness of National Security</p>
-        </p>
-      </div>
-    </div>
-
-    {/* Guest of Honor Container */}
-    <div className="md:w-[23%]">
-      <img src={TN_Sir} className="w-full h-[350px] object-cover rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl text-center font-semibold text-blue-700 md:text-2xl md:leading-8">
-          GUEST OF HONOUR:
-        </h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Prof. T. N. Singh</span>
-          <p>Director</p>
-          IIT-Patna
-        </p>
-      </div>
-    </div>
-
-    {/* Patron Container */}
-    <div className="md:w-[23%]">
-      <img src={Dean_Sir} className="w-full h-[350px] object-cover rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">PATRON:</h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Prof. A. K. Singh</span>
-          <p>Dean, FoET</p>
-          University of Lucknow
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  {/* Other sections (Special Guests, Keynote Speakers, etc.) */}
-  <div className="flex flex-wrap justify-between gap-6">
-    {/* Special Guest Section */}
-    <div className="md:w-[23%]">
-      <img src={GolokBihariJi} className="w-full h-[350px] object-cover rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Shri Golok Behari Rai</span>
-          <p>National Secretary(Org)</p>
-          FANS
-        </p>
-      </div>
-    </div>
-
-    {/* Another Special Guest */}
-    <div className="md:w-[23%]">
-      <img src={Akshay_Sharma} className="w-full h-[350px] object-cover rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Akshay Sharma</span>
-          <p>Novelist, Actor, Philanthropist</p>
-        </p>
-      </div>
-    </div>
-
-    {/* Inaugural Keynote Speaker 1 */}
-    <div className="md:w-[23%]">
-      <img src={ProfRaj} className="w-full h-[350px] object-fit rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Prof. Raj P. Chhabra</span>
-          <p>IIT-Kanpur</p>
-        </p>
-      </div>
-    </div>
-
-    {/* Inaugural Keynote Speaker 2 */}
-    <div className="md:w-[23%]">
-      <img src={ProfVijay} className="w-full h-[350px] object-cover rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold md:text-xl">Prof. Vijay Prakash Singh</span>
-          <p>EMEL, UoL</p>
-        </p>
-      </div>
-    </div>
-
-    {/* Inaugural Keynote Speaker 3 */}
-    <div className="md:w-[23%]">
-      <img src={KeynoteSpeaker2} className="w-full h-[350px] object-cover rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 text-center">INAUGURAL KEYNOTE SPEAKER:</h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Prof. Binod Mishra</span>
-          <p>IIT-Roorkee</p>
-        </p>
-      </div>
-    </div>
-
-    {/* Inaugural Keynote Speaker 4 */}
-    <div className="md:w-[23%]">
-      <img src={KeynoteSpeaker1} className="w-full h-[350px] object-cover rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 text-center">INAUGURAL KEYNOTE SPEAKER:</h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold text-xl">Prof. Rajinder Singh Chandel</span>
-          <p>Punjabi University</p>
-        </p>
-      </div>
-    </div>
-
-    {/* Chief Guest (Valedictory) */}
-    <div className="md:w-[23%]">
-      <img src={DrAlok} className="w-full h-[350px] object-fit rounded-lg" />
-      <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-        <h4 className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">Chief Guest (Valedictory):</h4>
-        <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-          <span className="font-bold">Dr. Alok Vijayant</span>
-          <p>Advisor, Ex-Director (Cyber Operations)</p>
-          Govt. of India
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-      
 
       {/* Introduction Section */}
       <div className="md:py-12">
@@ -537,7 +535,7 @@ const HeroSection = () => {
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. Shikha Verma, Institute of Physics, Bhubneshwar
               </li>
-              
+
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. R. P. Singh, University of Lucknow, Lucknow
               </li>
