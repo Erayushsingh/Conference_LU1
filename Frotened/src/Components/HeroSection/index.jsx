@@ -9,6 +9,7 @@ import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
 import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpg";
 import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpg";
+import DrAlok from "/src/assets/DrAlok.jpg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
 import GolokBihariJi from "/src/assets/GolokBihariJi.jpg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
@@ -21,6 +22,8 @@ import Faculty01 from "/src/assets/faculty_Photo01.jpg";
 import Faculty02 from "/src/assets/faculty_Photo02.jpg";
 import Faculty03 from "/src/assets/Faculty_Photo03.webp";
 import Indresh_Ji from "/src/assets/Indresh_Ji.jpg";
+import ProfRaj from "/src/assets/ProfRaj.jpg";
+import ProfVijay from "/src/assets/ProfVijay.jpg";
 import fans from "/src/assets/fans.png";
 import pnb from "/src/assets/pnb.png";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -271,10 +274,37 @@ const HeroSection = () => {
             </div>
           </div>
 
+
+
           <div className="md:w-[23%]">
-            <img src={KeynoteSpeaker2} className="w-full h-[350px] object-fit rounded-lg" />
+            <img src={ProfRaj} className="w-full h-[350px] object-fit rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">Inaugural Keynote Speaker:</h4>
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. Raj P. Chhabra</span>
+                <p>IIT-Kanpur</p>
+              </p>
+            </div>
+          </div>
+
+          <div className="md:w-[23%]">
+            <img src={ProfVijay} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4  className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold md:text-xl">Prof. Vijay Prakash Singh</span>
+                <p>EMEL, UoL</p>
+              </p>
+            </div>
+          </div>
+
+        </div> 
+
+        <div className="flex flex-col sm:flex-row justify-evenly space-x-4 space-y-4 sm:space-y-0 mt-10">
+          <div className="md:w-[23%]">
+            <img src={KeynoteSpeaker2} className="w-full h-[350px] object-cover rounded-lg" />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 text-center">INAUGURAL KEYNOTE SPEAKER:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Prof. Binod Mishra</span>
                 <p>IIT-Roorkee</p>
@@ -282,19 +312,36 @@ const HeroSection = () => {
             </div>
           </div>
 
+          {/* Another Special Guest Container */}
           <div className="md:w-[23%]">
             <img src={KeynoteSpeaker1} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4  className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">Inaugural Keynote Speaker:</h4>
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 text-center">INAUGURAL KEYNOTE SPEAKER:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold md:text-xl">Prof. Rajinder Singh Chandel</span>
-                <p>Punjabi University</p>
+                <span className="font-bold text-xl">Prof. Rajinder Singh Chandel</span>
+                <p> Punjabi University</p>
               </p>
             </div>
           </div>
 
+
+
+          <div className="md:w-[23%]">
+            <img src={DrAlok} className="w-full h-[350px] object-fit rounded-lg" />
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl text-center md:leading-8">Chief Guest (Valedictory):</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Dr. Alok Vijayant</span>
+                <p>Advisor, Ex-Director (Cyber Operations)
+                Govt. of India</p>
+              </p>
+            </div>
+          </div>
         </div> 
+
       </div>
+
+      
 
       {/* Introduction Section */}
       <div className="md:py-12">
@@ -469,10 +516,6 @@ const HeroSection = () => {
                 Prof. Sangeeta Sahu, University of Lucknow, Lucknow
               </li>
 
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Vijay Prakash Singh, University of Lucknow, Lucknow
-              </li>
-
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. Vivek Sahai, University of Lucknow, Lucknow
               </li>
@@ -495,12 +538,7 @@ const HeroSection = () => {
               <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. Shikha Verma, Institute of Physics, Bhubneshwar
               </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Binod Mishra, IIT, Roorkee
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Rajinder Singh Chandel, Punjabi University, Patiala
-              </li>
+              
               <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
                 Prof. R. P. Singh, University of Lucknow, Lucknow
               </li>
