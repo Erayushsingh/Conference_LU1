@@ -347,6 +347,22 @@ const AboutUsPage = () => {
               Dr. Khushboo Verma
             </p>
           </div>
+
+          <div className="bg-red-50 md:mt-10 mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+            <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
+            Associate Editors
+            </h3>
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Amit Mishra
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Parul Singh
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Sumedha Dwivedi
+            </p>
+          </div>
+
         </div>
 
         <h3 className="md:text-4xl pt-7  text-xl font-bold text-center text-gray-800 mb-8">
@@ -416,11 +432,11 @@ const AboutUsPage = () => {
               Ontario, Canada, K1A 0R6
             </li>
 
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+            <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
               Dr. Shefali Vaidya , CTU Czech Republic
             </li>
             
-            <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
+            <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
               Dr. Shantu Mondal , CTU Czech Republic
             </li>
           </ul>
