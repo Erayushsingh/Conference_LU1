@@ -383,7 +383,7 @@ const PublicationPage = () => {
         <tr>
             <td className="border border-gray-300 text-center px-2 py-2">1</td>
             <td className="border border-gray-300 px-2 py-2">Prof. Vijay Prakash Singh</td>
-            <td className="border border-gray-300 px-2 py-2">English</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
             <td className="border border-gray-300 px-2 py-2">Travel literature: Expanding the Frontiers across Disciplines</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
@@ -421,28 +421,28 @@ const PublicationPage = () => {
           <tr>
             <td className="border border-gray-300 text-center px-2 py-2">6</td>
             <td className="border border-gray-300 px-2 py-2">Dr. Vimal Kumar Vishwakarma</td>
-            <td className="border border-gray-300 px-2 py-2">English</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
             <td className="border border-gray-300 px-2 py-2">A Study of Forensic Linguistics: Bridging the Gap Between Language and Law in India’s Legal System</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
           <tr>
             <td className="border border-gray-300 text-center px-2 py-2">7</td>
             <td className="border border-gray-300 px-2 py-2">Dr. Saroj Kumar</td>
-            <td className="border border-gray-300 px-2 py-2">English</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
             <td className="border border-gray-300 px-2 py-2">Assessing the Feasibility of Recognising English as One of the Indian Languages: Scope and Challenges</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
           <tr>
             <td className="border border-gray-300 text-center px-2 py-2">8</td>
             <td className="border border-gray-300 px-2 py-2">Dr. Vinod Pal & Dr. Milan Swarup Sharma</td>
-            <td className="border border-gray-300 px-2 py-2">English</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
             <td className="border border-gray-300 px-2 py-2">Teaching and Learning through Actions - an essential change in primary Education</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
           <tr>
             <td className="border border-gray-300 text-center px-2 py-2">9</td>
             <td className="border border-gray-300 px-2 py-2">Dr. Sangeet Ranjan Natwar</td>
-            <td className="border border-gray-300 px-2 py-2">English</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
             <td className="border border-gray-300 px-2 py-2">The Role of English Literature in Digital Humanities and Engineering</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
@@ -500,6 +500,15 @@ const PublicationPage = () => {
             <td className="border border-gray-300 px-2 py-2">Sakina Rizvi</td>
             <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
             <td className="border border-gray-300 px-2 py-2">Deep Learning in measure theory</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">18</td>
+            <td className="border border-gray-300 px-2 py-2">Dr. Saroj Kumar</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Assessing the Feasibility of Recognising English as One of the Indian Languages: Scope
+            and Challenges</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
         </tbody>
