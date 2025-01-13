@@ -7,10 +7,10 @@ import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
-import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpeg";
-import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpeg";
+import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpg";
+import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
-import GolokBihariJi from "/src/assets/GolokBihariJi.jpeg";
+import GolokBihariJi from "/src/assets/GolokBihariJi.jpg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
 import Deepak_Sir from "/src/assets/Deepak_Sir.jpg";
 import Launch from "/src/assets/Launch.jpg";
@@ -189,9 +189,9 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row justify-between space-x-4 space-y-4 sm:space-y-0">
           {/* Chief Patron Container */}
           <div className="md:w-[23%]">
-            <img src={VC_Sir} className="w-full h-54 object-cover rounded-lg" />
+            <img src={VC_Sir} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
-              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 md:mt-2">
+              <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8 ">
                 CHIEF-PATRON:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
@@ -204,15 +204,14 @@ const HeroSection = () => {
 
           {/* Chief Guest Container */}
           <div className="md:w-[23%]">
-            <img className="w-full h-[350px]object-cover rounded-lg" src={Indresh_Ji} />
+            <img className="w-full h-[350px] object-cover rounded-lg" src={Indresh_Ji} />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
               <h4 className="text-xl font-semibold text-blue-700 md:text-2xl md:leading-8">
                 CHIEF-GUEST:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Shri Indresh Kumar Ji</span>
-                <p>Patron</p>
-                <p className="text-xl">Forum for Awareness of National Security</p>
+                <p className="text-2xl">Forum for Awareness of National Security</p>
               </p>
             </div>
           </div>
