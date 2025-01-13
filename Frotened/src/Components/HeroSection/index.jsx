@@ -187,9 +187,9 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
+      <div className="bg-white p-6 my-8 space-y-6 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
         {/* Flex container for individual sections */}
-        <div className="flex flex-col sm:flex-row justify-between space-x-4 space-y-4 sm:space-y-0">
+      
           {/* Chief Patron Container */}
           <div className="md:w-[23%]">
             <img src={VC_Sir} className="w-full h-[350px] object-cover rounded-lg" />
@@ -246,10 +246,10 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
-        </div>
+        
 
         {/* Special Guest Section */}
-        <div className="flex flex-col sm:flex-row justify-around space-x-4 space-y-4 sm:space-y-0 mt-10">
+       
           <div className="md:w-[23%]">
             <img src={GolokBihariJi} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
@@ -298,9 +298,8 @@ const HeroSection = () => {
             </div>
           </div>
 
-        </div> 
 
-        <div className="flex flex-col sm:flex-row justify-evenly space-x-4 space-y-4 sm:space-y-0 mt-10">
+        
           <div className="md:w-[23%]">
             <img src={KeynoteSpeaker2} className="w-full h-[350px] object-cover rounded-lg" />
             <div className="flex flex-col items-center p-4 bg-blue-50 rounded-lg w-full sm:w-full">
@@ -338,8 +337,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div> 
-
-      </div>
 
       
 
