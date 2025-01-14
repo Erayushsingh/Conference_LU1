@@ -511,6 +511,22 @@ const PublicationPage = () => {
             and Challenges</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">19</td>
+            <td className="border border-gray-300 px-2 py-2">Prabha Devi</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Issues and Challenges in the Teaching of Writing Skill</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">20</td>
+            <td className="border border-gray-300 px-2 py-2">Akash Sachan</td>
+            <td className="border border-gray-300 px-2 py-2">Physical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Doping Effects of Na2O on Physical, Structural, Optical, and Bioactive properties of SrO-SiO2-ZrO2 Glasses for Biomedical Applicationsl</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
         </tbody>
       </table>
     </div>
