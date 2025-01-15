@@ -522,11 +522,60 @@ const PublicationPage = () => {
 
           <tr>
             <td className="border border-gray-300 text-center px-2 py-2">20</td>
-            <td className="border border-gray-300 px-2 py-2">Akash Sachan</td>
+            <td className="border border-gray-300 px-2 py-2">Akash Sachan, Rajat Kumar Mishra, Chandkiram Gautam</td>
             <td className="border border-gray-300 px-2 py-2">Physical Sciences</td>
             <td className="border border-gray-300 px-2 py-2">Doping Effects of Na2O on Physical, Structural, Optical, and Bioactive properties of SrO-SiO2-ZrO2 Glasses for Biomedical Applicationsl</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">21</td>
+            <td className="border border-gray-300 px-2 py-2">Swati Domaji Kharabe, Beena Bundela, Manish Kumar Bansal</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Summation Formulae Associated with the Extension of Voigt Function and Bessel-Maitland Function and Its Applications</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">22</td>
+            <td className="border border-gray-300 px-2 py-2">Smita Jain , Beena Bundela</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Assessment the quality of Water for the River Ganga by using Multivariate and WQI techniques</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">23</td>
+            <td className="border border-gray-300 px-2 py-2">Seema Sharma, Beena Bundela*</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Revolutionizing Cyber security: The Role of Quantum Machine Learning in Enhancing Defense Mechanisms</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">24</td>
+            <td className="border border-gray-300 px-2 py-2">Shubhanshu Srivastava, Vijay Pratap Singh, Amrendra Kumar Singh</td>
+            <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Organo-Catalysed Green Synthesis of Some Bioactive Isoxazoles Motif and Study on Their Antibacterial/AntifungalActivity</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">25</td>
+            <td className="border border-gray-300 px-2 py-2">Vijay Pratap Singh, Amrendra Kumar Singh, Vipin Kumar Singh</td>
+            <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Organo-Catalyzed Stereoselective Synthesis, Characterization and Evaluation of Biological Activity of Spirocyclic Pyrazolones</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">26</td>
+            <td className="border border-gray-300 px-2 py-2">SHASHANK SHEKHAR SINGH</td>
+            <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">DEVELOPMENT OF ACTIVATED CARBON ADSORBENT FOR EFFECTIVE REMOVAL OF DYE FROM CONTAMINATED WATER</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
         </tbody>
       </table>
     </div>
