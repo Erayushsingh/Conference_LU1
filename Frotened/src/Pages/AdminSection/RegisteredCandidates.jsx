@@ -167,7 +167,7 @@ const UserTable = () => {
   return (
     <div className="container mx-auto my-6">
       <h2 className="text-2xl font-semibold mb-4 text-blue-500">Candidates Information</h2>
-      <p className="text-xl font-medium mb-4 text-gray-700">Total Registrations: {users.length}</p>
+      <p className="text-2xl font-bold mb-4 text-red-700 animate-flash">Total Registrations: {users.length}</p>
 
       {loading ? (
         <div className="flex justify-center items-center h-64">
