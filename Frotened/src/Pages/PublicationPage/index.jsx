@@ -84,7 +84,7 @@ const PublicationPage = () => {
           <div className="text-lg md:text-xl text-gray-700 space-y-6">
             <p>
               Participants desirous to present a paper/poster in the conference
-              should send their abstract latest by 15 January, 2025. Acceptance
+              should send their abstract latest by 20 January, 2025. Acceptance
               of paper/poster to be presented and published shall be notified
               within 15 days to the corresponding author.
             </p>
