@@ -872,74 +872,59 @@ const HeroSection = () => {
         </div>
       </div>
 
-     {/* Sponsors Section */}
-<div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
-  <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-center md:mb-0">Our Partners</h2>
 
-  {/* Scrolling Wrapper Container */}
-  <div className="scrolling-wrapper mt-4">
-    <div className="link-container">
-      {/* Sponsor 1 */}
-      <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={fans} alt="Sponsor 1" className="w-full h-full object-fit" />
+      <div className="bg-white p-6 my-8 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-center md:mb-0">Our Partners</h2>
+
+        {/* Scrolling Wrapper Container */}
+        <div className="scrolling-wrapper mt-4">
+          <div className="link-container">
+            {/* Sponsor 1 */}
+            <img
+              src={fans}
+              alt="Sponsor 1"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
+            />
+
+            {/* Sponsor 2 */}
+            <img
+              src={pnb}
+              alt="Sponsor 2"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
+            />
+
+            {/* Sponsor 3 */}
+            <img
+              src={media}
+              alt="Sponsor 3"
+              className=" w-[250px] sm:w-[150px] md:w-[400px] lg:w-[450px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-fit mr-10"
+            />
+
+             {/* Sponsor 1 */}
+             <img
+              src={fans}
+              alt="Sponsor 1"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
+            />
+
+            {/* Sponsor 2 */}
+            <img
+              src={pnb}
+              alt="Sponsor 2"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
+            />
+
+            {/* Sponsor 3 */}
+            <img
+              src={media}
+              alt="Sponsor 3"
+              className=" w-[250px] sm:w-[150px] md:w-[400px] lg:w-[450px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-fit mr-10"
+            />
+       
+          </div>
+        </div>
+
       </div>
-
-      {/* Sponsor 2 */}
-      <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={pnb} alt="Sponsor 2" className="w-full h-full object-fit" />
-      </div>
-
-      {/* Sponsor 3 */}
-      <div className="w-full sm:w-[200px] md:w-[350px] lg:w-[650px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={media} alt="Sponsor 3" className="w-full h-full object-fit" />
-      </div>
-
-      <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={fans} alt="Sponsor 1" className="w-full h-full object-fit" />
-      </div>
-
-      {/* Sponsor 2 */}
-      <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={pnb} alt="Sponsor 2" className="w-full h-full object-fit" />
-      </div>
-
-      {/* Sponsor 3 */}
-      <div className="w-full sm:w-[200px] md:w-[350px] lg:w-[650px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={media} alt="Sponsor 3" className="w-full h-full object-fit" />
-      </div>
-
-      <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={fans} alt="Sponsor 1" className="w-full h-full object-fit" />
-      </div>
-
-      {/* Sponsor 2 */}
-      <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={pnb} alt="Sponsor 2" className="w-full h-full object-fit" />
-      </div>
-
-      {/* Sponsor 3 */}
-      <div className="w-full sm:w-[200px] md:w-[350px] lg:w-[650px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={media} alt="Sponsor 3" className="w-full h-full object-fit" />
-      </div>
-
-      <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={fans} alt="Sponsor 1" className="w-full h-full object-fit" />
-      </div>
-
-      {/* Sponsor 2 */}
-      <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={pnb} alt="Sponsor 2" className="w-full h-full object-fit" />
-      </div>
-
-      {/* Sponsor 3 */}
-      <div className="w-full sm:w-[200px] md:w-[350px] lg:w-[650px] h-[200px] bg-gray-100 flex items-center justify-center rounded-lg shadow-md link-item mr-10">
-        <img src={media} alt="Sponsor 3" className="w-full h-full object-fit" />
-      </div>
-
-    
-    </div>
-  </div>
-</div>
 
 
     </>

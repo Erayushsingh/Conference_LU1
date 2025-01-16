@@ -1,4 +1,3 @@
-/* Container to ensure the scrolling wrapper stays within its bounds */
 .scrolling-wrapper {
     position: relative;
     overflow: hidden;
@@ -8,7 +7,7 @@
 .link-container {
     display: flex;
     width: max-content;
-    animation: scroll-left 40s linear infinite; /* Animation that moves content from right to left */
+    animation: scroll-left 4750s linear infinite; 
 }
 
 /* Item styles */
@@ -21,17 +20,17 @@
     font-weight: bold;
 }
 
-/* Keyframes for the scrolling animation */
+
 @keyframes scroll-left {
     0% {
-        transform: translateX(100%); /* Start off the screen to the right */
+        transform: translateX(100%); 
     }
     100% {
-        transform: translateX(-100%); /* Move completely to the left off-screen */
+        transform: translateX(-100%); 
     }
 }
 
-/* For mobile view (below 768px) - Faster animation */
+ 
 @media (max-width: 768px) {
     .link-item {
         padding: 10px 20px;
@@ -40,11 +39,11 @@
     }
 
     .link-container {
-        animation: scroll-left 30s linear infinite; 
+        animation: scroll-left 450s linear infinite; 
     }
 }
 
-/* For very small screens (below 480px) - Even faster animation */
+
 @media (max-width: 480px) {
     .link-item {
         padding: 8px 15px;
@@ -53,6 +52,6 @@
     }
 
     .link-container {
-        animation: scroll-left 25s linear infinite; 
+        animation: scroll-left 450s linear infinite; 
     }
 }
