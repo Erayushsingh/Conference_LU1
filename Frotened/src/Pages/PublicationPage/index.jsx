@@ -576,6 +576,22 @@ const PublicationPage = () => {
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
 
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">27</td>
+            <td className="border border-gray-300 px-2 py-2">Pawan Kumar Patel, Satya Deo, Satish Kumar</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Magnetohydrodynamic Flow of Immiscible Couple Stress and Jeffery Fluids in a Porous Pipe with Navier Slip Effect</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">28</td>
+            <td className="border border-gray-300 px-2 py-2">Ram Bharat Singh, Sandeep Kumar and Anil Kumar</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Stability and Perturbations of -Frame in Banach spaces</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
         </tbody>
       </table>
     </div>
