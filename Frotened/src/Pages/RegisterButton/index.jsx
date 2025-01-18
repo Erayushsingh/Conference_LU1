@@ -452,71 +452,73 @@ const RegisterButton = ({ className }) => {
         )}
 
 
-      {/* Payment Modal */}
-{showPaymentModal && (
-  <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50 flex-col px-4 overflow-y-auto">
-    <button
-      onClick={closePaymentModal}
-      className="absolute top-4 right-4 md:top-6 md:right-6 text-2xl hover:text-black text-red-700"
-    >
-      <FaTimes />
-    </button>
+        {/* Payment Modal */}
+        {showPaymentModal && (
+          <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50 px-4 overflow-y-auto">
+            <button
+              onClick={closePaymentModal}
+              className="absolute top-4 right-4 md:top-6 md:right-6 text-2xl hover:text-black text-red-700"
+            >
+              <FaTimes />
+            </button>
 
+            <div className="bg-white rounded-lg shadow-lg w-full sm:w-[90%] lg:w-[70%] mx-auto max-h-[90vh] flex flex-col overflow-hidden">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-center text-black md:mb-6 p-4">Registration Fee</h2>
 
-    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8 my-8 w-full sm:w-[90%] lg:w-[70%] mx-auto h-[90vh] overflow-y-auto">
-      <h2 className="text-2xl sm:text-3xl font-extrabold text-center text-black mb-6">Registration Fee</h2>
+              {/* Registration Fee Table Section */}
+              <div className="flex-grow overflow-y-auto p-4">
+                <div className="overflow-x-auto">
+                  <table className="min-w-full table-auto border-collapse">
+                    <thead>
+                      <tr className="bg-indigo-600 text-white text-xs sm:text-sm md:text-base">
+                        <th className="px-2 sm:px-2 py-3 text-left">Category</th>
+                        <th className="px-2 sm:px-2 py-3 text-left">Paper Presentation (INR/USD)</th>
+                        <th className="px-2 sm:px-2 py-3 text-left">Attendee (INR/USD)</th>
+                        <th className="px-2 sm:px-2 py-3 text-left">On-the-Spot Registration (INR/USD)</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-gray-700 text-xs sm:text-sm md:text-base">
+                      {/* Students Row */}
+                      <tr className="odd:bg-gray-50 even:bg-gray-100">
+                        <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold">Students (UG/PG/Research)</td>
+                        <td className="px-2 sm:px-4 py-2 sm:py-4">1000 INR / 100 USD</td>
+                        <td className="px-2 sm:px-4 py-2 sm:py-4">1000 INR / 100 USD</td>
+                        <td className="px-2 sm:px-4 py-2 sm:py-4">1500 INR / 110 USD</td>
+                      </tr>
 
-      {/* Table Content */}
-      <div className="overflow-x-auto">
-        <table className="min-w-full table-auto border-collapse">
-          <thead>
-            <tr className="bg-indigo-600 text-white text-xs sm:text-sm md:text-base">
-              <th className="px-2 sm:px-4 py-3 text-left">Category</th>
-              <th className="px-2 sm:px-4 py-3 text-left">Paper Presentation (INR/USD)</th>
-              <th className="px-2 sm:px-4 py-3 text-left">Attendee (INR/USD)</th>
-              <th className="px-2 sm:px-4 py-3 text-left">On-the-Spot Registration (INR/USD)</th>
-            </tr>
-          </thead>
-          <tbody className="text-gray-700 text-xs sm:text-sm md:text-base">
-            {/* Students Row */}
-            <tr className="odd:bg-gray-50 even:bg-gray-100">
-              <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold">Students (UG/PG/Research)</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">1000 INR / 100 USD</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">1000 INR / 100 USD</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">1500 INR / 110 USD</td>
-            </tr>
+                      {/* Academician/Industry Row */}
+                      <tr className="odd:bg-gray-50 even:bg-gray-100">
+                        <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold">Academician/Industry</td>
+                        <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
+                        <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
+                        <td className="px-2 sm:px-4 py-2 sm:py-4">2500 INR / 160 USD</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
 
-            {/* Academician/Industry Row */}
-            <tr className="odd:bg-gray-50 even:bg-gray-100">
-              <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold">Academician/Industry</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
-              <td className="px-2 sm:px-4 py-2 sm:py-4">2500 INR / 160 USD</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+              {/* Payment Details Section */}
+              <div className="bg-gray-100 p-4 sm:p-6 border-t border-gray-300 rounded-b-lg shadow-lg overflow-y-auto mt-10 mx-auto">
+                <h3 className="text-xl sm:text-2xl font-semibold text-center text-gray-800 mb-4">Payment Details</h3>
+                <div className="space-y-2 text-sm sm:text-base md:text-lg">
+                  <p><strong>Beneficiary Name: </strong>RAASHEE 25</p>
+                  <p><strong>Bank Name:</strong> Punjab National Bank</p>
+                  <p><strong>Account Number:</strong> 6950002100002537</p>
+                  <p><strong>Branch:</strong> JANKIPURAM VISTAR (DALIBAGH GANNA SANSTHAN-6216)</p>
+                  <p><strong>IFSC Code:</strong> PUNB0695000</p>
+                </div>
 
-    {/* Payment Details Section */}
-    <div className="p-4 sm:p-6 max-w-lg w-full mx-auto bg-gray-50 border border-gray-300 rounded-lg shadow-lg mb-4">
-      <h3 className="text-xl sm:text-2xl font-semibold text-center text-gray-800 mb-4">Payment Details</h3>
-      <div className="space-y-2 text-sm sm:text-base md:text-lg">
-        <p><strong>Beneficiary Name: </strong>RAASHEE 25</p>
-        <p><strong>Bank Name:</strong> Punjab National Bank</p>
-        <p><strong>Account Number:</strong> 6950002100002537</p>
-        <p><strong>Branch:</strong> JANKIPURAM VISTAR (DALIBAGH GANNA SANSTHAN-6216)</p>
-        <p><strong>IFSC Code:</strong> PUNB0695000</p>
-      </div>
+                <h1 className="md:text-2xl text-xl mt-2 text-center font-bold">UPI Details</h1>
+                <img src={QR} className="h-[300px] w-[300px] mx-auto border-red-300" />
+                <span className="text-lg font-bold text-red-600 bg-gray-200 block text-center">
+                  <span className="text-black">UPI ID:</span> 9415945708m@pnb
+                </span>
+              </div>
+            </div>
+          </div>
+        )}
 
-      <h1 className="text-2xl mt-2 text-center font-bold">UPI Details</h1>
-      <img src={QR} className="h-[300px] w-[300px] mx-auto border-red-300" />
-      <span className="text-lg font-bold text-red-600 bg-gray-200 block text-center">
-        <span className="text-black">UPI ID:</span> 9415945708m@pnb
-      </span>
-    </div>
-  </div>
-)}
 
       </div>
     </div>
