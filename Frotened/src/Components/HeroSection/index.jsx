@@ -262,7 +262,7 @@ const HeroSection = () => {
             <div className="p-4">
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Dr Pravin Kumar </span>
+                <span className="font-bold">Dr. Pravin Kumar </span>
                 <p className="text-lg">Scientist G, Inter University Accelerator Centre ( IUAC), New Delhi</p>
               </p>
             </div>
@@ -296,7 +296,7 @@ const HeroSection = () => {
             <div className="p-4">
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">DR. Dhananjoy Dey </span>
+                <span className="font-bold">Dr. Dhananjoy Dey </span>
                 <p>Department of Mathematics 
                 IIIT Lucknow</p>
               </p>
@@ -308,7 +308,7 @@ const HeroSection = () => {
             <div className="p-4">
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Dr Vijay Kumar Singh, </span>
+                <span className="font-bold">Dr. Vijay Kumar Singh, </span>
                 <p className="text-lg ">Department of Physics, Indian Institute of Technology Jodhpur</p>
               </p>
             </div>
