@@ -11,7 +11,7 @@ import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpg";
 import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpg";
 import DrAlok from "/src/assets/DrAlok.jpg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
-import GolokBihariJi from "/src/assets/GolokBihariJi.jpg";
+import Pravinji from "/src/assets/Pravinji.jpeg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
 import Deepak_Sir from "/src/assets/Deepak_Sir.jpg";
 import Launch from "/src/assets/Launch.jpg";
@@ -254,13 +254,13 @@ const HeroSection = () => {
 
           {/* Special Guest Section */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={GolokBihariJi} className="w-full h-[350px] object-fit rounded-lg" />
+            <img src={Pravinji} className="w-full h-[350px] object-fit rounded-lg" />
             <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Shri Golok Behari Rai</span>
-                <p>National Secretary(Org)</p>
-                FANS
+                <span className="font-bold">Dr Pravin Kumar </span>
+                <p>Scientist G, Inter University Accelerator Centre ( IUAC)</p>
+                New Delhi
               </p>
             </div>
           </div>
