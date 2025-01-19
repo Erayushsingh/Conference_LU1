@@ -259,8 +259,7 @@ const HeroSection = () => {
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Dr Pravin Kumar </span>
-                <p>Scientist G, Inter University Accelerator Centre ( IUAC)</p>
-                New Delhi
+                <p>Scientist G, Inter University Accelerator Centre ( IUAC), New Delhi</p>
               </p>
             </div>
           </div>
