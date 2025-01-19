@@ -331,7 +331,7 @@ const HeroSection = () => {
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">Chief Guest (Valedictory):</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Dr. Alok Vijayant</span>
-                <p className="text-2xl">Advisor, Ex-Director (Cyber Operations),Govt. of India</p>
+                <p className="md:text-2xl">Advisor, Ex-Director (Cyber Operations),Govt. of India</p>
               </p>
             </div>
           </div>
