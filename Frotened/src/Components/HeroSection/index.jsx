@@ -24,6 +24,10 @@ import Faculty03 from "/src/assets/Faculty_Photo03.webp";
 import Indresh_Ji from "/src/assets/Indresh_Ji.jpg";
 import ProfRaj from "/src/assets/ProfRaj.jpg";
 import ProfVijay from "/src/assets/ProfVijay.jpg";
+import rajeevji from "/src/assets/rajeevji.jpg";
+import satyadevji from "/src/assets/satyadevji.jpg";
+import vijayji from "/src/assets/vijayji.jpg";
+import iiit from "/src/assets/iiit.jpg";
 import fans from "/src/assets/fans.png";
 import pnb from "/src/assets/pnb.png";
 import media from "/src/assets/media.png";
@@ -259,10 +263,57 @@ const HeroSection = () => {
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Dr Pravin Kumar </span>
-                <p>Scientist G, Inter University Accelerator Centre ( IUAC), New Delhi</p>
+                <p className="text-lg">Scientist G, Inter University Accelerator Centre ( IUAC), New Delhi</p>
               </p>
             </div>
           </div>
+
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={rajeevji} className="w-full h-[350px] object-fit rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. Rajeev Sijariya </span>
+                <p>JNU</p>
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={satyadevji} className="w-full h-[350px] object-fit rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. Satya Deo </span>
+                <p>Department of Mathematics 
+                University of Allahabad</p>
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={iiit} className="w-full h-[350px] object-fit rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">DR. Dhananjoy Dey </span>
+                <p>Department of Mathematics 
+                IIIT Lucknow</p>
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={vijayji} className="w-full h-[350px] object-fit rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Dr Vijay Kumar Singh, </span>
+                <p className="text-lg ">Department of Physics, Indian Institute of Technology Jodhpur</p>
+              </p>
+            </div>
+          </div>
+
 
           {/* Another Special Guest */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
