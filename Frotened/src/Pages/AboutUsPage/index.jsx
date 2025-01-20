@@ -268,7 +268,12 @@ const AboutUsPage = () => {
               of Forensic Science, Lucknow
             </li>
             <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
-              Dr Ramgopal Singh Shri Ramswaroop Memorial University Barabanki
+              Dr. Ramgopal Singh Shri Ramswaroop Memorial University Barabanki
+            </li>
+
+            <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+              Dr. Chandrabhan Singh, Department of Computer Science and
+              Engineering, University of Lucknow
             </li>
           </ul>
         </div>

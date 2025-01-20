@@ -25,6 +25,7 @@ import Indresh_Ji from "/src/assets/Indresh_Ji.jpg";
 import ProfRaj from "/src/assets/ProfRaj.jpg";
 import ProfVijay from "/src/assets/ProfVijay.jpg";
 import rajeevji from "/src/assets/rajeevji.jpg";
+import arvindji from "/src/assets/arvindji.jpg";
 import satyadevji from "/src/assets/satyadevji.jpg";
 import vijayji from "/src/assets/vijayji.jpg";
 import iiit from "/src/assets/iiit.jpg";
@@ -310,6 +311,17 @@ const HeroSection = () => {
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Dr. Vijay Kumar Singh, </span>
                 <p className="text-lg ">Department of Physics, Indian Institute of Technology Jodhpur</p>
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+            <img src={arvindji} className="w-full h-[350px] object-fit rounded-lg" />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
+              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
+                <span className="font-bold">Prof. Arvind Kumar Singh </span>
+                <p className="text-lg ">Department of Mathematics,Banarash Hindu University</p>
               </p>
             </div>
           </div>
