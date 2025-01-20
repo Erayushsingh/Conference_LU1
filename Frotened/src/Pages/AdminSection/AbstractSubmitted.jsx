@@ -104,7 +104,7 @@ const ConferenceSubmissions = () => {
     const printContent = `
     <html>
       <head>
-        <title>Conference Report - 2024</title> 
+        <title>An International Conference on Recent Advances in Applied Science & Humanities in Evolution of Engineering (RAASHEE-2025)-Report</title> 
         ${printCSS} 
       </head>
       <body>
