@@ -279,7 +279,7 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Paper Acceptance Notification
                   </td>
-                  <td className="border px-4 py-2">10 days from submission</td>
+                  <td className="border px-4 py-2">5 days from submission</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">
