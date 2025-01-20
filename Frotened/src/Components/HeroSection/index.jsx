@@ -258,19 +258,6 @@ const HeroSection = () => {
           </div>
 
 
-
-          {/* Chief Guest (Valedictory) */}
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={DrAlok} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">Chief Guest (Valedictory):</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Dr. Alok Vijayant</span>
-                <p className="md:text-xl">Advisor, Ex-Director (Cyber Operations),Govt. of India</p>
-              </p>
-            </div>
-          </div>
-
           {/* Another Special Guest */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
             <img src={Akshay_Sharma} className="w-full h-[350px] object-fit rounded-lg" />
