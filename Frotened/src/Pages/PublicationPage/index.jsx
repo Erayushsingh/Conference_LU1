@@ -263,13 +263,13 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Abstract Submission (Oral & Poster)
                   </td>
-                  <td className="border px-4 py-2">20 January 2025</td>
+                  <td className="border px-4 py-2">25 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">
                     Abstract Acceptance Notification
                   </td>
-                  <td className="border px-4 py-2">15 days from submission</td>
+                  <td className="border px-4 py-2">5 days from submission</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Full Paper Submission</td>
@@ -285,7 +285,7 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Last date for Registration
                   </td>
-                  <td className="border px-4 py-2">20 January 2025</td>
+                  <td className="border px-4 py-2">25 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">On-the-spot Registration</td>
@@ -589,6 +589,134 @@ const PublicationPage = () => {
             <td className="border border-gray-300 px-2 py-2">Ram Bharat Singh, Sandeep Kumar and Anil Kumar</td>
             <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
             <td className="border border-gray-300 px-2 py-2">Stability and Perturbations of -Frame in Banach spaces</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">29</td>
+            <td className="border border-gray-300 px-2 py-2">Rajesh Kumar Singh and Dr. Upendra Gami</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Kalidasa's Abhijnansakuntalam: An Ecocritical Study</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">30</td>
+            <td className="border border-gray-300 px-2 py-2">Kritika Singh</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Three-Layer Cylindrical Model for Mucus Flow Dynamics in Constricted Airways</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">31</td>
+            <td className="border border-gray-300 px-2 py-2">Ravi Kumar Gautam</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">The God of Small Things: The Impact of Trauma on Child Psychology</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">32</td>
+            <td className="border border-gray-300 px-2 py-2">Ekhlakh Veg</td>
+            <td className="border border-gray-300 px-2 py-2">Chemical Sciences	</td>
+            <td className="border border-gray-300 px-2 py-2">Green Synthesis of α-Fe2O3 NPs by using Livistona chinensis leaf Extract and their antibacterial activity evaluation</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">33</td>
+            <td className="border border-gray-300 px-2 py-2">Kavita Dhariyal</td>
+            <td className="border border-gray-300 px-2 py-2">Chemical Sciences	</td>
+            <td className="border border-gray-300 px-2 py-2">Perspectives of Medicinally Privileged Thiosemicarbazones based Metal Coordination Compounds as Antimicrobial agents</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">34</td>
+            <td className="border border-gray-300 px-2 py-2">Pragya Shukla</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Mental health topic, including effects of Covid-19 on Children and Adolescents</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">35</td>
+            <td className="border border-gray-300 px-2 py-2">Dr. Anand Ballabh Joshi and Sonam Yadav</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Steadfast Maritime Portfolio Management Security System with Lattices</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">36</td>
+            <td className="border border-gray-300 px-2 py-2">Anand B. Joshi and Sonali Singh</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Transform Domain Based Digital Color Image Encryption Using Multi Chaotic Maps</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">37</td>
+            <td className="border border-gray-300 px-2 py-2">Anand Ballabh Joshi and Richa Sagar</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Digital images encryption using the Discrete Wavelet Transform and Baker’s chaotic map	</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">38</td>
+            <td className="border border-gray-300 px-2 py-2">Richa</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences	</td>
+            <td className="border border-gray-300 px-2 py-2">Between Cultures: Cultural Resonance in Pratibha Vinod Kumar and A.K. Kulshreshth’s English Translation of Chitralekha</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">39</td>
+            <td className="border border-gray-300 px-2 py-2">Shabanam Kumari , Arvind Kumar Singh</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Chebyshev collocation method to solve the Thomas - Fermi equation</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">40</td>
+            <td className="border border-gray-300 px-2 py-2">Dr Kalpana Singh</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">The Synergy between Corporate Culture and Communication in Organizational Excellence</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">41</td>
+            <td className="border border-gray-300 px-2 py-2">Anand B. Joshi and Bablu Das</td>
+            <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">SIEVE METHODS ON DIGITALLY DELICATE PRIME NUMBERS</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">42</td>
+            <td className="border border-gray-300 px-2 py-2">Avni Nayyar, Manaal Zahera, Archna Talwar</td>
+            <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Green Synthesis of Metal-Oxide Nanoparticles Utilizing a Biocompatible Stabilizer</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">43</td>
+            <td className="border border-gray-300 px-2 py-2">Shruti Anand</td>
+            <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Plant-Driven Green Synthesis of Silver Nanoparticles: A Step Towards Sustainable Nanotechnology</td>
+            <td className="border border-gray-300 px-2 py-2">India</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-300 text-center px-2 py-2">44</td>
+            <td className="border border-gray-300 px-2 py-2">Gaurav Kanti Sinha & Amisha Lal</td>
+            <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+            <td className="border border-gray-300 px-2 py-2">Cyber Crimes In Lucknow : A Critical Study</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
 
