@@ -14,7 +14,7 @@ const AboutUsPage = () => {
 
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-black">Best Paper and Presentation Prize</h1>
-          <p className="text-lg mt-2">Encouraging young Researcher with a prize of Rs. 2000 for the best paper and its presentation in the areas of Applied Sciences and Humanities.</p>
+          <p className="text-lg mt-2">Encouraging young Researcher with a prize for the best paper and its presentation in the areas of Applied Sciences and Humanities.</p>
         </div>
 
 
