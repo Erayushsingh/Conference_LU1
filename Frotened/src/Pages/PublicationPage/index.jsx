@@ -436,7 +436,7 @@ const PublicationPage = () => {
             <td className="border border-gray-300 text-center px-2 py-2">8</td>
             <td className="border border-gray-300 px-2 py-2">Dr. Vinod Pal & Dr. Milan Swarup Sharma</td>
             <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
-            <td className="border border-gray-300 px-2 py-2">Teaching and Learning through Actions - an essential change in primary Education</td>
+            <td className="border border-gray-300 px-2 py-2">A critical study on syllabus and curriculum of English at the primary and the secondary levels of Rohilkhand region (Uttar Pradesh).</td>
             <td className="border border-gray-300 px-2 py-2">India</td>
           </tr>
           <tr>
