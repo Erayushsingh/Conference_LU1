@@ -9,7 +9,6 @@ import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
 import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpg";
 import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpg";
-import DrAlok from "/src/assets/DrAlok.jpg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
 import Pravinji from "/src/assets/Pravinji.jpeg";
 import Dean_Sir from "/src/assets/Dean_Sir.jpg";
@@ -21,17 +20,24 @@ import Faculty from "/src/assets/faculty_photo.jpg";
 import Faculty01 from "/src/assets/faculty_Photo01.jpg";
 import Faculty02 from "/src/assets/faculty_Photo02.jpg";
 import Faculty03 from "/src/assets/Faculty_Photo03.webp";
-import Indresh_Ji from "/src/assets/Indresh_Ji.jpg";
 import ProfRaj from "/src/assets/ProfRaj.jpg";
 import ProfVijay from "/src/assets/ProfVijay.jpg";
 import rajeevji from "/src/assets/rajeevji.jpg";
 import arvindji from "/src/assets/arvindji.jpg";
 import satyadevji from "/src/assets/satyadevji.jpg";
 import vijayji from "/src/assets/vijayji.jpg";
+import drneha from "/src/assets/drneha.jpg";
+import drprabhanshu from "/src/assets/drprabhanshu.jpg";
+import img112 from "/src/assets/img112.jpg";
+import img113 from "/src/assets/img113.jpg";
+import Indresh_Ji from "/src/assets/Indresh_Ji.jpg";
+import drsaroj from "/src/assets/drsaroj.jpg";
+import drsaurabh from "/src/assets/drsaurabh.jpg";
 import iiit from "/src/assets/iiit.jpg";
 import fans from "/src/assets/fans.png";
 import pnb from "/src/assets/pnb.png";
 import media from "/src/assets/media.png";
+import UCO from "/src/assets/UCO.jpeg"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -212,17 +218,17 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Chief Guest Container */}
+          {/* Guest of Honor Container */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img className="w-full h-[350px] object-fit rounded-lg" src={Indresh_Ji} />
+            <img src={Indresh_Ji} className="w-full h-[350px] object-fit rounded-lg" />
             <div className="p-4">
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">
-                CHIEF-GUEST:
+                CHIEF-GUIEST:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
                 <span className="font-bold">Shri Indresh Kumar Ji</span>
                 <p>Patron</p>
-                <p>FANS</p>
+                FANS
               </p>
             </div>
           </div>
@@ -241,6 +247,7 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
+
 
           {/* Patron Container */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
@@ -270,126 +277,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={rajeevji} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Prof. Rajeev Sijariya </span>
-                <p>JNU</p>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={satyadevji} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Prof. Satya Deo </span>
-                <p>Department of Mathematics 
-                University of Allahabad</p>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={arvindji} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Prof. Arvind Kumar Singh </span>
-                <p className="text-lg ">Department of Mathematics</p>
-                <p className="text-lg ">Banarash Hindu University</p>
-              </p>
-            </div>
-          </div>
-
-           {/* Special Guest Section */}
-           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={Pravinji} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Dr. Pravin Kumar </span>
-                <p className="text-lg">Scientist G, Inter University Accelerator Centre ( IUAC), New Delhi</p>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={iiit} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Dr. Dhananjoy Dey </span>
-                <p>Department of Mathematics 
-                IIIT Lucknow</p>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={vijayji} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Dr. Vijay Kumar Singh, </span>
-                <p className="text-lg ">Department of Physics, Indian Institute of Technology Jodhpur</p>
-              </p>
-            </div>
-          </div>
-
-      
-          {/* Inaugural Keynote Speaker 1 */}
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={ProfRaj} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Prof. Raj P. Chhabra</span>
-                <p>IIT-Kanpur</p>
-              </p>
-            </div>
-          </div>
-
-          {/* Inaugural Keynote Speaker 2 */}
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={ProfVijay} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold md:text-xl">Prof. Vijay Prakash Singh</span>
-                <p>EMEL, UoL</p>
-              </p>
-            </div>
-          </div>
-
-          {/* Inaugural Keynote Speaker 3 */}
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={KeynoteSpeaker2} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Prof. Binod Mishra</span>
-                <p>IIT-Roorkee</p>
-              </p>
-            </div>
-          </div>
-
-          {/* Inaugural Keynote Speaker 4 */}
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={KeynoteSpeaker1} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">INAUGURAL KEYNOTE SPEAKER:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold text-xl">Prof. Rajinder Singh Chandel</span>
-                <p>Punjabi University</p>
-              </p>
-            </div>
-          </div>
-
-          
 
         </div>
       </div>
@@ -529,193 +416,363 @@ const HeroSection = () => {
       </div>
 
       <div className="">
-        <div className="bg-white rounded-lg  shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[80%] xl:w-1/2 mx-auto ">
+        <div className="bg-white rounded-lg shadow-lg p-6 my-8 w-full sm:w-4/5 lg:w-[90%] xl:w-[80%] mx-auto">
           <div>
             <h3 className="md:text-4xl text-3xl font-extrabold text-center text-gray-800 mb-8">
               Keynote and Invited Talk
             </h3>
-            <ul className="space-y-2">
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Vinay Pandey, Tribhuwan University, Nepal
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Shefali Vaidya , CTU Czech Republic
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Shantu Mondal , CTU Czech Republic
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Mohammad Nazrul Islam Khan, Qassim University, Saudi Arabia
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Gopal Krishna Dixit, Grenoble, France
-              </li>
 
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Sanobar Siddiqui, University of Regina, Saskatchewan, Canada
-              </li>
 
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Naila Erum, Universiti Teknologi MARA, Malaysia
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Rajneesh Kumar Pandey, Tribhuwan University, Nepal
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Mr. Vivek Kumar, Cognizent, U. S. A.
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Sangeeta Sahu, University of Lucknow, Lucknow
-              </li>
 
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Vivek Sahai, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. John Corcoran, University of Buffalo, New York, U. S. A.
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Ajit Srivastava, Institute of Physics, Bhubneshwar
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Anil Mishra,HOD Department of Chemistry University of
-                Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Matreyi Priyadashini, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Roman Taraban, Texas Tech University, U. S. A.
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Shikha Verma, Institute of Physics, Bhubneshwar
-              </li>
+            {/* Grid for images */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-10">
+              {/* Image Block 1 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={KeynoteSpeaker1} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Rajinder Singh Chandel</p>
+                  <p className="text-lg text-gray-700">Punjabi University</p>
+                </div>
+              </div>
 
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. R. P. Singh, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Satendra Pal Singh, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Anchal Srivastava, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Abha Bishnoi, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Meena Sahai, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. O. N. Upadhyay, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Pankaj Mathur, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Masood H. Siddiqui, University of Lucknow, Lucknow
-              </li>
-              <li className=" font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. D. R. Sahu, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Manoj Kumar Singh, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Pankaj Srivastava, MNNIT, Prayagraj
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Praveen Sahu, Central University of Rajasthan, Ajmer
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Aine Ito, NUS, Singapore
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. B. K. Mohanty, IIM, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Tetiana Kaminska, Kyiv, Ukraine
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Prof. Rajeev Sijeria, Jawaharlal Nehru University, New Delhi
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Sanjay Medhavi, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Nimisha Kapoor, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Ms. Supriya Yadav, Magnet Tech Services, Noida
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Prabhanshu Tripathi, CSIR-IITR, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Pravin Kumar, IUAC, New Delhi
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Vijay Kumar, Galgotia University, Greater Noida
-              </li>
+              {/* Image Block 2 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={rajeevji} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Rajeev Sijariya</p>
+                  <p className="text-lg text-gray-700">JNU</p>
+                </div>
+              </div>
 
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Shambhavi Mishra, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Amrendra Kumar, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Jyotsna Singh, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Pragya Mishra, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Archana Shukla, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Madhu Chetty, Federation University, Australia
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Shashi Bala, University of Lucknow, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Dilip Jaiswal, Ramswaroop Memorial University, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Mukesh Mishra, Ramswaroop Memorial University, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Vijay Kumar Singh, IIT, Jodhpur
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Neha Arora, Central University of Rajasthan, Ajmer
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Jyoti Juyal, Sharda University, Mathura
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. C. Withana, Study Group, Australia
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Saroj Kumar, Central University of South Bihar, Gaya
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Saurabh Yadav, Uttar Pradesh State Institute of Forensic
-                Science, Lucknow
-              </li>
-              <li className="font-semibold text-red-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Sapna Sharma, Uttar Pradesh State Institute of Forensic
-                Science, Lucknow
-              </li>
-              <li className="font-semibold text-indigo-600 md:mb-3  md:text-2xl md:leading-8">
-                Dr. Rituraj Mishra, National P. G. College, Lucknow
-              </li>
-            </ul>
+              {/* Image Block 3 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={satyadevji} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Satya Deo</p>
+                  <p className="text-lg text-gray-700"> University of Allahabad</p>
+                </div>
+              </div>
+
+              {/* Image Block 4 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={arvindji} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Arvind Kumar Singh</p>
+                  <p className="text-lg text-gray-700"> Banaras Hindu University</p>
+                </div>
+              </div>
+
+              {/* Image Block 8 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={ProfRaj} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Raj P. Chhabra</p>
+                  <p className="text-lg text-gray-700">IIT-Kanpur</p>
+                </div>
+              </div>
+
+               {/* Image Block 9 */}
+               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={ProfVijay} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Vijay Prakash Singh</p>
+                  <p className="text-lg text-gray-700">EMEL, UoL</p>
+                </div>
+              </div>
+
+              {/* Image Block 10 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={KeynoteSpeaker2} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Binod Mishra</p>
+                  <p className="text-lg text-gray-700">IIT-Roorkee</p>
+                </div>
+              </div>
+
+              {/* Image Block 5 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={Pravinji} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Dr. Pravin Kumar</p>
+                  <p className="text-lg text-gray-700">Scientist G,IUAC, New Delhi</p>
+                </div>
+              </div>
+
+              {/* Image Block 6 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={iiit} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Dr. Dhananjoy Dey</p>
+                  <p className="text-lg text-gray-700"> IIIT Lucknow</p>
+                </div>
+              </div>
+
+              {/* Image Block 7 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={vijayji} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Dr. Vijay Kumar Singh</p>
+                  <p className="text-lg text-gray-700">IIT Jodhpur</p>
+                </div>
+              </div>
+
+              
+             
+              {/* Image Block 10 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={drneha} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Dr. Neha Arora</p>
+                  <p className="text-lg text-gray-700">Central University of Rajasthan, Ajmer</p>
+                </div>
+              </div>
+
+
+              {/* Image Block 10 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={drprabhanshu} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Dr. Prabhanshu Tripathi</p>
+                  <p className="text-lg text-gray-700">CSIR-IITR, Lucknow</p>
+                </div>
+              </div>
+
+              {/* Image Block 10 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={drsaroj} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Dr. Saroj Kumar</p>
+                  <p className="text-lg text-gray-700"> Central University of South Bihar, Gaya</p>
+                </div>
+              </div>
+
+              {/* Image Block 10 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={drsaurabh} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Dr. Saurabh Yadav</p>
+                  <p className="text-lg text-gray-700">UPSIFS, Lucknow</p>
+                </div>
+              </div>
+
+              {/* Image Block 10 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img112} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Ms. Supriya Yadav</p>
+                  <p className="text-lg text-gray-700">GM-HR, Magnet Technologies, Noida</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img113} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Dr. Shashi Bala</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+            </div>
           </div>
+
+          <div className="space-b-2 text-left md:grid md:grid-cols-2 md:gap-4">
+            <div >
+              <ul className="space-y-2">
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Vinay Pandey, Tribhuwan University, Nepal
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Shefali Vaidya , CTU Czech Republic
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Shantu Mondal , CTU Czech Republic
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Mohammad Nazrul Islam Khan, Qassim University, Saudi Arabia
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Gopal Krishna Dixit, Grenoble, France
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Sanobar Siddiqui, University of Regina, Saskatchewan, Canada
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Naila Erum, Universiti Teknologi MARA, Malaysia
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Rajneesh Kumar Pandey, Tribhuwan University, Nepal
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Mr. Vivek Kumar, Cognizent, U. S. A.
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Sangeeta Sahu, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Vivek Sahai, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. John Corcoran, University of Buffalo, New York, U. S. A.
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Ajit Srivastava, Institute of Physics, Bhubneshwar
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Anil Mishra, HOD Department of Chemistry University of Lucknow
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Matreyi Priyadashini, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Roman Taraban, Texas Tech University, U. S. A.
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Shikha Verma, Institute of Physics, Bhubneshwar
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. R. P. Singh, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Satendra Pal Singh, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Anchal Srivastava, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Abha Bishnoi, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Meena Sahai, University of Lucknow, Lucknow
+                </li>
+
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Jyoti Juyal, Sharda University, Mathura
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. C. Withana, Study Group, Australia
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
+                </li>
+ 
+              </ul>
+
+            </div>
+
+            <div>
+              <ul className="space-y-2">
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. O. N. Upadhyay, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Pankaj Mathur, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Masood H. Siddiqui, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. D. R. Sahu, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Manoj Kumar Singh, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Pankaj Srivastava, MNNIT, Prayagraj
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Praveen Sahu, Central University of Rajasthan, Ajmer
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Aine Ito, NUS, Singapore
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. B. K. Mohanty, IIM, Lucknow
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Tetiana Kaminska, Kyiv, Ukraine
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Rajeev Sijeria, Jawaharlal Nehru University, New Delhi
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Sanjay Medhavi, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Nimisha Kapoor, University of Lucknow, Lucknow
+                </li>
+                
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Pravin Kumar, IUAC, New Delhi
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Vijay Kumar, Galgotia University, Greater Noida
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Shambhavi Mishra, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Amrendra Kumar, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Jyotsna Singh, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Pragya Mishra, University of Lucknow, Lucknow
+                </li>
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Archana Shukla, University of Lucknow, Lucknow
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Madhu Chetty, Federation University, Australia
+                </li>
+                
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Dilip Jaiswal, Ramswaroop Memorial University, Lucknow
+                </li>
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Mukesh Mishra, Ramswaroop Memorial University, Lucknow
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Vijay Kumar Singh, IIT, Jodhpur
+                </li>
+                
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Rituraj Mishra, National P. G. College, Lucknow
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Sapna Sharma, Uttar Pradesh State Institute of Forensic Science, Lucknow
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+
+
         </div>
 
         <div className="p-6 my-8 w-full sm:w-[30%] mx-auto">
@@ -954,8 +1011,15 @@ const HeroSection = () => {
               className=" w-[250px] sm:w-[150px] md:w-[400px] lg:w-[450px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-fit mr-10"
             />
 
-             {/* Sponsor 1 */}
-             <img
+            {/* Sponsor 4 */}
+            <img
+              src={UCO}
+              alt="Sponsor 4"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[350px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[200px] object-fit mr-10 my-auto"
+            />
+
+            {/* Sponsor 1 */}
+            <img
               src={fans}
               alt="Sponsor 1"
               className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
@@ -974,7 +1038,14 @@ const HeroSection = () => {
               alt="Sponsor 3"
               className=" w-[250px] sm:w-[150px] md:w-[400px] lg:w-[450px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-fit mr-10"
             />
-       
+
+            {/* Sponsor 4 */}
+            <img
+              src={UCO}
+              alt="Sponsor 4"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[350px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[200px] object-fit mr-10 my-auto"
+            />
+
           </div>
         </div>
 
