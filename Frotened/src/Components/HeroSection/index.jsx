@@ -16,6 +16,9 @@ import Deepak_Sir from "/src/assets/Deepak_Sir.jpg";
 import Launch from "/src/assets/Launch.jpg";
 import Launch01 from "/src/assets/Launch01.jpg";
 import Launch02 from "/src/assets/Launch02.jpg";
+import i001 from "/src/assets/i001.jpeg";
+import i002 from "/src/assets/i002.jpeg";
+import i004 from "/src/assets/i004.jpeg";
 import Faculty from "/src/assets/faculty_photo.jpg";
 import Faculty01 from "/src/assets/faculty_Photo01.jpg";
 import Faculty02 from "/src/assets/faculty_Photo02.jpg";
@@ -88,6 +91,30 @@ const HeroSection = () => {
           data-bs-interval="2000"
         >
           <div className="carousel-inner">
+
+          <div className="carousel-item active">
+              <img
+                src={i002}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="i002"
+              />
+            </div>
+
+            <div className="carousel-item active">
+              <img
+                src={i001}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="i001"
+              />
+            </div>
+
+            <div className="carousel-item active">
+              <img
+                src={i004}
+                className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
+                alt="i004"
+              />
+            </div>
             <div className="carousel-item active">
               <img
                 src={Launch02}
