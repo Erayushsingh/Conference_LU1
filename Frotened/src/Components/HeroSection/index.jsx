@@ -27,6 +27,22 @@ import arvindji from "/src/assets/arvindji.jpg";
 import satyadevji from "/src/assets/satyadevji.jpg";
 import vijayji from "/src/assets/vijayji.jpg";
 import drneha from "/src/assets/drneha.jpg";
+import img001 from "/src/assets/img001.jpg";
+import img002 from "/src/assets/img002.jpg";
+import img003 from "/src/assets/img003.jpg";
+import img004 from "/src/assets/img004.jpeg";
+import img005 from "/src/assets/img005.jpeg";
+import img006 from "/src/assets/img006.jpg";
+import img007 from "/src/assets/img007.jpg";
+import img008 from "/src/assets/img008.jpg";
+import img009 from "/src/assets/img009.jpeg";
+import img010 from "/src/assets/img010.jpeg";
+import img011 from "/src/assets/img011.jpg";
+import img012 from "/src/assets/img012.jpg";
+import img013 from "/src/assets/img013.jpg";
+import img014 from "/src/assets/img014.jpeg";
+import img015 from "/src/assets/img015.jpg";
+import img016 from "/src/assets/img016.jpg";
 import drprabhanshu from "/src/assets/drprabhanshu.jpg";
 import img112 from "/src/assets/img112.jpg";
 import img113 from "/src/assets/img113.jpg";
@@ -572,6 +588,135 @@ const HeroSection = () => {
                 </div>
               </div>
 
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img001} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Sangeeta Sahu</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img002} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Prof. Vivek Sahai</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img003} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. Matreyi Priyadashini</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img004} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. R. P. Singh</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img005} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. Satendra Pal Singh</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img006} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. Anchal Srivastava</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img007} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. Abha Bishnoi</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img008} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. Meena Sahai</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img009} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. O. N. Upadhyay</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img010} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. Pankaj Mathur</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img011} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. Masood H. Siddiqui</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img012} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. D. R. Sahu</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img013} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. Manoj Kumar Singh</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img014} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Dr. Shambhavi Mishra</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img015} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Dr. Amrendra Kumar</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img016} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Dr. Jyotsna Singh</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+
             </div>
           </div>
 
@@ -609,13 +754,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Mr. Vivek Kumar, Cognizent, U. S. A.
                 </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Sangeeta Sahu, University of Lucknow, Lucknow
-                </li>
-
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Vivek Sahai, University of Lucknow, Lucknow
-                </li>
+               
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. John Corcoran, University of Buffalo, New York, U. S. A.
                 </li>
@@ -627,9 +766,7 @@ const HeroSection = () => {
                   Prof. Anil Mishra, HOD Department of Chemistry University of Lucknow
                 </li>
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Matreyi Priyadashini, University of Lucknow, Lucknow
-                </li>
+                
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Roman Taraban, Texas Tech University, U. S. A.
                 </li>
@@ -637,24 +774,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Shikha Verma, Institute of Physics, Bhubneshwar
                 </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. R. P. Singh, University of Lucknow, Lucknow
-                </li>
-
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Satendra Pal Singh, University of Lucknow, Lucknow
-                </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Anchal Srivastava, University of Lucknow, Lucknow
-                </li>
-
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Abha Bishnoi, University of Lucknow, Lucknow
-                </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Meena Sahai, University of Lucknow, Lucknow
-                </li>
-
+                
 
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Jyoti Juyal, Sharda University, Mathura
@@ -673,23 +793,8 @@ const HeroSection = () => {
 
             <div>
               <ul className="space-y-2">
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. O. N. Upadhyay, University of Lucknow, Lucknow
-                </li>
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Pankaj Mathur, University of Lucknow, Lucknow
-                </li>
-
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Masood H. Siddiqui, University of Lucknow, Lucknow
-                </li>
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. D. R. Sahu, University of Lucknow, Lucknow
-                </li>
-
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Manoj Kumar Singh, University of Lucknow, Lucknow
-                </li>
+               
+               
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Pankaj Srivastava, MNNIT, Prayagraj
                 </li>
@@ -726,16 +831,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Vijay Kumar, Galgotia University, Greater Noida
                 </li>
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Shambhavi Mishra, University of Lucknow, Lucknow
-                </li>
-
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Amrendra Kumar, University of Lucknow, Lucknow
-                </li>
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Jyotsna Singh, University of Lucknow, Lucknow
-                </li>
+                
 
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Pragya Mishra, University of Lucknow, Lucknow
