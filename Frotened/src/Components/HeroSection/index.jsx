@@ -679,13 +679,13 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img009} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. O. N. Upadhyay</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img010} className="w-auto h-[100px] object-cover rounded-full" />
@@ -821,6 +821,9 @@ const HeroSection = () => {
             <div>
               <ul className="space-y-2">
                
+              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                Prof. O. N. Upadhyay, University of Lucknow, Lucknow
+              </li>
                
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Pankaj Srivastava, MNNIT, Prayagraj
