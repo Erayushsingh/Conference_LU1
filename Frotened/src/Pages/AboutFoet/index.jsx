@@ -88,7 +88,7 @@ const AboutFoet = () => {
             </ul>
           </div>
         </div>
-
+        
       </div> 
      <Footer/>
     </>

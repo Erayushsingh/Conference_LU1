@@ -493,6 +493,23 @@ const RegisterButton = ({ className }) => {
                         <td className="px-2 sm:px-4 py-2 sm:py-4">2000 INR / 150 USD</td>
                         <td className="px-2 sm:px-4 py-2 sm:py-4">2500 INR / 160 USD</td>
                       </tr>
+
+                      {/* Academician/Industry Row */}
+                      <tr className="odd:bg-gray-50 even:bg-gray-100">
+                        <td className="px-4 py-4 font-semibold text-sm sm:text-base">
+                          Volunteer/Attendee
+                        </td>
+                        <td className="px-4 py-4 text-sm sm:text-base">
+                          ---------
+                        </td>
+                        <td className="px-4 py-4 text-sm sm:text-base">
+                          500 INR
+                        </td>
+                        <td className="px-4 py-4 text-sm sm:text-base">
+                          ---------
+                        </td>
+                      </tr>
+
                     </tbody>
                   </table>
                 </div>
