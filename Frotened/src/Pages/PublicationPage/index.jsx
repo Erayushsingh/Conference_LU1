@@ -363,13 +363,13 @@ const PublicationPage = () => {
                   Volunteer/Attendee
                 </td>
                 <td className="px-4 py-4 text-sm sm:text-base">
-                  --
+                  ----
                 </td>
                 <td className="px-4 py-4 text-sm sm:text-base">
                   500 INR
                 </td>
                 <td className="px-4 py-4 text-sm sm:text-base">
-                  --
+                  ----
                 </td>
               </tr>
             </tbody>
