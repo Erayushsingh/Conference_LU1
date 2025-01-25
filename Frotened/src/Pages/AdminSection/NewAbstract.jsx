@@ -7,9 +7,10 @@ const ConferenceSubmissions = () => {
     const [fromDate, setFromDate] = useState('');
     const [toDate, setToDate] = useState('');
     const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        getAbstract();
-    }, []);
+    
+    // useEffect(() => {
+    //     getAbstract();
+    // }, []);
 
 
     //   const getAbstract = async () => {
