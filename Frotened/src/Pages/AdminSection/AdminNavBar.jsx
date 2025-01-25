@@ -67,6 +67,28 @@ const AdminSection = () => {
                   Abstract Submitted
                 </NavLink>
               </li>
+
+              <li className="mb-2">
+                <NavLink
+                  to="/admin/new-registered-candidates"
+                  className={({ isActive }) =>
+                    `p-2 rounded cursor-pointer ${isActive ? 'bg-gray-600 w-full block' : 'hover:bg-blue-600 w-full block'}`
+                  }
+                >
+                  New Registered Candidates
+                </NavLink>
+              </li>
+
+              <li className="mb-2">
+                <NavLink
+                  to="/admin/new-abstracts"
+                  className={({ isActive }) =>
+                    `p-2 rounded cursor-pointer ${isActive ? 'bg-gray-600 w-full block' : 'hover:bg-blue-600 w-full block'}`
+                  }
+                >
+                  New Abstract Submitted
+                </NavLink>
+              </li>
             </ul>
           )}
         </div>
