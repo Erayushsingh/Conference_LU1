@@ -11,8 +11,8 @@ import ProtectedRoute from './Components/ProtectedRoute/index.jsx';
 
 import AdminNavBar from './Pages/AdminSection/AdminNavBar.jsx';
 import RegisteredCandidates from './Pages/AdminSection/RegisteredCandidates.jsx';
-import NewRegistrations from './Pages/AdminSection/NewRegistration.jsx';
-import NewAbstract from './Pages/AdminSection/NewAbstract.jsx';
+
+
 import AbstractSubmitted from './Pages/AdminSection/AbstractSubmitted.jsx';
 import RegisterButton from './Pages/RegisterButton/index.jsx';
 import LoginForm from './Pages/SignInForm/index.jsx';
@@ -56,8 +56,6 @@ const  App=()=> {
         <Route path="/admin" element={<AdminNavBar />}>
           <Route path="registered-candidates" element={<RegisteredCandidates />} />
           <Route path="abstract-submitted" element={<AbstractSubmitted />} />
-          <Route path="new-registered-candidates" element={<NewRegistrations/>} />
-          <Route path="new-abstracts" element={<NewAbstract/>} />
         </Route>
 
         {/* Protected Routes */}

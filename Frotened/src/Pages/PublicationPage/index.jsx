@@ -84,9 +84,9 @@ const PublicationPage = () => {
           <div className="text-lg md:text-xl text-gray-700 space-y-6">
             <p>
               Participants desirous to present a paper/poster in the conference
-              should send their abstract latest by 20 January, 2025. Acceptance
+              should send their abstract latest by 31 January, 2025. Acceptance
               of paper/poster to be presented and published shall be notified
-              within 15 days to the corresponding author.
+              within 5 days to the corresponding author.
             </p>
             <p>
               The abstract must not exceed 150 words, should be neatly typed in
@@ -263,7 +263,7 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Abstract Submission (Oral & Poster)
                   </td>
-                  <td className="border px-4 py-2">25 January 2025</td>
+                  <td className="border px-4 py-2">31 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">
@@ -273,7 +273,7 @@ const PublicationPage = () => {
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">Full Paper Submission</td>
-                  <td className="border px-4 py-2">30 January, 2025</td>
+                  <td className="border px-4 py-2">31 January, 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">
@@ -285,7 +285,7 @@ const PublicationPage = () => {
                   <td className="border px-4 py-2">
                     Last date for Registration
                   </td>
-                  <td className="border px-4 py-2">25 January 2025</td>
+                  <td className="border px-4 py-2">31 January 2025</td>
                 </tr>
                 <tr className="odd:bg-gray-100 even:bg-gray-200">
                   <td className="border px-4 py-2">On-the-spot Registration</td>
