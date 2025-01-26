@@ -71,14 +71,14 @@ const HeroSection = () => {
       <div className="bg-red-900 text-white py-2 text-center w-full">
         <div className="flex justify-center items-center flex-col md:flex-row  animate-zoom-out-in">
           <p className="text-2xl font-bold mb-2 md:mb-0 ">
-            Website is under maintainance. Registration will reopen soon.
+            Registration Open for RAASHEE-2025
           </p>
-          {/* <button
+          <button
             onClick={handleRegisterClick}
             className="md:mt-0 md:ml-5 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 md:text-lg font-bold"
           >
             Register Now
-          </button> */}
+          </button>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ const HeroSection = () => {
         >
           <div className="carousel-inner">
 
-          <div className="carousel-item active">
+            <div className="carousel-item active">
               <img
                 src={i002}
                 className="d-block w-full object-cover h-[400px] sm:h-[500px] lg:h-[600px]"
@@ -514,8 +514,8 @@ const HeroSection = () => {
                 </div>
               </div>
 
-               {/* Image Block 9 */}
-               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* Image Block 9 */}
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={ProfVijay} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Vijay Prakash Singh</p>
@@ -559,8 +559,8 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              
-             
+
+
               {/* Image Block 10 */}
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={drneha} className="w-auto h-[100px] object-cover rounded-full" />
@@ -781,7 +781,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Mr. Vivek Kumar, Cognizent, U. S. A.
                 </li>
-               
+
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. John Corcoran, University of Buffalo, New York, U. S. A.
                 </li>
@@ -793,7 +793,7 @@ const HeroSection = () => {
                   Prof. Anil Mishra, HOD Department of Chemistry University of Lucknow
                 </li>
 
-                
+
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Roman Taraban, Texas Tech University, U. S. A.
                 </li>
@@ -801,7 +801,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Shikha Verma, Institute of Physics, Bhubneshwar
                 </li>
-                
+
 
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Jyoti Juyal, Sharda University, Mathura
@@ -813,18 +813,18 @@ const HeroSection = () => {
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
                 </li>
- 
+
               </ul>
 
             </div>
 
             <div>
               <ul className="space-y-2">
-               
-              <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                Prof. O. N. Upadhyay, University of Lucknow, Lucknow
-              </li>
-               
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. O. N. Upadhyay, University of Lucknow, Lucknow
+                </li>
+
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Pankaj Srivastava, MNNIT, Prayagraj
                 </li>
@@ -853,7 +853,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Nimisha Kapoor, University of Lucknow, Lucknow
                 </li>
-                
+
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Pravin Kumar, IUAC, New Delhi
                 </li>
@@ -861,7 +861,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Vijay Kumar, Galgotia University, Greater Noida
                 </li>
-                
+
 
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Pragya Mishra, University of Lucknow, Lucknow
@@ -873,7 +873,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Madhu Chetty, Federation University, Australia
                 </li>
-                
+
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Dilip Jaiswal, Ramswaroop Memorial University, Lucknow
                 </li>
@@ -884,7 +884,7 @@ const HeroSection = () => {
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Vijay Kumar Singh, IIT, Jodhpur
                 </li>
-                
+
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Rituraj Mishra, National P. G. College, Lucknow
                 </li>
