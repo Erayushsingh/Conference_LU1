@@ -244,7 +244,7 @@ const HeroSection = () => {
 
       <div className="bg-white p-6 my-8 space-y-6 w-full sm:w-4/5 mx-auto border-y-4 border-red-700">
         {/* Grid container for individual sections */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
 
           {/* Chief Patron Container */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
@@ -293,20 +293,6 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
-
-
-          {/* Another Special Guest */}
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={Akshay_Sharma} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">SPECIAL GUEST:</h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Akshay Sharma</span>
-                <p>Novelist, Actor, Philanthropist</p>
-              </p>
-            </div>
-          </div>
-
 
         </div>
       </div>
@@ -456,6 +442,17 @@ const HeroSection = () => {
 
             {/* Grid for images */}
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-10">
+
+
+            <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={Akshay_Sharma} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-xl font-bold text-blue-700">Akshay Sharma</p>
+                  <p className="text-lg text-gray-700">Novelist, Actor, Philanthropist</p>
+                </div>
+              </div>
+
+
               {/* Image Block 1 */}
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={KeynoteSpeaker1} className="w-auto h-[100px] object-cover rounded-full" />
