@@ -261,20 +261,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Guest of Honor Container */}
-          <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={Indresh_Ji} className="w-full h-[350px] object-fit rounded-lg" />
-            <div className="p-4">
-              <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">
-                CHIEF-GUIEST:
-              </h4>
-              <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Shri Indresh Kumar Ji</span>
-                <p>Patron</p>
-                FANS
-              </p>
-            </div>
-          </div>
+        
 
           {/* Guest of Honor Container */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
