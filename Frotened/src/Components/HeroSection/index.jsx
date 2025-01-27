@@ -495,31 +495,31 @@ const HeroSection = () => {
               </div>
 
               {/* Image Block 8 */}
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={ProfRaj} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Raj P. Chhabra</p>
                   <p className="text-lg text-gray-700">IIT-Kanpur</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Image Block 9 */}
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={ProfVijay} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Vijay Prakash Singh</p>
                   <p className="text-lg text-gray-700">EMEL, UoL</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Image Block 10 */}
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={KeynoteSpeaker2} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Binod Mishra</p>
                   <p className="text-lg text-gray-700">IIT-Roorkee</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Image Block 5 */}
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
@@ -604,13 +604,13 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img001} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Sangeeta Sahu</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img002} className="w-auto h-[100px] object-cover rounded-full" />
@@ -620,13 +620,13 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img003} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. Matreyi Priyadashini</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img004} className="w-auto h-[100px] object-cover rounded-full" />
@@ -644,21 +644,21 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img006} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. Anchal Srivastava</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img007} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. Abha Bishnoi</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img008} className="w-auto h-[100px] object-cover rounded-full" />
@@ -684,37 +684,37 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img011} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. Masood H. Siddiqui</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img012} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. D. R. Sahu</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img013} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. Manoj Kumar Singh</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img014} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Dr. Shambhavi Mishra</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img015} className="w-auto h-[100px] object-cover rounded-full" />
@@ -724,53 +724,53 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img016} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Dr. Jyotsna Singh</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img017} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. Anil Mishra</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img018} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. Onkar Nath Upadhyay</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img019} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Dr. Sanjay Medhavi</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img020} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Dr. Nimisha Kapoor</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img021} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Dr. Archana Shukla</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div>
+              </div> */}
 
 
             </div>
@@ -786,54 +786,46 @@ const HeroSection = () => {
                   Dr. Shefali Vaidya , CTU Czech Republic
                 </li>
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Shantu Mondal , CTU Czech Republic
-                </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                </li> */}
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Mohammad Nazrul Islam Khan, Qassim University, Saudi Arabia
                 </li>
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Gopal Krishna Dixit, Grenoble, France
                 </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Sanobar Siddiqui, University of Regina, Saskatchewan, Canada
                 </li>
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Naila Erum, Universiti Teknologi MARA, Malaysia
                 </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Rajneesh Kumar Pandey, Tribhuwan University, Nepal
-                </li>
+                </li> */}
 
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Mr. Vivek Kumar, Cognizent, U. S. A.
                 </li>
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. John Corcoran, University of Buffalo, New York, U. S. A.
-                </li>
+                </li> */}
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Ajit Srivastava, Institute of Physics, Bhubneshwar
                 </li>
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Roman Taraban, Texas Tech University, U. S. A.
-                </li>
+                </li> */}
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Prof. Shikha Verma, Institute of Physics, Bhubneshwar
-                </li>
-
-
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Jyoti Juyal, Sharda University, Mathura
-                </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. C. Withana, Study Group, Australia
-                </li>
+                </li> */}
 
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
@@ -853,55 +845,64 @@ const HeroSection = () => {
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Praveen Sahu, Central University of Rajasthan, Ajmer
                 </li>
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Aine Ito, NUS, Singapore
-                </li>
+                </li> */}
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. B. K. Mohanty, IIM, Lucknow
                 </li>
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Tetiana Kaminska, Kyiv, Ukraine
-                </li>
+                </li> */}
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Rajeev Sijeria, Jawaharlal Nehru University, New Delhi
-                </li>
+                </li> */}
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Pravin Kumar, IUAC, New Delhi
-                </li>
+                </li> */}
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Vijay Kumar, Galgotia University, Greater Noida
-                </li>
+                </li> */}
 
 
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Pragya Mishra, University of Lucknow, Lucknow
                 </li>
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Madhu Chetty, Federation University, Australia
-                </li>
+                </li> */}
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Dilip Jaiswal, Ramswaroop Memorial University, Lucknow
-                </li>
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                </li> */}
+                {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Mukesh Mishra, Ramswaroop Memorial University, Lucknow
-                </li>
+                </li> */}
+
+                {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Vijay Kumar Singh, IIT, Jodhpur
+                </li> */}
 
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Vijay Kumar Singh, IIT, Jodhpur
-                </li>
-
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Rituraj Mishra, National P. G. College, Lucknow
                 </li>
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Sapna Sharma, Uttar Pradesh State Institute of Forensic Science, Lucknow
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Prof. Shikha Verma, Institute of Physics, Bhubneshwar
+                </li>
+
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Jyoti Juyal, Sharda University, Mathura
                 </li>
 
               </ul>
