@@ -25,6 +25,7 @@ import Faculty02 from "/src/assets/faculty_Photo02.jpg";
 import Faculty03 from "/src/assets/Faculty_Photo03.webp";
 import ProfRaj from "/src/assets/ProfRaj.jpg";
 import ProfVijay from "/src/assets/ProfVijay.jpg";
+import img211 from "/src/assets/img211.jpeg";
 import rajeevji from "/src/assets/rajeevji.jpg";
 import arvindji from "/src/assets/arvindji.jpg";
 import satyadevji from "/src/assets/satyadevji.jpg";
@@ -266,7 +267,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-        
+
 
           {/* Guest of Honor Container */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
@@ -449,7 +450,7 @@ const HeroSection = () => {
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-10">
 
 
-            <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={Akshay_Sharma} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Akshay Sharma</p>
@@ -772,6 +773,13 @@ const HeroSection = () => {
                 </div>
               </div> */}
 
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img211} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Dr. S. A. Siddiqui</p>
+                  <p className="text-lg text-gray-700">University of Regina, Canada</p>
+                </div>
+              </div>
 
             </div>
           </div>

@@ -56,7 +56,7 @@ const LowerHeader = () => {
               )}
             </div>
 
-            <a href="/conference" className="hover:text-red-500">Tracks</a>
+            <a href="/conference" className="hover:text-red-500">Publications</a>
             <a href="/publications" className="hover:text-red-500">Submission</a>
             <a href="/awards" className="hover:text-red-500">Awards</a>
             <a href="/about-us" className="hover:text-red-500">Committee</a>
@@ -107,7 +107,7 @@ const LowerHeader = () => {
             )}
           </div>
 
-          <a href="/conference" className="py-2 hover:text-blue-700">Tracks</a>
+          <a href="/conference" className="py-2 hover:text-blue-700">Publications</a>
           <a href="/publications" className="py-2 hover:text-blue-700">Submission</a>
           <a href="/awards" className="py-2 hover:text-blue-700">Awards</a>
           <a href="/about-us" className="py-2 hover:text-blue-700">Committee</a>
