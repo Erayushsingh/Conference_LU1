@@ -495,13 +495,13 @@ const HeroSection = () => {
               </div>
 
               {/* Image Block 8 */}
-              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={ProfRaj} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Raj P. Chhabra</p>
                   <p className="text-lg text-gray-700">IIT-Kanpur</p>
                 </div>
-              </div> */}
+              </div>
 
               {/* Image Block 9 */}
               {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
@@ -513,13 +513,13 @@ const HeroSection = () => {
               </div> */}
 
               {/* Image Block 10 */}
-              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={KeynoteSpeaker2} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Binod Mishra</p>
                   <p className="text-lg text-gray-700">IIT-Roorkee</p>
                 </div>
-              </div> */}
+              </div>
 
               {/* Image Block 5 */}
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
@@ -604,13 +604,13 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img001} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Sangeeta Sahu</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div> */}
+              </div>
 
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img002} className="w-auto h-[100px] object-cover rounded-full" />
@@ -732,13 +732,13 @@ const HeroSection = () => {
                 </div>
               </div> */}
 
-              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img017} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. Anil Mishra</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
                 </div>
-              </div> */}
+              </div>
 
               {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={img018} className="w-auto h-[100px] object-cover rounded-full" />
