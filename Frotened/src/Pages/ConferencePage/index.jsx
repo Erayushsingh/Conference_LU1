@@ -56,9 +56,9 @@ const ConferencePage = () => {
     FinancialEconomics: useRef(null),
     ConsumerBehavior: useRef(null),
     Ecommercemanagement: useRef(null),
-    FinancialManagement:useRef(null),
-    Economics:useRef(null),
-    HumanResourceManagement:useRef(null),
+    FinancialManagement: useRef(null),
+    Economics: useRef(null),
+    HumanResourceManagement: useRef(null),
 
   };
 
@@ -278,7 +278,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
       and rational associations with consumers, which increases brand loyalty, market share, and overall business performance.`
     },
     ConsumerBehavior: {
-      title:"Consumer Behaviour",
+      title: "Consumer Behaviour",
       content: `Consumer behavior is the study of how individuals, groups, and organizations select, buy, use, and dispose of products to satisfy their needs and wants. Understanding consumer behavior is essential to marketing as it helps businesses design products, strategies, and campaigns that align with consumer preferences and decision-making processes. Insights into consumer behavior drive innovation by identifying emerging trends and demands and guiding the development of technologies and products. This knowledge fosters industrial growth, enhances market competitiveness, and contributes to national development by creating solutions that address societal needs efficiently.`,
     },
     Ecommercemanagement: {
@@ -286,20 +286,20 @@ an exciting exchange of ideas and discussions on the future directions of mathem
       content: `E-commerce , or electronic commerce, involves conducting business transactions online through internet-based technologies like electronic data exchange, email, and electronic fund transfers. It enables the paperless exchange of goods, services, and information, making business operations faster, more efficient, and cost-effective. E-commerce spans various domains, including B2B, B2C, and C2C transactions, facilitating global trade and digital marketplaces. Its growing role in online shopping, travel bookings, and financial services contributes significantly to economic growth by expanding markets and fostering innovation.`
     },
 
-    FinancialManagement:{
-      title:"Financial Management",
-      content:`Financial Management involves strategic decisions in the area of investing, financing, and dividend decisions. Investing decisions focus on allocating resources to projects that maximize returns, supporting engineering innovations and industrial growth. Financing decisions determine the optimal mix of debt and equity to fund these investments, while dividend decisions balance profit distribution and reinvestment to ensure sustainable development and shareholder satisfaction. Financial Management is essential for efficient financial planning and control, enabling organizations to drive innovation, sustain operations,
+    FinancialManagement: {
+      title: "Financial Management",
+      content: `Financial Management involves strategic decisions in the area of investing, financing, and dividend decisions. Investing decisions focus on allocating resources to projects that maximize returns, supporting engineering innovations and industrial growth. Financing decisions determine the optimal mix of debt and equity to fund these investments, while dividend decisions balance profit distribution and reinvestment to ensure sustainable development and shareholder satisfaction. Financial Management is essential for efficient financial planning and control, enabling organizations to drive innovation, sustain operations,
        and achieve long-term growth. By aligning financial strategies with engineering goals, it fosters economic efficiency and industrial competitiveness.`},
-    
-       Economics:{
-      title:"Economics",
-      content:`Economics is the study of how individuals, businesses, and governments allocate scarce resources to meet their needs 
+
+    Economics: {
+      title: "Economics",
+      content: `Economics is the study of how individuals, businesses, and governments allocate scarce resources to meet their needs 
       and wants. Managers need to understand economics to make informed decisions about resource allocation, pricing, production, and market strategies, enabling them to optimize organizational efficiency and profitability. Economics supports managerial functions by providing frameworks to analyze consumer behavior, market trends, and competitive dynamics, aiding in the achievement of organizational objectives. At the macro level, economics fosters national growth by shaping policies that impact national income, stabilize business cycles, control inflation, and optimize international trade.
        These measures enhance economic stability, promote global integration, and ensure sustainable development and competitiveness.`
     },
-    HumanResourceManagement:{
-      title:"Human Resource Management",
-      content:`Human Resource Management is a strategic approach to effectively managing an organization’s workforce.
+    HumanResourceManagement: {
+      title: "Human Resource Management",
+      content: `Human Resource Management is a strategic approach to effectively managing an organization’s workforce.
        It encompasses activities like workforce planning, recruitment, training, development, performance appraisal, employee welfare, and industrial relations, ensuring optimal utilization of human resources to achieve organizational goals. HRM aims to create an environment conducive to maximizing productivity, fostering motivation, and ensuring employee well-being. HRM is critical for business organizations as it aligns employee skills and motivation with strategic objectives, driving productivity and innovation. By fostering a 
       skilled and motivated workforce, HRM supports economic growth and national development, ensuring long-term sustainability and competitiveness.`
     }
@@ -336,10 +336,141 @@ an exciting exchange of ideas and discussions on the future directions of mathem
       <HeaderUpper />
       <LowerHeader />
 
+
+      <div className="flex flex-col mt-7 sm:flex-row justify-center sm:space-y-0 sm:space-x-4 ">
+          
+      <div className="bg-green-50 md:mt-10 mb-3 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center justify-center mx-auto">
+          <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
+            Editor-in-Chief
+          </h3>
+         
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Prof. Ashok Kumar Singh
+            </p>
+        </div>
+        </div>
+
+        <div className="bg-yellow-50 md:mt-10 mb-3 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center  mx-auto">
+          <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2 ">
+            Editors
+          </h3>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Deepak Gupta
+          </p>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Savya Sachi
+          </p>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Anupam Kumar Tripathi
+          </p>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Rachana Pathak
+          </p>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Ranvijay Pratap Singh
+          </p>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Khushboo Verma
+          </p>
+        </div>
+
+        <div className="bg-red-50 md:mt-10 mb-8 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center mx-auto">
+          <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
+            Associate Editors
+          </h3>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Amit Mishra
+          </p>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Parul Singh
+          </p>
+          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+            Dr. Sumedha Dwivedi
+          </p>
+        </div>
+
+      <h3 className="md:text-4xl pt-7  text-3xl font-bold text-center text-gray-800 mb-8">
+        Editorial Board
+      </h3>
+      <div className="bg-green-50 rounded-lg  shadow-lg p-6 my-8 w-[90%] sm:w-4/5 lg:w-[80%] mx-auto ">
+        <ul className="space-y-2 text-left">
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. P. K. Rath, Professor, Department of Physics, University of
+            Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Vijay Prakash Singh, Professor, Department of English and
+            Modern European Languages, University of Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. R. M. Naik, Professor, Department of Chemistry, University
+            of Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Biswajit Sarkar, Professor, Department of Industrial
+            Management and Engineering, Yonsei University, South Korea
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Manju Agarwal, Professor, Department of Mathematics and
+            Astronomy, University of Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Athanase Papadopoulos, Department of Mathematics, University
+            of Strasbourg, France
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Sangeeta Sahu, Professor, Department of Management,
+            University of Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Binod Mishra, Professor, Department of Humanities and Social
+            Sciences, Indian Institute of Technology, Roorkee
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Jose Carlos Redondo Olmedilla, Department of English,
+            University of Almeria, Spain
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Satendra Pal Singh, Professor, Department of Physics,
+            University of Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. V. K. Sharma, Professor, Department of Chemistry, University
+            of Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Vivek Sahai, Department of Mathematics and Astronomy,
+            University of Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Pankaj Mathur, Department of Mathematics and Astronomy,
+            University of Lucknow
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Prof. Praveen Sahu, Professor, Department of Commerce and
+            Management, Central University of Rajasthan
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Dr. Ashish Pandey, Associate Research Officer (AcRO), Conseil
+            National de Recherches Canada, Gouvernement dvu Canada, Ottawa,
+            Ontario, Canada, K1A 0R6
+          </li>
+
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Dr. Shefali Vaidya , CTU Czech Republic
+          </li>
+
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+            Dr. Shantu Mondal , CTU Czech Republic
+          </li>
+        </ul>
+      </div>
+
+
       {/* Conference Tracks Section */}
       <div className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-extrabold text-center text-black mb-8 animate-flash">
+          <h2 className="md:text-4xl text-3xl font-extrabold text-center text-black mb-8 animate-flash">
             Conference Tracks
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -350,7 +481,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
                 TRACK 1– Physical Sciences
               </h3>
               <ul className="list-inside space-y-2 text-lg text-gray-700">
-              <li>Nuclear and Particle Physics</li>
+                <li>Nuclear and Particle Physics</li>
                 <li>Quantum Materials and Topological Insulators: Theoretical and Experimental Insights</li>
                 <li>Synthesis and characterization of nanomaterials</li>
                 <li>Nanostructured materials</li>
