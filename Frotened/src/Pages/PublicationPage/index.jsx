@@ -169,6 +169,65 @@ const PublicationPage = () => {
             </a>
           </div>
         </div>
+
+        <div class="py-12 bg-gray-50">
+          <div class="container mx-auto px-4 space-y-6">
+            <h2 class="text-3xl font-extrabold text-center text-black mb-8">
+              Publication Ethics
+            </h2>
+
+            <div class="mb-8">
+              <h2 class="text-xl font-semibold text-gray-800">Responsibilities of Authors</h2>
+              <ul class="list-decimal list-inside space-y-4 mt-2">
+                <li class="text-gray-700 text-lg">
+                  <span class="font-semibold text-lg">Originality and Plagiarism:</span> Authors must ensure that their work is original and free from plagiarism. Proper acknowledgment should be given to all sources of information and ideas.
+                </li>
+                <li class="text-gray-700 text-lg">
+                  <span class="font-semibold text-lg">Authorship:</span> Authorship should be limited to individuals who have made a significant contribution to the conception, design, execution, or interpretation of the reported research.
+                </li>
+                <li class="text-gray-700 text-lg">
+                  <span class="font-semibold text-lg">Data Accuracy:</span> Authors are responsible for presenting accurate and verifiable data. Fabrication, falsification, or selective reporting of data is unethical.
+                </li>
+                <li class="text-gray-700 text-lg">
+                  <span class="font-semibold text-lg">Disclosure of Conflicts of Interest:</span> Any potential conflicts of interest, whether financial or personal, must be disclosed.
+                </li>
+                <li class="text-gray-700 text-lg">
+                  <span class="font-semibold text-lg">Acknowledgment of Funding:</span> Sources of financial support or funding must be clearly acknowledged in the publication.
+                </li>
+                <li class="text-gray-700 text-lg">
+                  <span class="font-semibold text-lg">Multiple Submissions:</span> Submitting the same manuscript to more than one journal simultaneously is unethical.
+                </li>
+                <li class="text-gray-700 text-lg">
+                  <span class="font-semibold text-lg">Corrections and Retractions:</span> If significant errors are discovered after publication, authors are obligated to notify the journal and cooperate in issuing corrections or retractions.
+                </li>
+              </ul>
+
+              <div>
+                <h2 class="text-xl font-semibold text-gray-800 mt-4">Ethical Violations</h2>
+                <ul class="list-decimal list-inside space-y-4 mt-2">
+                  <li class="text-gray-700 text-lg">
+                    <span class="font-semibold text-lg">Plagiarism:</span> Using someone else’s work without proper attribution is a severe ethical violation.
+                  </li>
+                  <li class="text-gray-700 text-lg">
+                    <span class="font-semibold text-lg">Data Fabrication and Falsification:</span> Presenting made-up data or altering data to misrepresent results is unethical.
+                  </li>
+                  <li class="text-gray-700 text-lg">
+                    <span class="font-semibold text-lg">Duplicate Submission:</span> Submitting the same work to multiple journals undermines the integrity of the publication process.
+                  </li>
+                  <li class="text-gray-700 text-lg">
+                    <span class="font-semibold text-lg">Undisclosed Conflicts of Interest:</span> Failure to disclose financial or personal conflicts of interest can lead to a lack of trust in the research.
+                  </li>
+                </ul>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
         <h2 className="text-3xl md:text-3xl mt-10 font-extrabold text-center text-gray-800 mb-6">
           Peer Review Process
         </h2>
