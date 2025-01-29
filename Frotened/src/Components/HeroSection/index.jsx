@@ -6,9 +6,10 @@ import LuPhoto06 from "/src/assets/LuPhoto06.jpg";
 import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import VC_Sir from "/src/assets/VC_Sir.jpg";
-import TN_Sir from "/src/assets/TN_Sir.jpg";
+
 import img0900 from "/src/assets/img0900.jpeg";
 import img0901 from "/src/assets/img0901.jpeg";
+import img0902 from "/src/assets/img0902.jpeg";
 import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpg";
 import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
@@ -788,6 +789,14 @@ const HeroSection = () => {
                 <div className="p-4 text-center">
                   <p className="text-lg font-bold text-blue-700">Prof. N. K. Pandey</p>
                   <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img0902} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Dr. Naila Erum</p>
+                  <p className="text-lg text-gray-700">University teknologi MARA (uitm),Malaysia</p>
                 </div>
               </div>
 
