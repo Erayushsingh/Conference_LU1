@@ -338,56 +338,56 @@ an exciting exchange of ideas and discussions on the future directions of mathem
 
 
       <div className="flex flex-col mt-7 sm:flex-row justify-center sm:space-y-0 sm:space-x-4 ">
-          
-      <div className="bg-green-50 md:mt-10 mb-3 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center justify-center mx-auto">
+
+        <div className="bg-green-50 md:mt-10 mb-3 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center justify-center mx-auto">
           <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
             Editor-in-Chief
           </h3>
-         
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Prof. Ashok Kumar Singh
-            </p>
-        </div>
-        </div>
 
-        <div className="bg-yellow-50 md:mt-10 mb-3 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center  mx-auto">
-          <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2 ">
-            Editors
-          </h3>
           <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Deepak Gupta
-          </p>
-          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Savya Sachi
-          </p>
-          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Anupam Kumar Tripathi
-          </p>
-          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Rachana Pathak
-          </p>
-          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Ranvijay Pratap Singh
-          </p>
-          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Khushboo Verma
+            Prof. Ashok Kumar Singh
           </p>
         </div>
+      </div>
 
-        <div className="bg-red-50 md:mt-10 mb-8 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center mx-auto">
-          <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
-            Associate Editors
-          </h3>
-          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Amit Mishra
-          </p>
-          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Parul Singh
-          </p>
-          <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-            Dr. Sumedha Dwivedi
-          </p>
-        </div>
+      <div className="bg-yellow-50 md:mt-10 mb-3 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center  mx-auto">
+        <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2 ">
+          Editors
+        </h3>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Deepak Gupta
+        </p>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Savya Sachi
+        </p>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Anupam Kumar Tripathi
+        </p>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Rachana Pathak
+        </p>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Ranvijay Pratap Singh
+        </p>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Khushboo Verma
+        </p>
+      </div>
+
+      <div className="bg-red-50 md:mt-10 mb-8 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center mx-auto">
+        <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
+          Associate Editors
+        </h3>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Amit Mishra
+        </p>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Parul Singh
+        </p>
+        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+          Dr. Sumedha Dwivedi
+        </p>
+      </div>
 
       <h3 className="md:text-4xl pt-7  text-3xl font-bold text-center text-gray-800 mb-8">
         Editorial Board
@@ -468,75 +468,75 @@ an exciting exchange of ideas and discussions on the future directions of mathem
 
 
       <div class="py-12 bg-gray-50 w-[80%] mx-auto bg-yellow-50">
-          <div class="container mx-auto px-4 space-y-6">
-            <h2 class="text-3xl font-extrabold text-center text-black mb-8">
-              Publication Ethics
-            </h2>
+        <div class="container mx-auto px-4 space-y-6">
+          <h2 class="text-3xl font-extrabold text-center text-black mb-8">
+            Publication Ethics
+          </h2>
 
-            <div class="mb-8">
-              <h2 class="text-xl font-semibold text-gray-800">Responsibilities of Authors</h2>
+          <div class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800">Responsibilities of Authors</h2>
+            <ul class="list-decimal list-inside space-y-4 mt-2">
+              <li class="text-gray-700 text-lg text-justify">
+                <span class="font-semibold text-lg">Originality and Plagiarism:</span> Authors must ensure that their work is original and free from plagiarism. Proper acknowledgment should be given to all sources of information and ideas.
+              </li>
+              <li class="text-gray-700 text-lg text-justify">
+                <span class="font-semibold text-lg">Authorship:</span> Authorship should be limited to individuals who have made a significant contribution to the conception, design, execution, or interpretation of the reported research.
+              </li>
+              <li class="text-gray-700 text-lg text-justify">
+                <span class="font-semibold text-lg">Data Accuracy:</span> Authors are responsible for presenting accurate and verifiable data. Fabrication, falsification, or selective reporting of data is unethical.
+              </li>
+              <li class="text-gray-700 text-lg text-justify">
+                <span class="font-semibold text-lg">Disclosure of Conflicts of Interest:</span> Any potential conflicts of interest, whether financial or personal, must be disclosed.
+              </li>
+              <li class="text-gray-700 text-lg text-justify">
+                <span class="font-semibold text-lg">Acknowledgment of Funding:</span> Sources of financial support or funding must be clearly acknowledged in the publication.
+              </li>
+              <li class="text-gray-700 text-lg text-justify">
+                <span class="font-semibold text-lg">Multiple Submissions:</span> Submitting the same manuscript to more than one journal simultaneously is unethical.
+              </li>
+              <li class="text-gray-700 text-lg text-justify">
+                <span class="font-semibold text-lg">Corrections and Retractions:</span> If significant errors are discovered after publication, authors are obligated to notify the journal and cooperate in issuing corrections or retractions.
+              </li>
+            </ul>
+
+            <div>
+              <h2 class="text-xl font-semibold text-gray-800 mt-4">Ethical Violations</h2>
               <ul class="list-decimal list-inside space-y-4 mt-2">
-                <li class="text-gray-700 text-lg">
-                  <span class="font-semibold text-lg">Originality and Plagiarism:</span> Authors must ensure that their work is original and free from plagiarism. Proper acknowledgment should be given to all sources of information and ideas.
+                <li class="text-gray-700 text-lg text-justify">
+                  <span class="font-semibold text-lg">Plagiarism:</span> Using someone else’s work without proper attribution is a severe ethical violation.
                 </li>
-                <li class="text-gray-700 text-lg">
-                  <span class="font-semibold text-lg">Authorship:</span> Authorship should be limited to individuals who have made a significant contribution to the conception, design, execution, or interpretation of the reported research.
+                <li class="text-gray-700 text-lg text-justify">
+                  <span class="font-semibold text-lg">Data Fabrication and Falsification:</span> Presenting made-up data or altering data to misrepresent results is unethical.
                 </li>
-                <li class="text-gray-700 text-lg">
-                  <span class="font-semibold text-lg">Data Accuracy:</span> Authors are responsible for presenting accurate and verifiable data. Fabrication, falsification, or selective reporting of data is unethical.
+                <li class="text-gray-700 text-lg text-justify">
+                  <span class="font-semibold text-lg">Duplicate Submission:</span> Submitting the same work to multiple journals undermines the integrity of the publication process.
                 </li>
-                <li class="text-gray-700 text-lg">
-                  <span class="font-semibold text-lg">Disclosure of Conflicts of Interest:</span> Any potential conflicts of interest, whether financial or personal, must be disclosed.
-                </li>
-                <li class="text-gray-700 text-lg">
-                  <span class="font-semibold text-lg">Acknowledgment of Funding:</span> Sources of financial support or funding must be clearly acknowledged in the publication.
-                </li>
-                <li class="text-gray-700 text-lg">
-                  <span class="font-semibold text-lg">Multiple Submissions:</span> Submitting the same manuscript to more than one journal simultaneously is unethical.
-                </li>
-                <li class="text-gray-700 text-lg">
-                  <span class="font-semibold text-lg">Corrections and Retractions:</span> If significant errors are discovered after publication, authors are obligated to notify the journal and cooperate in issuing corrections or retractions.
+                <li class="text-gray-700 text-lg text-justify">
+                  <span class="font-semibold text-lg">Undisclosed Conflicts of Interest:</span> Failure to disclose financial or personal conflicts of interest can lead to a lack of trust in the research.
                 </li>
               </ul>
 
-              <div>
-                <h2 class="text-xl font-semibold text-gray-800 mt-4">Ethical Violations</h2>
-                <ul class="list-decimal list-inside space-y-4 mt-2">
-                  <li class="text-gray-700 text-lg">
-                    <span class="font-semibold text-lg">Plagiarism:</span> Using someone else’s work without proper attribution is a severe ethical violation.
-                  </li>
-                  <li class="text-gray-700 text-lg">
-                    <span class="font-semibold text-lg">Data Fabrication and Falsification:</span> Presenting made-up data or altering data to misrepresent results is unethical.
-                  </li>
-                  <li class="text-gray-700 text-lg">
-                    <span class="font-semibold text-lg">Duplicate Submission:</span> Submitting the same work to multiple journals undermines the integrity of the publication process.
-                  </li>
-                  <li class="text-gray-700 text-lg">
-                    <span class="font-semibold text-lg">Undisclosed Conflicts of Interest:</span> Failure to disclose financial or personal conflicts of interest can lead to a lack of trust in the research.
-                  </li>
-                </ul>
-
-
-              </div>
 
             </div>
+
           </div>
         </div>
+      </div>
 
 
-       <div className='bg-green-50 w-[80%] mx-auto mt-4'>
+      <div className='bg-green-50 w-[80%] mx-auto mt-4'>
 
-       <h2 className="text-3xl md:text-3xl mt-10 font-extrabold text-center text-gray-800 mb-6">
+        <h2 className="text-3xl md:text-3xl mt-10 font-extrabold text-center text-gray-800 mb-6">
           Peer Review Process
         </h2>
         <p className="text-lg text-black mb-4 md:mb-0 md:text-lg md:leading-8 flex ml-4">
           <div className="w-[80%]">
-            <p className='mb-2'>
-              <span className="font-bold mb">Step I:</span> Paper received by
+            <p className='mb-2 text-justify'>
+              <span className="font-bold">Step I:</span> Paper received by
               Editor-in-Chief for checking the title and abstract for relevance
               against the conference theme (rejected if no relevance found)
             </p>
-            <p className='mb-2'>
+            <p className='mb-2 text-justify'>
               <span className="font-bold">Step II:</span> Sent to field specific
               Editor for further process. Editor conducts first plag-check.
               (Criteria I: if plag is less than 10%, the manuscript is sent to
@@ -546,18 +546,18 @@ an exciting exchange of ideas and discussions on the future directions of mathem
               and if plag is more than 20%, manuscript is rejected and
               communicated to author)
             </p>
-            <p className='mb-2'>
+            <p className='mb-2 text-justify'>
               <span className="font-bold">Step III:</span> Once first two
               reviews are received, the editor compiles reviews and notes
               comments and sends back to author for revision in the manuscript.
             </p>
-            <p className='mb-2'>
+            <p className='mb-2 text-justify'>
               <span className="font-bold">Step IV:</span> If revised manuscript
               is found satisfactory, the editor accepts it for publication.
               Else, the revised manuscript is sent to the same peer reviewers
               for their review.
             </p>
-            <p className='mb-2'>
+            <p className='mb-2 text-justify'>
               <span className="font-bold">Step V:</span> Once satisfied by the
               peers the manuscript publication is decided by the Editor. Else,
               the manuscript is sent back to the author with additional comments
@@ -565,15 +565,16 @@ an exciting exchange of ideas and discussions on the future directions of mathem
               satisfied with the revised manuscript, the Editor rejects it and
               communicates the same to the author.
             </p>
-            <p className='mb-2'>
+            <p className='mb-2 text-justify'>
               <span className="font-bold">Step VI:</span> Upon receipt of
-              re-revised manuscript, the editor takes final decision
+              re-revised manuscript, the editor takes final decision
             </p>
           </div>
+
         </p>
-       </div>
-       
-      
+      </div>
+
+
 
       {/* Conference Tracks Section */}
       <div className="py-12 bg-gray-50">

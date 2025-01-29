@@ -313,7 +313,7 @@ const HeroSection = () => {
             <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
               Introduction
             </h2>
-            <p className="text-lg text-gray-700 mb-6 md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6 md:text-2xl md:leading-8 text-justify">
               Basic sciences like Mathematics, Physics, and Chemistry serve as
               the foundation for any form of structure—whether it's a design
               structure, a physical structure, a data structure, or even a logic
@@ -325,7 +325,7 @@ const HeroSection = () => {
               phenomena but also evolve with time, paving the way for
               engineering to thrive.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8 text-justify">
               Just as the basic sciences have evolved, so too has human society.
               The development of human social behavior, linguistic capabilities,
               imagination, psychological traits, and sociological understanding
@@ -335,14 +335,14 @@ const HeroSection = () => {
               deeper into nature's mysteries to discover solutions. This
               exploration becomes the bedrock for the evolution of engineering.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8 text-justify">
               Thus, the combination of basic sciences and human traits is
               collectively known as{" "}
               <strong>Applied Sciences and Humanities in Engineering</strong>.
               These disciplines work hand-in-hand, addressing challenges and
               facilitating the continuous growth of modern engineering.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8 text-justify">
               The central question that drives this discourse is whether recent
               trends in applied sciences and humanities are sufficiently
               prepared to support and advance modern engineering as they have
@@ -351,7 +351,7 @@ const HeroSection = () => {
               development. On the other hand, if the answer is no, the
               course-correction required must be examined.
             </p>
-            <p className="text-lg text-gray-700 md:text-2xl md:leading-8 ">
+            <p className="text-lg text-gray-700 md:text-2xl md:leading-8 text-justify">
               Louis D. Brandeis once said, “There are no shortcuts in
               evolution.” At the Department of Applied Sciences and Humanities,
               we believe that students must be ready to ask tough questions and
@@ -372,7 +372,7 @@ const HeroSection = () => {
             <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
               Our Objective
             </h2>
-            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8 text-justify">
               The conference is an attempt at promoting basic sciences and
               humanistic studies through scholarly research. It aims at
               providing a platform to hold scholastic deliberations and
@@ -426,7 +426,7 @@ const HeroSection = () => {
               className="h-40 w-40 bg-black rounded-full mb-10 mt-6 shadow-lg"
             />
           </div>
-          <p className="text-lg p-8 text-gray-800 leading-relaxed md:leading-8 md:text-2xl">
+          <p className="text-lg p-8 text-gray-800 leading-relaxed md:leading-8 md:text-2xl text-justify">
             The foundation of the logo comes from the helix structure of DNA,
             standing for humanity as a whole, a symbol that resonates with
             evolution. The gears along the structure give it a nature of
@@ -794,7 +794,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="space-b-2 text-left md:grid md:grid-cols-2 md:gap-4">
+          <div className="space-b-2  md:grid md:grid-cols-2 md:gap-4 text-justify mr-2">
             <div >
               <ul className="space-y-2">
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
