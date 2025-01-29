@@ -7,6 +7,8 @@ import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
+import img0900 from "/src/assets/img0900.jpeg";
+import img0901 from "/src/assets/img0901.jpeg";
 import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpg";
 import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
@@ -271,15 +273,15 @@ const HeroSection = () => {
 
           {/* Guest of Honor Container */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={TN_Sir} className="w-full h-[350px] object-fit rounded-lg" />
+            <img src={img0900} className="w-full h-[350px] object-fit rounded-lg" />
             <div className="p-4">
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">
-                GUEST OF HONOUR:
+                CHIEF GUEST:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Prof. T. N. Singh</span>
-                <p>Director</p>
-                IIT-Patna
+                <span className="font-bold">Prof. M. G. Thakkar</span>
+                <p>Director-BSIP</p>
+                Lucknow
               </p>
             </div>
           </div>
@@ -311,7 +313,7 @@ const HeroSection = () => {
             <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
               Introduction
             </h2>
-            <p className="text-lg text-gray-700 mb-6 md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6 md:text-2xl md:leading-8 text-justify">
               Basic sciences like Mathematics, Physics, and Chemistry serve as
               the foundation for any form of structure—whether it's a design
               structure, a physical structure, a data structure, or even a logic
@@ -323,7 +325,7 @@ const HeroSection = () => {
               phenomena but also evolve with time, paving the way for
               engineering to thrive.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8 text-justify">
               Just as the basic sciences have evolved, so too has human society.
               The development of human social behavior, linguistic capabilities,
               imagination, psychological traits, and sociological understanding
@@ -333,14 +335,14 @@ const HeroSection = () => {
               deeper into nature's mysteries to discover solutions. This
               exploration becomes the bedrock for the evolution of engineering.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8 text-justify">
               Thus, the combination of basic sciences and human traits is
               collectively known as{" "}
               <strong>Applied Sciences and Humanities in Engineering</strong>.
               These disciplines work hand-in-hand, addressing challenges and
               facilitating the continuous growth of modern engineering.
             </p>
-            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8 text-justify">
               The central question that drives this discourse is whether recent
               trends in applied sciences and humanities are sufficiently
               prepared to support and advance modern engineering as they have
@@ -349,7 +351,7 @@ const HeroSection = () => {
               development. On the other hand, if the answer is no, the
               course-correction required must be examined.
             </p>
-            <p className="text-lg text-gray-700 md:text-2xl md:leading-8 ">
+            <p className="text-lg text-gray-700 md:text-2xl md:leading-8 text-justify">
               Louis D. Brandeis once said, “There are no shortcuts in
               evolution.” At the Department of Applied Sciences and Humanities,
               we believe that students must be ready to ask tough questions and
@@ -370,7 +372,7 @@ const HeroSection = () => {
             <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
               Our Objective
             </h2>
-            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8">
+            <p className="text-lg text-gray-700 mb-6  md:text-2xl md:leading-8 text-justify">
               The conference is an attempt at promoting basic sciences and
               humanistic studies through scholarly research. It aims at
               providing a platform to hold scholastic deliberations and
@@ -424,7 +426,7 @@ const HeroSection = () => {
               className="h-40 w-40 bg-black rounded-full mb-10 mt-6 shadow-lg"
             />
           </div>
-          <p className="text-lg p-8 text-gray-800 leading-relaxed md:leading-8 md:text-2xl">
+          <p className="text-lg p-8 text-gray-800 leading-relaxed md:leading-8 md:text-2xl text-justify">
             The foundation of the logo comes from the helix structure of DNA,
             standing for humanity as a whole, a symbol that resonates with
             evolution. The gears along the structure give it a nature of
@@ -505,13 +507,13 @@ const HeroSection = () => {
               </div>
 
               {/* Image Block 9 */}
-              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={ProfVijay} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Vijay Prakash Singh</p>
                   <p className="text-lg text-gray-700">EMEL, UoL</p>
                 </div>
-              </div> */}
+              </div>
 
               {/* Image Block 10 */}
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
@@ -781,10 +783,18 @@ const HeroSection = () => {
                 </div>
               </div>
 
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img0901} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Prof. N. K. Pandey</p>
+                  <p className="text-lg text-gray-700">University of Lucknow</p>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <div className="space-b-2 text-left md:grid md:grid-cols-2 md:gap-4">
+          <div className="space-b-2  md:grid md:grid-cols-2 md:gap-4 text-justify mr-2">
             <div >
               <ul className="space-y-2">
                 <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
