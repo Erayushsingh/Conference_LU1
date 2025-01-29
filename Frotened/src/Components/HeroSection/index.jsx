@@ -7,6 +7,7 @@ import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import VC_Sir from "/src/assets/VC_Sir.jpg";
 import TN_Sir from "/src/assets/TN_Sir.jpg";
+import img0900 from "/src/assets/img0900.jpeg";
 import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpg";
 import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
@@ -271,15 +272,15 @@ const HeroSection = () => {
 
           {/* Guest of Honor Container */}
           <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
-            <img src={TN_Sir} className="w-full h-[350px] object-fit rounded-lg" />
+            <img src={img0900} className="w-full h-[350px] object-fit rounded-lg" />
             <div className="p-4">
               <h4 className="text-xl font-semibold text-blue-700 text-center md:text-2xl md:leading-8">
-                GUEST OF HONOUR:
+                CHIEF GUEST:
               </h4>
               <p className="text-lg text-gray-700 text-center md:text-2xl md:leading-8">
-                <span className="font-bold">Prof. T. N. Singh</span>
-                <p>Director</p>
-                IIT-Patna
+                <span className="font-bold">Prof. M. G. Thakkar</span>
+                <p>Director-BSIP</p>
+                Lucknow
               </p>
             </div>
           </div>
