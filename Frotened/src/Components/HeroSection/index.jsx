@@ -505,13 +505,13 @@ const HeroSection = () => {
               </div>
 
               {/* Image Block 9 */}
-              {/* <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
                 <img src={ProfVijay} className="w-auto h-[100px] object-cover rounded-full" />
                 <div className="p-4 text-center">
                   <p className="text-xl font-bold text-blue-700">Prof. Vijay Prakash Singh</p>
                   <p className="text-lg text-gray-700">EMEL, UoL</p>
                 </div>
-              </div> */}
+              </div>
 
               {/* Image Block 10 */}
               <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
