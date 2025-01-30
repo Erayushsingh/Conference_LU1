@@ -7,9 +7,12 @@ import LuPhoto05 from "/src/assets/LuPhoto05.jpg";
 import LuPhoto04 from "/src/assets/LuPhoto04.jpg";
 import VC_Sir from "/src/assets/VC_Sir.jpg";
 
+import Nazp from "/src/assets/Nazp.jpg";
+
 import img0900 from "/src/assets/img0900.jpeg";
 import img0901 from "/src/assets/img0901.jpeg";
 import img0902 from "/src/assets/img0902.jpeg";
+import img0909 from "/src/assets/img0909.jpeg";
 import KeynoteSpeaker1 from "/src/assets/KeynoteSpeaker1.jpg";
 import KeynoteSpeaker2 from "/src/assets/KeynoteSpeaker2.jpg";
 import Akshay_Sharma from "/src/assets/Akshay_Sharma.jpg";
@@ -800,6 +803,22 @@ const HeroSection = () => {
                 </div>
               </div>
 
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={Nazp} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Dr. Mohammad Nazrul Islam Khan</p>
+                  <p className="text-lg text-gray-700">Qassim University, Saudi Arabia</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-blue-50 rounded-lg w-full">
+                <img src={img0909} className="w-auto h-[100px] object-cover rounded-full" />
+                <div className="p-4 text-center">
+                  <p className="text-lg font-bold text-blue-700">Dr. Sapna Sharma</p>
+                  <p className="text-lg text-gray-700">Uttar Pradesh State Institute of Forensic Science, Lucknow</p>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -853,10 +872,6 @@ const HeroSection = () => {
                 {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. C. Withana, Study Group, Australia
                 </li> */}
-
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
-                </li>
 
               </ul>
 
@@ -919,17 +934,19 @@ const HeroSection = () => {
                   Dr. Rituraj Mishra, National P. G. College, Lucknow
                 </li>
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Sapna Sharma, Uttar Pradesh State Institute of Forensic Science, Lucknow
-                </li>
+                
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Shikha Verma, Institute of Physics, Bhubneshwar
                 </li>
 
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Jyoti Juyal, Sharda University, Mathura
+                </li>
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
                 </li>
 
               </ul>
