@@ -115,10 +115,10 @@ const AboutUsPage = () => {
                 Gorakhpur University
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Sanjay Kumar Pandey, Mathematics, Banaras Hindu University{" "}
+                Prof. Sanjay Kumar Pandey, Mathematics, Banaras Hindu University
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-                Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya{" "}
+                Prof. I. V. S. Rathore, Kenyata University, Nairobi, Kenya
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof B M Dixit Shri Ramswaroop Memorial University Barabanki
@@ -132,14 +132,13 @@ const AboutUsPage = () => {
               </p>
 
               <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Vishal Singh Chandel,
-                Department of Applied Sciences and Humanities Rajkiya Engineering College, Ambedkar Nagar
+                Prof. Vishal Singh Chandel, Department of Applied Sciences and
+                Humanities Rajkiya Engineering College, Ambedkar Nagar
               </p>
 
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. Amita Singh Bhal, BBD University Lucknow
               </p>
-
             </div>
             <div className="bg-green-50 rounded-lg shadow-lg p-6 w-full sm:w-1/2 space-y-4">
               {/* List of Advisory Committee Members */}
@@ -149,7 +148,7 @@ const AboutUsPage = () => {
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. Manju Agarwal, Department of Mathematics and Astronomy,
-                University of Lucknow{" "}
+                University of Lucknow
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. Vivek Sahai, Department of Mathematics and Astronomy,
@@ -160,7 +159,7 @@ const AboutUsPage = () => {
                 University of Lucknow
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-                Prof. Anjana Solaki, Department of Mathematics, BIET, Jhansi{" "}
+                Prof. Anjana Solaki, Department of Mathematics, BIET, Jhansi
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. R. P. Singh, Department of English and Modern European
@@ -171,7 +170,7 @@ const AboutUsPage = () => {
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. Praveen Sahu, Head-Department of Commerce, Central
-                University of Rajasthan, Ajmer{" "}
+                University of Rajasthan, Ajmer
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Prof. Sanjay Kumar Srivastava, Department of AS&H, IET, Lucknow{" "}
@@ -192,7 +191,7 @@ const AboutUsPage = () => {
                 Sweden
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
-                Dr. Arvind Patel, IIT-Delhi{" "}
+                Dr. Arvind Patel, IIT-Delhi
               </p>
               <p className="text-lg sm:text-xl text-gray-700">
                 Dr. Ashish Pandey, National Research Council, Canada{" "}
@@ -200,7 +199,6 @@ const AboutUsPage = () => {
               <p className="text-lg sm:text-xl text-gray-700">
                 Dr. Alka Singh, Department of English, NLU-Lucknow
               </p>
-
             </div>
           </div>
         </div>
@@ -319,6 +317,7 @@ const AboutUsPage = () => {
         </div>
 
         
+
         <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">
           STUDENT COORDINATORS
         </h3>
