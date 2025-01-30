@@ -530,7 +530,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
           Peer Review Process
         </h2>
         <p className="text-lg text-black mb-4 md:mb-0 md:text-lg md:leading-8 flex ml-4">
-          <div className="w-[80%]">
+          <div className="mr-6">
             <p className='mb-2 text-justify'>
               <span className="font-bold">Step I:</span> Paper received by
               Editor-in-Chief for checking the title and abstract for relevance
