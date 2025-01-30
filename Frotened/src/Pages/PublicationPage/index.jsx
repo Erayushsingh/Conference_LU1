@@ -733,14 +733,6 @@ const PublicationPage = () => {
 
                 <tr>
                   <td className="border border-gray-300 text-center px-2 py-2">50</td>
-                  <td className="border border-gray-300 px-2 py-2">Chandra shekhar Gangipelli , Ganesh V and Anil Kumar</td>
-                  <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
-                  <td className="border border-gray-300 px-2 py-2">Limits of Stability and Dynamic Transitions in Swirling Fluids</td>
-                  <td className="border border-gray-300 px-2 py-2">India</td>
-                </tr>
-
-                <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">51</td>
                   <td className="border border-gray-300 px-2 py-2">Chandra shekhar Gangipelli1, Ganesh V 2 and 3</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Limits of Stability and Dynamic Transitions in Swirling Fluids</td>
@@ -748,7 +740,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">52</td>
+                  <td className="border border-gray-300 text-center px-2 py-2">51</td>
                   <td className="border border-gray-300 px-2 py-2">Afra khan, Manisha Shukla, Desh Deepak</td>
                   <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Milk oligosaccharide as future drugs</td>
@@ -756,7 +748,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">53</td>
+                  <td className="border border-gray-300 text-center px-2 py-2">52</td>
                   <td className="border border-gray-300 px-2 py-2">Shradha Jaiswal , Manisha Shukla and Desh Deepak	</td>
                   <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Structural Novelities in Milk Oligosaccharides Isolated from Cow Milk of Arid Zones of India.</td>
@@ -764,7 +756,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">54</td>
+                  <td className="border border-gray-300 text-center px-2 py-2">53</td>
                   <td className="border border-gray-300 px-2 py-2">Ahmad Aldeib</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Double Integrals: Exploring Multivariable Calculus</td>
@@ -772,31 +764,16 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">55</td>
+                  <td className="border border-gray-300 text-center px-2 py-2">54</td>
                   <td className="border border-gray-300 px-2 py-2">Mazen Abass Abaker Goda</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Applications of Vector Calculus in Artificial Intelligence: Advancing Computational Efficiency and Predictive Modeling</td>
                   <td className="border border-gray-300 px-2 py-2">India</td>
                 </tr>
 
-                <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">56</td>
-                  <td className="border border-gray-300 px-2 py-2">Devanshi Singh</td>
-                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
-                  <td className="border border-gray-300 px-2 py-2">Relevance of forensic linguistics in global literature</td>
-                  <td className="border border-gray-300 px-2 py-2">India</td>
-                </tr>
 
                 <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">57</td>
-                  <td className="border border-gray-300 px-2 py-2">Devanshi Singh</td>
-                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
-                  <td className="border border-gray-300 px-2 py-2">Relevance of forensic linguistics in global literature</td>
-                  <td className="border border-gray-300 px-2 py-2">India</td>
-                </tr>
-
-                <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">58</td>
+                  <td className="border border-gray-300 text-center px-2 py-2">55</td>
                   <td className="border border-gray-300 px-2 py-2">Anirudha Kumar Mondal</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematics</td>
@@ -804,7 +781,7 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">59</td>
+                  <td className="border border-gray-300 text-center px-2 py-2">56</td>
                   <td className="border border-gray-300 px-2 py-2">Niloy Das</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Metrics in Artificial Intelligence: Foundations and Applications</td>
@@ -812,10 +789,178 @@ const PublicationPage = () => {
                 </tr>
 
                 <tr>
-                  <td className="border border-gray-300 text-center px-2 py-2">60</td>
+                  <td className="border border-gray-300 text-center px-2 py-2">57</td>
                   <td className="border border-gray-300 px-2 py-2">MD ARIFUR RAHMAN</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Exploring the Role of Leibnitz's and Euler's Theorems in Advancing Artificial Intelligence through Differential Calculus</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">58</td>
+                  <td className="border border-gray-300 px-2 py-2">Chandra shekhar Gangipelli1, Ganesh V 2 and 3</td>
+                  <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Limits of Stability and Dynamic Transitions in Swirling Fluids</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">59</td>
+                  <td className="border border-gray-300 px-2 py-2">Afra khan, Manisha Shukla, Desh Deepak</td>
+                  <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Milk oligosaccharide as future drugs</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">60</td>
+                  <td className="border border-gray-300 px-2 py-2">Shradha Jaiswal , Manisha Shukla and Desh Deepak</td>
+                  <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Structural Novelities in Milk Oligosaccharides Isolated from Cow Milk of Arid Zones of India</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">61</td>
+                  <td className="border border-gray-300 px-2 py-2">Devanshi Singh</td>
+                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Relevance of forensic linguistics in global literature</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">62</td>
+                  <td className="border border-gray-300 px-2 py-2">Dr. Sapna Devi, Ajeet Kumar Ram</td>
+                  <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Modeling with the controlling effects of inorganic fertilizers, earthworm population and soil fertility on agricultural crop production</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">63</td>
+                  <td className="border border-gray-300 px-2 py-2">Akanksha Yadav, Aparna Sharma, Namrata Singh and Shashi Bala</td>
+                  <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Carbohydrates and Metal Nanoparticles: A New Perspective in Carbohydrate Research</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">64</td>
+                  <td className="border border-gray-300 px-2 py-2">Unnati Singh manisha Shukla and Desh Deepak</td>
+                  <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Identification of Monosaccharide Units in Oligosaccharides by Traditional and Physicochemical techniques</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">65</td>
+                  <td className="border border-gray-300 px-2 py-2">Nidhi Pandya and Priyanka Kannoujia</td>
+                  <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Two-Phase Flow of Jeffrey and Non-Jeffrey Fluids with Heat Transfer and no slip Condition in an Inclined Porous Channel</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">66</td>
+                  <td className="border border-gray-300 px-2 py-2">Alok Kumar Singh</td>
+                  <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Comparative study of pollutants in River Garrha and River Khannaut in district Shahjahanpur, Uttar Pradesh</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">67</td>
+                  <td className="border border-gray-300 px-2 py-2">Ms. Rohini Kumari, Prof. Renu Verma, Dr. Shikha Dutt Sharma</td>
+                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">A Case Study on Empowering Women for Micro-Finance and Financial Literacy in Ghangola Village, Gurugram, Haryana</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">68</td>
+                  <td className="border border-gray-300 px-2 py-2">Subohi Tabinda</td>
+                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Healing Through Stories: The Role of Digital Storytelling in Healthcare</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">69</td>
+                  <td className="border border-gray-300 px-2 py-2">Digvijay Singh</td>
+                  <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Effect on an image while changing the order of bivariate kernel functions using Sampling Kantorovich Operators</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">70</td>
+                  <td className="border border-gray-300 px-2 py-2">Padum Kant Mishra, Ekta Gupta, Aniket Kumar</td>
+                  <td className="border border-gray-300 px-2 py-2">Physical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Comparative Research on Nikhilam Sutra and Conventional Multiplication Algorithms.</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">71</td>
+                  <td className="border border-gray-300 px-2 py-2">Sugandha Agarwal, Aniket Kumar</td>
+                  <td className="border border-gray-300 px-2 py-2">Physical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Implementation and Performance Analysis of Vedic Multipliers on Nanoscale Power-Efficient FPGA Architectures</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">72</td>
+                  <td className="border border-gray-300 px-2 py-2">SHYAM KISHOR and ANOOP KUMAR VERMA</td>
+                  <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">On Special Weakly Conharmonic Symmetric Manifolds</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">73</td>
+                  <td className="border border-gray-300 px-2 py-2">Abdul Gaffar and Anand Ballabh Joshi</td>
+                  <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">A Technique for Securing Medical Images Based on Plastic Constant and Finite Field</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">74</td>
+                  <td className="border border-gray-300 px-2 py-2">VIMLESH</td>
+                  <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Stability Criteria for a System Involving Delays In Growth Response And Harvesting</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">75</td>
+                  <td className="border border-gray-300 px-2 py-2">Atul Kumar Tiwari*, Prem C. Pandey</td>
+                  <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Role of different polymer stabilized metal nanoparticle in fluorescein reporter based turn-off-on glutathione detection</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">76</td>
+                  <td className="border border-gray-300 px-2 py-2">Prof. Audhesh Kumar, Vaishali Shukla</td>
+                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Impact of Digital financial literacy on women entrepreneurs with special reference to Viksit Bharat</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">77</td>
+                  <td className="border border-gray-300 px-2 py-2">Anmol Verma and Saurabh Kumar Singh</td>
+                  <td className="border border-gray-300 px-2 py-2">Chemical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Synthesis of aceclofenac containing steroidal conjugates, their Spectroscopic, DFT, molecular docking and in vitro evaluation as anti-cancer agents against SiHa cells</td>
+                  <td className="border border-gray-300 px-2 py-2">India</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">78</td>
+                  <td className="border border-gray-300 px-2 py-2">Shantanu Dubey</td>
+                  <td className="border border-gray-300 px-2 py-2">Physical Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">AI-Based Weather Prediction Using Climate Physics Models</td>
                   <td className="border border-gray-300 px-2 py-2">India</td>
                 </tr>
 

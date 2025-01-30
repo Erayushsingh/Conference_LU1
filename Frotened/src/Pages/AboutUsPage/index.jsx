@@ -316,64 +316,7 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-        <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">
-          PROGRAM COMMITTEE
-        </h3>
-        <div className="flex flex-col mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4 mb-8">
-          <div className="bg-green-50  rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Parul Singh
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Arif Jamal
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Sumedha Dwivedi
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Amit Misra
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Pushpendra Verma
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Neha Arora
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Saroj Yadav
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Prof. Sanjay Kumar Pandey
-            </p>
-            
-          </div>
-          <div className="bg-blue-50 mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Ankit Prajapati
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Bhimsen Chaudhary
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Vinay Kumar
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Mr. Hrishabh Narayan
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Prof. Praveen Sahu
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Dr. Arvind Patel, IIT-Delhi
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Prof. Binod Mishra
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-              Prof. Praveen Sahu
-            </p>
-          </div>
-        </div>
+        
 
         <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">
           STUDENT COORDINATORS
