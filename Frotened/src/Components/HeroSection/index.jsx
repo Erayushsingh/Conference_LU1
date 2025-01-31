@@ -835,25 +835,25 @@ const HeroSection = () => {
                 {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Shantu Mondal , CTU Czech Republic
                 </li> */}
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Mohammad Nazrul Islam Khan, Qassim University, Saudi Arabia
-                </li>
+                </li> */}
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Gopal Krishna Dixit, Grenoble, France
                 </li>
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                {/* <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Sanobar Siddiqui, University of Regina, Saskatchewan, Canada
                 </li>
 
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Naila Erum, Universiti Teknologi MARA, Malaysia
-                </li>
+                </li> */}
                 {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. Rajneesh Kumar Pandey, Tribhuwan University, Nepal
                 </li> */}
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Mr. Vivek Kumar, Cognizent, U. S. A.
                 </li>
 
@@ -861,7 +861,7 @@ const HeroSection = () => {
                   Prof. John Corcoran, University of Buffalo, New York, U. S. A.
                 </li> */}
 
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Ajit Srivastava, Institute of Physics, Bhubneshwar
                 </li>
 
@@ -872,6 +872,14 @@ const HeroSection = () => {
                 {/* <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Dr. C. Withana, Study Group, Australia
                 </li> */}
+
+                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
+                </li>
+
+                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
+                  Dr. Jyoti Juyal, Sharda University, Mathura
+                </li>
 
               </ul>
 
@@ -934,20 +942,13 @@ const HeroSection = () => {
                   Dr. Rituraj Mishra, National P. G. College, Lucknow
                 </li>
 
-                
+
 
                 <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
                   Prof. Shikha Verma, Institute of Physics, Bhubneshwar
                 </li>
 
 
-                <li className="font-semibold text-red-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Jyoti Juyal, Sharda University, Mathura
-                </li>
-
-                <li className="font-semibold text-indigo-600 md:mb-3 md:text-2xl md:leading-8">
-                  Dr. Vimal Kumar Vishwakarma, National Law University, Jabalpur
-                </li>
 
               </ul>
 
