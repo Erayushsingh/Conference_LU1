@@ -760,7 +760,7 @@ const PublicationPage = () => {
                   <td className="border border-gray-300 px-2 py-2">Ahmad Aldeib</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Double Integrals: Exploring Multivariable Calculus</td>
-                  <td className="border border-gray-300 px-2 py-2">India</td>
+                  <td className="border border-gray-300 px-2 py-2">Syria</td>
                 </tr>
 
                 <tr>
@@ -768,7 +768,7 @@ const PublicationPage = () => {
                   <td className="border border-gray-300 px-2 py-2">Mazen Abass Abaker Goda</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Applications of Vector Calculus in Artificial Intelligence: Advancing Computational Efficiency and Predictive Modeling</td>
-                  <td className="border border-gray-300 px-2 py-2">India</td>
+                  <td className="border border-gray-300 px-2 py-2">Sudan</td>
                 </tr>
 
 
@@ -777,7 +777,7 @@ const PublicationPage = () => {
                   <td className="border border-gray-300 px-2 py-2">Anirudha Kumar Mondal</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematics</td>
-                  <td className="border border-gray-300 px-2 py-2">India</td>
+                  <td className="border border-gray-300 px-2 py-2">Bangladesh</td>
                 </tr>
 
                 <tr>
@@ -785,7 +785,7 @@ const PublicationPage = () => {
                   <td className="border border-gray-300 px-2 py-2">Niloy Das</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Metrics in Artificial Intelligence: Foundations and Applications</td>
-                  <td className="border border-gray-300 px-2 py-2">India</td>
+                  <td className="border border-gray-300 px-2 py-2">Bangladesh</td>
                 </tr>
 
                 <tr>
@@ -793,7 +793,7 @@ const PublicationPage = () => {
                   <td className="border border-gray-300 px-2 py-2">MD ARIFUR RAHMAN</td>
                   <td className="border border-gray-300 px-2 py-2">Mathematical Sciences</td>
                   <td className="border border-gray-300 px-2 py-2">Exploring the Role of Leibnitz's and Euler's Theorems in Advancing Artificial Intelligence through Differential Calculus</td>
-                  <td className="border border-gray-300 px-2 py-2">India</td>
+                  <td className="border border-gray-300 px-2 py-2">Bangladesh</td>
                 </tr>
 
                 <tr>
@@ -963,6 +963,40 @@ const PublicationPage = () => {
                   <td className="border border-gray-300 px-2 py-2">AI-Based Weather Prediction Using Climate Physics Models</td>
                   <td className="border border-gray-300 px-2 py-2">India</td>
                 </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">79</td>
+                  <td className="border border-gray-300 px-2 py-2">Dr. S. A. Siddiqui</td>
+                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Sustainability and Accounting: what is the state of research in sustainability reporting as it intersects with traditional accounting</td>
+                  <td className="border border-gray-300 px-2 py-2">University of Regina, Canada</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">80</td>
+                  <td className="border border-gray-300 px-2 py-2">Dr. Naila Erum</td>
+                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Digital Transformation, Artificial Intelligence and Economic Development</td>
+                  <td className="border border-gray-300 px-2 py-2">University teknologi MARA (uitm),Malaysia</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">81</td>
+                  <td className="border border-gray-300 px-2 py-2">Dr. Mohammad Nazrul Islam Khan</td>
+                  <td className="border border-gray-300 px-2 py-2">Mathematics</td>
+                  <td className="border border-gray-300 px-2 py-2">An Exploration of Tensors</td>
+                  <td className="border border-gray-300 px-2 py-2">Qassim University, Saudi Arabia</td>
+                </tr>
+
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">82</td>
+                  <td className="border border-gray-300 px-2 py-2">Dr. Gopal Krishna Dixit</td>
+                  <td className="border border-gray-300 px-2 py-2">Chemistry</td>
+                  <td className="border border-gray-300 px-2 py-2">Machine learning assisted detection of RBC aggregates in blood flow.</td>
+                  <td className="border border-gray-300 px-2 py-2">Grenoble, France</td>
+                </tr>
+
+
 
               </tbody>
             </table>

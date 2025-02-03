@@ -1173,13 +1173,8 @@ const HeroSection = () => {
         {/* Scrolling Wrapper Container */}
         <div className="scrolling-wrapper mt-4">
           <div className="link-container">
-            {/* Sponsor 1 */}
-            <img
-              src={fans}
-              alt="Sponsor 1"
-              className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
-            />
-
+           
+            
             {/* Sponsor 2 */}
             <img
               src={pnb}
@@ -1201,12 +1196,7 @@ const HeroSection = () => {
               className="w-full sm:w-[150px] md:w-[200px] lg:w-[350px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[200px] object-fit mr-10 my-auto"
             />
 
-            {/* Sponsor 1 */}
-            <img
-              src={fans}
-              alt="Sponsor 1"
-              className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
-            />
+            
 
             {/* Sponsor 2 */}
             <img
