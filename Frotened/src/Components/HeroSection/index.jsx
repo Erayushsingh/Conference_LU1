@@ -69,6 +69,7 @@ import fans from "/src/assets/fans.png";
 import pnb from "/src/assets/pnb.png";
 import media from "/src/assets/media.png";
 import UCO from "/src/assets/UCO.jpeg"
+import S4 from "/src/assets/S4.jpeg"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -1173,8 +1174,36 @@ const HeroSection = () => {
         {/* Scrolling Wrapper Container */}
         <div className="scrolling-wrapper mt-4">
           <div className="link-container">
-           
-            
+
+
+            {/* Sponsor 2 */}
+            <img
+              src={pnb}
+              alt="Sponsor 2"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
+            />
+
+            {/* Sponsor 3 */}
+            <img
+              src={media}
+              alt="Sponsor 3"
+              className=" w-[250px] sm:w-[150px] md:w-[400px] lg:w-[450px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-fit mr-10"
+            />
+
+            {/* Sponsor 4 */}
+            <img
+              src={UCO}
+              alt="Sponsor 4"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[350px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[200px] object-fit mr-10 my-auto"
+            />
+
+            <img
+              src={S4}
+              alt="Sponsor 4"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[350px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[230px] object-fit mr-10 my-auto"
+            />
+
+
             {/* Sponsor 2 */}
             <img
               src={pnb}
@@ -1196,27 +1225,10 @@ const HeroSection = () => {
               className="w-full sm:w-[150px] md:w-[200px] lg:w-[350px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[200px] object-fit mr-10 my-auto"
             />
 
-            
-
-            {/* Sponsor 2 */}
             <img
-              src={pnb}
-              alt="Sponsor 2"
-              className="w-full sm:w-[150px] md:w-[200px] lg:w-[250px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-contain mr-10"
-            />
-
-            {/* Sponsor 3 */}
-            <img
-              src={media}
-              alt="Sponsor 3"
-              className=" w-[250px] sm:w-[150px] md:w-[400px] lg:w-[450px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[250px] object-fit mr-10"
-            />
-
-            {/* Sponsor 4 */}
-            <img
-              src={UCO}
+              src={S4}
               alt="Sponsor 4"
-              className="w-full sm:w-[150px] md:w-[200px] lg:w-[350px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[200px] object-fit mr-10 my-auto"
+              className="w-full sm:w-[150px] md:w-[200px] lg:w-[350px] h-[150px] sm:h-[150px] md:h-[200px] lg:h-[230px] object-fit mr-10 my-auto"
             />
 
           </div>
