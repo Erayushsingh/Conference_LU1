@@ -996,6 +996,14 @@ const PublicationPage = () => {
                   <td className="border border-gray-300 px-2 py-2">Grenoble, France</td>
                 </tr>
 
+                <tr>
+                  <td className="border border-gray-300 text-center px-2 py-2">83</td>
+                  <td className="border border-gray-300 px-2 py-2">Prof. Vinay Pandey </td>
+                  <td className="border border-gray-300 px-2 py-2">Humanities & Management Sciences</td>
+                  <td className="border border-gray-300 px-2 py-2">Sustainable Rural Entrepreneurship and Local Economic Development</td>
+                  <td className="border border-gray-300 px-2 py-2">Nepal</td>
+                </tr>
+
 
 
               </tbody>
