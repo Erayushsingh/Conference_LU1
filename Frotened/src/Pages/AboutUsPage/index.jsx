@@ -316,7 +316,44 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-        
+
+        <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">
+          STUDENT COMMITTEE
+        </h3>
+        <div className="flex flex-col mt-7 sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
+          <div className="  rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Ayush Singh
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Rishabh Gupta
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Shivansh Kumar
+            </p>
+
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Venkatesh
+            </p>
+          </div>
+
+          <div className=" mb-8 rounded-lg shadow-lg p-6 w-full sm:w-1/2 flex flex-col items-center">
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Shikhar Dwivedi
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Pratyush Kumar Singh
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Somesh Pratap Singh
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
+              Himanshu Singh
+            </p>
+          </div>
+        </div>
+
 
         <h3 className="md:text-3xl pt-7 text-xl font-bold text-center border-t-4 border-red-600 text-gray-800 mb-8">
           STUDENT COORDINATORS
