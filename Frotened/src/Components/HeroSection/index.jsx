@@ -83,13 +83,13 @@ const HeroSection = () => {
       {/* Banner Section */}
       <div className="bg-red-900 text-white py-2 text-center w-full">
         <div className="flex justify-center items-center flex-col md:flex-row  animate-zoom-out-in">
-          <p className="text-2xl font-bold mb-2 md:mb-0 ">
+          {/* <p className="text-2xl font-bold mb-2 md:mb-0 ">
             Registration Open for RAASHEE-2025
           </p>
           <button
             onClick={handleRegisterClick}
             className="md:mt-0 md:ml-5 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 md:text-lg font-bold"
-          >
+          > */}
             Register Now
           </button>
         </div>
