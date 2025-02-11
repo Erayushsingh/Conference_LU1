@@ -89,9 +89,9 @@ const HeroSection = () => {
           <button
             onClick={handleRegisterClick}
             className="md:mt-0 md:ml-5 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 md:text-lg font-bold"
-          > */}
+          >
             Register Now
-          </button>
+          </button> */}
         </div>
       </div>
 
