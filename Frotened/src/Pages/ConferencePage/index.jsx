@@ -364,30 +364,101 @@ an exciting exchange of ideas and discussions on the future directions of mathem
           Dr. Anupam Kumar Tripathi
         </p>
         <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-          Dr. Rachana Pathak
-        </p>
-        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
           Dr. Ranvijay Pratap Singh
-        </p>
-        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-          Dr. Khushboo Verma
         </p>
       </div>
 
-      <div className="bg-red-50 md:mt-10 mb-8 rounded-lg shadow-lg p-6 w-[90%] sm:w-1/2 flex flex-col items-center mx-auto">
-        <h3 className="md:text-3xl text-xl font-bold text-center  text-gray-800 mb-2">
-          Associate Editors
-        </h3>
-        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-          Dr. Amit Mishra
-        </p>
-        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-          Dr. Parul Singh
-        </p>
-        <p className="text-lg sm:text-xl text-gray-700 text-center md:mb-1">
-          Dr. Sumedha Dwivedi
-        </p>
+
+      
+      <div className="bg-green-50 rounded-lg md:mt-16  shadow-lg p-6 my-8 w-[90%] sm:w-4/5 lg:w-[80%] mx-auto ">
+      <h3 className="md:text-4xl  text-3xl font-bold text-center text-gray-800 mb-8">
+      Programme Committee
+      </h3>
+
+        <ul className="space-y-2 text-left">
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Jose Carlos, Redondo Olmedilla, Department of English, University of Almeria, Spain
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Athanase Papadopoulos, Department of Mathematics, University of Strasbourg, France
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Biswajit Sarkar, Department of Industrial Management and Engineering, Yonsei University, South Korea
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Vinay Pandey, Tribhuwan University, Nepal
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Praveen Sahu, Central University of Rajasthan, Ajmer, Rajasthan
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Binod Mishra, IIT-Roorkee, Roorkee, Uttrakhand
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Rajinder Singh Chandel, Punjabi University, Patiala, Punjab
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Raj P. Chhabra, IIT-Kanpur, Kanpur, Uttar Pradesh
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Prof. Shikha Varma, Institute of Physics, Bhubneshwar, Odissa
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. S. A. Siddiqui, University of Regina, Canada
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Naila Erum, University Teknologi MARA, Malaysia
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Mohammad Nazarul Islam Khan, Qassim University, Saudi Arabia
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Shefali Vaidya, Czech Technical University, Czech Republic
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Santo Mondal, Czech Technical University, Czech Republic
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Gopal Krishna Dixit, Grenoble, France
+
+          </li>
+
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Bimal Kumar Vishwakarma, National Law University, Jabalpur, Madhya Pradesh
+          </li>
+
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Bindunath Jha, Lalit Narayan Mithila University, Darbhanga, Bihar
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Prabhanshu Tripathi, Principle Scientist, CSIR-IITR, Lucknow, Uttar Pradesh
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Dr. Pravin Kumar, Scientist G, IUAC, New Delhi
+
+          </li>
+          <li className="text-gray-600 md:mb-3  md:text-xl md:leading-8">
+          Mr. Akshay Sharma, Author and Actor, Coimbatore, Tamilnadu
+          </li>
+        </ul>
       </div>
+
+
+
 
       <h3 className="md:text-4xl pt-7  text-3xl font-bold text-center text-gray-800 mb-8">
         Editorial Board
