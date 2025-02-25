@@ -658,7 +658,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
             {/* Left Column: Track 1, Track 2, Track 3 */}
             <div className="border-2 border-gray-300 rounded-lg p-4">
               <h3 className="text-2xl font-bold text-red-500 mb-4 border-b-2 border-dotted border-gray-400 pb-2">
-                TRACK 1– Physical Sciences
+                TRACK 1– Engineering Physics
               </h3>
               <ul className="list-inside space-y-2 text-lg text-gray-700">
                 <li>Nuclear and Particle Physics</li>
@@ -675,7 +675,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
               </ul>
 
               <h3 className="text-2xl font-bold text-rose-700 mt-8 mb-4 border-b-2 border-dotted border-gray-400 pb-2">
-                TRACK 2– Chemical Sciences
+                TRACK 2– Engineering Chemistry
               </h3>
               <ul className="list-inside space-y-2 text-lg text-gray-700">
                 {Object.keys(trackData).map((trackKey) => (
@@ -692,7 +692,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
               </ul>
 
               <h3 className="text-2xl font-bold text-red-900 mt-8 mb-4 border-b-2 border-dotted border-gray-400 pb-2">
-                TRACK 3– Mathematical Sciences
+                TRACK 3– Engineering Mathematics
               </h3>
               <ul className="list-inside space-y-2 text-lg text-gray-700">
                 {Object.keys(mathematicalScience).map((trackKey) => (
@@ -715,7 +715,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
               <h3 className="text-2xl font-bold text-red-950 mb-4 border-b-2 border-dotted border-gray-400 pb-2">
                 TRACK 4– Humanities & Management Sciences
               </h3>
-              <h4 className="text-xl font-bold text-indigo-600 mb-4">English, Psychology, Sociology and Communication Studies:</h4>
+              <h4 className="text-xl font-bold text-indigo-600 mb-4">Communication Studies and Humanities:</h4>
               <ul className="list-inside space-y-2 text-lg text-gray-700">
                 <li>European Languages and Literatures</li>
                 <li>Comparative Literature</li>
@@ -738,7 +738,7 @@ an exciting exchange of ideas and discussions on the future directions of mathem
                 <li>Psychological problems of children and adolescents</li>
               </ul>
 
-              <h4 className="text-xl font-bold text-indigo-600 mt-8 mb-4 border-b-2 border-dotted border-gray-400 pb-2">Management:</h4>
+              <h4 className="text-xl font-bold text-indigo-600 mt-8 mb-4 border-b-2 border-dotted border-gray-400 pb-2">Engineering Management:</h4>
               <ul className="list-inside space-y-2 text-lg text-gray-700">
                 {Object.keys(management).map((trackKey) => (
                   <Track
